@@ -23,6 +23,7 @@ public class CardManager : MonoBehaviour
         
     }
 
+    //Uses animations to cycle cards in UI
     public void CycleCards(bool direction)
     {
         Debug.Log(direction);
@@ -52,8 +53,10 @@ public class CardManager : MonoBehaviour
         //Show an info sprite
     }
 
+    //Moves the array tracker by the value of cycleBy
     public void CycleCardsBy(int cycleBy)
     {
+        //Reduces cycleBy to be within the bounds of cardList
         while(cycleBy >= cardList.Count)
         {
             cycleBy -= cardList.Count;

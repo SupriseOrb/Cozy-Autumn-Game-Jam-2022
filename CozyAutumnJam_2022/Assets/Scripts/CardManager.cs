@@ -46,6 +46,12 @@ public class CardManager : MonoBehaviour
         }
     }
 
+    public void ViewCard()
+    {
+        cardList[currentCard].GetComponent<Animator>().Play("Expand");
+        //Show an info sprite
+    }
+
     public void CycleCardsBy(int cycleBy)
     {
         while(cycleBy >= cardList.Count)

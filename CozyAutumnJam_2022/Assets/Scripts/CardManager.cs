@@ -62,7 +62,6 @@ public class CardManager : MonoBehaviour
         bool cycleDirection
     )
     {
-        Debug.Log(cycleDirection);
         if(cycleDirection)
         {
             currentDeck[currentCurrent].GetComponent<Animator>().Play("MidToLeft");

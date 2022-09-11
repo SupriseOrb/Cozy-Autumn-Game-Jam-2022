@@ -22,6 +22,7 @@ public class CardManager : MonoBehaviour
     [SerializeField] private Image LeftCardImage;
     [SerializeField] private Image RightCardImage;
     [SerializeField] private bool activeDeckActive;
+    private bool isCardExpanded;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,7 @@ public class CardManager : MonoBehaviour
     //Uses animations to cycle cards in UI
     public void CycleCards(bool direction)
     {
+        isCardExpanded = false;
         if(activeDeckActive)
         {
             CycleHelper(ref aCardList, ref aCurrentCard, ref aPreviousCard, ref aNextCard, direction);
@@ -80,13 +82,16 @@ public class CardManager : MonoBehaviour
 
     public void ViewCard()
     {
-        if(activeDeckActive)
+        if(!isCardExpanded)
         {
-            ViewHelper(ref aCardList, aCurrentCard);
-        }
-        else
-        {
-            ViewHelper(ref pCardList, pCurrentCard);
+            if(activeDeckActive)
+            {
+                ViewHelper(ref aCardList, aCurrentCard);
+            }
+            else
+            {
+                ViewHelper(ref pCardList, pCurrentCard);
+            }
         }
     }
 
@@ -99,6 +104,7 @@ public class CardManager : MonoBehaviour
     //Moves the array tracker by the value of cycleBy
     public void CycleCardsBy(int cycleBy)
     {
+        isCardExpanded = false;
         if(activeDeckActive)
         {
             CycleByHelper(ref aCardList, ref aCurrentCard, ref aPreviousCard, ref aNextCard, cycleBy);
@@ -150,6 +156,7 @@ public class CardManager : MonoBehaviour
 
     public void SwapDecks()
     {
+        isCardExpanded = false;
         if(activeDeckActive)
         {
             //Play the swap back animation for aCardList

@@ -8,5 +8,7 @@ public class CardScriptableObject : ScriptableObject
 #region SO Backing Fields
     //maybe make it an Image
     [SerializeField] private Sprite oracleCardSprite; 
+    [SerializeField] private Sprite oracleCardInfoSprite;
 #endregion
 }
+

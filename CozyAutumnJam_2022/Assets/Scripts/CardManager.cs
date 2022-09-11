@@ -10,19 +10,22 @@ public class CardManager : MonoBehaviour
     [SerializeField] private int aCurrentCard;
     [SerializeField] private int aNextCard;
     [SerializeField] private int aPreviousCard;
+    [SerializeField] private Animator aDeckAnimator;
 #endregion
 
-#region Active Ability Variables 
+#region Passive Ability Variables 
     [SerializeField] private List<GameObject> pCardList;
     [SerializeField] private int pCurrentCard;
     [SerializeField] private int pNextCard;
     [SerializeField] private int pPreviousCard;
     [SerializeField] private int numPassiveCards;
+    [SerializeField] private Animator pDeckAnimator;
 #endregion
     [SerializeField] private Image LeftCardImage;
     [SerializeField] private Image RightCardImage;
-    [SerializeField] private bool activeDeckActive;
+    [SerializeField] private bool abilityDeckActive;
     private bool isCardExpanded;
+    private bool isCardFront;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +46,7 @@ public class CardManager : MonoBehaviour
         AkSoundEngine.PostEvent("Play_CardShuffle", this.gameObject);
 
         isCardExpanded = false;
-        if(activeDeckActive)
+        if(abilityDeckActive)
         {
             CycleHelper(ref aCardList, ref aCurrentCard, ref aPreviousCard, ref aNextCard, direction);
         }
@@ -88,29 +91,83 @@ public class CardManager : MonoBehaviour
         {
             //Plays sound for showing card info
             AkSoundEngine.PostEvent("Play_CardPull", this.gameObject);
-            if(activeDeckActive)
+            isCardFront = true;
+            if(abilityDeckActive)
             {
-                ViewHelper(ref aCardList, aCurrentCard);
+                ExpandHelper(ref aCardList, aCurrentCard);
             }
             else
             {
-                ViewHelper(ref pCardList, pCurrentCard);
+                ExpandHelper(ref pCardList, pCurrentCard);
+            }
+        }
+        else if(isCardExpanded)
+        {
+            if(abilityDeckActive)
+            {
+                FlipHelper(ref aCardList, aCurrentCard);
+            }
+            else
+            {
+                FlipHelper(ref pCardList, pCurrentCard);
             }
         }
     }
 
-    public void ViewHelper(ref List<GameObject> currentDeck, int currentCurrent)
+    public void ExpandHelper(ref List<GameObject> currentDeck, int currentCurrent)
     {
+        Debug.Log("playing expand");
         isCardExpanded = true;
         currentDeck[currentCurrent].GetComponent<Animator>().Play("Expand");
         //Show an info sprite
+    }
+
+    public void FlipHelper(ref List<GameObject> currentDeck, int currentCurrent)
+    {
+        if(isCardFront)
+        {
+            isCardFront = false;
+            currentDeck[currentCurrent].GetComponent<Animator>().Play("FlipToBack");
+        }
+        else
+        {
+            isCardFront = true;
+            currentDeck[currentCurrent].GetComponent<Animator>().Play("FlipToFront");
+        }
+    }
+
+    public void CloseCard()
+    {
+        if(isCardExpanded)
+        {
+            if(abilityDeckActive)
+            {
+                CloseHelper(ref aCardList, aCurrentCard);
+            }
+            else
+            {
+                CloseHelper(ref pCardList, pCurrentCard);
+            }
+        }
+    }
+
+    public void CloseHelper(ref List<GameObject> currentDeck, int currentCurrent)
+    {
+        if(isCardFront)
+        {
+            currentDeck[currentCurrent].GetComponent<Animator>().Play("FrontShrink");
+        }
+        else
+        {
+            currentDeck[currentCurrent].GetComponent<Animator>().Play("BackShrink");
+        }
     }
 
     //Moves the array tracker by the value of cycleBy
     public void CycleCardsBy(int cycleBy)
     {
         isCardExpanded = false;
-        if(activeDeckActive)
+        if(abilityDeckActive)
         {
             CycleByHelper(ref aCardList, ref aCurrentCard, ref aPreviousCard, ref aNextCard, cycleBy);
         }
@@ -162,46 +219,54 @@ public class CardManager : MonoBehaviour
     public void SwapDecks()
     {
         isCardExpanded = false;
-        if(activeDeckActive)
+        if(abilityDeckActive)
         {
+            aCardList[aCurrentCard].GetComponent<Animator>().Play("Normal");
+            pDeckAnimator.gameObject.SetActive(true);
             //Play the swap back animation for aCardList
             //Play the swap forward animation for pCardList
+            aDeckAnimator.Play("DeckToBack");
+            pDeckAnimator.Play("DeckToFront");
         }
         else
         {
+            pCardList[pCurrentCard].GetComponent<Animator>().Play("Normal");
+            aDeckAnimator.gameObject.SetActive(true);
             //Play the swap back animation for pCardList
             //Play the swap forward animation for aCardList
+            aDeckAnimator.Play("DeckToFront");
+            pDeckAnimator.Play("DeckToBack");
         }
-        activeDeckActive = !activeDeckActive;
+        abilityDeckActive = !abilityDeckActive;
     }
 
     public void AddActiveCard(GameObject newCard)
     {
         aCardList.Add(newCard);
-        if(activeDeckActive)
+        if(abilityDeckActive)
         {
             CycleCardsBy(0); 
         }
         else
         {
-            activeDeckActive = true;
+            abilityDeckActive = true;
             CycleCardsBy(0);
-            activeDeckActive = false;
+            abilityDeckActive = false;
         }
     }    
 
     public void AddPassiveCard(GameObject newCard)
     {
         pCardList.Add(newCard);
-        if(!activeDeckActive)
+        if(!abilityDeckActive)
         {
             CycleCardsBy(0);
         }
         else
         {
-            activeDeckActive = false;
+            abilityDeckActive = false;
             CycleCardsBy(0);
-            activeDeckActive = true;
+            abilityDeckActive = true;
         }
     }
 }

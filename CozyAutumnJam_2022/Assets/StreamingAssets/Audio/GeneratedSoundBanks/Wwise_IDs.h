@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_CARDPULL = 3136930057U;
+        static const AkUniqueID PLAY_CARDSHUFFLE = 3192869359U;
         static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
     } // namespace EVENTS
 

@@ -39,6 +39,9 @@ public class CardManager : MonoBehaviour
     //Uses animations to cycle cards in UI
     public void CycleCards(bool direction)
     {
+        //Plays sound for cycling through cards
+        AkSoundEngine.PostEvent("Play_CardShuffle", this.gameObject);
+
         isCardExpanded = false;
         if(activeDeckActive)
         {
@@ -84,6 +87,8 @@ public class CardManager : MonoBehaviour
     {
         if(!isCardExpanded)
         {
+            //Plays sound for showing card info
+            AkSoundEngine.PostEvent("Play_CardPull", this.gameObject);
             if(activeDeckActive)
             {
                 ViewHelper(ref aCardList, aCurrentCard);
@@ -97,6 +102,7 @@ public class CardManager : MonoBehaviour
 
     public void ViewHelper(ref List<GameObject> currentDeck, int currentCurrent)
     {
+        isCardExpanded = true;
         currentDeck[currentCurrent].GetComponent<Animator>().Play("Expand");
         //Show an info sprite
     }

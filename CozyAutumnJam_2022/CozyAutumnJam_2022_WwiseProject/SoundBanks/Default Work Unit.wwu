@@ -5,7 +5,9 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{67FB1E2B-96DD-412E-8860-B146083BD172}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_CardShuffle" ID="{81251156-964A-4390-BDC2-65B5AF08418C}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_TestSound" ID="{B0A3C6A5-15F8-482D-9F35-E7100994E20F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CardPull" ID="{AC004D5D-0225-4E40-8781-F74FA18B7378}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

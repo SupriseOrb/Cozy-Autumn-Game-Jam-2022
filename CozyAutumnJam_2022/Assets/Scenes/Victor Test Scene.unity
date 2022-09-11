@@ -1277,6 +1277,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2650161887890474580, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
   m_PrefabInstance: {fileID: 1940511554}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1940511573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940511568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694c2c41d42302b43ac7c15b6a604fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardInformation: {fileID: 11400000, guid: 0964eed7b29588c4fb0aff3054c535d3, type: 2}
+  pushProjectile: {fileID: 0}
 --- !u!1 &2041308222
 GameObject:
   m_ObjectHideFlags: 0

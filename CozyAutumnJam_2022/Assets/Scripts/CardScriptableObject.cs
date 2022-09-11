@@ -6,9 +6,35 @@ using UnityEngine;
 public class CardScriptableObject : ScriptableObject 
 {
 #region SO Backing Fields
+    [SerializeField] private string _abilityName;
+    [SerializeField] private int _cardID;
     //maybe make it an Image
-    [SerializeField] private Sprite oracleCardSprite; 
-    [SerializeField] private Sprite oracleCardInfoSprite;
+    [SerializeField] private Sprite _oracleCardSprite; 
+    [SerializeField] private Sprite _oracleCardInfoSprite;
+    [SerializeField] private string _abilityDescription;
+#endregion
+
+#region SO Getters
+    public string AbilityName
+    {
+        get {return _abilityName;}
+    }
+    public int CardID
+    {
+        get {return _cardID;}
+    }
+    public Sprite OracleCardSprite
+    {
+        get {return _oracleCardSprite;}
+    }
+    public Sprite OracleCardInfoSprite
+    {
+        get {return _oracleCardInfoSprite;}
+    }
+    public string AbilityDescription
+    {
+        get {return _abilityDescription;}
+    }
 #endregion
 }
 

@@ -107,16 +107,11 @@ public class CardManager : MonoBehaviour
             {
                 FlipHelper(ref aCardList, aCurrentCard);
             }
-            else
-            {
-                FlipHelper(ref pCardList, pCurrentCard);
-            }
         }
     }
 
     public void ExpandHelper(ref List<GameObject> currentDeck, int currentCurrent)
     {
-        Debug.Log("playing expand");
         isCardExpanded = true;
         currentDeck[currentCurrent].GetComponent<Animator>().Play("Expand");
         //Show an info sprite
@@ -267,6 +262,22 @@ public class CardManager : MonoBehaviour
             abilityDeckActive = false;
             CycleCardsBy(0);
             abilityDeckActive = true;
+        }
+    }
+
+    public void ActivateAbilityCard()
+    {
+        if(abilityDeckActive)
+        {
+            IAbility cardAbility = aCardList[aCurrentCard].GetComponent<IAbility>();
+            if(cardAbility != null)
+            {
+                cardAbility.ActivateAbility();
+            }
+            else
+            {
+                Debug.Log("ABILITY SCRIPT NOT FOUND. YOU'RE A DINGUS");
+            }
         }
     }
 }

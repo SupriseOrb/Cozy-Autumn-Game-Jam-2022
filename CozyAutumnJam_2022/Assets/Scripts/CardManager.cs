@@ -135,6 +135,7 @@ public class CardManager : MonoBehaviour
     {
         if(isCardExpanded)
         {
+            isCardExpanded = false;
             if(abilityDeckActive)
             {
                 CloseHelper(ref aCardList, aCurrentCard);

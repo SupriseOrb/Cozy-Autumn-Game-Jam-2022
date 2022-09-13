@@ -36,6 +36,73 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Music Events" ID="{EAC3DD18-5574-49EF-8822-301CDEE1C86E}" ShortID="27379024">
+					<ChildrenList>
+						<Event Name="Main_Theme" ID="{1A0763CA-9E64-4680-9310-131230902572}">
+							<ChildrenList>
+								<Action Name="" ID="{44953E6A-5979-4842-BD52-3BFC550FCD2D}" ShortID="471229695">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GeneralShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ken" ID="{A9661CD6-DA4E-43F4-AB6F-E7DC7D2A67B3}">
+							<ChildrenList>
+								<Action Name="" ID="{ABF6B7E8-121D-487F-895C-9969EB656B41}" ShortID="287438948">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ken" ID="{8582E751-3238-4044-8FC1-7B363AD5C8FD}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayMusicStart" ID="{B279BAD9-7539-4CD8-A67C-A1B17C510EB5}">
+							<ChildrenList>
+								<Action Name="" ID="{EBB66FD4-B409-49B9-8E6C-2DD3474ECA61}" ShortID="472459033">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Gameplay" ID="{31C148B2-DA2E-4C2E-8A2B-7F028E9B76A5}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F253CC9D-69E9-4C4D-91E7-2C68D73DCAC5}" ShortID="795487377">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GeneralShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Myrttle" ID="{490D8A68-088D-413B-AACB-8E2B7E804CA2}">
+							<ChildrenList>
+								<Action Name="" ID="{2E975959-17AA-42EE-B7B2-6C7389A64CE6}" ShortID="891351315">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Myrtle" ID="{75367050-8BA8-4098-8405-B87343B50AFE}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

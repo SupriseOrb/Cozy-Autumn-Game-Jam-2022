@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{63E57578-E8CA-421A-9406-9152824262B8}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{63E57578-E8CA-421A-9406-9152824262B8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{63E57578-E8CA-421A-9406-9152824262B8}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Music Test 1" ID="{5A526E4C-4C28-4223-A864-99BF9E4C7F89}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PlayMusicStart" ID="{B279BAD9-7539-4CD8-A67C-A1B17C510EB5}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Main_Theme" ID="{1A0763CA-9E64-4680-9310-131230902572}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Ken" ID="{A9661CD6-DA4E-43F4-AB6F-E7DC7D2A67B3}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Myrttle" ID="{490D8A68-088D-413B-AACB-8E2B7E804CA2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="GeneralShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

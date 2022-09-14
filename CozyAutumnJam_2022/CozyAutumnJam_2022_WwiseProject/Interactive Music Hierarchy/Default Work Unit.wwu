@@ -1070,7 +1070,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="Spooky_MainTheme_Draft_1" ID="{577C84CD-19AF-4B54-93A2-DADBEAFBF862}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+											<ObjectRef Name="MainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="KenTheme" ID="{FD7702CD-F6D5-47EA-9A9B-F663C1C3FE7B}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
@@ -1100,7 +1100,7 @@
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
-										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="3"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
@@ -1108,7 +1108,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="Spooky_MainTheme_Draft_1" ID="{577C84CD-19AF-4B54-93A2-DADBEAFBF862}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+											<ObjectRef Name="MainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="MyrtleTheme" ID="{C0963D23-842B-4790-AF74-A953A1899C77}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
@@ -1138,7 +1138,7 @@
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
-										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="3"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
@@ -1146,7 +1146,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="Spooky_MainTheme_Draft_1" ID="{577C84CD-19AF-4B54-93A2-DADBEAFBF862}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+											<ObjectRef Name="MainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="ChrysanthaTheme" ID="{DA6B1696-8ACE-4677-ADEF-B11ED89FE6AE}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
@@ -1176,7 +1176,7 @@
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
-										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="3"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
@@ -1184,7 +1184,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="Spooky_MainTheme_Draft_1" ID="{577C84CD-19AF-4B54-93A2-DADBEAFBF862}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+											<ObjectRef Name="MainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="JowanTheme" ID="{C2470743-3A44-4638-BC20-369535D52364}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
@@ -1214,7 +1214,7 @@
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
-										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="3"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
@@ -1222,7 +1222,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="Spooky_MainTheme_Draft_1" ID="{577C84CD-19AF-4B54-93A2-DADBEAFBF862}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+											<ObjectRef Name="MainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="VTheme" ID="{9600BF0F-2568-4D76-9581-5AC835574EE0}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>

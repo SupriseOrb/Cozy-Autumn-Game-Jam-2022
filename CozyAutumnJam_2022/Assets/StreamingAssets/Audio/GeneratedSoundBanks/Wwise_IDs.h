@@ -28,10 +28,13 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID CHRYSANTHA = 3859875700U;
                 static const AkUniqueID GENERALSHOP = 3809334403U;
+                static const AkUniqueID JOWAN = 925511666U;
                 static const AkUniqueID KEN = 1183067797U;
                 static const AkUniqueID MYRTLE = 2951281120U;
                 static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID V = 84696425U;
             } // namespace STATE
         } // namespace GAMEPLAY
 

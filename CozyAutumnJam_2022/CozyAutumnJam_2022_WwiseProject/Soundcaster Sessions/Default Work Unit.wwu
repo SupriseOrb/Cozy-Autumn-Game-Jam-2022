@@ -36,7 +36,7 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Ken" ID="{8582E751-3238-4044-8FC1-7B363AD5C8FD}"/>
+						<CurrentStateRef Name="GeneralShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

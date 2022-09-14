@@ -10,12 +10,24 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Jowan" ID="{C0A07559-FDF3-4C18-8DF6-7E282EEB83B2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Main_Theme" ID="{1A0763CA-9E64-4680-9310-131230902572}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="V" ID="{F40A95F7-2B59-4CA2-8A5D-B09772D855D4}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Ken" ID="{A9661CD6-DA4E-43F4-AB6F-E7DC7D2A67B3}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
 							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Chrysantha" ID="{4EC72FB5-13F0-4CB9-80F1-17D13D5568EF}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Myrttle" ID="{490D8A68-088D-413B-AACB-8E2B7E804CA2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
@@ -24,7 +36,7 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="GeneralShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
+						<CurrentStateRef Name="Ken" ID="{8582E751-3238-4044-8FC1-7B363AD5C8FD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

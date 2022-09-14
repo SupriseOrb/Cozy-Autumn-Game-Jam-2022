@@ -105,6 +105,8 @@ public class CardManager : MonoBehaviour
         {
             if(abilityDeckActive)
             {
+                //Plays sound for flipping a card over
+                AkSoundEngine.PostEvent("Play_CardFlip", this.gameObject);
                 FlipHelper(ref aCardList, aCurrentCard);
             }
         }
@@ -214,6 +216,9 @@ public class CardManager : MonoBehaviour
 
     public void SwapDecks()
     {
+        //Plays sound for swapping decks
+        AkSoundEngine.PostEvent("Play_DeckSwap", this.gameObject);
+
         isCardExpanded = false;
         if(abilityDeckActive)
         {

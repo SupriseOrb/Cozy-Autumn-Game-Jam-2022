@@ -3,39 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_TestSound" ID="{B0A3C6A5-15F8-482D-9F35-E7100994E20F}">
-					<ChildrenList>
-						<Action Name="" ID="{535A25A5-AEC2-42A3-B5A5-FC15538A5694}" ShortID="430039012">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Z_TestSound" ID="{C8463406-6E9F-49D3-A88D-0D20A741E1D5}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_CardPull" ID="{AC004D5D-0225-4E40-8781-F74FA18B7378}">
-					<ChildrenList>
-						<Action Name="" ID="{3466AB12-B47B-4ADA-9204-4280A7FF059B}" ShortID="767923347">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="CardPull" ID="{60A66026-69CD-46FD-A2F0-AAB9F04CD7E7}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_CardShuffle" ID="{81251156-964A-4390-BDC2-65B5AF08418C}">
-					<ChildrenList>
-						<Action Name="" ID="{50E77886-CCB0-42ED-9227-D376868634E9}" ShortID="28009172">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="CardShuffle" ID="{8ABF6FD8-AAED-4C67-A8F3-C8E2654BF132}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Music Events" ID="{EAC3DD18-5574-49EF-8822-301CDEE1C86E}" ShortID="27379024">
 					<ChildrenList>
 						<Event Name="Main_Theme" ID="{1A0763CA-9E64-4680-9310-131230902572}">
@@ -101,6 +68,69 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX Events" ID="{3915D00B-66DC-4517-BEA5-7B98BA810906}" ShortID="178931308">
+					<ChildrenList>
+						<Event Name="Play_TestSound" ID="{B0A3C6A5-15F8-482D-9F35-E7100994E20F}">
+							<ChildrenList>
+								<Action Name="" ID="{535A25A5-AEC2-42A3-B5A5-FC15538A5694}" ShortID="430039012">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Z_TestSound" ID="{C8463406-6E9F-49D3-A88D-0D20A741E1D5}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Card UI" ID="{6AAD80A5-CC72-4BF5-A85C-CCA18A4307CB}" ShortID="804806355">
+							<ChildrenList>
+								<Event Name="Play_CardPull" ID="{AC004D5D-0225-4E40-8781-F74FA18B7378}">
+									<ChildrenList>
+										<Action Name="" ID="{3466AB12-B47B-4ADA-9204-4280A7FF059B}" ShortID="767923347">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CardPull" ID="{60A66026-69CD-46FD-A2F0-AAB9F04CD7E7}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_CardShuffle" ID="{81251156-964A-4390-BDC2-65B5AF08418C}">
+									<ChildrenList>
+										<Action Name="" ID="{50E77886-CCB0-42ED-9227-D376868634E9}" ShortID="28009172">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CardShuffle" ID="{8ABF6FD8-AAED-4C67-A8F3-C8E2654BF132}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_CardFlip" ID="{313B9074-E8CC-4CC7-8B6E-C8D997C5A566}">
+									<ChildrenList>
+										<Action Name="" ID="{D24FFB9E-77FC-4464-994A-209BE9D95912}" ShortID="724236643">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CardFlip" ID="{00C4B22F-FD63-4E83-B6A2-B1289E2C31A6}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_DeckSwap" ID="{93BAF24F-C3C8-40B5-826A-048D777E1A8F}">
+									<ChildrenList>
+										<Action Name="" ID="{D33B61E0-9014-46B7-AA88-C2D73A879D0C}" ShortID="697419626">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DeckSwap" ID="{5022361B-B61F-41B5-A5E8-D17393B1E221}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

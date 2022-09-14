@@ -1,13 +1,17 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2752533807	Play_TestSound			\Default Work Unit\Play_TestSound	
-	3136930057	Play_CardPull			\Default Work Unit\Play_CardPull	
-	3192869359	Play_CardShuffle			\Default Work Unit\Play_CardShuffle	
+	884848037	Play_CardFlip			\Default Work Unit\SFX Events\Card UI\Play_CardFlip	
+	2752533807	Play_TestSound			\Default Work Unit\SFX Events\Play_TestSound	
+	3136930057	Play_CardPull			\Default Work Unit\SFX Events\Card UI\Play_CardPull	
+	3192869359	Play_CardShuffle			\Default Work Unit\SFX Events\Card UI\Play_CardShuffle	
+	4280915480	Play_DeckSwap			\Default Work Unit\SFX Events\Card UI\Play_DeckSwap	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	366149810	CardShuffle2	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardShuffle2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CardShuffle\CardShuffle2		85784
 	407509120	CardShuffle1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardShuffle1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CardShuffle\CardShuffle1		85784
 	469650255	CardPull1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardPull1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CardPull\CardPull1		55252
+	530332103	DeckSwap	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardSwap_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DeckSwap		30660
 	645855217	CardPull2	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardPull2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CardPull\CardPull2		67128
 	730900144	CardShuffle3	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardShuffle3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CardShuffle\CardShuffle3		86632
+	807983812	CardShuffle2	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardShuffle2_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CardShuffle\CardShuffle2		62036
+	844309663	CardFlip	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardFlip_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\CardFlip		14544
 	898142516	Z_TestSound	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Phone Ringing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Z_TestSound		973648
 

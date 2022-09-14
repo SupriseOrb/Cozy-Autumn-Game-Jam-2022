@@ -13,10 +13,29 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_CARDFLIP = 884848037U;
         static const AkUniqueID PLAY_CARDPULL = 3136930057U;
         static const AkUniqueID PLAY_CARDSHUFFLE = 3192869359U;
+        static const AkUniqueID PLAY_DECKSWAP = 4280915480U;
         static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace GAMEPLAY
+        {
+            static const AkUniqueID GROUP = 89505537U;
+
+            namespace STATE
+            {
+                static const AkUniqueID GENERALSHOP = 3809334403U;
+                static const AkUniqueID KEN = 1183067797U;
+                static const AkUniqueID MYRTLE = 2951281120U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace GAMEPLAY
+
+    } // namespace STATES
 
     namespace BANKS
     {

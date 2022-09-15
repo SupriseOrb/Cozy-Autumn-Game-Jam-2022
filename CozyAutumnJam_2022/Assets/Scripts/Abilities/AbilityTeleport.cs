@@ -10,7 +10,7 @@ public class AbilityTeleport : MonoBehaviour, IAbility
     private Vector3 _originalPos;
     private bool inHumanWorld = true;
     private bool _isUp = true;
-    private float teleportReturnDelay = .5f;
+    [SerializeField] private float teleportReturnDelay = .5f;
     [SerializeField] private float _abilityCoolDown = 5f;
 
     public void ActivateAbility()
@@ -39,8 +39,8 @@ public class AbilityTeleport : MonoBehaviour, IAbility
             {
                 PlayerScript.Instance.transform.position = (inHumanWorld)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist); 
             }
-                inHumanWorld = !inHumanWorld;
-                StartCoroutine(StartCooldown());
+            inHumanWorld = !inHumanWorld;
+            StartCoroutine(StartCooldown());
         }
     }
 

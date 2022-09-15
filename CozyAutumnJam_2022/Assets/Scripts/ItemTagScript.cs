@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemTagScript : MonoBehaviour, ITaggable
+public class ItemTagScript : MonoBehaviour
 {
     [SerializeField] private bool isTrash;
     [SerializeField] private bool isTrap;

@@ -14,6 +14,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private InputManager _inputManager;
+    [SerializeField] private Vector2 _playerDirection;
 
     void Awake()
     {
@@ -31,6 +32,14 @@ public class PlayerScript : MonoBehaviour
     private void FixedUpdate() 
     {
         _rb.MovePosition(_rb.position + _inputManager.MovementInput * _speed * Time.deltaTime);
+        if(_inputManager.MovementInput != Vector2.zero)
+        {
+            _playerDirection = _inputManager.MovementInput;
+        }
     }
 
+    public Vector2 getPlayerDirection()
+    {
+        return _playerDirection;
+    }
 }

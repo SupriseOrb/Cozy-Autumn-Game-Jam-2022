@@ -19,9 +19,9 @@ public class AbilityVacuum : MonoBehaviour, IAbility
         {
             foreach (Collider2D c in allColliders)
             {
-                if (c.TryGetComponent(out ITaggable trash))
+                if (c.TryGetComponent(out ItemTagScript trash))
                 {
-                    if(c.GetComponent<ITaggable>().IsTrash())
+                    if(c.GetComponent<ItemTagScript>().IsTrash())
                     {
                         //Disable or Destroy them (any animations?):
                         Destroy(c.gameObject);

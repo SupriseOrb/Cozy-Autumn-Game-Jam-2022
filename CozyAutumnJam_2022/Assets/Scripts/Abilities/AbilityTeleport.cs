@@ -9,28 +9,39 @@ public class AbilityTeleport : MonoBehaviour, IAbility
     [SerializeField] private float _teleportRadius;
     private Vector3 _originalPos;
     private bool inHumanWorld = true;
+    private bool _isUp = true;
     private float teleportReturnDelay = .5f;
+    [SerializeField] private float _abilityCoolDown = 5f;
 
     public void ActivateAbility()
     {
-        Debug.Log("teleporting...");
-        _originalPos = PlayerScript.Instance.transform.position;
-        Collider2D[] allColliders = Physics2D.OverlapCircleAll((inHumanWorld)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist), _teleportRadius);
-        if (allColliders.Length > 0)
+        if (_isUp == false)
         {
-            PlayerScript.Instance.transform.position = ((inHumanWorld)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist));
-            Debug.Log("You cannot teleport there!");
-            foreach(Collider2D obstacle in allColliders)
-            {
-                Debug.Log("Hit: " + obstacle.gameObject.name);
-            }
-            StartCoroutine(TeleportBackDelay());
+            Debug.Log("Ability on cooldown!");
+            return;
         }
         else
         {
-           PlayerScript.Instance.transform.position = (inHumanWorld)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist); 
+            Debug.Log("teleporting...");
+            _originalPos = PlayerScript.Instance.transform.position;
+            Collider2D[] allColliders = Physics2D.OverlapCircleAll((inHumanWorld)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist), _teleportRadius);
+            if (allColliders.Length > 0)
+            {
+                PlayerScript.Instance.transform.position = ((inHumanWorld)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist));
+                Debug.Log("You cannot teleport there!");
+                foreach(Collider2D obstacle in allColliders)
+                {
+                    Debug.Log("Hit: " + obstacle.gameObject.name);
+                }
+                StartCoroutine(TeleportBackDelay());
+            }
+            else
+            {
+                PlayerScript.Instance.transform.position = (inHumanWorld)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist); 
+            }
+                inHumanWorld = !inHumanWorld;
+                StartCoroutine(StartCooldown());
         }
-        inHumanWorld = !inHumanWorld;
     }
 
     IEnumerator TeleportBackDelay()
@@ -38,5 +49,12 @@ public class AbilityTeleport : MonoBehaviour, IAbility
         yield return new WaitForSeconds(teleportReturnDelay);
         PlayerScript.Instance.transform.position = _originalPos;
         inHumanWorld = !inHumanWorld;
+    }
+
+    IEnumerator StartCooldown()
+    {
+        _isUp = false;
+        yield return new WaitForSeconds (_abilityCoolDown);
+        _isUp = true;
     }
 }

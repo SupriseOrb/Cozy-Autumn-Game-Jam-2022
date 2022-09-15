@@ -8,10 +8,12 @@ public class InputManager : MonoBehaviour
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private CardManager _cardManager;
 
-    [Header("Movement Variables")]
+    [Header("OnMovement Vars")]
     [SerializeField] private Vector2 _movementInput;
-    [SerializeField] private float _speed;
-    private Rigidbody2D _rb;
+    public Vector2 MovementInput
+    {
+        get{return _movementInput;}
+    }
 
     [Header("Input Action Strings")]
     [SerializeField] private string _cycleLString;
@@ -39,8 +41,6 @@ public class InputManager : MonoBehaviour
         _swapDAction = _playerInput.actions[_swapDString];
         _useDAction = _playerInput.actions[_useDString];
         _movementAction = _playerInput.actions[_movementString];
-
-        _rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnEnable() 
@@ -102,12 +102,9 @@ public class InputManager : MonoBehaviour
         _cardManager.ActivateAbilityCard();
     }
 
-    private void FixedUpdate() 
-    {
-        _rb.MovePosition(_rb.position + _movementInput * _speed * Time.deltaTime);
-    }
     public void OnMovement(InputAction.CallbackContext context)
     {
         _movementInput = _movementAction.ReadValue<Vector2>();
     }
+
 }

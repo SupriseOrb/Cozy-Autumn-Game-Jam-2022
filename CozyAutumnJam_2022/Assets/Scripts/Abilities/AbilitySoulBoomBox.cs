@@ -19,7 +19,7 @@ public class AbilitySoulBoomBox : MonoBehaviour, IAbility
         {
             foreach (Collider2D c in allColliders)
             {
-                if(c.TryGetComponent(out IInteractable interactable) && c.TryGetComponent(out IRune rune))
+                if(c.TryGetComponent(out ITaggable interactable))
                 {
                     //Only one character, set their bool variable to false
                     //c.gameObject.GetComponent<CharacterScriptableObject>().IsGibberish = false;

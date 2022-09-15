@@ -8,26 +8,35 @@ public class AbilityTeleport : MonoBehaviour, IAbility
     [SerializeField] private Vector3 _teleportDist;
     [SerializeField] private float _teleportRadius;
     private Vector3 _originalPos;
+    private bool inHumanWorld = true;
+    private float teleportReturnDelay = .5f;
 
     public void ActivateAbility()
     {
+        Debug.Log("teleporting...");
         _originalPos = PlayerScript.Instance.transform.position;
-        Collider2D[] allColliders = Physics2D.OverlapCircleAll(_originalPos + _teleportDist, _teleportRadius);
-        if (allColliders != null)
+        Collider2D[] allColliders = Physics2D.OverlapCircleAll((inHumanWorld)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist), _teleportRadius);
+        if (allColliders.Length > 0)
         {
-            PlayerScript.Instance.transform.position = _originalPos + _teleportDist;
+            PlayerScript.Instance.transform.position = ((inHumanWorld)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist));
             Debug.Log("You cannot teleport there!");
+            foreach(Collider2D obstacle in allColliders)
+            {
+                Debug.Log("Hit: " + obstacle.gameObject.name);
+            }
             StartCoroutine(TeleportBackDelay());
-            PlayerScript.Instance.transform.position = _originalPos;
         }
         else
         {
-           PlayerScript.Instance.transform.position = _originalPos + _teleportDist; 
+           PlayerScript.Instance.transform.position = (inHumanWorld)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist); 
         }
+        inHumanWorld = !inHumanWorld;
     }
 
     IEnumerator TeleportBackDelay()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(teleportReturnDelay);
+        PlayerScript.Instance.transform.position = _originalPos;
+        inHumanWorld = !inHumanWorld;
     }
 }

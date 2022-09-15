@@ -27,7 +27,7 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
         {
             foreach (Collider2D c in allColliders)
             {
-                if(c.TryGetComponent(out ICharacter character))
+                if(c.TryGetComponent(out ITaggable character))
                 {
                     //Only one character, set their bool variable to false
                     //c.gameObject.GetComponent<CharacterScriptableObject>().IsGibberish = false;
@@ -67,7 +67,7 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
         {
             foreach (Collider2D c in allColliders)
             {
-                if(c.TryGetComponent(out IInteractable interactable) && (c.TryGetComponent(out IRune rune)))
+                if(c.TryGetComponent(out ITaggable interactable))
                 {
                     //Interacts with inky bool variable, sets it to true to start dialogue? Possibly needs to interact
                     //with c.gameobject to get the id of the item to determine the bool variable? Unsure.

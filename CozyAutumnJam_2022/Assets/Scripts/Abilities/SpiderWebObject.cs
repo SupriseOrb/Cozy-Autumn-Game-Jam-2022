@@ -13,12 +13,12 @@ public class SpiderWebObject : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (this.TryGetComponent(out ITrap trap) && _canTrap)
+        if (this.TryGetComponent(out ITaggable trap) && _canTrap)
         {
             Collider2D[] allColliders = Physics2D.OverlapCircleAll(this.transform.position, _spiderWebRadius);
             foreach (Collider2D c in allColliders)
             {
-                if(c.TryGetComponent(out ITrappable trappable))
+                if(c.TryGetComponent(out ITaggable trappable))
                 {
                     //What are we doing to the rat? Play anim? destroy rat object?
                     //c.gameObject.SetActive(false);

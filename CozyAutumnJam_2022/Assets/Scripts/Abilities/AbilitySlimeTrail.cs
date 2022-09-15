@@ -17,7 +17,7 @@ public class AbilitySlimeTrail : MonoBehaviour, IAbility
         _originalDir = PlayerScript.Instance.transform.forward;
         _rayCastHit = Physics2D.Raycast(_originalPos, _originalDir);
         _hitGO = _rayCastHit.transform.gameObject;
-        if (_hitGO.TryGetComponent(out IInteractable interactable) && _hitGO.TryGetComponent(out IPushable pushable))
+        if (_hitGO.TryGetComponent(out ITaggable interactable))
         {
            _hitGO.GetComponent<Rigidbody2D>().AddForce(_originalDir * _speed);
 

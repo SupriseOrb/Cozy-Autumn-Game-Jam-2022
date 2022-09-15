@@ -68,6 +68,48 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="V" ID="{F40A95F7-2B59-4CA2-8A5D-B09772D855D4}">
+							<ChildrenList>
+								<Action Name="" ID="{393E41AC-D7EF-43E0-B1A8-515F4860CE88}" ShortID="503836820">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="V" ID="{22446ED2-264A-41EF-A1E5-D87CABBAFD19}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Chrysantha" ID="{4EC72FB5-13F0-4CB9-80F1-17D13D5568EF}">
+							<ChildrenList>
+								<Action Name="" ID="{71A9C9D0-2819-4935-8E05-426541EA3711}" ShortID="615310218">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Chrysantha" ID="{D03D9F47-6A49-4401-8301-38E5575D83BB}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Jowan" ID="{C0A07559-FDF3-4C18-8DF6-7E282EEB83B2}">
+							<ChildrenList>
+								<Action Name="" ID="{F279866A-6AB9-4E2D-9628-ED52B559BD0E}" ShortID="717024816">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jowan" ID="{810468E1-0368-4357-A3E7-7E4E580FBA7C}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX Events" ID="{3915D00B-66DC-4517-BEA5-7B98BA810906}" ShortID="178931308">

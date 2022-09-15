@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2789545671">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4281923606">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -25,7 +25,7 @@
 					<IncludedMemoryFiles>
 						<File Id="844309663" Language="SFX">
 							<ShortName>CardFlip.wav</ShortName>
-							<Path>SFX\CardFlip_10C4C929.wem</Path>
+							<Path>SFX/CardFlip_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -33,11 +33,11 @@
 					<IncludedMemoryFiles>
 						<File Id="469650255" Language="SFX">
 							<ShortName>CardPull1.wav</ShortName>
-							<Path>SFX\CardPull1_10C4C929.wem</Path>
+							<Path>SFX/CardPull1_10C4C929.wem</Path>
 						</File>
 						<File Id="645855217" Language="SFX">
 							<ShortName>CardPull2.wav</ShortName>
-							<Path>SFX\CardPull2_10C4C929.wem</Path>
+							<Path>SFX/CardPull2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -45,15 +45,15 @@
 					<IncludedMemoryFiles>
 						<File Id="407509120" Language="SFX">
 							<ShortName>CardShuffle1.wav</ShortName>
-							<Path>SFX\CardShuffle1_10C4C929.wem</Path>
+							<Path>SFX/CardShuffle1_10C4C929.wem</Path>
 						</File>
 						<File Id="730900144" Language="SFX">
 							<ShortName>CardShuffle3.wav</ShortName>
-							<Path>SFX\CardShuffle3_10C4C929.wem</Path>
+							<Path>SFX/CardShuffle3_10C4C929.wem</Path>
 						</File>
 						<File Id="807983812" Language="SFX">
 							<ShortName>CardShuffle2_02.wav</ShortName>
-							<Path>SFX\CardShuffle2_02_10C4C929.wem</Path>
+							<Path>SFX/CardShuffle2_02_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -61,7 +61,7 @@
 					<IncludedMemoryFiles>
 						<File Id="530332103" Language="SFX">
 							<ShortName>CardSwap.wav</ShortName>
-							<Path>SFX\CardSwap_10C4C929.wem</Path>
+							<Path>SFX/CardSwap_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -69,7 +69,7 @@
 					<IncludedMemoryFiles>
 						<File Id="898142516" Language="SFX">
 							<ShortName>Phone Ringing.wav</ShortName>
-							<Path>SFX\Phone Ringing_10C4C929.wem</Path>
+							<Path>SFX/Phone Ringing_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

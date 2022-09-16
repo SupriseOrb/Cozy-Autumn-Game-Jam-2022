@@ -96,7 +96,7 @@ public class InputManager : MonoBehaviour
     {
         if (!_isPaused.Value && !_playerInConvo.Value)
         {
-            _cardManager.ViewCard();
+            _cardManager.EditCardSize();
         }
         else if (_playerInConvo)
         {
@@ -106,19 +106,8 @@ public class InputManager : MonoBehaviour
 
     public void OnEscape(InputAction.CallbackContext context)
     {
-        if (_cardManager.IsCardExpanded)
+        if (!_isPaused.Value)
         {
-            Debug.Log("CLOSE THE GATES");
-            _cardManager.CloseCard();
-        }
-        else if (_isPaused.Value)
-        {
-            Debug.Log("YOU ACTUALLY WANNA PLAY?");
-            _pauseMenu.ResumeGame();
-        }
-        else
-        {
-            Debug.Log("STAY WITH ME UWU");
             _pauseMenu.PauseGame();
         }
     }
@@ -129,7 +118,6 @@ public class InputManager : MonoBehaviour
         {
             _cardManager.SwapDecks();
         }
-        
     }
 
     public void OnUseD(InputAction.CallbackContext context)

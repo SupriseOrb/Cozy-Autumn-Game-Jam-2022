@@ -5,15 +5,11 @@ using UnityEngine;
 public class PauseMenu : Menu
 {
     [SerializeField] private Canvas _pauseMenuCanvas;
-    
-    void Start()
-    {
-        _isPaused.Value = false;
-    }
+    [SerializeField] private BoolVariable _isPaused;  
 
     public void PauseGame()
     {
-        if(!_isPaused)
+        if(!_isPaused.Value)
         {
             _pauseMenuCanvas.enabled = true;
             _isPaused.Value = true;
@@ -23,7 +19,7 @@ public class PauseMenu : Menu
 
     public void ResumeGame()
     {
-        if(_isPaused)
+        if(_isPaused.Value)
         {
             _pauseMenuCanvas.enabled = false;
             _isPaused.Value = false;

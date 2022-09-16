@@ -25,6 +25,10 @@ public class CardManager : MonoBehaviour
     [SerializeField] private Image RightCardImage;
     [SerializeField] private bool abilityDeckActive;
     private bool isCardExpanded;
+    public bool IsCardExpanded
+    {
+        get{return isCardExpanded;}
+    }
     private bool isCardFront;
 
     // Start is called before the first frame update

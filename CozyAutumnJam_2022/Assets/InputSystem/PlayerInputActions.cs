@@ -46,7 +46,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""ViewInfo"",
+                    ""name"": ""OnSpace"",
                     ""type"": ""Button"",
                     ""id"": ""1c5ba046-0ea2-4718-b1b7-47b07a1a73f3"",
                     ""expectedControlType"": ""Button"",
@@ -55,7 +55,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""MinimizeCard"",
+                    ""name"": ""OnEscape"",
                     ""type"": ""Button"",
                     ""id"": ""2be89152-3d13-4b59-880c-985785f9dfaf"",
                     ""expectedControlType"": ""Button"",
@@ -121,7 +121,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""ViewInfo"",
+                    ""action"": ""OnSpace"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -132,7 +132,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""MinimizeCard"",
+                    ""action"": ""OnEscape"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -339,8 +339,8 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_CycleLeft = m_Player.FindAction("CycleLeft", throwIfNotFound: true);
         m_Player_CycleRight = m_Player.FindAction("CycleRight", throwIfNotFound: true);
-        m_Player_ViewInfo = m_Player.FindAction("ViewInfo", throwIfNotFound: true);
-        m_Player_MinimizeCard = m_Player.FindAction("MinimizeCard", throwIfNotFound: true);
+        m_Player_OnSpace = m_Player.FindAction("OnSpace", throwIfNotFound: true);
+        m_Player_OnEscape = m_Player.FindAction("OnEscape", throwIfNotFound: true);
         m_Player_SwapDeck = m_Player.FindAction("SwapDeck", throwIfNotFound: true);
         m_Player_ActivateCard = m_Player.FindAction("ActivateCard", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
@@ -411,8 +411,8 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_CycleLeft;
     private readonly InputAction m_Player_CycleRight;
-    private readonly InputAction m_Player_ViewInfo;
-    private readonly InputAction m_Player_MinimizeCard;
+    private readonly InputAction m_Player_OnSpace;
+    private readonly InputAction m_Player_OnEscape;
     private readonly InputAction m_Player_SwapDeck;
     private readonly InputAction m_Player_ActivateCard;
     private readonly InputAction m_Player_Movement;
@@ -422,8 +422,8 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         public PlayerActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @CycleLeft => m_Wrapper.m_Player_CycleLeft;
         public InputAction @CycleRight => m_Wrapper.m_Player_CycleRight;
-        public InputAction @ViewInfo => m_Wrapper.m_Player_ViewInfo;
-        public InputAction @MinimizeCard => m_Wrapper.m_Player_MinimizeCard;
+        public InputAction @OnSpace => m_Wrapper.m_Player_OnSpace;
+        public InputAction @OnEscape => m_Wrapper.m_Player_OnEscape;
         public InputAction @SwapDeck => m_Wrapper.m_Player_SwapDeck;
         public InputAction @ActivateCard => m_Wrapper.m_Player_ActivateCard;
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
@@ -442,12 +442,12 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @CycleRight.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCycleRight;
                 @CycleRight.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCycleRight;
                 @CycleRight.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCycleRight;
-                @ViewInfo.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnViewInfo;
-                @ViewInfo.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnViewInfo;
-                @ViewInfo.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnViewInfo;
-                @MinimizeCard.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMinimizeCard;
-                @MinimizeCard.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMinimizeCard;
-                @MinimizeCard.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMinimizeCard;
+                @OnSpace.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnOnSpace;
+                @OnSpace.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnOnSpace;
+                @OnSpace.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnOnSpace;
+                @OnEscape.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnOnEscape;
+                @OnEscape.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnOnEscape;
+                @OnEscape.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnOnEscape;
                 @SwapDeck.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwapDeck;
                 @SwapDeck.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwapDeck;
                 @SwapDeck.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwapDeck;
@@ -467,12 +467,12 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @CycleRight.started += instance.OnCycleRight;
                 @CycleRight.performed += instance.OnCycleRight;
                 @CycleRight.canceled += instance.OnCycleRight;
-                @ViewInfo.started += instance.OnViewInfo;
-                @ViewInfo.performed += instance.OnViewInfo;
-                @ViewInfo.canceled += instance.OnViewInfo;
-                @MinimizeCard.started += instance.OnMinimizeCard;
-                @MinimizeCard.performed += instance.OnMinimizeCard;
-                @MinimizeCard.canceled += instance.OnMinimizeCard;
+                @OnSpace.started += instance.OnOnSpace;
+                @OnSpace.performed += instance.OnOnSpace;
+                @OnSpace.canceled += instance.OnOnSpace;
+                @OnEscape.started += instance.OnOnEscape;
+                @OnEscape.performed += instance.OnOnEscape;
+                @OnEscape.canceled += instance.OnOnEscape;
                 @SwapDeck.started += instance.OnSwapDeck;
                 @SwapDeck.performed += instance.OnSwapDeck;
                 @SwapDeck.canceled += instance.OnSwapDeck;
@@ -601,8 +601,8 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     {
         void OnCycleLeft(InputAction.CallbackContext context);
         void OnCycleRight(InputAction.CallbackContext context);
-        void OnViewInfo(InputAction.CallbackContext context);
-        void OnMinimizeCard(InputAction.CallbackContext context);
+        void OnOnSpace(InputAction.CallbackContext context);
+        void OnOnEscape(InputAction.CallbackContext context);
         void OnSwapDeck(InputAction.CallbackContext context);
         void OnActivateCard(InputAction.CallbackContext context);
         void OnMovement(InputAction.CallbackContext context);

@@ -7,6 +7,9 @@ public class InputManager : MonoBehaviour
 {
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private CardManager _cardManager;
+    [SerializeField] private PauseMenu _pauseMenu;
+    [SerializeField] private BoolVariable _isPaused;
+    [SerializeField] private BoolVariable _playerInConvo;
 
     [Header("OnMovement Vars")]
     [SerializeField] private Vector2 _movementInput;
@@ -18,23 +21,19 @@ public class InputManager : MonoBehaviour
     [Header("Input Action Strings")]
     [SerializeField] private string _cycleLString;
     [SerializeField] private string _cycleRString;
-    [SerializeField] private string _viewInfoString; 
-    [SerializeField] private string _minimizeDString;
+    [SerializeField] private string _onSpaceString; 
+    [SerializeField] private string _onEscapeString;
     [SerializeField] private string _swapDString;
     [SerializeField] private string _useDString;
     [SerializeField] private string _movementString;
 
-    [SerializeField] private string _advanceDialogueString;
-
     private InputAction _cycleLAction;
     private InputAction _cycleRAction;
-    private InputAction _viewInfoDAction;
-    private InputAction _minimizeDAction;
+    private InputAction _onSpaceAction;
+    private InputAction _onEscapeAction;
     private InputAction _swapDAction;
     private InputAction _useDAction;
     private InputAction _movementAction;
-
-    private InputAction _advanceDialogueAction;
 
     
 
@@ -42,84 +41,110 @@ public class InputManager : MonoBehaviour
     {
         _cycleLAction = _playerInput.actions[_cycleLString];
         _cycleRAction = _playerInput.actions[_cycleRString];
-        _viewInfoDAction = _playerInput.actions[_viewInfoString];
-        _minimizeDAction = _playerInput.actions[_minimizeDString];
+        _onSpaceAction = _playerInput.actions[_onSpaceString];
+        _onEscapeAction = _playerInput.actions[_onEscapeString];
         _swapDAction = _playerInput.actions[_swapDString];
         _useDAction = _playerInput.actions[_useDString];
         _movementAction = _playerInput.actions[_movementString];
-        _advanceDialogueAction = _playerInput.actions[_advanceDialogueString];
     }
 
     private void OnEnable() 
     {
         _cycleLAction.performed += OnCycleLeft;
         _cycleRAction.performed += OnCycleRight;
-        _viewInfoDAction.performed += OnViewInfo;
-        _minimizeDAction.performed += OnMinimizeD;
+        _onSpaceAction.performed += OnSpace;
+        _onEscapeAction.performed += OnEscape;
         _swapDAction.performed += OnSwapD;
         _useDAction.performed += OnUseD;
 
         _movementAction.started += OnMovement;
         _movementAction.performed += OnMovement;
         _movementAction.canceled += OnMovement;
-
-        _advanceDialogueAction.performed += OnAdvanceDialouge;
     }
 
     private void OnDisable() 
     {
         _cycleLAction.performed -= OnCycleLeft;
         _cycleRAction.performed -= OnCycleRight;
-        _viewInfoDAction.performed -= OnViewInfo;
-        _minimizeDAction.performed -= OnMinimizeD;
+        _onSpaceAction.performed -= OnSpace;
+        _onEscapeAction.performed -= OnEscape;
         _swapDAction.performed -= OnSwapD;
         _useDAction.performed -= OnUseD;
 
         _movementAction.started -= OnMovement;
         _movementAction.performed -= OnMovement;
         _movementAction.canceled -= OnMovement; 
-
-        _advanceDialogueAction.performed -= OnAdvanceDialouge;
     }
 
     public void OnCycleLeft(InputAction.CallbackContext context)
     {
-        _cardManager.CycleCards(false);
+        if (!_isPaused.Value && !_playerInConvo.Value)
+        {
+            _cardManager.CycleCards(false);
+        }
     }
 
     public void OnCycleRight(InputAction.CallbackContext context)
     {
-        _cardManager.CycleCards(true);
+        if (!_isPaused.Value && !_playerInConvo.Value)
+        {
+            _cardManager.CycleCards(true);
+        }
     }
 
-    public void OnViewInfo(InputAction.CallbackContext context)
+    public void OnSpace(InputAction.CallbackContext context)
     {
-        _cardManager.ViewCard();
+        if (!_isPaused.Value && !_playerInConvo.Value)
+        {
+            _cardManager.ViewCard();
+        }
+        else if (_playerInConvo)
+        {
+            DialogueManager.Instance.OnAdvanceDialouge();
+        }
     }
 
-    public void OnMinimizeD(InputAction.CallbackContext context)
+    public void OnEscape(InputAction.CallbackContext context)
     {
-        _cardManager.CloseCard();
+        if (_cardManager.IsCardExpanded)
+        {
+            Debug.Log("CLOSE THE GATES");
+            _cardManager.CloseCard();
+        }
+        else if (_isPaused.Value)
+        {
+            Debug.Log("YOU ACTUALLY WANNA PLAY?");
+            _pauseMenu.ResumeGame();
+        }
+        else
+        {
+            Debug.Log("STAY WITH ME UWU");
+            _pauseMenu.PauseGame();
+        }
     }
 
     public void OnSwapD(InputAction.CallbackContext context)
     {
-        _cardManager.SwapDecks();
+        if (!_isPaused.Value && !_playerInConvo.Value)
+        {
+            _cardManager.SwapDecks();
+        }
+        
     }
 
     public void OnUseD(InputAction.CallbackContext context)
     {
-        _cardManager.ActivateAbilityCard();
+        if (!_isPaused.Value && !_playerInConvo.Value)
+        {
+            _cardManager.ActivateAbilityCard();
+        }
     }
 
     public void OnMovement(InputAction.CallbackContext context)
     {
-        _movementInput = _movementAction.ReadValue<Vector2>();
+        if (!_isPaused.Value && !_playerInConvo.Value)
+        {
+            _movementInput = _movementAction.ReadValue<Vector2>();
+        }
     }
-
-    public void OnAdvanceDialouge(InputAction.CallbackContext context)
-    {
-        DialogueManager.Instance.OnAdvanceDialouge();
-    }
-
 }

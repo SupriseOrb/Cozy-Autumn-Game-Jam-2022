@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "ViewInfo",
+                    "name": "OnSpace",
                     "type": "Button",
                     "id": "1c5ba046-0ea2-4718-b1b7-47b07a1a73f3",
                     "expectedControlType": "Button",
@@ -33,7 +33,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "MinimizeCard",
+                    "name": "OnEscape",
                     "type": "Button",
                     "id": "2be89152-3d13-4b59-880c-985785f9dfaf",
                     "expectedControlType": "Button",
@@ -99,7 +99,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "ViewInfo",
+                    "action": "OnSpace",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -110,7 +110,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "MinimizeCard",
+                    "action": "OnEscape",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

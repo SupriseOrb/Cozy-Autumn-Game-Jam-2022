@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 2638984981169549110}
   - component: {fileID: 380937262}
   - component: {fileID: 4436501766631142825}
-  - component: {fileID: 380937261}
   - component: {fileID: 7027618688658158721}
+  - component: {fileID: 380937261}
+  - component: {fileID: 1375009991626019041}
   m_Layer: 5
   m_Name: Oracle Deck
   m_TagString: Untagged
@@ -72,6 +73,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardPositionHolder: {fileID: 2650161888681788096}
+--- !u!114 &7027618688658158721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957454842773671482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96190bc8d985504b8642d8cc8122730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPositionHolder: {fileID: 2650161888681788096}
 --- !u!95 &380937261
 Animator:
   serializedVersion: 4
@@ -92,7 +106,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7027618688658158721
+--- !u!114 &1375009991626019041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,8 +130,9 @@ GameObject:
   - component: {fileID: 6110703791503231506}
   - component: {fileID: 431327144}
   - component: {fileID: 4087088342638041230}
-  - component: {fileID: 431327143}
   - component: {fileID: 2002564049379020595}
+  - component: {fileID: 431327143}
+  - component: {fileID: 5730532875379183166}
   m_Layer: 5
   m_Name: Prop Deck
   m_TagString: Untagged
@@ -171,6 +186,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardPositionHolder: {fileID: 2650161888681788096}
+--- !u!114 &2002564049379020595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724504213863614832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96190bc8d985504b8642d8cc8122730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPositionHolder: {fileID: 2650161888681788096}
 --- !u!95 &431327143
 Animator:
   serializedVersion: 4
@@ -191,7 +219,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2002564049379020595
+--- !u!114 &5730532875379183166
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -340,6 +368,8 @@ MonoBehaviour:
   _leftCardImage: {fileID: 2650161889188352919}
   _rightCardImage: {fileID: 2650161888817679564}
   _isOracleDeckActive: 1
+  _hintHolder: {fileID: 0}
+  _hintText: {fileID: 0}
 --- !u!1 &2650161887891784736
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1431071617516394398
 RectTransform:
   m_ObjectHideFlags: 0

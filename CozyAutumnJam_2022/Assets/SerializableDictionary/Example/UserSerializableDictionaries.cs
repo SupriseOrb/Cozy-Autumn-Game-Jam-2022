@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
+
+[Serializable]
+public class StringCharacterSODictionary : SerializableDictionary<string, CharacterScriptableObject>{}
 [Serializable]
 public class StringStringDictionary : SerializableDictionary<string, string> {}
 

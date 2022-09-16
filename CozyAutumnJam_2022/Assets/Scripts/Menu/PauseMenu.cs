@@ -11,6 +11,7 @@ public class PauseMenu : Menu
     {
         if(!_isPaused.Value)
         {
+            // Kristen TODO: Play pause sound
             _pauseMenuCanvas.enabled = true;
             _isPaused.Value = true;
         }
@@ -21,6 +22,7 @@ public class PauseMenu : Menu
     {
         if(_isPaused.Value)
         {
+            // Kristen TODO: Play resume sound
             _pauseMenuCanvas.enabled = false;
             _isPaused.Value = false;
         }    

@@ -53,13 +53,13 @@ public class DialogueManager : MonoBehaviour
     }
     public void OnAdvanceDialouge()
     {
-        Debug.Log("OnAdvanceDialogue");
         AdvanceDialogue();
         //TODO: Check if we're currently writing a sentence. If we are, load the full sentence.
     }
 
     private void ChooseChoice(int index)
     {
+        // Kristen TODO: Play button sound
         _story.ChooseChoiceIndex(index);
         _playerCanContinue = true;
         AdvanceDialogue();
@@ -130,7 +130,6 @@ public class DialogueManager : MonoBehaviour
         {
             if (_story.canContinue)
             {
-                Debug.Log("Continue Dialogue");
                 _canContinueIndicator.SetActive(false);
                 _playerCanContinue = false;
 

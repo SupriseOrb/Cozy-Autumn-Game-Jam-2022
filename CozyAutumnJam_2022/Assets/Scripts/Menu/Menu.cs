@@ -14,6 +14,15 @@ public class Menu : MonoBehaviour
 
     protected void SetCanvasVisibility(Canvas canvas, bool canSee)
     {
+        if (canSee)
+        {
+            // Kristen TODO: Play regular button sound
+        }
+        else
+        {
+            // Kristen TODO: Play back sound
+        }
+        
         canvas.enabled = canSee;
     }
 

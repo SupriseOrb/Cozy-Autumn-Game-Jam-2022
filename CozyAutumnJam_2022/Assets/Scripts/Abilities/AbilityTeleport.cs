@@ -11,7 +11,7 @@ public class AbilityTeleport : MonoBehaviour, IAbility
     private bool inHumanWorld = true;
     private bool _isAvailable = true;
     [SerializeField] private float teleportReturnDelay = .5f;
-    [SerializeField] private float _abilityCoolDown = 5f;
+    [SerializeField] private float _abilityCooldown = 5f;
 
     public void ActivateAbility()
     {
@@ -54,7 +54,7 @@ public class AbilityTeleport : MonoBehaviour, IAbility
     IEnumerator StartCooldown()
     {
         _isAvailable = false;
-        yield return new WaitForSeconds (_abilityCoolDown);
+        yield return new WaitForSeconds (_abilityCooldown);
         _isAvailable = true;
     }
 }

@@ -9,7 +9,7 @@ public class AbilitySoulBoomBox : MonoBehaviour, IAbility
     private Vector3 _originalPos;
     private Vector3 _offset;
     private bool _isAvailable = true;
-    [SerializeField] private float _abilityCoolDown = 1f;
+    [SerializeField] private float _abilityCooldown = 1f;
 
     public void ActivateAbility()
     {
@@ -52,7 +52,7 @@ public class AbilitySoulBoomBox : MonoBehaviour, IAbility
     IEnumerator StartCooldown()
     {
         _isAvailable = false;
-        yield return new WaitForSeconds (_abilityCoolDown);
+        yield return new WaitForSeconds (_abilityCooldown);
         _isAvailable = true;
     }
 }

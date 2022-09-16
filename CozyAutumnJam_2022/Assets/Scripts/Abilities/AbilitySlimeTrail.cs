@@ -12,7 +12,7 @@ public class AbilitySlimeTrail : MonoBehaviour, IAbility
     private RaycastHit2D _rayCastHit;
     private GameObject _hitGO;
     private bool _isAvailable = true;
-    [SerializeField] private float _abilityCoolDown = 1f;
+    [SerializeField] private float _abilityCooldown = 3f;
 
     public void ActivateAbility()
     {
@@ -37,7 +37,7 @@ public class AbilitySlimeTrail : MonoBehaviour, IAbility
                     {
                         Debug.Log("Hit a pushabLe");
                         _hitGO.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-                        _hitGO.GetComponent<Rigidbody2D>().AddForce(_originalDir * _speed);
+                        _hitGO.GetComponent<Rigidbody2D>().AddForce(_originalDir * _speed, ForceMode2D.Impulse);
                         StartCoroutine(StartCooldown());
                     }
                     //If collides into something specific (probably with interface tag), do x?
@@ -50,7 +50,7 @@ public class AbilitySlimeTrail : MonoBehaviour, IAbility
     IEnumerator StartCooldown()
     {
         _isAvailable = false;
-        yield return new WaitForSeconds (_abilityCoolDown);
+        yield return new WaitForSeconds (_abilityCooldown);
         _isAvailable = true;
     }
 }

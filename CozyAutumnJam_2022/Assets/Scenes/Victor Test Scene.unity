@@ -17650,14 +17650,14 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 7
 --- !u!61 &2000921762
 BoxCollider2D:
@@ -17874,11 +17874,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cardInformation: {fileID: 0}
-  _speed: 500
+  _speed: 10
   _originalPos: {x: 0, y: 0, z: 0}
   _originalDir: {x: 0, y: 0, z: 0}
   _distance: 2
-  _abilityCoolDown: 1
+  _abilityCoolDown: 3
 --- !u!4 &2141556954 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 220283254696092757, guid: 596ed3d2d024b5b429f287848e688f61, type: 3}

@@ -192,62 +192,6 @@
                     "isPartOfComposite": true
                 }
             ]
-        },
-        {
-            "name": "UI",
-            "id": "8756609f-df57-4331-bf47-a52cd70e7dcb",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "d0729f0f-09ae-4592-8a9f-ebdb71ae051d",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "71519a0d-c4ba-47dc-80bc-27e1a0b76be8",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Dialogue",
-            "id": "ea8fa646-e3e3-44ca-9c0b-9880476a6b2f",
-            "actions": [
-                {
-                    "name": "AdvanceDialogue",
-                    "type": "Button",
-                    "id": "4c50a02c-22b5-4927-bcdc-8ff85992e836",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "5dbd30b2-a513-40af-b40e-a55130ef7f12",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "AdvanceDialogue",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
         }
     ],
     "controlSchemes": [

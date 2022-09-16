@@ -214,62 +214,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 }
             ]
-        },
-        {
-            ""name"": ""UI"",
-            ""id"": ""8756609f-df57-4331-bf47-a52cd70e7dcb"",
-            ""actions"": [
-                {
-                    ""name"": ""New action"",
-                    ""type"": ""Button"",
-                    ""id"": ""d0729f0f-09ae-4592-8a9f-ebdb71ae051d"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""71519a0d-c4ba-47dc-80bc-27e1a0b76be8"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""New action"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""Dialogue"",
-            ""id"": ""ea8fa646-e3e3-44ca-9c0b-9880476a6b2f"",
-            ""actions"": [
-                {
-                    ""name"": ""AdvanceDialogue"",
-                    ""type"": ""Button"",
-                    ""id"": ""4c50a02c-22b5-4927-bcdc-8ff85992e836"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""5dbd30b2-a513-40af-b40e-a55130ef7f12"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""AdvanceDialogue"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
         }
     ],
     ""controlSchemes"": [
@@ -344,12 +288,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         m_Player_SwapDeck = m_Player.FindAction("SwapDeck", throwIfNotFound: true);
         m_Player_ActivateCard = m_Player.FindAction("ActivateCard", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
-        // UI
-        m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
-        m_UI_Newaction = m_UI.FindAction("New action", throwIfNotFound: true);
-        // Dialogue
-        m_Dialogue = asset.FindActionMap("Dialogue", throwIfNotFound: true);
-        m_Dialogue_AdvanceDialogue = m_Dialogue.FindAction("AdvanceDialogue", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -486,72 +424,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
-
-    // UI
-    private readonly InputActionMap m_UI;
-    private IUIActions m_UIActionsCallbackInterface;
-    private readonly InputAction m_UI_Newaction;
-    public struct UIActions
-    {
-        private @PlayerInputActions m_Wrapper;
-        public UIActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_UI_Newaction;
-        public InputActionMap Get() { return m_Wrapper.m_UI; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(UIActions set) { return set.Get(); }
-        public void SetCallbacks(IUIActions instance)
-        {
-            if (m_Wrapper.m_UIActionsCallbackInterface != null)
-            {
-                @Newaction.started -= m_Wrapper.m_UIActionsCallbackInterface.OnNewaction;
-                @Newaction.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnNewaction;
-                @Newaction.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnNewaction;
-            }
-            m_Wrapper.m_UIActionsCallbackInterface = instance;
-            if (instance != null)
-            {
-                @Newaction.started += instance.OnNewaction;
-                @Newaction.performed += instance.OnNewaction;
-                @Newaction.canceled += instance.OnNewaction;
-            }
-        }
-    }
-    public UIActions @UI => new UIActions(this);
-
-    // Dialogue
-    private readonly InputActionMap m_Dialogue;
-    private IDialogueActions m_DialogueActionsCallbackInterface;
-    private readonly InputAction m_Dialogue_AdvanceDialogue;
-    public struct DialogueActions
-    {
-        private @PlayerInputActions m_Wrapper;
-        public DialogueActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @AdvanceDialogue => m_Wrapper.m_Dialogue_AdvanceDialogue;
-        public InputActionMap Get() { return m_Wrapper.m_Dialogue; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(DialogueActions set) { return set.Get(); }
-        public void SetCallbacks(IDialogueActions instance)
-        {
-            if (m_Wrapper.m_DialogueActionsCallbackInterface != null)
-            {
-                @AdvanceDialogue.started -= m_Wrapper.m_DialogueActionsCallbackInterface.OnAdvanceDialogue;
-                @AdvanceDialogue.performed -= m_Wrapper.m_DialogueActionsCallbackInterface.OnAdvanceDialogue;
-                @AdvanceDialogue.canceled -= m_Wrapper.m_DialogueActionsCallbackInterface.OnAdvanceDialogue;
-            }
-            m_Wrapper.m_DialogueActionsCallbackInterface = instance;
-            if (instance != null)
-            {
-                @AdvanceDialogue.started += instance.OnAdvanceDialogue;
-                @AdvanceDialogue.performed += instance.OnAdvanceDialogue;
-                @AdvanceDialogue.canceled += instance.OnAdvanceDialogue;
-            }
-        }
-    }
-    public DialogueActions @Dialogue => new DialogueActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     public InputControlScheme KeyboardMouseScheme
     {
@@ -606,13 +478,5 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         void OnSwapDeck(InputAction.CallbackContext context);
         void OnActivateCard(InputAction.CallbackContext context);
         void OnMovement(InputAction.CallbackContext context);
-    }
-    public interface IUIActions
-    {
-        void OnNewaction(InputAction.CallbackContext context);
-    }
-    public interface IDialogueActions
-    {
-        void OnAdvanceDialogue(InputAction.CallbackContext context);
     }
 }

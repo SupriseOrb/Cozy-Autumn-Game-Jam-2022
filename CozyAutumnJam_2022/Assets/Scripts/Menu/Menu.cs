@@ -9,6 +9,8 @@ public class Menu : MonoBehaviour
 
     protected void LoadScene(int sceneIndex)
     {
+        //Play regular button sound
+        AkSoundEngine.PostEvent("Play_UISelect", this.gameObject);
         SceneManager.LoadScene(sceneIndex);
     }
 
@@ -16,11 +18,13 @@ public class Menu : MonoBehaviour
     {
         if (canSee)
         {
-            // Kristen TODO: Play regular button sound
+            //Play regular button sound
+            AkSoundEngine.PostEvent("Play_UISelect", this.gameObject);
         }
         else
         {
-            // Kristen TODO: Play back sound
+            //Play back sound
+            AkSoundEngine.PostEvent("Play_UIBack", this.gameObject);
         }
         
         canvas.enabled = canSee;

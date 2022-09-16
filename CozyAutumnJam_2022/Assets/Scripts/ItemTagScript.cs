@@ -9,6 +9,7 @@ public class ItemTagScript : MonoBehaviour
     [SerializeField] private bool isTrappable;
     [SerializeField] private bool isRune;
     [SerializeField] private bool isPushable;
+    [SerializeField] private bool isPressurePalatable;
     [SerializeField] private bool isInteractable;
     [SerializeField] private bool isAnimatronic;
     [SerializeField] private bool isCharacter;
@@ -36,6 +37,11 @@ public class ItemTagScript : MonoBehaviour
     public bool IsPushable()
     {
         return isPushable;
+    }
+
+    public bool IsPressurePalatable()
+    {
+        return isPressurePalatable;
     }
 
     public bool IsInteractable()

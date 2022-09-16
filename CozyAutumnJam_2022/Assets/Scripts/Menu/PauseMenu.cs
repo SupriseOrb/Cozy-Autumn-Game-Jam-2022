@@ -11,7 +11,8 @@ public class PauseMenu : Menu
     {
         if(!_isPaused.Value)
         {
-            // Kristen TODO: Play pause sound
+            //Play pause sound
+            AkSoundEngine.PostEvent("Play_UIPause", this.gameObject);
             _pauseMenuCanvas.enabled = true;
             _isPaused.Value = true;
         }
@@ -22,7 +23,8 @@ public class PauseMenu : Menu
     {
         if(_isPaused.Value)
         {
-            // Kristen TODO: Play resume sound
+            //Play resume sound
+            AkSoundEngine.PostEvent("Play_UIResume", this.gameObject);
             _pauseMenuCanvas.enabled = false;
             _isPaused.Value = false;
         }    

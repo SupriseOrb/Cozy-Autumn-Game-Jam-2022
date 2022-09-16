@@ -173,6 +173,65 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="General UI SFX" ID="{3ADDB331-12FA-4458-B80E-43DF87F3AB94}" ShortID="12574195">
+							<ChildrenList>
+								<Event Name="Play_UIBack" ID="{E4F782A1-C9BF-41C8-8C39-C4BE3121831B}">
+									<ChildrenList>
+										<Action Name="" ID="{9299314D-ADD0-4A58-B63A-1F2F9528F70A}" ShortID="22147375">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UIBack" ID="{5328CC03-874F-42D6-9567-688C056A0FDE}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_UIPause" ID="{7C13ED6C-245F-4099-94A5-B8DF48F3C8DD}">
+									<ChildrenList>
+										<Action Name="" ID="{BA78C307-C55E-429A-A8E6-15283BEA766A}" ShortID="762420211">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UIPause" ID="{78746350-E76D-4E47-B436-83D6D64888E4}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_UIResume" ID="{C21120F1-2652-4873-A952-8717062E41EA}">
+									<ChildrenList>
+										<Action Name="" ID="{24A8F96B-1B0E-4B15-A829-B8EC0BD5A3B4}" ShortID="526566429">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UIResume" ID="{4FB92BF5-1591-43AF-BF75-34F8BDB56734}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_UIScroll" ID="{063729F0-36B8-4B2D-822A-A2B239E0D0AE}">
+									<ChildrenList>
+										<Action Name="" ID="{93735411-6B7C-4232-B02B-A95692B8A67D}" ShortID="96125649">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UIScroll" ID="{B1E9A116-7D55-46FD-8C26-D5974941A84F}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_UISelect" ID="{C4CED4A4-1238-4347-BD13-6FDADB4C9671}">
+									<ChildrenList>
+										<Action Name="" ID="{672F042C-8E22-4FA8-8C97-655B5946CACB}" ShortID="164911155">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UISelect" ID="{9176A61A-7496-42D7-856E-F1E817367DE1}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

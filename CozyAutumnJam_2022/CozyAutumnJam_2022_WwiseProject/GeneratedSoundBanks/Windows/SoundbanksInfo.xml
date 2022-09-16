@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ProjectRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2628926967">
+		<SoundBank Id="1355168291" Language="SFX" Hash="169154154">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="365633811" Name="AmbianceVolume" ObjectPath="\Game Parameters\Default Work Unit\AmbianceVolume"/>
+				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\SFXVolume"/>
+				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\MusicVolume"/>
+				<GameParameter Id="2731583604" Name="AllVolume" ObjectPath="\Game Parameters\Default Work Unit\AllVolume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4281923606">
+		<SoundBank Id="3161908922" Language="SFX" Hash="771584123">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -25,7 +31,7 @@
 					<IncludedMemoryFiles>
 						<File Id="844309663" Language="SFX">
 							<ShortName>CardFlip.wav</ShortName>
-							<Path>SFX/CardFlip_10C4C929.wem</Path>
+							<Path>SFX\CardFlip_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -33,11 +39,11 @@
 					<IncludedMemoryFiles>
 						<File Id="469650255" Language="SFX">
 							<ShortName>CardPull1.wav</ShortName>
-							<Path>SFX/CardPull1_10C4C929.wem</Path>
+							<Path>SFX\CardPull1_10C4C929.wem</Path>
 						</File>
 						<File Id="645855217" Language="SFX">
 							<ShortName>CardPull2.wav</ShortName>
-							<Path>SFX/CardPull2_10C4C929.wem</Path>
+							<Path>SFX\CardPull2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -45,15 +51,15 @@
 					<IncludedMemoryFiles>
 						<File Id="407509120" Language="SFX">
 							<ShortName>CardShuffle1.wav</ShortName>
-							<Path>SFX/CardShuffle1_10C4C929.wem</Path>
+							<Path>SFX\CardShuffle1_10C4C929.wem</Path>
 						</File>
 						<File Id="730900144" Language="SFX">
 							<ShortName>CardShuffle3.wav</ShortName>
-							<Path>SFX/CardShuffle3_10C4C929.wem</Path>
+							<Path>SFX\CardShuffle3_10C4C929.wem</Path>
 						</File>
 						<File Id="807983812" Language="SFX">
 							<ShortName>CardShuffle2_02.wav</ShortName>
-							<Path>SFX/CardShuffle2_02_10C4C929.wem</Path>
+							<Path>SFX\CardShuffle2_02_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -61,7 +67,7 @@
 					<IncludedMemoryFiles>
 						<File Id="530332103" Language="SFX">
 							<ShortName>CardSwap.wav</ShortName>
-							<Path>SFX/CardSwap_10C4C929.wem</Path>
+							<Path>SFX\CardSwap_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -69,7 +75,47 @@
 					<IncludedMemoryFiles>
 						<File Id="898142516" Language="SFX">
 							<ShortName>Phone Ringing.wav</ShortName>
-							<Path>SFX/Phone Ringing_10C4C929.wem</Path>
+							<Path>SFX\Phone Ringing_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1224305705" Name="Play_UIBack" ObjectPath="\Events\Default Work Unit\SFX Events\General UI SFX\Play_UIBack" DurationType="OneShot" DurationMin="1.467687" DurationMax="1.467687">
+					<IncludedMemoryFiles>
+						<File Id="906103811" Language="SFX">
+							<ShortName>UIBack.wav</ShortName>
+							<Path>SFX\UIBack_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1830907318" Name="Play_UIPause" ObjectPath="\Events\Default Work Unit\SFX Events\General UI SFX\Play_UIPause" DurationType="OneShot" DurationMin="2.032562" DurationMax="2.032562">
+					<IncludedMemoryFiles>
+						<File Id="937727332" Language="SFX">
+							<ShortName>UIPause.wav</ShortName>
+							<Path>SFX\UIPause_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="235035089" Name="Play_UIResume" ObjectPath="\Events\Default Work Unit\SFX Events\General UI SFX\Play_UIResume" DurationType="OneShot" DurationMin="2.032562" DurationMax="2.032562">
+					<IncludedMemoryFiles>
+						<File Id="35618958" Language="SFX">
+							<ShortName>UIResume.wav</ShortName>
+							<Path>SFX\UIResume_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3312925211" Name="Play_UIScroll" ObjectPath="\Events\Default Work Unit\SFX Events\General UI SFX\Play_UIScroll" DurationType="OneShot" DurationMin="2.878141" DurationMax="2.878141">
+					<IncludedMemoryFiles>
+						<File Id="189416120" Language="SFX">
+							<ShortName>UIScroll.wav</ShortName>
+							<Path>SFX\UIScroll_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3703192648" Name="Play_UISelect" ObjectPath="\Events\Default Work Unit\SFX Events\General UI SFX\Play_UISelect" DurationType="OneShot" DurationMin="1.467687" DurationMax="1.467687">
+					<IncludedMemoryFiles>
+						<File Id="897019754" Language="SFX">
+							<ShortName>UISelect.wav</ShortName>
+							<Path>SFX\UISelect_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

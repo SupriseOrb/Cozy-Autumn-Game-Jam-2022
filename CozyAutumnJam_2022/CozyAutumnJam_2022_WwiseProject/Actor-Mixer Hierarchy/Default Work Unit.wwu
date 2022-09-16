@@ -9,7 +9,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+							<ObjectRef Name="SFX" ID="{669C53AA-FCCF-471E-B43B-8CD2ACF961ED}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -26,111 +26,229 @@
 						<ActiveSource Name="Phone Ringing" ID="{B0BEA770-81DF-4F8B-9632-BD503B0ABD44}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<RandomSequenceContainer Name="CardPull" ID="{60A66026-69CD-46FD-A2F0-AAB9F04CD7E7}" ShortID="801710399">
-					<PropertyList>
-						<Property Name="Pitch" Type="int32">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{AE971A54-00DC-42DA-B938-50681178DA0F}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="100"/>
-											<Property Name="Min" Type="Real64" Value="-100"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
-						</Reference>
-					</ReferenceList>
+				<Folder Name="Card UI SFX" ID="{A2BC67A2-E392-477F-B059-786E1298B3C2}" ShortID="405525821">
 					<ChildrenList>
-						<Sound Name="CardPull1" ID="{EE133C12-20C8-4622-82CD-7E9855644BBF}" ShortID="519664210">
+						<RandomSequenceContainer Name="CardPull" ID="{60A66026-69CD-46FD-A2F0-AAB9F04CD7E7}" ShortID="801710399">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{AE971A54-00DC-42DA-B938-50681178DA0F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+									<ObjectRef Name="SFX" ID="{669C53AA-FCCF-471E-B43B-8CD2ACF961ED}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="CardPull1" ID="{D473F9B4-FC09-4C82-BE8A-FB7A8A526FD8}">
-									<Language>SFX</Language>
-									<AudioFile>CardPull1.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="469650255"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="CardPull1" ID="{EE133C12-20C8-4622-82CD-7E9855644BBF}" ShortID="519664210">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CardPull1" ID="{D473F9B4-FC09-4C82-BE8A-FB7A8A526FD8}">
+											<Language>SFX</Language>
+											<AudioFile>CardPull1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="469650255"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="CardPull1" ID="{D473F9B4-FC09-4C82-BE8A-FB7A8A526FD8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CardPull2" ID="{4137721C-D03C-4FA0-A658-9A6ECCCBA2F5}" ShortID="326049770">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CardPull2" ID="{39C08A07-DDD0-4DF2-A0B3-DED6E8F0F445}">
+											<Language>SFX</Language>
+											<AudioFile>CardPull2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="645855217"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="CardPull2" ID="{39C08A07-DDD0-4DF2-A0B3-DED6E8F0F445}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="CardPull1" ID="{D473F9B4-FC09-4C82-BE8A-FB7A8A526FD8}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="CardPull2" ID="{4137721C-D03C-4FA0-A658-9A6ECCCBA2F5}" ShortID="326049770">
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="CardShuffle" ID="{8ABF6FD8-AAED-4C67-A8F3-C8E2654BF132}" ShortID="298778157">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{052F62C7-128C-4141-BB9A-018920B9D87C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+									<ObjectRef Name="SFX" ID="{669C53AA-FCCF-471E-B43B-8CD2ACF961ED}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="CardPull2" ID="{39C08A07-DDD0-4DF2-A0B3-DED6E8F0F445}">
+								<Sound Name="CardShuffle1" ID="{EBB2E30A-F6D1-41B8-A237-BF7611BD048E}" ShortID="673844082">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CardShuffle1" ID="{B2BA8387-C4A2-4ABF-A9A2-EA7C49C267AB}">
+											<Language>SFX</Language>
+											<AudioFile>CardShuffle1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="407509120"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="CardShuffle1" ID="{B2BA8387-C4A2-4ABF-A9A2-EA7C49C267AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CardShuffle2" ID="{E8CA24C7-53FD-4901-868A-282B0E150F14}" ShortID="544563335">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CardShuffle2" ID="{E65948E0-3014-4411-8065-61FC72870B6D}">
+											<Language>SFX</Language>
+											<AudioFile>CardShuffle2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="366149810"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="CardShuffle2_02" ID="{EF27C09F-D5C7-4003-997D-0637F4352240}">
+											<Language>SFX</Language>
+											<AudioFile>CardShuffle2_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="807983812"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="CardShuffle2_02" ID="{EF27C09F-D5C7-4003-997D-0637F4352240}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CardShuffle3" ID="{D55C04B3-765D-41E9-882A-CE06F56A12EA}" ShortID="367621758">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CardShuffle3" ID="{6BFF12FE-6C05-4841-80A8-1F094CF7B6DF}">
+											<Language>SFX</Language>
+											<AudioFile>CardShuffle3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="730900144"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="CardShuffle3" ID="{6BFF12FE-6C05-4841-80A8-1F094CF7B6DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<Sound Name="CardFlip" ID="{00C4B22F-FD63-4E83-B6A2-B1289E2C31A6}" ShortID="1058787164">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{669C53AA-FCCF-471E-B43B-8CD2ACF961ED}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CardFlip" ID="{6B43D36B-4C56-42CB-8BC4-6A13F5BBB618}">
 									<Language>SFX</Language>
-									<AudioFile>CardPull2.wav</AudioFile>
+									<AudioFile>CardFlip.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="645855217"/>
+										<MediaID ID="844309663"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="CardPull2" ID="{39C08A07-DDD0-4DF2-A0B3-DED6E8F0F445}" Platform="Linked"/>
+								<ActiveSource Name="CardFlip" ID="{6B43D36B-4C56-42CB-8BC4-6A13F5BBB618}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-					</ChildrenList>
-					<ObjectLists/>
-				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="CardShuffle" ID="{8ABF6FD8-AAED-4C67-A8F3-C8E2654BF132}" ShortID="298778157">
-					<PropertyList>
-						<Property Name="Pitch" Type="int32">
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{052F62C7-128C-4141-BB9A-018920B9D87C}">
-										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="100"/>
-											<Property Name="Min" Type="Real64" Value="-100"/>
-										</PropertyList>
-									</Modifier>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="CardShuffle1" ID="{EBB2E30A-F6D1-41B8-A237-BF7611BD048E}" ShortID="673844082">
+						<Sound Name="DeckSwap" ID="{5022361B-B61F-41B5-A5E8-D17393B1E221}" ShortID="81150078">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -139,139 +257,144 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+									<ObjectRef Name="SFX" ID="{669C53AA-FCCF-471E-B43B-8CD2ACF961ED}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="CardShuffle1" ID="{B2BA8387-C4A2-4ABF-A9A2-EA7C49C267AB}">
+								<AudioFileSource Name="CardSwap" ID="{931EB286-3BB0-49BB-BB5A-C45E7DB1C43F}">
 									<Language>SFX</Language>
-									<AudioFile>CardShuffle1.wav</AudioFile>
+									<AudioFile>CardSwap.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="407509120"/>
+										<MediaID ID="530332103"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="CardShuffle1" ID="{B2BA8387-C4A2-4ABF-A9A2-EA7C49C267AB}" Platform="Linked"/>
+								<ActiveSource Name="CardSwap" ID="{931EB286-3BB0-49BB-BB5A-C45E7DB1C43F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="CardShuffle2" ID="{E8CA24C7-53FD-4901-868A-282B0E150F14}" ShortID="544563335">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-7</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="General UI SFX" ID="{F17F91A6-EEF3-45B5-928B-3ECBE1CFEE2F}" ShortID="720461576">
+					<ChildrenList>
+						<Sound Name="UIBack" ID="{5328CC03-874F-42D6-9567-688C056A0FDE}" ShortID="733701227">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+									<ObjectRef Name="SFX" ID="{669C53AA-FCCF-471E-B43B-8CD2ACF961ED}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="CardShuffle2" ID="{E65948E0-3014-4411-8065-61FC72870B6D}">
+								<AudioFileSource Name="UIBack" ID="{7F82D1CE-E379-45B6-9CF6-C29A2E3C9690}">
 									<Language>SFX</Language>
-									<AudioFile>CardShuffle2.wav</AudioFile>
+									<AudioFile>UIBack.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="366149810"/>
-									</MediaIDList>
-								</AudioFileSource>
-								<AudioFileSource Name="CardShuffle2_02" ID="{EF27C09F-D5C7-4003-997D-0637F4352240}">
-									<Language>SFX</Language>
-									<AudioFile>CardShuffle2_02.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="807983812"/>
+										<MediaID ID="906103811"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="CardShuffle2_02" ID="{EF27C09F-D5C7-4003-997D-0637F4352240}" Platform="Linked"/>
+								<ActiveSource Name="UIBack" ID="{7F82D1CE-E379-45B6-9CF6-C29A2E3C9690}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="CardShuffle3" ID="{D55C04B3-765D-41E9-882A-CE06F56A12EA}" ShortID="367621758">
+						<Sound Name="UIPause" ID="{78746350-E76D-4E47-B436-83D6D64888E4}" ShortID="296440175">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+									<ObjectRef Name="SFX" ID="{669C53AA-FCCF-471E-B43B-8CD2ACF961ED}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="CardShuffle3" ID="{6BFF12FE-6C05-4841-80A8-1F094CF7B6DF}">
+								<AudioFileSource Name="UIPause" ID="{FB3D27F4-EAA6-46CA-A625-E9161AB9A6E5}">
 									<Language>SFX</Language>
-									<AudioFile>CardShuffle3.wav</AudioFile>
+									<AudioFile>UIPause.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="730900144"/>
+										<MediaID ID="937727332"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="CardShuffle3" ID="{6BFF12FE-6C05-4841-80A8-1F094CF7B6DF}" Platform="Linked"/>
+								<ActiveSource Name="UIPause" ID="{FB3D27F4-EAA6-46CA-A625-E9161AB9A6E5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UIResume" ID="{4FB92BF5-1591-43AF-BF75-34F8BDB56734}" ShortID="482443161">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{669C53AA-FCCF-471E-B43B-8CD2ACF961ED}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UIResume" ID="{CC8094AA-0957-4C95-A616-C221C168FF64}">
+									<Language>SFX</Language>
+									<AudioFile>UIResume.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="35618958"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="UIResume" ID="{CC8094AA-0957-4C95-A616-C221C168FF64}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UIScroll" ID="{B1E9A116-7D55-46FD-8C26-D5974941A84F}" ShortID="476499518">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{669C53AA-FCCF-471E-B43B-8CD2ACF961ED}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UIScroll" ID="{DA8D74A0-9FE3-493B-83A6-C03901BA4155}">
+									<Language>SFX</Language>
+									<AudioFile>UIScroll.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="189416120"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="UIScroll" ID="{DA8D74A0-9FE3-493B-83A6-C03901BA4155}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UISelect" ID="{9176A61A-7496-42D7-856E-F1E817367DE1}" ShortID="701191513">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{669C53AA-FCCF-471E-B43B-8CD2ACF961ED}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UISelect" ID="{738033B7-1492-475B-A7A3-48EF3AB12072}">
+									<Language>SFX</Language>
+									<AudioFile>UISelect.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="897019754"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="UISelect" ID="{738033B7-1492-475B-A7A3-48EF3AB12072}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
-					<ObjectLists/>
-				</RandomSequenceContainer>
-				<Sound Name="CardFlip" ID="{00C4B22F-FD63-4E83-B6A2-B1289E2C31A6}" ShortID="1058787164">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="CardFlip" ID="{6B43D36B-4C56-42CB-8BC4-6A13F5BBB618}">
-							<Language>SFX</Language>
-							<AudioFile>CardFlip.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="844309663"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="CardFlip" ID="{6B43D36B-4C56-42CB-8BC4-6A13F5BBB618}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="DeckSwap" ID="{5022361B-B61F-41B5-A5E8-D17393B1E221}" ShortID="81150078">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-10</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="CardSwap" ID="{931EB286-3BB0-49BB-BB5A-C45E7DB1C43F}">
-							<Language>SFX</Language>
-							<AudioFile>CardSwap.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="530332103"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="CardSwap" ID="{931EB286-3BB0-49BB-BB5A-C45E7DB1C43F}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

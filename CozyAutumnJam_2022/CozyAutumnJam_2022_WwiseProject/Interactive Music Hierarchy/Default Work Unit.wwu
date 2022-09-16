@@ -16,237 +16,873 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicPlaylistContainer Name="MainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" ShortID="365657537">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
-								</Reference>
-							</ReferenceList>
+						<Folder Name="Human World" ID="{F7FE859E-A89C-47AC-9C3D-FED9DF562AEA}" ShortID="408970310">
 							<ChildrenList>
-								<MusicSegment Name="Spooky_MainTheme_Intro_Draft_1" ID="{0A42D00D-F6F9-4DE3-B079-9EF74FBF3C19}" ShortID="204088781">
+								<MusicPlaylistContainer Name="HumanMainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" ShortID="365657537">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="7374.39909297052"/>
+										<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+											<ObjectRef Name="Music" ID="{4A30EDBD-E77E-45B7-BB86-90268060F0CB}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Spooky_MainTheme_Intro_Draft_1" ID="{5D050214-D33F-469B-BF2F-56E34EEA4D43}" ShortID="356162239">
+										<MusicSegment Name="Spooky_MainTheme_Intro_Draft_1" ID="{0A42D00D-F6F9-4DE3-B079-9EF74FBF3C19}" ShortID="204088781">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="7374.39909297052"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Spooky_MainTheme_Intro_Draft_1" ID="{FCA31C0A-8F0F-4076-AC40-7A924CD9FE1A}">
-													<Language>SFX</Language>
-													<AudioFile>Spooky_MainTheme_Intro_Draft_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="181034382"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<MusicTrack Name="Spooky_MainTheme_Intro_Draft_1" ID="{5D050214-D33F-469B-BF2F-56E34EEA4D43}" ShortID="356162239">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Spooky_MainTheme_Intro_Draft_1" ID="{FCA31C0A-8F0F-4076-AC40-7A924CD9FE1A}">
+															<Language>SFX</Language>
+															<AudioFile>Spooky_MainTheme_Intro_Draft_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="181034382"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{21395C5A-576F-426C-9033-0EFCF97C555C}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{71F3344D-93C8-49DC-AA81-ACC617E22309}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Spooky_MainTheme_Intro_Draft_1" ID="{BB6A383F-36B5-4BCA-896B-CE2D7F1842BB}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="7374.39909297052"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Spooky_MainTheme_Intro_Draft_1" ID="{FCA31C0A-8F0F-4076-AC40-7A924CD9FE1A}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
 											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{21395C5A-576F-426C-9033-0EFCF97C555C}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
 											<ObjectLists>
-												<ObjectList Name="Sequences">
+												<ObjectList Name="Cues">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{71F3344D-93C8-49DC-AA81-ACC617E22309}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="Spooky_MainTheme_Intro_Draft_1" ID="{BB6A383F-36B5-4BCA-896B-CE2D7F1842BB}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="7374.39909297052"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="Spooky_MainTheme_Intro_Draft_1" ID="{FCA31C0A-8F0F-4076-AC40-7A924CD9FE1A}"/>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
+															<MusicCue Name="Entry Cue" ID="{9446D5E8-E325-4BB0-9C24-D4E5453208C2}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{23193B1C-174D-43A7-AEC8-46805C7D8440}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="6000"/>
+																</PropertyList>
+															</MusicCue>
 														</Local>
 													</Reference>
 												</ObjectList>
 											</ObjectLists>
-										</MusicTrack>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<Reference>
-												<Local>
-													<MusicCue Name="Entry Cue" ID="{9446D5E8-E325-4BB0-9C24-D4E5453208C2}"/>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicCue Name="Exit Cue" ID="{23193B1C-174D-43A7-AEC8-46805C7D8440}">
-														<PropertyList>
-															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="6000"/>
-														</PropertyList>
-													</MusicCue>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
-								<MusicSegment Name="Spooky_MainTheme_Draft_1" ID="{577C84CD-19AF-4B54-93A2-DADBEAFBF862}" ShortID="674637083">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="78712.0861678004"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Spooky_MainTheme_Draft_1" ID="{EB82D52C-AF5B-4D48-93E9-9045675C9E29}" ShortID="193323710">
+										</MusicSegment>
+										<MusicSegment Name="Spooky_MainTheme_Draft_1" ID="{577C84CD-19AF-4B54-93A2-DADBEAFBF862}" ShortID="674637083">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="78712.0861678004"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Spooky_MainTheme_Draft_1" ID="{197D2D7B-A870-4973-9891-6C727A3C5F5B}">
-													<Language>SFX</Language>
-													<AudioFile>Spooky_MainTheme_Draft_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="101494922"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<MusicTrack Name="Spooky_MainTheme_Draft_1" ID="{EB82D52C-AF5B-4D48-93E9-9045675C9E29}" ShortID="193323710">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Spooky_MainTheme_Draft_1" ID="{197D2D7B-A870-4973-9891-6C727A3C5F5B}">
+															<Language>SFX</Language>
+															<AudioFile>Spooky_MainTheme_Draft_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="101494922"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{2EB2F952-503B-4A57-B522-DE6795D819E5}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{49D59FAD-5D86-4BA3-82A0-49DC62CC4C16}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Spooky_MainTheme_Draft_1" ID="{D52759C7-5CF5-4E72-9AA8-D4FCC04AB552}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="78712.0861678004"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Spooky_MainTheme_Draft_1" ID="{197D2D7B-A870-4973-9891-6C727A3C5F5B}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
 											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{2EB2F952-503B-4A57-B522-DE6795D819E5}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
 											<ObjectLists>
-												<ObjectList Name="Sequences">
+												<ObjectList Name="Cues">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{49D59FAD-5D86-4BA3-82A0-49DC62CC4C16}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="Spooky_MainTheme_Draft_1" ID="{D52759C7-5CF5-4E72-9AA8-D4FCC04AB552}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="78712.0861678004"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="Spooky_MainTheme_Draft_1" ID="{197D2D7B-A870-4973-9891-6C727A3C5F5B}"/>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
+															<MusicCue Name="Entry Cue" ID="{8B1BCD2E-E2DE-4B43-9C1A-C5A637C04B2F}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{80FF1808-3C07-46B0-8952-A3C9CD587AFF}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="72000"/>
+																</PropertyList>
+															</MusicCue>
 														</Local>
 													</Reference>
 												</ObjectList>
 											</ObjectLists>
-										</MusicTrack>
+										</MusicSegment>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<Reference>
-												<Local>
-													<MusicCue Name="Entry Cue" ID="{8B1BCD2E-E2DE-4B43-9C1A-C5A637C04B2F}"/>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicCue Name="Exit Cue" ID="{80FF1808-3C07-46B0-8952-A3C9CD587AFF}">
-														<PropertyList>
-															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="72000"/>
-														</PropertyList>
-													</MusicCue>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
-							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{B8C4AC67-694E-4823-8F30-AA2CBFE337DF}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{74672E68-A8C0-4F50-BBA9-01128CA7C6EF}">
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{B8C4AC67-694E-4823-8F30-AA2CBFE337DF}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{74672E68-A8C0-4F50-BBA9-01128CA7C6EF}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
 											<TransitionInfo/>
 										</MusicTransition>
-									</ChildrenList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<ObjectLists/>
-							<Playlist>
-								<MusicPlaylistItem Name="" ID="{DDEB5499-DA84-43F3-899A-745231D256CA}" ShortID="765541575">
-									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{55376669-B341-4D89-A8C0-7C26E773E3B4}" ShortID="623737702">
-											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<SegmentRef Name="Spooky_MainTheme_Intro_Draft_1" ID="{0A42D00D-F6F9-4DE3-B079-9EF74FBF3C19}"/>
+									</TransitionList>
+									<ObjectLists/>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{DDEB5499-DA84-43F3-899A-745231D256CA}" ShortID="765541575">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{55376669-B341-4D89-A8C0-7C26E773E3B4}" ShortID="623737702">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Spooky_MainTheme_Intro_Draft_1" ID="{0A42D00D-F6F9-4DE3-B079-9EF74FBF3C19}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{9C8A363F-AFB9-4B65-B08F-AD19CF2D7504}" ShortID="742000153">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{7323D331-7973-4D59-9125-146E64AA3051}" ShortID="844112447">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Spooky_MainTheme_Draft_1" ID="{577C84CD-19AF-4B54-93A2-DADBEAFBF862}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
 										</MusicPlaylistItem>
-										<MusicPlaylistItem Name="" ID="{9C8A363F-AFB9-4B65-B08F-AD19CF2D7504}" ShortID="742000153">
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="KenTheme" ID="{FD7702CD-F6D5-47EA-9A9B-F663C1C3FE7B}" ShortID="800431139">
+									<PropertyList>
+										<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{4A30EDBD-E77E-45B7-BB86-90268060F0CB}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Spooky_KenTheme_Draft_1" ID="{5F3C5AC4-BD4C-477B-8BE2-2C2693F0165F}" ShortID="184551612">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="78712.0861678004"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Spooky_KenTheme_Draft_1" ID="{25BA98EA-CF50-4343-9155-9E7FC5B32E03}" ShortID="447616186">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Spooky_KenTheme_Draft_1" ID="{06601CD2-F10E-49CC-ADC1-510CB27FBE0B}">
+															<Language>SFX</Language>
+															<AudioFile>Spooky_KenTheme_Draft_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="720273982"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{C2D0670C-FF00-47B5-9E42-5DB46652E06C}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{614F2BA0-9308-42BE-B54C-D3A9FEBC8890}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Spooky_KenTheme_Draft_1" ID="{4ED4BC3D-152C-4F6D-8216-15E28BA5B606}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="78712.0861678004"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Spooky_KenTheme_Draft_1" ID="{06601CD2-F10E-49CC-ADC1-510CB27FBE0B}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<Reference>
+														<Local>
+															<MusicCue Name="Entry Cue" ID="{3521B77E-1CE5-4830-B75A-D20871D0904A}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{F5A2E151-E7A3-4563-B6E2-CD6B300CC2DF}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="72000"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{49B98D93-7F9F-425F-BEE4-BAC846FE2023}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{D5498744-1723-4C83-8C12-C2676219F7AE}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists/>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{1E54AA61-92F5-49F2-AB32-3BEE96226F8D}" ShortID="634942505">
 											<PropertyList>
 												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{923A580C-1BDB-4131-8433-4C95754127C0}" ShortID="48756662">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Spooky_KenTheme_Draft_1" ID="{5F3C5AC4-BD4C-477B-8BE2-2C2693F0165F}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
 										</MusicPlaylistItem>
-										<MusicPlaylistItem Name="" ID="{7323D331-7973-4D59-9125-146E64AA3051}" ShortID="844112447">
-											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<SegmentRef Name="Spooky_MainTheme_Draft_1" ID="{577C84CD-19AF-4B54-93A2-DADBEAFBF862}"/>
-										</MusicPlaylistItem>
-									</ChildrenList>
-								</MusicPlaylistItem>
-							</Playlist>
-						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="KenTheme" ID="{FD7702CD-F6D5-47EA-9A9B-F663C1C3FE7B}" ShortID="800431139">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicSegment Name="Spooky_KenTheme_Draft_1" ID="{5F3C5AC4-BD4C-477B-8BE2-2C2693F0165F}" ShortID="184551612">
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="MyrtleTheme" ID="{C0963D23-842B-4790-AF74-A953A1899C77}" ShortID="15274851">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="78712.0861678004"/>
+										<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
 									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{4A30EDBD-E77E-45B7-BB86-90268060F0CB}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Spooky_MyrtleTheme_Draft_1" ID="{CD9303F9-6399-461C-AE7F-7703A714D034}" ShortID="335742630">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="78712.0861678004"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Spooky_MyrtleTheme_Draft_1" ID="{7FE8055B-7674-426E-BFEB-189B01299834}" ShortID="928012218">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Spooky_MyrtleTheme_Draft_1" ID="{D8529740-832E-4546-BDE9-9FBD662C22FD}">
+															<Language>SFX</Language>
+															<AudioFile>Spooky_MyrtleTheme_Draft_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="520901426"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{34A67875-3F22-4296-96DF-65E36B62346F}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{9A347B49-83E8-4111-A66A-FC97CF1BD95D}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Spooky_MyrtleTheme_Draft_1" ID="{9966FF1C-95CF-4C00-815A-A02FF8DFED81}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="78712.0861678004"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Spooky_MyrtleTheme_Draft_1" ID="{D8529740-832E-4546-BDE9-9FBD662C22FD}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<Reference>
+														<Local>
+															<MusicCue Name="Entry Cue" ID="{69A4F9CB-3A68-40AE-A0CC-DD2242529E86}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{80785C20-0B29-4964-B8AC-7020448A8D4B}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="72000"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{E8EE67CA-F8EA-4614-A71C-5D0808EC7092}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{61C43853-1BF8-4D54-B4EC-E3BF38F18B0A}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists/>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{999B1EBC-AB61-4936-8E3F-3C7D2D10E0FD}" ShortID="437786121">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{D87E8522-E074-4904-A1B2-E8C4D38F88AE}" ShortID="434210530">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Spooky_MyrtleTheme_Draft_1" ID="{CD9303F9-6399-461C-AE7F-7703A714D034}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="ChrysanthaTheme" ID="{DA6B1696-8ACE-4677-ADEF-B11ED89FE6AE}" ShortID="722908297">
+									<PropertyList>
+										<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{4A30EDBD-E77E-45B7-BB86-90268060F0CB}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Spooky_ChrysanthaTheme_Draft_1" ID="{CF8B15BF-0D7F-42E1-AEDA-06F827E14CE1}" ShortID="909757053">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="78706.0997732426"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Spooky_ChrysanthaTheme_Draft_1" ID="{1455628B-D3D2-4966-9B87-544498B05C01}" ShortID="979733295">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Spooky_ChrysanthaTheme_Draft_1" ID="{0ED9086B-C5B8-4480-8E7D-64F63F1BF221}">
+															<Language>SFX</Language>
+															<AudioFile>Spooky_ChrysanthaTheme_Draft_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="294587160"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{6D599AD4-F9BC-424E-8109-2680D3914920}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{F2DAB58E-C5E2-4218-9820-519FB3269754}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Spooky_ChrysanthaTheme_Draft_1" ID="{29508F35-4E68-4D1B-B1C1-9B0A80818B33}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="78706.0997732426"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="6522.60495358364"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Spooky_ChrysanthaTheme_Draft_1" ID="{0ED9086B-C5B8-4480-8E7D-64F63F1BF221}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<Reference>
+														<Local>
+															<MusicCue Name="Entry Cue" ID="{99BA4808-274A-4218-A57A-FEA58E73CB46}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{78CF24FB-953E-4610-AA93-E5A586F6B4FD}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="72000"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{F958710E-0819-4490-B532-F91DC7A6E5FA}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{62249A8D-2517-46C9-A1CF-C5721C16BE88}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists/>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{E9F01C87-EF95-4AD6-A87E-655DAF24348B}" ShortID="13326015">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{0EC21DB4-786E-49D1-81BB-915660356594}" ShortID="355636472">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Spooky_ChrysanthaTheme_Draft_1" ID="{CF8B15BF-0D7F-42E1-AEDA-06F827E14CE1}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="VTheme" ID="{9600BF0F-2568-4D76-9581-5AC835574EE0}" ShortID="955613971">
+									<PropertyList>
+										<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{4A30EDBD-E77E-45B7-BB86-90268060F0CB}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Spooky_VTheme_Draft_1" ID="{56A5F5A9-9DCF-4A85-A6BD-967982C277A9}" ShortID="273974179">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="78706.0997732426"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Spooky_VTheme_Draft_1" ID="{AF1B97D6-C9E1-47D2-8B37-C6E308B6B24D}" ShortID="503801282">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Spooky_VTheme_Draft_1" ID="{74106915-E47B-421C-876B-84EE7344D02A}">
+															<Language>SFX</Language>
+															<AudioFile>Spooky_VTheme_Draft_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="11164527"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{28648FD7-C79D-45C1-A298-6F6B30A32CD9}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{FAB7B4F7-8442-49ED-A67D-D97291D10107}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Spooky_VTheme_Draft_1" ID="{6D1DFED4-C4B8-4F44-A835-68275A019B6E}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="78706.0997732426"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="6087.76462334474"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Spooky_VTheme_Draft_1" ID="{74106915-E47B-421C-876B-84EE7344D02A}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<Reference>
+														<Local>
+															<MusicCue Name="Entry Cue" ID="{80EE262D-3414-41D3-9499-2191D003DA35}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{B5F989F5-D5D3-4424-8C11-67E221168D51}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="72000"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{29B60BB4-8DA9-4797-BD31-4D34D6081C1A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{1552A90B-D423-48EE-BA77-D94D00B57B99}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists/>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{23E75C49-6DD5-45EB-80E0-1FCC97343543}" ShortID="986044236">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{411E0271-5A9F-48DF-8022-DAAEE8E35358}" ShortID="523470675">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Spooky_VTheme_Draft_1" ID="{56A5F5A9-9DCF-4A85-A6BD-967982C277A9}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="JowanTheme" ID="{C2470743-3A44-4638-BC20-369535D52364}" ShortID="825417119">
+									<PropertyList>
+										<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{4A30EDBD-E77E-45B7-BB86-90268060F0CB}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Spooky_JowanTheme_Draft_1" ID="{DD7443BD-2528-4E03-9570-CB41554363B2}" ShortID="184118223">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="78706.0997732426"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Spooky_JowanTheme_Draft_1" ID="{B47C8B33-C77B-4923-83DD-D22F37171462}" ShortID="652542705">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Spooky_JowanTheme_Draft_1" ID="{BAD3186C-4AEB-415F-8F28-5B164D0C849E}">
+															<Language>SFX</Language>
+															<AudioFile>Spooky_JowanTheme_Draft_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="339010008"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{958EE9A4-69F6-4F1A-9D0A-CDD96A69F4ED}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{AF7BA9EA-2348-44FA-A85D-1ABF9CD82033}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Spooky_JowanTheme_Draft_1" ID="{1D52E2FF-5D92-42BE-9C92-F3AA141F46EE}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="78706.0997732426"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="5652.92429310583"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Spooky_JowanTheme_Draft_1" ID="{BAD3186C-4AEB-415F-8F28-5B164D0C849E}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<Reference>
+														<Local>
+															<MusicCue Name="Entry Cue" ID="{CCA6E13C-72DE-420C-95A4-9F4B5306493A}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{51D9CF8F-F9F6-43D2-80E2-982549852A50}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="72000"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{4A5C9D94-5938-4AD9-BCF1-03801680E8A5}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{BB197ACD-F651-42B8-8091-394FDEE6A9EE}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists/>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{176840A4-4BAF-48ED-98FD-FCB8D31A71DF}" ShortID="852128174">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{A28051D1-4D90-4C5F-86A4-605B0E3383BF}" ShortID="744903744">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Spooky_JowanTheme_Draft_1" ID="{DD7443BD-2528-4E03-9570-CB41554363B2}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Spirit World" ID="{6095A210-E858-45D8-B8E1-4B01395C8666}" ShortID="546068889">
+							<ChildrenList>
+								<MusicPlaylistContainer Name="SpiritMainTheme" ID="{8DB9E953-E0A3-424D-A29B-0E3C3AD09234}" ShortID="323063489">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
@@ -256,122 +892,124 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Spooky_KenTheme_Draft_1" ID="{25BA98EA-CF50-4343-9155-9E7FC5B32E03}" ShortID="447616186">
+										<MusicSegment Name="Spirit_MainTheme" ID="{EF4535EC-2050-4648-BC7B-A5B7B87839DC}" ShortID="485741504">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="57856.0090702948"/>
+												<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+												<Property Name="Tempo" Type="Real64" Value="125"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Spooky_KenTheme_Draft_1" ID="{06601CD2-F10E-49CC-ADC1-510CB27FBE0B}">
-													<Language>SFX</Language>
-													<AudioFile>Spooky_KenTheme_Draft_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="720273982"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<MusicTrack Name="Spirit_MainTheme" ID="{FE004B85-4774-4AEE-9501-86D3B92C02F8}" ShortID="111460342">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Spirit_MainTheme" ID="{266C5C32-CD37-485D-9AC0-FF328579DCC2}">
+															<Language>SFX</Language>
+															<AudioFile>Spirit_MainTheme.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="84526937"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{DB12EA99-8880-4939-BA0A-7EFEDC1A427E}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{219DE6B3-D479-4025-8759-F74F139DFD25}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Spirit_MainTheme" ID="{7DCC82A9-FBC1-4854-8500-4C6DD4F214D6}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="57856.0090702948"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="3193.94371839167"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Spirit_MainTheme" ID="{266C5C32-CD37-485D-9AC0-FF328579DCC2}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
 											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{C2D0670C-FF00-47B5-9E42-5DB46652E06C}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
 											<ObjectLists>
-												<ObjectList Name="Sequences">
+												<ObjectList Name="Cues">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{614F2BA0-9308-42BE-B54C-D3A9FEBC8890}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="Spooky_KenTheme_Draft_1" ID="{4ED4BC3D-152C-4F6D-8216-15E28BA5B606}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="78712.0861678004"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="Spooky_KenTheme_Draft_1" ID="{06601CD2-F10E-49CC-ADC1-510CB27FBE0B}"/>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
+															<MusicCue Name="Entry Cue" ID="{2DD3C39E-0B26-47EF-80F7-F76D9266C83A}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{DF91E046-5DD0-4A2D-BB2B-045DE60CB4C3}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="53760"/>
+																</PropertyList>
+															</MusicCue>
 														</Local>
 													</Reference>
 												</ObjectList>
 											</ObjectLists>
-										</MusicTrack>
+										</MusicSegment>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<Reference>
-												<Local>
-													<MusicCue Name="Entry Cue" ID="{3521B77E-1CE5-4830-B75A-D20871D0904A}"/>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicCue Name="Exit Cue" ID="{F5A2E151-E7A3-4563-B6E2-CD6B300CC2DF}">
-														<PropertyList>
-															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="72000"/>
-														</PropertyList>
-													</MusicCue>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
-							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{49B98D93-7F9F-425F-BEE4-BAC846FE2023}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{D5498744-1723-4C83-8C12-C2676219F7AE}">
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{8470D99E-296D-4913-812C-4C2CF2D7251F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{B940490C-5AF2-4A46-ACCE-AFA4AF59C371}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
 											<TransitionInfo/>
 										</MusicTransition>
-									</ChildrenList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<ObjectLists/>
-							<Playlist>
-								<MusicPlaylistItem Name="" ID="{1E54AA61-92F5-49F2-AB32-3BEE96226F8D}" ShortID="634942505">
-									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="0"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{923A580C-1BDB-4131-8433-4C95754127C0}" ShortID="48756662">
+									</TransitionList>
+									<ObjectLists/>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{D38532CA-A985-4525-BEA2-0A73B32663CF}" ShortID="540446604">
 											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
-											<SegmentRef Name="Spooky_KenTheme_Draft_1" ID="{5F3C5AC4-BD4C-477B-8BE2-2C2693F0165F}"/>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{D73DB8DB-F003-48C3-B251-2FB92C94A586}" ShortID="135592347">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Spirit_MainTheme" ID="{EF4535EC-2050-4648-BC7B-A5B7B87839DC}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
 										</MusicPlaylistItem>
-									</ChildrenList>
-								</MusicPlaylistItem>
-							</Playlist>
-						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="MyrtleTheme" ID="{C0963D23-842B-4790-AF74-A953A1899C77}" ShortID="15274851">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicSegment Name="Spooky_MyrtleTheme_Draft_1" ID="{CD9303F9-6399-461C-AE7F-7703A714D034}" ShortID="335742630">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="78712.0861678004"/>
-									</PropertyList>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="SpiritChrysanthaTheme" ID="{8F5C649E-7EC2-4C79-8B24-F9213CCF3AF8}" ShortID="46487380">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
@@ -381,122 +1019,124 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Spooky_MyrtleTheme_Draft_1" ID="{7FE8055B-7674-426E-BFEB-189B01299834}" ShortID="928012218">
+										<MusicSegment Name="Spirit_ChrysanthaTheme" ID="{5CEF03F1-AEBA-46E5-9A21-9536E0C18930}" ShortID="436259395">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="57856.0090702948"/>
+												<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+												<Property Name="Tempo" Type="Real64" Value="125"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Spooky_MyrtleTheme_Draft_1" ID="{D8529740-832E-4546-BDE9-9FBD662C22FD}">
-													<Language>SFX</Language>
-													<AudioFile>Spooky_MyrtleTheme_Draft_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="520901426"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<MusicTrack Name="Spirit_ChrysanthaTheme" ID="{7AAD8664-AEAD-4DF7-AA04-F8E5BAFB7D6C}" ShortID="558917648">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Spirit_ChrysanthaTheme" ID="{60A53D5D-ED82-4836-8312-F0CEB78EDC6C}">
+															<Language>SFX</Language>
+															<AudioFile>Spirit_ChrysanthaTheme.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="253288252"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{A5A73762-7DEE-4DC1-AC0D-A107F8548D7F}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{5BF70660-8ACF-4124-9257-A9C92E87F351}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Spirit_ChrysanthaTheme" ID="{EFD9BD31-1215-49B9-9C48-AA63470C0E09}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="57856.0090702948"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="3057.06041617489"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Spirit_ChrysanthaTheme" ID="{60A53D5D-ED82-4836-8312-F0CEB78EDC6C}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
 											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{34A67875-3F22-4296-96DF-65E36B62346F}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
 											<ObjectLists>
-												<ObjectList Name="Sequences">
+												<ObjectList Name="Cues">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{9A347B49-83E8-4111-A66A-FC97CF1BD95D}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="Spooky_MyrtleTheme_Draft_1" ID="{9966FF1C-95CF-4C00-815A-A02FF8DFED81}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="78712.0861678004"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="Spooky_MyrtleTheme_Draft_1" ID="{D8529740-832E-4546-BDE9-9FBD662C22FD}"/>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
+															<MusicCue Name="Entry Cue" ID="{0DAF4E6B-3A09-4165-A5BB-DC40462D3637}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{5FA21FA6-0865-4C5F-B2EB-149745CEECA2}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="53760"/>
+																</PropertyList>
+															</MusicCue>
 														</Local>
 													</Reference>
 												</ObjectList>
 											</ObjectLists>
-										</MusicTrack>
+										</MusicSegment>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<Reference>
-												<Local>
-													<MusicCue Name="Entry Cue" ID="{69A4F9CB-3A68-40AE-A0CC-DD2242529E86}"/>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicCue Name="Exit Cue" ID="{80785C20-0B29-4964-B8AC-7020448A8D4B}">
-														<PropertyList>
-															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="72000"/>
-														</PropertyList>
-													</MusicCue>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
-							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{E8EE67CA-F8EA-4614-A71C-5D0808EC7092}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{61C43853-1BF8-4D54-B4EC-E3BF38F18B0A}">
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{180AEA1E-1431-4EEE-B7D7-C64BF34E2011}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{D7D3FB74-2927-4562-9A3D-E607316B1C85}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
 											<TransitionInfo/>
 										</MusicTransition>
-									</ChildrenList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<ObjectLists/>
-							<Playlist>
-								<MusicPlaylistItem Name="" ID="{999B1EBC-AB61-4936-8E3F-3C7D2D10E0FD}" ShortID="437786121">
-									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="0"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{D87E8522-E074-4904-A1B2-E8C4D38F88AE}" ShortID="434210530">
+									</TransitionList>
+									<ObjectLists/>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{787E25EF-F41B-4A1D-9EDD-A134D6BDAB1F}" ShortID="661844336">
 											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
-											<SegmentRef Name="Spooky_MyrtleTheme_Draft_1" ID="{CD9303F9-6399-461C-AE7F-7703A714D034}"/>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{5BC8DBB1-9B48-4510-943D-178CF0902C11}" ShortID="883720738">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Spirit_ChrysanthaTheme" ID="{5CEF03F1-AEBA-46E5-9A21-9536E0C18930}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
 										</MusicPlaylistItem>
-									</ChildrenList>
-								</MusicPlaylistItem>
-							</Playlist>
-						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="ChrysanthaTheme" ID="{DA6B1696-8ACE-4677-ADEF-B11ED89FE6AE}" ShortID="722908297">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicSegment Name="Spooky_ChrysanthaTheme_Draft_1" ID="{CF8B15BF-0D7F-42E1-AEDA-06F827E14CE1}" ShortID="909757053">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="78706.0997732426"/>
-									</PropertyList>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="SpiritJowanTheme" ID="{F63195AE-7224-425C-BA47-B9E68438C845}" ShortID="43523960">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
@@ -506,122 +1146,124 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Spooky_ChrysanthaTheme_Draft_1" ID="{1455628B-D3D2-4966-9B87-544498B05C01}" ShortID="979733295">
+										<MusicSegment Name="Spirit_JowanTheme" ID="{6AD651A7-78DE-4942-8370-A8DF1E4149F1}" ShortID="783063483">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="57856.0090702948"/>
+												<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+												<Property Name="Tempo" Type="Real64" Value="125"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Spooky_ChrysanthaTheme_Draft_1" ID="{0ED9086B-C5B8-4480-8E7D-64F63F1BF221}">
-													<Language>SFX</Language>
-													<AudioFile>Spooky_ChrysanthaTheme_Draft_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="294587160"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<MusicTrack Name="Spirit_JowanTheme" ID="{1E907F42-1EC3-4E23-9E00-16C54F0DE0F6}" ShortID="860105749">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Spirit_JowanTheme" ID="{DA243178-4CED-44FB-96D3-E7FE3EFE1403}">
+															<Language>SFX</Language>
+															<AudioFile>Spirit_JowanTheme.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="860405681"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{00D5F535-3B54-40F5-BA0E-8332C6393074}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{7FE0FEA3-A333-4488-89E6-4BB5EE359261}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Spirit_JowanTheme" ID="{3FF0B31F-6F62-42E0-A0D6-1C1DA0417C31}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="57856.0090702948"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="3650.22139244762"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Spirit_JowanTheme" ID="{DA243178-4CED-44FB-96D3-E7FE3EFE1403}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
 											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{6D599AD4-F9BC-424E-8109-2680D3914920}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
 											<ObjectLists>
-												<ObjectList Name="Sequences">
+												<ObjectList Name="Cues">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{F2DAB58E-C5E2-4218-9820-519FB3269754}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="Spooky_ChrysanthaTheme_Draft_1" ID="{29508F35-4E68-4D1B-B1C1-9B0A80818B33}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="78706.0997732426"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutDuration" Type="Real64" Value="6522.60495358364"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="Spooky_ChrysanthaTheme_Draft_1" ID="{0ED9086B-C5B8-4480-8E7D-64F63F1BF221}"/>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
+															<MusicCue Name="Entry Cue" ID="{40C4A1D8-DA47-4BFE-8426-8910B1623D92}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{082CF215-AA15-41F0-B5D8-B1DC1F98ECE4}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="53760"/>
+																</PropertyList>
+															</MusicCue>
 														</Local>
 													</Reference>
 												</ObjectList>
 											</ObjectLists>
-										</MusicTrack>
+										</MusicSegment>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<Reference>
-												<Local>
-													<MusicCue Name="Entry Cue" ID="{99BA4808-274A-4218-A57A-FEA58E73CB46}"/>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicCue Name="Exit Cue" ID="{78CF24FB-953E-4610-AA93-E5A586F6B4FD}">
-														<PropertyList>
-															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="72000"/>
-														</PropertyList>
-													</MusicCue>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
-							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{F958710E-0819-4490-B532-F91DC7A6E5FA}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{62249A8D-2517-46C9-A1CF-C5721C16BE88}">
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{A3FB2A4C-EF31-4601-AAA5-178323159871}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{2BD04BA8-8889-4228-91BC-B8C0104CDDE4}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
 											<TransitionInfo/>
 										</MusicTransition>
-									</ChildrenList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<ObjectLists/>
-							<Playlist>
-								<MusicPlaylistItem Name="" ID="{E9F01C87-EF95-4AD6-A87E-655DAF24348B}" ShortID="13326015">
-									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="0"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{0EC21DB4-786E-49D1-81BB-915660356594}" ShortID="355636472">
+									</TransitionList>
+									<ObjectLists/>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{79197C6A-4257-4FA9-9914-CE1EA192A483}" ShortID="269651989">
 											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
-											<SegmentRef Name="Spooky_ChrysanthaTheme_Draft_1" ID="{CF8B15BF-0D7F-42E1-AEDA-06F827E14CE1}"/>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{D682BAE7-BA74-4393-ADBA-40C66F2120E4}" ShortID="968388074">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Spirit_JowanTheme" ID="{6AD651A7-78DE-4942-8370-A8DF1E4149F1}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
 										</MusicPlaylistItem>
-									</ChildrenList>
-								</MusicPlaylistItem>
-							</Playlist>
-						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="VTheme" ID="{9600BF0F-2568-4D76-9581-5AC835574EE0}" ShortID="955613971">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicSegment Name="Spooky_VTheme_Draft_1" ID="{56A5F5A9-9DCF-4A85-A6BD-967982C277A9}" ShortID="273974179">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="78706.0997732426"/>
-									</PropertyList>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="SpiritMyrtleTheme" ID="{8089513B-63C2-491B-BD85-08D50CCA815A}" ShortID="73724397">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
@@ -631,233 +1273,125 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Spooky_VTheme_Draft_1" ID="{AF1B97D6-C9E1-47D2-8B37-C6E308B6B24D}" ShortID="503801282">
+										<MusicSegment Name="Spirit_MyrtleTheme" ID="{23564E84-A8E2-4E04-9B88-74F080234628}" ShortID="722051134">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="57856.0090702948"/>
+												<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+												<Property Name="Tempo" Type="Real64" Value="125"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Spooky_VTheme_Draft_1" ID="{74106915-E47B-421C-876B-84EE7344D02A}">
-													<Language>SFX</Language>
-													<AudioFile>Spooky_VTheme_Draft_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="11164527"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<MusicTrack Name="Spirit_MyrtleTheme" ID="{EA650D4B-0890-49F0-A7B1-6457E1CC8505}" ShortID="219483768">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Spirit_MyrtleTheme" ID="{60A2A6E0-446D-4C43-A3C5-5AC89577357C}">
+															<Language>SFX</Language>
+															<AudioFile>Spirit_MyrtleTheme.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="596672924"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{251DEA70-7A78-4654-B70E-98E060E713FA}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{CAF9DB46-B2B5-4028-8D82-4DFC1E737D1C}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Spirit_MyrtleTheme" ID="{3933F7ED-984A-492C-9328-4AC703B88FE2}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="57856.0090702948"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="3650.22139244762"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Spirit_MyrtleTheme" ID="{60A2A6E0-446D-4C43-A3C5-5AC89577357C}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
 											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{28648FD7-C79D-45C1-A298-6F6B30A32CD9}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
 											<ObjectLists>
-												<ObjectList Name="Sequences">
+												<ObjectList Name="Cues">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{FAB7B4F7-8442-49ED-A67D-D97291D10107}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="Spooky_VTheme_Draft_1" ID="{6D1DFED4-C4B8-4F44-A835-68275A019B6E}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="78706.0997732426"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutDuration" Type="Real64" Value="6087.76462334474"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="Spooky_VTheme_Draft_1" ID="{74106915-E47B-421C-876B-84EE7344D02A}"/>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
+															<MusicCue Name="Entry Cue" ID="{A5EF193B-B4BC-4769-B4F4-0AFC1B300199}"/>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{0BAF7E4F-1AE6-4FD5-89DA-312F91FFD158}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="53760"/>
+																</PropertyList>
+															</MusicCue>
 														</Local>
 													</Reference>
 												</ObjectList>
 											</ObjectLists>
-										</MusicTrack>
+										</MusicSegment>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<Reference>
-												<Local>
-													<MusicCue Name="Entry Cue" ID="{80EE262D-3414-41D3-9499-2191D003DA35}"/>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicCue Name="Exit Cue" ID="{B5F989F5-D5D3-4424-8C11-67E221168D51}">
-														<PropertyList>
-															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="72000"/>
-														</PropertyList>
-													</MusicCue>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
-							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{29B60BB4-8DA9-4797-BD31-4D34D6081C1A}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{1552A90B-D423-48EE-BA77-D94D00B57B99}">
-											<TransitionInfo/>
-										</MusicTransition>
-									</ChildrenList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<ObjectLists/>
-							<Playlist>
-								<MusicPlaylistItem Name="" ID="{23E75C49-6DD5-45EB-80E0-1FCC97343543}" ShortID="986044236">
-									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="0"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{411E0271-5A9F-48DF-8022-DAAEE8E35358}" ShortID="523470675">
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{13B890BD-720C-4136-A494-AFF0D6CA2D5B}">
 											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<SegmentRef Name="Spooky_VTheme_Draft_1" ID="{56A5F5A9-9DCF-4A85-A6BD-967982C277A9}"/>
-										</MusicPlaylistItem>
-									</ChildrenList>
-								</MusicPlaylistItem>
-							</Playlist>
-						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="JowanTheme" ID="{C2470743-3A44-4638-BC20-369535D52364}" ShortID="825417119">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicSegment Name="Spooky_JowanTheme_Draft_1" ID="{DD7443BD-2528-4E03-9570-CB41554363B2}" ShortID="184118223">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="78706.0997732426"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Spooky_JowanTheme_Draft_1" ID="{B47C8B33-C77B-4923-83DD-D22F37171462}" ShortID="652542705">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
-												</Reference>
-											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Spooky_JowanTheme_Draft_1" ID="{BAD3186C-4AEB-415F-8F28-5B164D0C849E}">
-													<Language>SFX</Language>
-													<AudioFile>Spooky_JowanTheme_Draft_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="339010008"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{958EE9A4-69F6-4F1A-9D0A-CDD96A69F4ED}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
+												<MusicTransition Name="Transition" ID="{B037B725-14C9-44C4-BFDB-05B68DB29963}">
 													<TransitionInfo/>
 												</MusicTransition>
-											</TransitionList>
-											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<Reference>
-														<Local>
-															<MusicTrackSequence Name="" ID="{AF7BA9EA-2348-44FA-A85D-1ABF9CD82033}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="Spooky_JowanTheme_Draft_1" ID="{1D52E2FF-5D92-42BE-9C92-F3AA141F46EE}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="78706.0997732426"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutDuration" Type="Real64" Value="5652.92429310583"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="Spooky_JowanTheme_Draft_1" ID="{BAD3186C-4AEB-415F-8F28-5B164D0C849E}"/>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-										</MusicTrack>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<Reference>
-												<Local>
-													<MusicCue Name="Entry Cue" ID="{CCA6E13C-72DE-420C-95A4-9F4B5306493A}"/>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicCue Name="Exit Cue" ID="{51D9CF8F-F9F6-43D2-80E2-982549852A50}">
-														<PropertyList>
-															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="72000"/>
-														</PropertyList>
-													</MusicCue>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
-							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{4A5C9D94-5938-4AD9-BCF1-03801680E8A5}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{BB197ACD-F651-42B8-8091-394FDEE6A9EE}">
+											</ChildrenList>
 											<TransitionInfo/>
 										</MusicTransition>
-									</ChildrenList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<ObjectLists/>
-							<Playlist>
-								<MusicPlaylistItem Name="" ID="{176840A4-4BAF-48ED-98FD-FCB8D31A71DF}" ShortID="852128174">
-									<PropertyList>
-										<Property Name="LoopCount" Type="int16" Value="0"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{A28051D1-4D90-4C5F-86A4-605B0E3383BF}" ShortID="744903744">
+									</TransitionList>
+									<ObjectLists/>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{D9A11F03-BF20-40FB-BAD3-DBB566D44622}" ShortID="1026038165">
 											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
-											<SegmentRef Name="Spooky_JowanTheme_Draft_1" ID="{DD7443BD-2528-4E03-9570-CB41554363B2}"/>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{36115BD8-6DCF-4752-9EFF-8868D65F4C1E}" ShortID="487176737">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Spirit_MyrtleTheme" ID="{23564E84-A8E2-4E04-9B88-74F080234628}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
 										</MusicPlaylistItem>
-									</ChildrenList>
-								</MusicPlaylistItem>
-							</Playlist>
-						</MusicPlaylistContainer>
+									</Playlist>
+								</MusicPlaylistContainer>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{77D7673D-DC32-4D61-A9A3-98A33175E9E7}">
@@ -1070,7 +1604,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="MainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+											<ObjectRef Name="HumanMainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="KenTheme" ID="{FD7702CD-F6D5-47EA-9A9B-F663C1C3FE7B}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
@@ -1108,7 +1642,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="MainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+											<ObjectRef Name="HumanMainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="MyrtleTheme" ID="{C0963D23-842B-4790-AF74-A953A1899C77}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
@@ -1146,7 +1680,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="MainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+											<ObjectRef Name="HumanMainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="ChrysanthaTheme" ID="{DA6B1696-8ACE-4677-ADEF-B11ED89FE6AE}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
@@ -1184,7 +1718,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="MainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+											<ObjectRef Name="HumanMainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="JowanTheme" ID="{C2470743-3A44-4638-BC20-369535D52364}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
@@ -1222,7 +1756,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="MainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+											<ObjectRef Name="HumanMainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="VTheme" ID="{9600BF0F-2568-4D76-9581-5AC835574EE0}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
@@ -1248,6 +1782,308 @@
 										</DestinationFadeIn>
 									</TransitionInfo>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{641351EB-79C6-44B0-80FC-8B8924E47889}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="SpiritMyrtleTheme" ID="{8089513B-63C2-491B-BD85-08D50CCA815A}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="SpiritMainTheme" ID="{8DB9E953-E0A3-424D-A29B-0E3C3AD09234}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{9EDD305E-2B28-4EB1-811D-0743CF0690F3}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{605C3309-FAA8-4CE8-9BA3-01A9CEF1BE2A}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{2FF05A50-C322-4F6D-8D21-E0CA3BE172C9}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="SpiritJowanTheme" ID="{F63195AE-7224-425C-BA47-B9E68438C845}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="SpiritMainTheme" ID="{8DB9E953-E0A3-424D-A29B-0E3C3AD09234}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{127629DF-498F-41B5-B6B5-AAB33F801F02}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{6F22BD04-C69B-42A1-AF25-AC375691ECA6}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{A1274E6E-C670-43EA-9C56-0CA1F97FAB5C}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="SpiritChrysanthaTheme" ID="{8F5C649E-7EC2-4C79-8B24-F9213CCF3AF8}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="SpiritMainTheme" ID="{8DB9E953-E0A3-424D-A29B-0E3C3AD09234}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{3FEC9F7E-FFF8-41F7-A430-B3B6C0DD2603}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{17024518-C170-4459-B7AE-A3553FB0B83B}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{0B88DB50-BFE2-4593-8252-3AA1B62B6914}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="SpiritMainTheme" ID="{8DB9E953-E0A3-424D-A29B-0E3C3AD09234}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="SpiritChrysanthaTheme" ID="{8F5C649E-7EC2-4C79-8B24-F9213CCF3AF8}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{97B57DD9-A2CF-463B-8E75-D2A43B8CFBEC}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{5346C96D-3D77-40EC-97FD-260BBE4407F6}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{6E615A9D-2408-4BBB-B431-88A716B20EC1}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="SpiritMainTheme" ID="{8DB9E953-E0A3-424D-A29B-0E3C3AD09234}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="SpiritJowanTheme" ID="{F63195AE-7224-425C-BA47-B9E68438C845}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{32AF0703-E66C-454C-9C41-DD1E5EC8EFDA}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{43CF95CA-8D9C-4EBF-B2E0-FDF5557A15CD}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{3C3E1FF2-C78C-4234-B6D4-F7A152FFB8A5}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="SpiritMainTheme" ID="{8DB9E953-E0A3-424D-A29B-0E3C3AD09234}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="SpiritMyrtleTheme" ID="{8089513B-63C2-491B-BD85-08D50CCA815A}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{F43DDC03-4047-455E-9297-63BA52A7BB46}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{DB10CD30-4660-4FCF-BBCB-7B5E8C50DDD3}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{39F4A5A2-379B-430D-BE63-593D5955BB07}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="3"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="SpiritMainTheme" ID="{8DB9E953-E0A3-424D-A29B-0E3C3AD09234}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Spooky_MainTheme_Draft_1" ID="{577C84CD-19AF-4B54-93A2-DADBEAFBF862}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<JumpToPlaylistItemRef Name="" ID="{D38532CA-A985-4525-BEA2-0A73B32663CF}"/>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{B4BF4AED-E84E-4CEB-A0AD-B30B28276BE7}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{2A8A66AC-40F6-472E-A123-C2291280527F}">
+												<PropertyList>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{0CE70C92-3FC2-4A01-8560-C77E20284E61}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="HumanMainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="SpiritMainTheme" ID="{8DB9E953-E0A3-424D-A29B-0E3C3AD09234}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{94FCC17B-3AD2-4ABD-AF9B-4ED73878B69E}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{7372C1AE-3D84-46AF-8363-21F0F9D4EB4C}">
+												<PropertyList>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
@@ -1259,15 +2095,15 @@
 					<EntryList>
 						<Entry>
 							<Path>
-								<PathElementRef Name="GeneralShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
+								<PathElementRef Name="HumanShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="MainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}" Platform="Linked"/>
+								<AudioNodeRef Name="HumanMainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Ken" ID="{8582E751-3238-4044-8FC1-7B363AD5C8FD}"/>
+								<PathElementRef Name="HumanKen" ID="{8582E751-3238-4044-8FC1-7B363AD5C8FD}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="KenTheme" ID="{FD7702CD-F6D5-47EA-9A9B-F663C1C3FE7B}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}" Platform="Linked"/>
@@ -1275,7 +2111,7 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Myrtle" ID="{75367050-8BA8-4098-8405-B87343B50AFE}"/>
+								<PathElementRef Name="HumanMyrtle" ID="{75367050-8BA8-4098-8405-B87343B50AFE}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="MyrtleTheme" ID="{C0963D23-842B-4790-AF74-A953A1899C77}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}" Platform="Linked"/>
@@ -1283,7 +2119,7 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Chrysantha" ID="{D03D9F47-6A49-4401-8301-38E5575D83BB}"/>
+								<PathElementRef Name="HumanCrysantha" ID="{D03D9F47-6A49-4401-8301-38E5575D83BB}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="ChrysanthaTheme" ID="{DA6B1696-8ACE-4677-ADEF-B11ED89FE6AE}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}" Platform="Linked"/>
@@ -1291,7 +2127,7 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="Jowan" ID="{810468E1-0368-4357-A3E7-7E4E580FBA7C}"/>
+								<PathElementRef Name="HumanJowan" ID="{810468E1-0368-4357-A3E7-7E4E580FBA7C}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="JowanTheme" ID="{C2470743-3A44-4638-BC20-369535D52364}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}" Platform="Linked"/>
@@ -1299,7 +2135,7 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="V" ID="{22446ED2-264A-41EF-A1E5-D87CABBAFD19}"/>
+								<PathElementRef Name="HumanV" ID="{22446ED2-264A-41EF-A1E5-D87CABBAFD19}"/>
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="VTheme" ID="{9600BF0F-2568-4D76-9581-5AC835574EE0}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}" Platform="Linked"/>
@@ -1311,6 +2147,38 @@
 							</Path>
 							<AudioNodeInfo>
 								<NoObject Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="SpiritStore" ID="{9E5BE5B5-6E95-4EB6-906E-72FC6A53811F}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="SpiritMainTheme" ID="{8DB9E953-E0A3-424D-A29B-0E3C3AD09234}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="SpiritChrysantha" ID="{1D63F856-59CE-4A2F-9632-0210CFCCBB0E}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="SpiritChrysanthaTheme" ID="{8F5C649E-7EC2-4C79-8B24-F9213CCF3AF8}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="SpiritJowan" ID="{C319AC7B-0335-4EFD-939F-379BCC26CA7E}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="SpiritJowanTheme" ID="{F63195AE-7224-425C-BA47-B9E68438C845}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="SpiritMyrtle" ID="{179D2889-84AD-452B-AADC-6B55C0E518E8}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="SpiritMyrtleTheme" ID="{8089513B-63C2-491B-BD85-08D50CCA815A}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Music Events" ID="{EAC3DD18-5574-49EF-8822-301CDEE1C86E}" ShortID="27379024">
 					<ChildrenList>
-						<Event Name="Main_Theme" ID="{1A0763CA-9E64-4680-9310-131230902572}">
+						<Event Name="Human_Store" ID="{1A0763CA-9E64-4680-9310-131230902572}">
 							<ChildrenList>
 								<Action Name="" ID="{44953E6A-5979-4842-BD52-3BFC550FCD2D}" ShortID="471229695">
 									<PropertyList>
@@ -13,13 +13,13 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="GeneralShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+											<ObjectRef Name="HumanShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Ken" ID="{A9661CD6-DA4E-43F4-AB6F-E7DC7D2A67B3}">
+						<Event Name="Human_Ken" ID="{A9661CD6-DA4E-43F4-AB6F-E7DC7D2A67B3}">
 							<ChildrenList>
 								<Action Name="" ID="{ABF6B7E8-121D-487F-895C-9969EB656B41}" ShortID="287438948">
 									<PropertyList>
@@ -27,7 +27,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Ken" ID="{8582E751-3238-4044-8FC1-7B363AD5C8FD}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+											<ObjectRef Name="HumanKen" ID="{8582E751-3238-4044-8FC1-7B363AD5C8FD}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -48,13 +48,13 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="GeneralShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+											<ObjectRef Name="HumanShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Myrttle" ID="{490D8A68-088D-413B-AACB-8E2B7E804CA2}">
+						<Event Name="Human_Myrtle" ID="{490D8A68-088D-413B-AACB-8E2B7E804CA2}">
 							<ChildrenList>
 								<Action Name="" ID="{2E975959-17AA-42EE-B7B2-6C7389A64CE6}" ShortID="891351315">
 									<PropertyList>
@@ -62,13 +62,13 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Myrtle" ID="{75367050-8BA8-4098-8405-B87343B50AFE}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+											<ObjectRef Name="HumanMyrtle" ID="{75367050-8BA8-4098-8405-B87343B50AFE}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="V" ID="{F40A95F7-2B59-4CA2-8A5D-B09772D855D4}">
+						<Event Name="Human_V" ID="{F40A95F7-2B59-4CA2-8A5D-B09772D855D4}">
 							<ChildrenList>
 								<Action Name="" ID="{393E41AC-D7EF-43E0-B1A8-515F4860CE88}" ShortID="503836820">
 									<PropertyList>
@@ -76,13 +76,13 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="V" ID="{22446ED2-264A-41EF-A1E5-D87CABBAFD19}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+											<ObjectRef Name="HumanV" ID="{22446ED2-264A-41EF-A1E5-D87CABBAFD19}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Chrysantha" ID="{4EC72FB5-13F0-4CB9-80F1-17D13D5568EF}">
+						<Event Name="Human_Chrysantha" ID="{4EC72FB5-13F0-4CB9-80F1-17D13D5568EF}">
 							<ChildrenList>
 								<Action Name="" ID="{71A9C9D0-2819-4935-8E05-426541EA3711}" ShortID="615310218">
 									<PropertyList>
@@ -90,13 +90,13 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Chrysantha" ID="{D03D9F47-6A49-4401-8301-38E5575D83BB}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+											<ObjectRef Name="HumanCrysantha" ID="{D03D9F47-6A49-4401-8301-38E5575D83BB}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Jowan" ID="{C0A07559-FDF3-4C18-8DF6-7E282EEB83B2}">
+						<Event Name="Human_Jowan" ID="{C0A07559-FDF3-4C18-8DF6-7E282EEB83B2}">
 							<ChildrenList>
 								<Action Name="" ID="{F279866A-6AB9-4E2D-9628-ED52B559BD0E}" ShortID="717024816">
 									<PropertyList>
@@ -104,7 +104,63 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Jowan" ID="{810468E1-0368-4357-A3E7-7E4E580FBA7C}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+											<ObjectRef Name="HumanJowan" ID="{810468E1-0368-4357-A3E7-7E4E580FBA7C}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Spirit_Chrysantha" ID="{FE853D0A-6BD2-4F6E-ADA1-40223FD8A41F}">
+							<ChildrenList>
+								<Action Name="" ID="{F3382049-68A7-469B-9CFA-3643F8C61B62}" ShortID="1001130483">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpiritChrysantha" ID="{1D63F856-59CE-4A2F-9632-0210CFCCBB0E}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Spirit_Jowan" ID="{EEB54F43-CB9C-4870-9B17-01FB4DCE45B1}">
+							<ChildrenList>
+								<Action Name="" ID="{A25698D8-7815-4508-BC4F-02062563DA8D}" ShortID="825953984">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpiritJowan" ID="{C319AC7B-0335-4EFD-939F-379BCC26CA7E}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Spirit_Store" ID="{4E40E017-7FAD-4B19-865D-FB524030F341}">
+							<ChildrenList>
+								<Action Name="" ID="{DFA1D53E-7CFE-446E-9F28-AA594E0EAC19}" ShortID="604327004">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpiritStore" ID="{9E5BE5B5-6E95-4EB6-906E-72FC6A53811F}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Spirit_Myrtle" ID="{C207CCF1-E10A-4B6D-A227-CF5E73FDC888}">
+							<ChildrenList>
+								<Action Name="" ID="{9D015565-DB58-414F-A049-0DB543D0C6B1}" ShortID="100173581">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpiritMyrtle" ID="{179D2889-84AD-452B-AADC-6B55C0E518E8}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

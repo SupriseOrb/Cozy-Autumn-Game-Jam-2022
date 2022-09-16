@@ -6,12 +6,16 @@
 				<StateGroup Name="Gameplay" ID="{5FF2EE3C-97EE-4CA1-8FB4-8C8C9FB574C4}">
 					<ChildrenList>
 						<State Name="None" ID="{18CA4891-A2DE-4614-B34D-DFBDA194D10E}"/>
-						<State Name="GeneralShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
-						<State Name="Ken" ID="{8582E751-3238-4044-8FC1-7B363AD5C8FD}"/>
-						<State Name="Myrtle" ID="{75367050-8BA8-4098-8405-B87343B50AFE}"/>
-						<State Name="V" ID="{22446ED2-264A-41EF-A1E5-D87CABBAFD19}"/>
-						<State Name="Jowan" ID="{810468E1-0368-4357-A3E7-7E4E580FBA7C}"/>
-						<State Name="Chrysantha" ID="{D03D9F47-6A49-4401-8301-38E5575D83BB}"/>
+						<State Name="HumanShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
+						<State Name="HumanKen" ID="{8582E751-3238-4044-8FC1-7B363AD5C8FD}"/>
+						<State Name="HumanMyrtle" ID="{75367050-8BA8-4098-8405-B87343B50AFE}"/>
+						<State Name="HumanV" ID="{22446ED2-264A-41EF-A1E5-D87CABBAFD19}"/>
+						<State Name="HumanJowan" ID="{810468E1-0368-4357-A3E7-7E4E580FBA7C}"/>
+						<State Name="HumanCrysantha" ID="{D03D9F47-6A49-4401-8301-38E5575D83BB}"/>
+						<State Name="SpiritStore" ID="{9E5BE5B5-6E95-4EB6-906E-72FC6A53811F}"/>
+						<State Name="SpiritChrysantha" ID="{1D63F856-59CE-4A2F-9632-0210CFCCBB0E}"/>
+						<State Name="SpiritMyrtle" ID="{179D2889-84AD-452B-AADC-6B55C0E518E8}"/>
+						<State Name="SpiritJowan" ID="{C319AC7B-0335-4EFD-939F-379BCC26CA7E}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

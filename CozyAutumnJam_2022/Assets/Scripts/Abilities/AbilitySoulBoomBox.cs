@@ -31,7 +31,10 @@ public class AbilitySoulBoomBox : MonoBehaviour, IAbility
                     if(c.TryGetComponent(out ItemTagScript interactable))
                     {
                         //Only one character, set their bool variable to false
-                        //c.gameObject.GetComponent<CharacterScriptableObject>().IsGibberish = false;
+                        if(c.gameObject.GetComponent<ItemTagScript>().IsAnimatronic())
+                        {
+                            c.GetComponent<AnimatronicScript>().ActivateAnimatronic();
+                        }
                         animatronicCount++;   
                     }
                  else {}

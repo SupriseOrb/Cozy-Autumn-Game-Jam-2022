@@ -8,30 +8,51 @@ public class AbilitySoulBoomBox : MonoBehaviour, IAbility
     [SerializeField] private float _boomBoxRadius;
     private Vector3 _originalPos;
     private Vector3 _offset;
+    private bool _isAvailable = true;
+    [SerializeField] private float _abilityCoolDown = 1f;
 
     public void ActivateAbility()
     {
-        _originalPos = PlayerScript.Instance.transform.position;
-        _offset = PlayerScript.Instance.transform.forward;
-        Collider2D[] allColliders = Physics2D.OverlapCircleAll(_originalPos + _offset, _boomBoxRadius);
-        int runeCount = 0;
-        if (allColliders != null)
+        if (_isAvailable == false)
         {
-            foreach (Collider2D c in allColliders)
+            Debug.Log("Boom Box Ability on cooldown!");
+            return;
+        }
+        else
+        {
+            _originalPos = PlayerScript.Instance.transform.position;
+            _offset = PlayerScript.Instance.getPlayerDirection();
+            Collider2D[] allColliders = Physics2D.OverlapCircleAll(_originalPos + _offset, _boomBoxRadius);
+            int animatronicCount = 0;
+            if (allColliders.Length > 0)
             {
-                if(c.TryGetComponent(out ItemTagScript interactable))
+                foreach (Collider2D c in allColliders)
                 {
-                    //Only one character, set their bool variable to false
-                    //c.gameObject.GetComponent<CharacterScriptableObject>().IsGibberish = false;
-                    runeCount++;   
+                    if(c.TryGetComponent(out ItemTagScript interactable))
+                    {
+                        //Only one character, set their bool variable to false
+                        //c.gameObject.GetComponent<CharacterScriptableObject>().IsGibberish = false;
+                        animatronicCount++;   
+                    }
+                 else {}
                 }
-                else {}
+            }
+            if (animatronicCount == 0)
+            {
+                //No animatronics found
+                Debug.Log("No animatronics found!");
+            }
+            else
+            {
+                StartCoroutine(StartCooldown());
             }
         }
-        if (runeCount == 0)
-        {
-            //No runes found
-            Debug.Log("No runes found!");
-        }
+    }
+
+    IEnumerator StartCooldown()
+    {
+        _isAvailable = false;
+        yield return new WaitForSeconds (_abilityCoolDown);
+        _isAvailable = true;
     }
 }

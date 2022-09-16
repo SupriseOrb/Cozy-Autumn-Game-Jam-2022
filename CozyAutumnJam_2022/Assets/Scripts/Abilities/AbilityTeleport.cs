@@ -9,13 +9,13 @@ public class AbilityTeleport : MonoBehaviour, IAbility
     [SerializeField] private float _teleportRadius;
     private Vector3 _originalPos;
     private bool inHumanWorld = true;
-    private bool _isUp = true;
+    private bool _isAvailable = true;
     [SerializeField] private float teleportReturnDelay = .5f;
     [SerializeField] private float _abilityCoolDown = 5f;
 
     public void ActivateAbility()
     {
-        if (_isUp == false)
+        if (_isAvailable == false)
         {
             Debug.Log("Ability on cooldown!");
             return;
@@ -34,13 +34,13 @@ public class AbilityTeleport : MonoBehaviour, IAbility
                     Debug.Log("Hit: " + obstacle.gameObject.name);
                 }
                 StartCoroutine(TeleportBackDelay());
+                StartCoroutine(StartCooldown());
             }
             else
             {
                 PlayerScript.Instance.transform.position = (inHumanWorld)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist); 
             }
             inHumanWorld = !inHumanWorld;
-            StartCoroutine(StartCooldown());
         }
     }
 
@@ -53,8 +53,8 @@ public class AbilityTeleport : MonoBehaviour, IAbility
 
     IEnumerator StartCooldown()
     {
-        _isUp = false;
+        _isAvailable = false;
         yield return new WaitForSeconds (_abilityCoolDown);
-        _isUp = true;
+        _isAvailable = true;
     }
 }

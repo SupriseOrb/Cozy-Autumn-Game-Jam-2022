@@ -11,28 +11,46 @@ public class AbilitySlimeTrail : MonoBehaviour, IAbility
     [SerializeField] private float _distance = 200;
     private RaycastHit2D _rayCastHit;
     private GameObject _hitGO;
+    private bool _isAvailable = true;
+    [SerializeField] private float _abilityCoolDown = 1f;
 
     public void ActivateAbility()
     {
-        _originalPos = PlayerScript.Instance.transform.position;
-        _originalDir = PlayerScript.Instance.getPlayerDirection();
-        _rayCastHit = Physics2D.Raycast(_originalPos, _originalDir, _distance);
-        Debug.DrawRay(_originalPos, _originalDir * _distance, Color.red, 1);
-        if(_rayCastHit.transform != null)
+        if (_isAvailable == false)
         {
-            _hitGO = _rayCastHit.transform.gameObject;
-            if (_hitGO.TryGetComponent(out ItemTagScript interactable))
+            Debug.Log("Slime Trail Ability on cooldown!");
+            return;
+        }
+        else
+        {
+            _originalPos = PlayerScript.Instance.transform.position;
+            _originalDir = PlayerScript.Instance.getPlayerDirection();
+            _rayCastHit = Physics2D.Raycast(_originalPos, _originalDir, _distance);
+            Debug.DrawRay(_originalPos, _originalDir * _distance, Color.red, 1);
+            if(_rayCastHit.transform != null)
             {
-                Debug.Log("hitsomething");
-                if(_hitGO.GetComponent<ItemTagScript>().IsPushable())
+                _hitGO = _rayCastHit.transform.gameObject;
+                if (_hitGO.TryGetComponent(out ItemTagScript interactable))
                 {
-                    Debug.Log("Hit a pushabke");
-                    _hitGO.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-                    _hitGO.GetComponent<Rigidbody2D>().AddForce(_originalDir * _speed);
+                    Debug.Log("hit something");
+                    if(_hitGO.GetComponent<ItemTagScript>().IsPushable())
+                    {
+                        Debug.Log("Hit a pushabLe");
+                        _hitGO.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+                        _hitGO.GetComponent<Rigidbody2D>().AddForce(_originalDir * _speed);
+                        StartCoroutine(StartCooldown());
+                    }
+                    //If collides into something specific (probably with interface tag), do x?
+                    //If not, reset position?
                 }
-            //If collides into something specific (probably with interface tag), do x?
-            //If not, reset position?
             }
         }
+    }
+
+    IEnumerator StartCooldown()
+    {
+        _isAvailable = false;
+        yield return new WaitForSeconds (_abilityCoolDown);
+        _isAvailable = true;
     }
 }

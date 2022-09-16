@@ -9,6 +9,10 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
     [SerializeField] private float _runeRadius;
     private Vector3 _originalPos;
     private Vector3 _offset;
+    private bool _isTranslateAvailable = true;
+    private bool _isRuneAvailable = true;
+    [SerializeField] private float _abilityTranslateCooldown = 1f;
+    [SerializeField] private float _abilityRuneCooldown = 3f;
 
     public void ActivateAbility()
     {
@@ -18,26 +22,38 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
 
     private void Translate()
     {
-        _originalPos = PlayerScript.Instance.transform.position;
-        _offset = PlayerScript.Instance.transform.forward;
-        Collider2D[] allColliders = Physics2D.OverlapCircleAll(_originalPos + _offset, _translateRadius);
-        int charCount = 0;
-
-        if (allColliders != null)
+        if (_isTranslateAvailable == false)
         {
-            foreach (Collider2D c in allColliders)
+            Debug.Log("Translate Ability on cooldown!");
+            return;
+        }
+        else
+        {
+            _originalPos = PlayerScript.Instance.transform.position;
+            _offset = PlayerScript.Instance.getPlayerDirection();
+            Collider2D[] allColliders = Physics2D.OverlapCircleAll(_originalPos + _offset, _translateRadius);
+            int charCount = 0;
+
+            if (allColliders != null)
             {
-                if(c.TryGetComponent(out ItemTagScript character))
+                foreach (Collider2D c in allColliders)
                 {
-                    //Only one character, set their bool variable to false
-                    //c.gameObject.GetComponent<CharacterScriptableObject>().IsGibberish = false;
-                    charCount++;   
+                    if(c.TryGetComponent(out ItemTagScript character))
+                    {
+                        //Only one character, set their bool variable to false
+                        //c.gameObject.GetComponent<CharacterScriptableObject>().IsGibberish = false;
+                        charCount++;   
+                    }
                 }
-            }
-            if (charCount == 0)
-            {
-                //No characters, so nothing to do
-                Debug.Log("No characters around!");
+                if (charCount == 0)
+                {
+                    //No characters, so nothing to do
+                    Debug.Log("No characters found!");
+                }
+                else
+                {
+                    StartCoroutine(StartTranslateCooldown());
+                }
             }
         }
     }
@@ -61,19 +77,50 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
 
     private void InteractRune()
     {
-        _originalPos = PlayerScript.Instance.transform.position;
-        Collider2D[] allColliders = Physics2D.OverlapCircleAll(_originalPos + _offset, _runeRadius);
-        if (allColliders != null)
+        if (_isRuneAvailable == false)
         {
-            foreach (Collider2D c in allColliders)
+            Debug.Log("Rune Ability on cooldown!");
+            return;
+        }
+        else
+        {
+            _originalPos = PlayerScript.Instance.transform.position;
+            Collider2D[] allColliders = Physics2D.OverlapCircleAll(_originalPos + _offset, _runeRadius);
+            int runeCount = 0;
+            if (allColliders != null)
             {
-                if(c.TryGetComponent(out ItemTagScript interactable))
+                foreach (Collider2D c in allColliders)
                 {
-                    //Interacts with inky bool variable, sets it to true to start dialogue? Possibly needs to interact
-                    //with c.gameobject to get the id of the item to determine the bool variable? Unsure.
+                    if(c.TryGetComponent(out ItemTagScript interactable))
+                    {
+                        //Interacts with inky bool variable, sets it to true to start dialogue? Possibly needs to interact
+                        //with c.gameobject to get the id of the item to determine the bool variable? Unsure.
+                    }
+                    else {}
                 }
-                else {}
+                if (runeCount == 0)
+                {
+                    Debug.Log("No runes found!");
+                }
+                else
+                {
+                    StartCoroutine(StartRuneCooldown());
+                }
             }
         }
+    }
+
+    IEnumerator StartTranslateCooldown()
+    {
+        _isTranslateAvailable = false;
+        yield return new WaitForSeconds (_abilityTranslateCooldown);
+        _isTranslateAvailable = true;
+    }
+
+    IEnumerator StartRuneCooldown()
+    {
+        _isRuneAvailable = false;
+        yield return new WaitForSeconds (_abilityRuneCooldown);
+        _isRuneAvailable = true;
     }
 }

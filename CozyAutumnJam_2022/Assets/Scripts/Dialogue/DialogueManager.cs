@@ -9,9 +9,6 @@ using Ink.Runtime;
 using TMPro;
 public class DialogueManager : MonoBehaviour
 {
-    // ======================================================================
-    // Interface
-    // ======================================================================
     public static DialogueManager Instance
     {
         get{return instance;}
@@ -21,41 +18,53 @@ public class DialogueManager : MonoBehaviour
         inkFile : the dialogue that will start
         endEvent : any behavior that occurs at the end of the dialogue; set to null by default
     */
-    public void StartStory(TextAsset inkFile, UnityEvent endEvent = null, int _points = int.MaxValue)
+    public void StartStoryViaButton(TextAsset inkFile)
     {
-        if(_playerCanContinue)
+        StartStory(inkFile);
+    }
+    public void StartStory(TextAsset inkFile, UnityEvent endEvent = null)
+    {
+        if(!_playerInConvo.Value)
         {
             _story = new Story(inkFile.text);
             _dialogueEndEvent = endEvent;
             
-            // if(_points != int.MaxValue)
-            // {
-            //     story.variablesState["points"] = _points;
-            // }
-
             animator.SetBool("isOpen", true);
-            _playerInConvo = true;
-            AdvanceDialogue();
+            _playerInConvo.Value = true;
+            
+            StartTimer(WaitToStartStory());
         }
     }
 
     //Picks the choice (based on the choice index) to continue the ink story
-    public void ChooseChoice(int index)
+    public void ChoosePuzzleChoice(int index)
     {
-        // //Turn off choice UI
-        // for(int i = 0; i < story.currentChoices.Count; ++i)
-        // {
-        //     choicesArray[i].gameObject.SetActive(false);
-        // }
-        // story.ChooseChoiceIndex(index);
-        // playerCanProceed = true;
-        // AdvanceDialogue();
-        
+        _puzzleChoiceParent.SetActive(false);
+        ChooseChoice(index);
     }
 
-    // ======================================================================
-    // Implementation
-    // ======================================================================
+    public void ChooseDialogueChoice(int index)
+    {
+        for(int i = 0; i < _story.currentChoices.Count; i++)
+        {
+            _dialogueChoices[i].gameObject.SetActive(false);
+        }
+        ChooseChoice(index);
+    }
+    public void OnAdvanceDialouge()
+    {
+        Debug.Log("OnAdvanceDialogue");
+        AdvanceDialogue();
+        //TODO: Check if we're currently writing a sentence. If we are, load the full sentence.
+    }
+
+    private void ChooseChoice(int index)
+    {
+        _story.ChooseChoiceIndex(index);
+        _playerCanContinue = true;
+        AdvanceDialogue();
+    }
+
     private static DialogueManager instance;
 
     #region Story
@@ -66,15 +75,16 @@ public class DialogueManager : MonoBehaviour
     #endregion
 
     #region Choices
-    [SerializeField] private GameObject _dialogueChoiceParent;
-    [SerializeField] private TextMeshProUGUI[] _dialogueChoices;
+    [SerializeField] private GameObject[] _dialogueChoices;
     [SerializeField] private GameObject _puzzleChoiceParent;
 
-    [SerializeField] private TextMeshProUGUI[] _puzzleChoices;
+    [SerializeField] private GameObject[] _puzzleChoices;
     #endregion
     	
     #region Dialogue Box
+    [SerializeField] private GameObject _imageHolder;
     [SerializeField] private Image _charImage;
+    [SerializeField] private GameObject _nameHolder;
     [SerializeField] private TextMeshProUGUI _nameText;
     [SerializeField] private TextMeshProUGUI _dialogueText;
     [SerializeField] private GameObject _canContinueIndicator;
@@ -84,10 +94,11 @@ public class DialogueManager : MonoBehaviour
 
     #region Checks
     [SerializeField] private bool _playerCanContinue;
-    [SerializeField] private bool _playerInConvo;
+    [SerializeField] private BoolVariable _playerInConvo;
     #endregion
 
     #region Character Info
+    // TODO: Figure out how to do hat off boss
     private static string[] _emotions = new string[] {"Default", "Happy", "Tired"};
     [SerializeField] private string[] _characterNames;
     [SerializeField] private CharacterScriptableObject[] _characterInfos;
@@ -106,22 +117,6 @@ public class DialogueManager : MonoBehaviour
         _tags = new List<string>();    
     }
 
-    void Start()
-    {
-
-    }
-    void Update()
-    {
-        // TODO: When in dialogue, click a button to advance dialogue
-        // Maybe will have to do this through events now
-        // if(playerCanProceed && playerInConvo && story!=null && Input.anyKeyDown && 
-        //     !(Input.GetKeyDown(KeyCode.Escape))
-        //     && !(((PauseMenuManager)PauseMenuManager.instance).isGamePaused()))
-        // {
-        //     AdvanceDialogue();
-        // }
-    }
-
     /* 
     Advances the dialogue based on if
         (1) Player can proceed in the conversation
@@ -135,6 +130,7 @@ public class DialogueManager : MonoBehaviour
         {
             if (_story.canContinue)
             {
+                Debug.Log("Continue Dialogue");
                 _canContinueIndicator.SetActive(false);
                 _playerCanContinue = false;
 
@@ -176,18 +172,15 @@ public class DialogueManager : MonoBehaviour
                 case "char":
                     characterName = param;
                     break;
-                // TODO: Figure out a way to put emotion
                 case "emotion":
                     emotion = param;
                     break;
-                // case "points":
-                //     GameManager.Instance.CalculatePoints((int) story.variablesState["points"]);
-                //     break;
-                // TODO: Use wwise to play an event
                 case "sfx":
+                    //TODO: Figure out a way to play SFX if needed
                     //AudioManager.Instance.Play(param);
                     break;
                 case "music":
+                    //TODO: Figure out a way to play music if needed
                     //AudioManager.Instance.Play(param);
                     break;
             }
@@ -197,8 +190,12 @@ public class DialogueManager : MonoBehaviour
     }
     private void SetChar(string charName, string emotion)
     {
-        // TODO: if charName is empty use the narrator dialogueBox
-        if (charName != "")
+        if (charName == "")
+        {
+            _nameHolder.SetActive(false);
+            _imageHolder.SetActive(false);
+        }
+        else
         {
             int characterIndex = Array.IndexOf(_characterNames, charName);
             CharacterScriptableObject currentChar = _characterInfos[characterIndex];
@@ -206,12 +203,10 @@ public class DialogueManager : MonoBehaviour
             
             int emotionIndex = emotion != "" ? Array.IndexOf(_emotions, emotion) : 0;
             _charImage = currentChar.GetEmote(emotionIndex);
-        }
-        
-    }
 
-    private void SetEmotion(string emotion)
-    {
+            _nameHolder.SetActive(true);
+            _imageHolder.SetActive(true);
+        }
         
     }
 
@@ -220,15 +215,12 @@ public class DialogueManager : MonoBehaviour
     {
         if(_story.currentChoices.Count == 10)
         {
-            _parseChoices(_puzzleChoices);
+            ActivateChoiceButton(_puzzleChoices);
             _puzzleChoiceParent.SetActive(true);
         }
         else if(_story.currentChoices.Count > 0)
         {
-            _parseChoices(_dialogueChoices);
-            _dialogueChoiceParent.SetActive(true);
-            //TODO: Set each invidiual choice active
-            // Might need to create another class
+            ActivateChoiceButton(_dialogueChoices);
         }
         else
         {
@@ -237,12 +229,13 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private void _parseChoices(TextMeshProUGUI[] choiceTf)
+    private void ActivateChoiceButton(GameObject[] choiceButton)
     {
         for(int i = 0; i <_story.currentChoices.Count; ++i)
         {
             Choice choice = _story.currentChoices[i];
-            choiceTf[i].text = choice.text;
+            choiceButton[i].GetComponentInChildren<TextMeshProUGUI>().text = choice.text;
+            choiceButton[i].SetActive(true);
         }
     }
 
@@ -259,17 +252,7 @@ public class DialogueManager : MonoBehaviour
                                 + "<color=#ffffff00>" 
                                 + sentence.Substring(i)
                                 + "</color>";
-            yield return null;
-
-            // TODO: Add functionality to show full sentence when player clicks on a button
-            // if press any key that's not escape and the game is paused, complete the sentence
-            // if(Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Escape)
-            // && !(((PauseMenuManager)PauseMenuManager.instance).isGamePaused()))
-            // {
-            //     _dialogueText.text = sentence;
-            //     ParseChoices();
-            //     yield break;
-            // }
+            yield return null;            
         }
         ParseChoices();
     }
@@ -277,27 +260,33 @@ public class DialogueManager : MonoBehaviour
     //Finishes the dialogue
     private void FinishDialogue()
     {
-        // TODO: Add animation bool isOpen
+        Debug.Log("Finish Dialogue");
         animator.SetBool("isOpen", false);
         
         _nameText.text = "";
         _dialogueText.text = "";
         
-        _playerInConvo = false;
+        _playerInConvo.Value = false;
         _playerCanContinue = false;
         _story = null;
-        StartTimer();
+        StartTimer(TimeoutDialogue());
         TriggerEndBehavior();
     }
 
-    private void StartTimer()
+    private void StartTimer(IEnumerator timer)
     {
-        StartCoroutine(TimeoutDialogue());
+        StartCoroutine(timer);
+    }
+
+    private IEnumerator WaitToStartStory()
+    {
+        yield return new WaitForSeconds(0.25f);
+        AdvanceDialogue();
     }
 
     private IEnumerator TimeoutDialogue()
     {
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(1f);
         _playerCanContinue = true;
     }
 

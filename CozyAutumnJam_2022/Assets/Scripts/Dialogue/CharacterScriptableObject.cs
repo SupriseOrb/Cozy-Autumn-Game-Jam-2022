@@ -4,17 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu(fileName = "Character", menuName = "CozyAutumnJam_2022/Character")]
+[CreateAssetMenu(fileName = "Character", menuName = "CozyAutumnJam_2022/Character/Character")]
 public class CharacterScriptableObject : ScriptableObject
 {   
     #region Fields
     [SerializeField] private string _name;
+    // TODO: Figure out how to do it for V's Spirit who changes sprites MIDWAY
     [SerializeField] private Image[] _emotes;
-    [SerializeField] private bool _isTranslatedDefault;
-    [SerializeField] private bool _isTranslated;
-
-    [SerializeField] private TextAsset[] _story;   
-    
     #endregion
 
     public string Name
@@ -25,17 +21,6 @@ public class CharacterScriptableObject : ScriptableObject
     public Image GetEmote(int index = 0)
     {
         return _emotes[index]; 
-    }
-
-    public bool IsTranslated
-    {
-        get {return _isTranslated;}
-        set {_isTranslated = value;}
-    }
-
-    private void OnEnable()
-    {
-        _isTranslated = _isTranslatedDefault;
     }
 }
 

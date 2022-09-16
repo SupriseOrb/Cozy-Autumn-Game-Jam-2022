@@ -24,6 +24,8 @@ public class InputManager : MonoBehaviour
     [SerializeField] private string _useDString;
     [SerializeField] private string _movementString;
 
+    [SerializeField] private string _advanceDialogueString;
+
     private InputAction _cycleLAction;
     private InputAction _cycleRAction;
     private InputAction _viewInfoDAction;
@@ -31,6 +33,10 @@ public class InputManager : MonoBehaviour
     private InputAction _swapDAction;
     private InputAction _useDAction;
     private InputAction _movementAction;
+
+    private InputAction _advanceDialogueAction;
+
+    
 
     void Awake()
     {
@@ -41,6 +47,7 @@ public class InputManager : MonoBehaviour
         _swapDAction = _playerInput.actions[_swapDString];
         _useDAction = _playerInput.actions[_useDString];
         _movementAction = _playerInput.actions[_movementString];
+        _advanceDialogueAction = _playerInput.actions[_advanceDialogueString];
     }
 
     private void OnEnable() 
@@ -55,6 +62,8 @@ public class InputManager : MonoBehaviour
         _movementAction.started += OnMovement;
         _movementAction.performed += OnMovement;
         _movementAction.canceled += OnMovement;
+
+        _advanceDialogueAction.performed += OnAdvanceDialouge;
     }
 
     private void OnDisable() 
@@ -70,6 +79,7 @@ public class InputManager : MonoBehaviour
         _movementAction.performed -= OnMovement;
         _movementAction.canceled -= OnMovement; 
 
+        _advanceDialogueAction.performed -= OnAdvanceDialouge;
     }
 
     public void OnCycleLeft(InputAction.CallbackContext context)
@@ -105,6 +115,11 @@ public class InputManager : MonoBehaviour
     public void OnMovement(InputAction.CallbackContext context)
     {
         _movementInput = _movementAction.ReadValue<Vector2>();
+    }
+
+    public void OnAdvanceDialouge(InputAction.CallbackContext context)
+    {
+        DialogueManager.Instance.OnAdvanceDialouge();
     }
 
 }

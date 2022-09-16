@@ -357,7 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _settingsCanvas: {fileID: 1146349882862841872}
   _isPaused: {fileID: 11400000, guid: 2ccf9640a7059f5448ee586a52f0d165, type: 2}
-  _pauseMenuCanvas: {fileID: 0}
+  _pauseMenuCanvas: {fileID: 588238164006830244}
 --- !u!1 &588238164432530026
 GameObject:
   m_ObjectHideFlags: 0

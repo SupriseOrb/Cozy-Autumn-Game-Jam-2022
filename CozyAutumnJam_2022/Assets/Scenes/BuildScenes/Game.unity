@@ -17580,6 +17580,7 @@ GameObject:
   - component: {fileID: 1714873215}
   - component: {fileID: 1714873217}
   - component: {fileID: 1714873216}
+  - component: {fileID: 1714873218}
   m_Layer: 0
   m_Name: 'Walls: Human'
   m_TagString: Untagged
@@ -19641,6 +19642,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1714873218
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714873214}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1729258054
 GameObject:
   m_ObjectHideFlags: 0
@@ -19652,6 +19669,7 @@ GameObject:
   - component: {fileID: 1729258055}
   - component: {fileID: 1729258057}
   - component: {fileID: 1729258056}
+  - component: {fileID: 1729258058}
   m_Layer: 0
   m_Name: 'Walls: Spirit'
   m_TagString: Untagged
@@ -21693,6 +21711,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1729258058
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729258054}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1745852481
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class CharacterScriptableObject : ScriptableObject
     [SerializeField] private string _name;
     // TODO: Figure out how to do it for V's Spirit who changes sprites MIDWAY
     [SerializeField] private Image[] _emotes;
+    [SerializeField] private int _characterID;
     #endregion
 
     public string Name
@@ -21,6 +22,11 @@ public class CharacterScriptableObject : ScriptableObject
     public Image GetEmote(int index = 0)
     {
         return _emotes[index]; 
+    }
+
+    public int CharacterID
+    {
+        get {return _characterID;}
     }
 }
 

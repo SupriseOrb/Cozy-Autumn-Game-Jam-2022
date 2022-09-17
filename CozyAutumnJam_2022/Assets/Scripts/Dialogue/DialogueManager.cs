@@ -69,7 +69,7 @@ public class DialogueManager : MonoBehaviour
 
     #region Story
     private static Story _story;
-    private UnityEvent _dialogueEndEvent = null;
+    [SerializeField] private UnityEvent _dialogueEndEvent;
     private List <string> _tags;
     private IEnumerator _coroutine;
     #endregion

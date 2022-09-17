@@ -358,18 +358,18 @@ MonoBehaviour:
   _oracleCurrentCard: 0
   _oracleNextCard: 0
   _oraclePreviousCard: 0
-  _oracleDeckAnimator: {fileID: 0}
+  _oracleDeckAnimator: {fileID: 380937261}
   _propCardList: []
   _propCurrentCard: 0
   _propNextCard: 0
   _propPreviousCard: 0
   _propnumPassiveCards: 0
-  _propDeckAnimator: {fileID: 0}
+  _propDeckAnimator: {fileID: 431327143}
   _leftCardImage: {fileID: 2650161889188352919}
   _rightCardImage: {fileID: 2650161888817679564}
   _isOracleDeckActive: 1
-  _hintHolder: {fileID: 0}
-  _hintText: {fileID: 0}
+  _hintHolder: {fileID: 8582732229460629334}
+  _hintText: {fileID: 4367609086859236214}
 --- !u!1 &2650161887891784736
 GameObject:
   m_ObjectHideFlags: 0

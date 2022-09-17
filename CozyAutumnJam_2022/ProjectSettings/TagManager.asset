@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG
+    uniqueID: 2012221975
+    locked: 0
+  - name: Props
+    uniqueID: 245054189
+    locked: 0
+  - name: Character
+    uniqueID: 90104817
+    locked: 0
+  - name: Player
+    uniqueID: 3585477891
+    locked: 0

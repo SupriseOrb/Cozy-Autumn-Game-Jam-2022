@@ -1267,14 +1267,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1634713377}
     m_Modifications:
-    - target: {fileID: 184099285477837022, guid: fd35b5f5631ee7d49994ee13a97def92, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 184099285477837027, guid: fd35b5f5631ee7d49994ee13a97def92, type: 3}
-      propertyPath: m_Color.a
-      value: 0.24705882
-      objectReference: {fileID: 0}
     - target: {fileID: 2062206722281281315, guid: fd35b5f5631ee7d49994ee13a97def92, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1322,10 +1314,6 @@ PrefabInstance:
     - target: {fileID: 7054045341765165481, guid: fd35b5f5631ee7d49994ee13a97def92, type: 3}
       propertyPath: m_Name
       value: Masks Tilesets
-      objectReference: {fileID: 0}
-    - target: {fileID: 7054045341765165481, guid: fd35b5f5631ee7d49994ee13a97def92, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd35b5f5631ee7d49994ee13a97def92, type: 3}
@@ -1805,26 +1793,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1634713377}
     m_Modifications:
-    - target: {fileID: 956037594269335696, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: m_Color.a
-      value: 0.24705882
-      objectReference: {fileID: 0}
-    - target: {fileID: 956037594269335696, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 956037594269335696, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 956037594269335696, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 956037594269335703, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1288383701440222295, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1872,10 +1840,6 @@ PrefabInstance:
     - target: {fileID: 7350795500589760960, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
       propertyPath: m_Name
       value: Decor Tilesets
-      objectReference: {fileID: 0}
-    - target: {fileID: 7350795500589760960, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
@@ -18607,10 +18571,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animatronics Tilesets
       objectReference: {fileID: 0}
-    - target: {fileID: 1097947826901655891, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3494564438208299073, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -18654,26 +18614,6 @@ PrefabInstance:
     - target: {fileID: 3494564438208299073, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8760679300943514923, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8760679300943514926, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: m_Color.a
-      value: 0.24705882
-      objectReference: {fileID: 0}
-    - target: {fileID: 8760679300943514926, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8760679300943514926, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8760679300943514926, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: m_Color.r
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
@@ -34605,7 +34545,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.80817604, b: 0.9860519, a: 1}
   m_Origin: {x: -11, y: -18, z: 0}
   m_Size: {x: 125, y: 34, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -39778,26 +39718,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1634713377}
     m_Modifications:
-    - target: {fileID: 1070654890133705801, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070654890133705802, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: m_Color.a
-      value: 0.24705882
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070654890133705802, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070654890133705802, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1070654890133705802, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3980950316512806852, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -39846,10 +39766,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Props Tilesets
       objectReference: {fileID: 0}
-    - target: {fileID: 7117067426465022187, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
 --- !u!4 &2051684994 stripped
@@ -39864,26 +39780,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1634713377}
     m_Modifications:
-    - target: {fileID: 4600463846036623928, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
-      propertyPath: m_Color.a
-      value: 0.24705882
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600463846036623928, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600463846036623928, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600463846036623928, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4600463846036623931, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6501587480475422098, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -39931,10 +39827,6 @@ PrefabInstance:
     - target: {fileID: 7927634261358321235, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
       propertyPath: m_Name
       value: Candy Tilesets
-      objectReference: {fileID: 0}
-    - target: {fileID: 7927634261358321235, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}

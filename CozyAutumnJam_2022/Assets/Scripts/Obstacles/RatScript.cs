@@ -5,6 +5,7 @@ using UnityEngine;
 public class RatScript : MonoBehaviour
 {
     [SerializeField] private Transform[] _runToLocation;
+    [SerializeField] private Transform _startLocation;
     private int currentTransformIndex;
     [SerializeField] private Transform currentLocation;
     [SerializeField] private float speed;
@@ -59,7 +60,17 @@ public class RatScript : MonoBehaviour
             currentLocation = _runToLocation[currentTransformIndex];
             StartCoroutine(MoveObject(currentLocation));
         }
+        else if(currentTransformIndex == _runToLocation.Length)
+        {
+            currentTransformIndex = 0;
+            gameObject.transform.position = _startLocation.position;
+        }
         
         yield break;
     } 
+
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
+
+    }
 }

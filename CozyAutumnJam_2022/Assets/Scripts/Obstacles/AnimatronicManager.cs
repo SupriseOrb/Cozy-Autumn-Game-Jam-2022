@@ -2,13 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimatronicManager : MonoBehaviour, IAnimatronic
+public class AnimatronicManager : MonoBehaviour, IAnimatronic, IInteractable
 {
     [SerializeField] private string _musicName;
     [SerializeField] private bool[] _songsPlayedInOrder;
     [SerializeField] private bool _songComplete = false;
     // Start is called before the first frame update
     public void ActivateAnimatronic()
+    {
+        ActivateInteraction();
+    }
+
+    public void ActivateInteraction()
     {
         if(!_songComplete)
         {

@@ -11,11 +11,20 @@ public class CostumeScript : MonoBehaviour, IInteractable
     //idk what specific # it should be just yet 
     //Step 3 for spirit costume? Step 5? for human costume
     [SerializeField] private int _questStep;
+    [SerializeField] private QuestInfo _questInfo;
+    //Alternatively, just define the 2 variables above directly in the QuestInfo SO
+
+    private void Awake() 
+    {
+        _questInfo.QuestIndex = _characterID;
+        _questInfo.StepIndex = _questStep;
+    }
+
 
     public void ActivateInteraction()
     {
         //needs to give charID and qStep to dialogue manager
-        QuestManager.Instance.CompleteQuestStep(_characterID, _questStep);
+        QuestManager.Instance.CompleteQuestStep(_questInfo);
         //TODO:: needs to give the new costume card to the deck
     }
 

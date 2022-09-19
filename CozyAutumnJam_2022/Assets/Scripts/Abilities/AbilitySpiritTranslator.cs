@@ -91,8 +91,12 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
             {
                 foreach (Collider2D c in allColliders)
                 {
-                    if(c.TryGetComponent(out ItemTagScript interactable))
+                    if(c.TryGetComponent(out ItemTagScript interactable) && c.GetComponent<ItemTagScript>().IsRune())
                     {
+                        if(c.TryGetComponent(out RuneScript floatingRune))
+                        {
+                            c.GetComponent<RuneScript>().TranslateRune();
+                        }
                         //Interacts with inky bool variable, sets it to true to start dialogue? Possibly needs to interact
                         //with c.gameobject to get the id of the item to determine the bool variable? Unsure.
                     }

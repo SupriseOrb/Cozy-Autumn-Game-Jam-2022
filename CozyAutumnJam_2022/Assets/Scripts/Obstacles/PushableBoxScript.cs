@@ -19,4 +19,5 @@ public class PushableBoxScript : MonoBehaviour
             hasStartedMoving = true;
         }
     }
+    //TODO:: If I have time, create a trigger boundary to prevent boxes getting stuck on things
 }

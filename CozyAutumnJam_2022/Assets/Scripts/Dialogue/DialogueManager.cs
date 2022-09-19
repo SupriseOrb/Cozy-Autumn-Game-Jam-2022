@@ -118,6 +118,7 @@ public class DialogueManager : MonoBehaviour
     private static string[] _emotions = new string[] {"Default", "Happy", "Tired"};
     [SerializeField] private string[] _characterNames;
     [SerializeField] private CharacterScriptableObject[] _characterInfos;
+    private CharacterScriptableObject _currentChar;
     #endregion
 
     void Awake()
@@ -231,18 +232,21 @@ public class DialogueManager : MonoBehaviour
     private void SetChar(string charName, string emotion)
     {
         int characterIndex = Array.IndexOf(_characterNames, charName);
-        if (characterIndex < 0)
+        if (characterIndex < 0 && charName != "")
         {
             _nameHolder.SetActive(false);
             _imageHolder.SetActive(false);
         }
         else
         {
-            CharacterScriptableObject currentChar = _characterInfos[characterIndex];
-            _nameText.text = currentChar.Name;
+            if(characterIndex >= 0)
+            {
+                _currentChar = _characterInfos[characterIndex];
+                _nameText.text = _currentChar.Name;
+            }
             
             int emotionIndex = emotion != "" ? Array.IndexOf(_emotions, emotion) : 0;
-            _charImage = currentChar.GetEmote(emotionIndex);
+            _charImage = _currentChar.GetEmote(emotionIndex);
 
             _nameHolder.SetActive(true);
             _imageHolder.SetActive(true);

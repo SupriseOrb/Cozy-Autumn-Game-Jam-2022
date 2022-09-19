@@ -5,6 +5,19 @@ using UnityEngine;
 public class RatScript : MonoBehaviour
 {
     [SerializeField] private Transform[] _runToLocation;
+    private int currentTransformIndex;
+    [SerializeField] private Transform currentLocation;
+    [SerializeField] private float speed;
+    [SerializeField] private Sprite _upSprite;
+    [SerializeField] private Sprite _downSprite;
+    [SerializeField] private Sprite _leftSprite;
+    [SerializeField] private Sprite _rightSprite;
+
+
+    public void Start()
+    {
+        currentLocation = _runToLocation[0];
+    }
 
     public void StartRunning()
     {
@@ -12,5 +25,43 @@ public class RatScript : MonoBehaviour
         //Note the locations will only be placed in 90 degree shit
         //rat runs directly to the location
         //When it runs to the final location it dissapears
+        foreach(Transform trans in _runToLocation)
+        {
+            StartCoroutine(MoveObject(trans));
+        }
+    }
+    IEnumerator MoveObject(Transform intendedTarget)
+    {
+        yield return new WaitUntil(()=> intendedTarget == currentLocation);
+        if (Mathf.Round(transform.position.y) > Mathf.Round(intendedTarget.position.y))
+        {
+            GetComponent<SpriteRenderer>().sprite = _downSprite;
+        }
+        else if (Mathf.Round(transform.position.y) < Mathf.Round(intendedTarget.position.y))
+        {
+            GetComponent<SpriteRenderer>().sprite = _upSprite;
+        }
+        else if (Mathf.Round(transform.position.x) > Mathf.Round(intendedTarget.position.x))
+        {
+            GetComponent<SpriteRenderer>().sprite = _leftSprite;
+        }
+        else if (Mathf.Round(transform.position.x) < Mathf.Round(intendedTarget.position.x))
+        {
+            GetComponent<SpriteRenderer>().sprite = _rightSprite;
+        }
+        
+        while (Vector3.Distance(transform.position, currentLocation.position) > .001f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, currentLocation.position, speed);
+            yield return new WaitForSeconds(.01f);
+        }
+
+        currentTransformIndex++;
+        if (currentTransformIndex < _runToLocation.Length)
+        {
+            currentLocation = _runToLocation[currentTransformIndex];
+        }
+        
+        yield break;
     } 
 }

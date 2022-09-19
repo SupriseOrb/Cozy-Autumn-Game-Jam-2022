@@ -471,6 +471,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2869603767406814889, guid: b75f779257d043d4ca3a1cb059e3d0ed, type: 3}
+      propertyPath: _runToLocation.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869603767406814889, guid: b75f779257d043d4ca3a1cb059e3d0ed, type: 3}
+      propertyPath: _runToLocation.Array.data[0]
+      value: 
+      objectReference: {fileID: 1003359254}
+    - target: {fileID: 2869603767406814889, guid: b75f779257d043d4ca3a1cb059e3d0ed, type: 3}
+      propertyPath: _runToLocation.Array.data[1]
+      value: 
+      objectReference: {fileID: 1452972322}
+    - target: {fileID: 2869603767406814889, guid: b75f779257d043d4ca3a1cb059e3d0ed, type: 3}
+      propertyPath: _runToLocation.Array.data[2]
+      value: 
+      objectReference: {fileID: 1498789761}
     - target: {fileID: 2869603767406814890, guid: b75f779257d043d4ca3a1cb059e3d0ed, type: 3}
       propertyPath: m_Name
       value: RatPrefab

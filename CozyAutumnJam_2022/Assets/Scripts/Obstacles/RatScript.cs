@@ -17,6 +17,7 @@ public class RatScript : MonoBehaviour
     public void Start()
     {
         currentLocation = _runToLocation[0];
+        StartRunning();
     }
 
     public void StartRunning()
@@ -25,14 +26,10 @@ public class RatScript : MonoBehaviour
         //Note the locations will only be placed in 90 degree shit
         //rat runs directly to the location
         //When it runs to the final location it dissapears
-        foreach(Transform trans in _runToLocation)
-        {
-            StartCoroutine(MoveObject(trans));
-        }
+        StartCoroutine(MoveObject(currentLocation));
     }
     IEnumerator MoveObject(Transform intendedTarget)
     {
-        yield return new WaitUntil(()=> intendedTarget == currentLocation);
         if (Mathf.Round(transform.position.y) > Mathf.Round(intendedTarget.position.y))
         {
             GetComponent<SpriteRenderer>().sprite = _downSprite;
@@ -60,6 +57,7 @@ public class RatScript : MonoBehaviour
         if (currentTransformIndex < _runToLocation.Length)
         {
             currentLocation = _runToLocation[currentTransformIndex];
+            StartCoroutine(MoveObject(currentLocation));
         }
         
         yield break;

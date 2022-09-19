@@ -18,4 +18,9 @@ public class AnimatronicScript : MonoBehaviour, IAnimatronic
             _managerScript.checkSound(_animatronicOrderIndex);
         }
     }
+
+    public void SetPowerOfAnimatronic(bool power)
+    {
+        _isPowered = power;
+    }
 }

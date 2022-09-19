@@ -14,6 +14,12 @@ public class DialogueManager : MonoBehaviour
         get{return instance;}
     }
 
+    public const string ANIMATRONIC_ACTIVATED = "activated";
+    public const string CHEST_OPEN = "open";
+    public const string TRANSLATED = "has_translator";
+    public const string GOT_COSTUME_REQUEST = "gotten_costume_request";
+    public const string GAVE_COSTUME = "gave_costume";
+
     /*Starts the dialogue
         inkFile : the dialogue that will start
         endEvent : any behavior that occurs at the end of the dialogue; set to null by default
@@ -22,12 +28,18 @@ public class DialogueManager : MonoBehaviour
     {
         StartStory(inkFile);
     }
-    public void StartStory(TextAsset inkFile, UnityEvent endEvent = null)
+    
+    public void StartStory(TextAsset inkFile, UnityEvent endEvent = null, PasscodeChestScript chest = null, string varName = "", bool varValue = false)
     {
         if(!_playerInConvo.Value)
         {
             _story = new Story(inkFile.text);
             _dialogueEndEvent = endEvent;
+            _chest = chest;
+            if(varName != "")
+            {
+                SetVariable(varName, varValue);
+            }
             
             animator.SetBool("isOpen", true);
             _playerInConvo.Value = true;
@@ -36,11 +48,33 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    public enum PuzzleStatus
+    {
+        WIP,
+        Open,
+        Close
+    }
+
     //Picks the choice (based on the choice index) to continue the ink story
     public void ChoosePuzzleChoice(int index)
     {
-        _puzzleChoiceParent.SetActive(false);
-        ChooseChoice(index);
+        PuzzleStatus chestStatus = _chest.EnterCodeDigit(index);
+        if (chestStatus != PuzzleStatus.WIP)
+        {
+            if(chestStatus == PuzzleStatus.Open)
+            {
+                SetVariable(CHEST_OPEN, true);
+            }
+
+            _puzzleChoiceParent.SetActive(false);
+            ChooseChoice(index);
+        }
+        
+    }
+
+    private void SetVariable(string varName, bool varValue)
+    {
+        _story.variablesState[varName] = varValue;
     }
 
     public void ChooseDialogueChoice(int index)
@@ -79,6 +113,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject _puzzleChoiceParent;
 
     [SerializeField] private GameObject[] _puzzleChoices;
+    [SerializeField] private PasscodeChestScript _chest;
     #endregion
     	
     #region Dialogue Box
@@ -141,6 +176,7 @@ public class DialogueManager : MonoBehaviour
                 {
                     StopCoroutine(_coroutine);
                 }
+                // TODO: Account for line breaks
                 _coroutine = TypeSentence(currentSentence);
                 StartCoroutine(_coroutine);
                 

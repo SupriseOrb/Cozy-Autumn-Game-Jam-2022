@@ -776,6 +776,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f4eac1a1549ac49be4511f0799b03f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dialogueEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
   _dialogueChoices:
   - {fileID: 6467850270895128656}
   - {fileID: 2289120425613382747}
@@ -792,6 +795,7 @@ MonoBehaviour:
   - {fileID: 751861139995065168}
   - {fileID: 751861141053318454}
   - {fileID: 751861139957935608}
+  _chest: {fileID: 0}
   _imageHolder: {fileID: 6467850272246368182}
   _charImage: {fileID: 6467850270756387519}
   _nameHolder: {fileID: 6467850271076098386}
@@ -1366,6 +1370,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6467850271005281012}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChooseDialogueChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
 --- !u!224 &1421957969846593433 stripped
@@ -1476,6 +1508,38 @@ PrefabInstance:
     - target: {fileID: 5045999071007025202, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6467850271005281012}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChooseDialogueChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
@@ -1588,6 +1652,38 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6467850271005281012}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChooseDialogueChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5045999071544597667, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45354d103d7025a4eba6ba11a67ed2dc, type: 3}
 --- !u!1 &2289120425451241538 stripped
@@ -1607,6 +1703,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6467850271291050439}
     m_Modifications:
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6467850271005281012}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChoosePuzzleChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6029561463718360624, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
       propertyPath: m_Name
       value: PuzzleChoiceButton (7)
@@ -1714,6 +1842,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6467850271291050439}
     m_Modifications:
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6467850271005281012}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChoosePuzzleChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6029561463718360624, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
       propertyPath: m_Name
       value: PuzzleChoiceButton (9)
@@ -1821,6 +1981,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6467850271291050439}
     m_Modifications:
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6467850271005281012}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChoosePuzzleChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6029561463718360624, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
       propertyPath: m_Name
       value: PuzzleChoiceButton (1)
@@ -1928,6 +2120,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6467850271291050439}
     m_Modifications:
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6467850271005281012}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChoosePuzzleChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6029561463718360624, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
       propertyPath: m_Name
       value: PuzzleChoiceButton
@@ -2035,6 +2255,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6467850271291050439}
     m_Modifications:
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6467850271005281012}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChoosePuzzleChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6029561463718360624, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
       propertyPath: m_Name
       value: PuzzleChoiceButton (2)
@@ -2142,6 +2394,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6467850271291050439}
     m_Modifications:
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6467850271005281012}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChoosePuzzleChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6029561463718360624, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
       propertyPath: m_Name
       value: PuzzleChoiceButton (5)
@@ -2249,6 +2533,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6467850271291050439}
     m_Modifications:
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6467850271005281012}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChoosePuzzleChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6029561463718360624, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
       propertyPath: m_Name
       value: PuzzleChoiceButton (3)
@@ -2356,6 +2672,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6467850271291050439}
     m_Modifications:
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6467850271005281012}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChoosePuzzleChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6029561463718360624, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
       propertyPath: m_Name
       value: PuzzleChoiceButton (8)
@@ -2463,6 +2811,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6467850271291050439}
     m_Modifications:
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6467850271005281012}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChoosePuzzleChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6029561463718360624, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
       propertyPath: m_Name
       value: PuzzleChoiceButton (4)
@@ -2570,6 +2950,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6467850271291050439}
     m_Modifications:
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6467850271005281012}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChoosePuzzleChoice
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972251540124643204, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6029561463718360624, guid: bdf9e127c3ba2c04990a18f8fb3f9dc1, type: 3}
       propertyPath: m_Name
       value: PuzzleChoiceButton (6)

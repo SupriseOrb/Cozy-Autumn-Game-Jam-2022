@@ -41,6 +41,7 @@ public class CharacterWithProgression : CharacterScriptableObject
         _currentStoryBeat = (int)beat;
     }
 
+    // TODO: Account for how Diane split the story for the characters.
     public TextAsset GetStory()
     {
         return _story[_currentStoryBeat];

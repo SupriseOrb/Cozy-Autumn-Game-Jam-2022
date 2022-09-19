@@ -8,14 +8,27 @@ public class AbilitySpiderWeb : MonoBehaviour, IAbility
     [SerializeField] GameObject _spiderWebGO;
     //Object with: sprite, ITrap, code to constantly check if it is colliding with any object with ITrappable (the rat),
     //and a bool canTrap (to check if it's in the correct state to catch the rat)
-    private Vector3 _spiderWebPos;
-    private Vector3 _offset;
+    [SerializeField] GameObject _lastWeb;
+    [SerializeField] float _spiderWebDetectRadius;
     private Quaternion _spiderWebRot;
 
     public void ActivateAbility()
     {
-        _spiderWebPos = PlayerScript.Instance.transform.position;
         _spiderWebRot = PlayerScript.Instance.transform.rotation;
-        Instantiate(_spiderWebGO, _spiderWebPos + _offset, _spiderWebRot, PlayerScript.Instance.transform.root);
+        Collider2D[] allColliders = Physics2D.OverlapCircleAll(PlayerScript.Instance.transform.position, _spiderWebDetectRadius);
+        if(allColliders.Length > 0)
+        {
+            foreach (Collider2D c in allColliders)
+            {
+                if(c.TryGetComponent(out ItemTagScript trappable) && c.GetComponent<ItemTagScript>().IsTrap())
+                {
+                    if(_lastWeb != null)
+                    {
+                        Destroy(_lastWeb);
+                    }
+                    _lastWeb = Instantiate(_spiderWebGO, c.transform.position, _spiderWebRot, c.transform);
+                }
+            }
+        }
     }
 }

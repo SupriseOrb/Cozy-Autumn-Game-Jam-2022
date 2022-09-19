@@ -13,6 +13,7 @@ public class RatScript : MonoBehaviour
     [SerializeField] private Sprite _downSprite;
     [SerializeField] private Sprite _leftSprite;
     [SerializeField] private Sprite _rightSprite;
+    [SerializeField] private GameObject _ratPickUp;
 
 
     public void Start()
@@ -29,23 +30,26 @@ public class RatScript : MonoBehaviour
         //When it runs to the final location it dissapears
         StartCoroutine(MoveObject(currentLocation));
     }
-    IEnumerator MoveObject(Transform intendedTarget)
+    IEnumerator MoveObject(Transform intendedTarget = null)
     {
-        if (Mathf.Round(transform.position.y) > Mathf.Round(intendedTarget.position.y))
+        if(intendedTarget != null)
         {
-            GetComponent<SpriteRenderer>().sprite = _downSprite;
-        }
-        else if (Mathf.Round(transform.position.y) < Mathf.Round(intendedTarget.position.y))
-        {
-            GetComponent<SpriteRenderer>().sprite = _upSprite;
-        }
-        else if (Mathf.Round(transform.position.x) > Mathf.Round(intendedTarget.position.x))
-        {
-            GetComponent<SpriteRenderer>().sprite = _leftSprite;
-        }
-        else if (Mathf.Round(transform.position.x) < Mathf.Round(intendedTarget.position.x))
-        {
-            GetComponent<SpriteRenderer>().sprite = _rightSprite;
+            if (Mathf.Round(transform.position.y) > Mathf.Round(intendedTarget.position.y))
+            {
+                GetComponent<SpriteRenderer>().sprite = _downSprite;
+            }
+            else if (Mathf.Round(transform.position.y) < Mathf.Round(intendedTarget.position.y))
+            {
+                GetComponent<SpriteRenderer>().sprite = _upSprite;
+            }
+            else if (Mathf.Round(transform.position.x) > Mathf.Round(intendedTarget.position.x))
+            {
+                GetComponent<SpriteRenderer>().sprite = _leftSprite;
+            }
+            else if (Mathf.Round(transform.position.x) < Mathf.Round(intendedTarget.position.x))
+            {
+                GetComponent<SpriteRenderer>().sprite = _rightSprite;
+            }
         }
         
         while (Vector3.Distance(transform.position, currentLocation.position) > .001f)
@@ -63,7 +67,9 @@ public class RatScript : MonoBehaviour
         else if(currentTransformIndex == _runToLocation.Length)
         {
             currentTransformIndex = 0;
+            currentLocation = _runToLocation[currentTransformIndex];
             gameObject.transform.position = _startLocation.position;
+
         }
         
         yield break;
@@ -71,6 +77,10 @@ public class RatScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-
+        if(other.TryGetComponent(out SpiderWebObject web) && other.GetComponent<SpiderWebObject>().CanTrap)
+        {
+            Instantiate(_ratPickUp, transform.position, other.transform.rotation ,other.transform);
+            Destroy(gameObject);
+        }
     }
 }

@@ -100,7 +100,7 @@ public class InputManager : MonoBehaviour
         }
         else if (_playerInConvo)
         {
-            DialogueManager.Instance.OnAdvanceDialouge();
+            DialogueManager.Instance.OnAdvanceDialogue();
         }
     }
 

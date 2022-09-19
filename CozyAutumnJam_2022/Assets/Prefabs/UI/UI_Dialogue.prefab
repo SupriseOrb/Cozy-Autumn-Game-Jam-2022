@@ -813,13 +813,13 @@ MonoBehaviour:
   - ken
   - myrtle
   - v
-  - chrysanthaS
-  - jowanS
-  - kenS
-  - myrtleS
-  - vS
+  - chrysantha_spirit
+  - jowan_spirit
+  - ken_spirit
+  - myrtle_spirit
+  - v_spirit
   - jay
-  - jayS
+  - jay_spirit
   _characterInfos:
   - {fileID: 11400000, guid: 78803146d89adde44abeaedbcd1e5547, type: 2}
   - {fileID: 11400000, guid: cd8d20c4f02c48248bf9c37ed6559975, type: 2}

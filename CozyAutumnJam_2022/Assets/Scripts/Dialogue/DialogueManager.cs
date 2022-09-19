@@ -14,38 +14,32 @@ public class DialogueManager : MonoBehaviour
         get{return instance;}
     }
 
+    #region Story Bool Variables
     public const string ANIMATRONIC_ACTIVATED = "activated";
     public const string CHEST_OPEN = "open";
     public const string TRANSLATED = "has_translator";
     public const string GOT_COSTUME_REQUEST = "gotten_costume_request";
     public const string GAVE_COSTUME = "gave_costume";
+    #endregion
 
-    /*Starts the dialogue
-        inkFile : the dialogue that will start
-        endEvent : any behavior that occurs at the end of the dialogue; set to null by default
-    */
     public void StartStoryViaButton(TextAsset inkFile)
     {
         StartStory(inkFile);
     }
-    
-    public void StartStory(TextAsset inkFile, UnityEvent endEvent = null, PasscodeChestScript chest = null, string varName = "", bool varValue = false)
+
+    public void StartStory(TextAsset inkFile, UnityEvent endEvent = null)
     {
-        if(!_playerInConvo.Value)
-        {
-            _story = new Story(inkFile.text);
-            _dialogueEndEvent = endEvent;
-            _chest = chest;
-            if(varName != "")
-            {
-                SetVariable(varName, varValue);
-            }
-            
-            animator.SetBool("isOpen", true);
-            _playerInConvo.Value = true;
-            
-            StartTimer(WaitToStartStory());
-        }
+        StartStoryHelper(inkFile, endEvent);
+    }
+
+    public void StartStory(TextAsset inkFile, string varName, bool varValue, UnityEvent endEvent = null)
+    {
+        StartStoryHelper(inkFile, endEvent: endEvent, varName: varName, varValue: varValue);
+    }
+
+    public void StartStory(TextAsset inkFile, PasscodeChestScript chest, UnityEvent endEvent = null)
+    {
+        StartStoryHelper(inkFile, endEvent, chest);
     }
 
     public enum PuzzleStatus
@@ -54,49 +48,35 @@ public class DialogueManager : MonoBehaviour
         Open,
         Close
     }
-
-    //Picks the choice (based on the choice index) to continue the ink story
     public void ChoosePuzzleChoice(int index)
     {
+        AkSoundEngine.PostEvent("Play_UISelect", this.gameObject);
         PuzzleStatus chestStatus = _chest.EnterCodeDigit(index);
         if (chestStatus != PuzzleStatus.WIP)
         {
             if(chestStatus == PuzzleStatus.Open)
             {
-                SetVariable(CHEST_OPEN, true);
+                SetStoryVariable(CHEST_OPEN, true);
             }
 
             _puzzleChoiceParent.SetActive(false);
             ChooseChoice(index);
         }
-        
-    }
-
-    private void SetVariable(string varName, bool varValue)
-    {
-        _story.variablesState[varName] = varValue;
     }
 
     public void ChooseDialogueChoice(int index)
     {
+        AkSoundEngine.PostEvent("Play_UISelect", this.gameObject);
         for(int i = 0; i < _story.currentChoices.Count; i++)
         {
             _dialogueChoices[i].gameObject.SetActive(false);
         }
         ChooseChoice(index);
     }
-    public void OnAdvanceDialouge()
+    public void OnAdvanceDialogue()
     {
         AdvanceDialogue();
-        //TODO: Check if we're currently writing a sentence. If we are, load the full sentence.
-    }
-
-    private void ChooseChoice(int index)
-    {
-        // Kristen TODO: Play button sound
-        _story.ChooseChoiceIndex(index);
-        _playerCanContinue = true;
-        AdvanceDialogue();
+        // TODO: Check if we're currently writing a sentence. If we are, load the full sentence.
     }
 
     private static DialogueManager instance;
@@ -104,6 +84,7 @@ public class DialogueManager : MonoBehaviour
     #region Story
     private static Story _story;
     [SerializeField] private UnityEvent _dialogueEndEvent;
+    private string _currentSentence;
     private List <string> _tags;
     private IEnumerator _coroutine;
     #endregion
@@ -149,26 +130,44 @@ public class DialogueManager : MonoBehaviour
         {
             Destroy(this);
         }
-        _tags = new List<string>();    
     }
 
-    /* 
-    Advances the dialogue based on if
-        (1) Player can proceed in the conversation
-        (2) Player is in a conversation
-        (3) There is a story
-    Else, the dialogue is finished.
-    */
+    private void SetStoryVariable(string varName, bool varValue)
+    {
+        _story.variablesState[varName] = varValue;
+    }
+
+    private void StartStoryHelper(TextAsset inkFile, UnityEvent endEvent = null, PasscodeChestScript chest = null, string varName = "", bool varValue = false)
+    {
+        if(!_playerInConvo.Value)
+        {
+            _story = new Story(inkFile.text);
+            _dialogueEndEvent = endEvent;
+            _chest = chest;
+
+            if(varName != "")
+            {
+                SetStoryVariable(varName, varValue);
+            }
+            
+            animator.SetBool("isOpen", true);
+            _playerInConvo.Value = true;
+            
+            StartTimer(WaitToStartStory());
+        }
+    }
+
     private void AdvanceDialogue()
     {
         if(_playerCanContinue && _playerInConvo && _story!=null)
         {
+            AkSoundEngine.PostEvent("Play_CardFlip", this.gameObject);
             if (_story.canContinue)
             {
                 _canContinueIndicator.SetActive(false);
                 _playerCanContinue = false;
 
-                string currentSentence = _story.Continue();
+                _currentSentence = _story.Continue();
                 
                 ParseTags();
 
@@ -176,10 +175,9 @@ public class DialogueManager : MonoBehaviour
                 {
                     StopCoroutine(_coroutine);
                 }
-                // TODO: Account for line breaks
-                _coroutine = TypeSentence(currentSentence);
+                _coroutine = TypeSentence(_currentSentence);
                 StartCoroutine(_coroutine);
-                
+                // Kristen TODO: Start character sfx                
             }
             else
             {
@@ -210,29 +208,36 @@ public class DialogueManager : MonoBehaviour
                 case "emotion":
                     emotion = param;
                     break;
-                case "sfx":
-                    //TODO: Figure out a way to play SFX if needed
-                    //AudioManager.Instance.Play(param);
+                case "lines":
+                    UpdateCurrentLines(Int32.Parse(param));
                     break;
                 case "music":
-                    //TODO: Figure out a way to play music if needed
-                    //AudioManager.Instance.Play(param);
+                    // Kristen TODO: Play music
                     break;
             }
         }
         SetChar(characterName, emotion);
 
     }
+
+    private void UpdateCurrentLines(int linesLeft)
+    {
+        for (int i = 0; i < linesLeft; i++)
+        {
+            _currentSentence += _story.Continue();
+        }
+    }
+
     private void SetChar(string charName, string emotion)
     {
-        if (charName == "")
+        int characterIndex = Array.IndexOf(_characterNames, charName);
+        if (characterIndex < 0)
         {
             _nameHolder.SetActive(false);
             _imageHolder.SetActive(false);
         }
         else
         {
-            int characterIndex = Array.IndexOf(_characterNames, charName);
             CharacterScriptableObject currentChar = _characterInfos[characterIndex];
             _nameText.text = currentChar.Name;
             
@@ -242,7 +247,6 @@ public class DialogueManager : MonoBehaviour
             _nameHolder.SetActive(true);
             _imageHolder.SetActive(true);
         }
-        
     }
 
     //Reads and displays the choices used in the ink file
@@ -273,22 +277,28 @@ public class DialogueManager : MonoBehaviour
             choiceButton[i].SetActive(true);
         }
     }
+    private void ChooseChoice(int index)
+    {
+        _story.ChooseChoiceIndex(index);
+        _playerCanContinue = true;
+        AdvanceDialogue();        
+    }
 
-    /*Creates a typewriter effect when displaying a sentence. 
-    Full sentence can be displayed when player presses any key that is not escape.
-        sentence: the sentence to be displayed
-    */
     private IEnumerator TypeSentence(string sentence)
     {
+        // TODO: There might be a small bug with \n character
         _dialogueText.text = "";
-        for(int i =1; i<sentence.Length; ++i)
+
+        for(int charIndex = 1; charIndex < sentence.Length; charIndex++)
         {
-            _dialogueText.text = sentence.Substring(0,i) 
+            _dialogueText.text = sentence.Substring(0,charIndex) 
                                 + "<color=#ffffff00>" 
-                                + sentence.Substring(i)
+                                + sentence.Substring(charIndex)
                                 + "</color>";
             yield return null;            
         }
+
+        // Kristen TODO: end character SFX
         ParseChoices();
     }
 
@@ -304,6 +314,7 @@ public class DialogueManager : MonoBehaviour
         _playerInConvo.Value = false;
         _playerCanContinue = false;
         _story = null;
+
         StartTimer(TimeoutDialogue());
         TriggerEndBehavior();
     }
@@ -324,8 +335,6 @@ public class DialogueManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         _playerCanContinue = true;
     }
-
-    //Triggers the event/behavior that occurs after the dialogue finishes, if event exists.
     private void TriggerEndBehavior()
     {
         if(_dialogueEndEvent != null)

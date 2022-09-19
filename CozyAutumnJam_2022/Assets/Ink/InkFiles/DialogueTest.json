@@ -1,1 +1,1 @@
-﻿{"inkVersion":20,"root":[[{"#":"char myrtle"},"^HELLO THERE!!! THIS IS A TEST!!!","\n",{"#":"char cleo"},"^You don't have to shout.","\n",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}
+﻿{"inkVersion":20,"root":[[{"#":"char myrtle"},{"#":"lines 1"},"^HELLO THERE!!!","\n","^THIS IS A TEST!!!","\n",{"#":"char cleo"},"^You don't have to shout.","\n",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}

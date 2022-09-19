@@ -24,7 +24,7 @@ public class CostumeScript : MonoBehaviour, IInteractable
     public void ActivateInteraction()
     {
         //needs to give charID and qStep to dialogue manager
-        QuestManager.Instance.CompleteQuestStep(_questInfo);
+        QuestManager.Instance.CompleteQuestStepHuman(_questInfo);
         //TODO:: needs to give the new costume card to the deck
     }
 

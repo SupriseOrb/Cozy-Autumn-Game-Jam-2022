@@ -86,7 +86,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="SpiritStore" ID="{9E5BE5B5-6E95-4EB6-906E-72FC6A53811F}"/>
+						<CurrentStateRef Name="HumanShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

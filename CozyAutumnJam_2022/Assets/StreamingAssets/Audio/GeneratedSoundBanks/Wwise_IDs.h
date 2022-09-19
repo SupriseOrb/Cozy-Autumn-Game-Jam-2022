@@ -13,6 +13,12 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID HUMAN_CHRYSANTHA = 384231010U;
+        static const AkUniqueID HUMAN_JOWAN = 2630114156U;
+        static const AkUniqueID HUMAN_KEN = 2994644335U;
+        static const AkUniqueID HUMAN_MYRTLE = 3435889618U;
+        static const AkUniqueID HUMAN_STORE = 2707783454U;
+        static const AkUniqueID HUMAN_V = 582752983U;
         static const AkUniqueID PLAY_CARDFLIP = 884848037U;
         static const AkUniqueID PLAY_CARDPULL = 3136930057U;
         static const AkUniqueID PLAY_CARDSHUFFLE = 3192869359U;
@@ -23,6 +29,11 @@ namespace AK
         static const AkUniqueID PLAY_UIRESUME = 235035089U;
         static const AkUniqueID PLAY_UISCROLL = 3312925211U;
         static const AkUniqueID PLAY_UISELECT = 3703192648U;
+        static const AkUniqueID PLAYMUSICSTART = 1068983008U;
+        static const AkUniqueID SPIRIT_CHRYSANTHA = 3448711732U;
+        static const AkUniqueID SPIRIT_JOWAN = 658206130U;
+        static const AkUniqueID SPIRIT_MYRTLE = 2694481824U;
+        static const AkUniqueID SPIRIT_STORE = 1419433896U;
     } // namespace EVENTS
 
     namespace STATES
@@ -33,13 +44,17 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID CHRYSANTHA = 3859875700U;
-                static const AkUniqueID GENERALSHOP = 3809334403U;
-                static const AkUniqueID JOWAN = 925511666U;
-                static const AkUniqueID KEN = 1183067797U;
-                static const AkUniqueID MYRTLE = 2951281120U;
+                static const AkUniqueID HUMANCRYSANTHA = 2783885547U;
+                static const AkUniqueID HUMANJOWAN = 2790751573U;
+                static const AkUniqueID HUMANKEN = 2712708934U;
+                static const AkUniqueID HUMANMYRTLE = 1812465801U;
+                static const AkUniqueID HUMANSHOP = 919506728U;
+                static const AkUniqueID HUMANV = 2383602514U;
                 static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID V = 84696425U;
+                static const AkUniqueID SPIRITCHRYSANTHA = 902421079U;
+                static const AkUniqueID SPIRITJOWAN = 1775093491U;
+                static const AkUniqueID SPIRITMYRTLE = 3165849807U;
+                static const AkUniqueID SPIRITSTORE = 1876881881U;
             } // namespace STATE
         } // namespace GAMEPLAY
 

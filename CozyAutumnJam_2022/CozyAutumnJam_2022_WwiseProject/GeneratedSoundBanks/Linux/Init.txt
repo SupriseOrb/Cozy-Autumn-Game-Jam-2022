@@ -2,13 +2,17 @@ State Group	ID	Name			Wwise Object Path	Notes
 	89505537	Gameplay			\Default Work Unit\Gameplay	
 
 State	ID	Name	State Group			Notes
-	84696425	V	Gameplay			
 	748895195	None	Gameplay			
-	925511666	Jowan	Gameplay			
-	1183067797	Ken	Gameplay			
-	2951281120	Myrtle	Gameplay			
-	3809334403	GeneralShop	Gameplay			
-	3859875700	Chrysantha	Gameplay			
+	902421079	SpiritChrysantha	Gameplay			
+	919506728	HumanShop	Gameplay			
+	1775093491	SpiritJowan	Gameplay			
+	1812465801	HumanMyrtle	Gameplay			
+	1876881881	SpiritStore	Gameplay			
+	2383602514	HumanV	Gameplay			
+	2712708934	HumanKen	Gameplay			
+	2783885547	HumanCrysantha	Gameplay			
+	2790751573	HumanJowan	Gameplay			
+	3165849807	SpiritMyrtle	Gameplay			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	365633811	AmbianceVolume			\Default Work Unit\AmbianceVolume	

@@ -26,6 +26,7 @@ public class InputManager : MonoBehaviour
     [SerializeField] private string _swapDString;
     [SerializeField] private string _useDString;
     [SerializeField] private string _movementString;
+    [SerializeField] private string _interactString;
 
     private InputAction _cycleLAction;
     private InputAction _cycleRAction;
@@ -34,6 +35,7 @@ public class InputManager : MonoBehaviour
     private InputAction _swapDAction;
     private InputAction _useDAction;
     private InputAction _movementAction;
+    private InputAction _interactAction;
 
     
 
@@ -46,6 +48,7 @@ public class InputManager : MonoBehaviour
         _swapDAction = _playerInput.actions[_swapDString];
         _useDAction = _playerInput.actions[_useDString];
         _movementAction = _playerInput.actions[_movementString];
+        _interactAction = _playerInput.actions[_interactString];
     }
 
     private void OnEnable() 
@@ -56,6 +59,7 @@ public class InputManager : MonoBehaviour
         _onEscapeAction.performed += OnEscape;
         _swapDAction.performed += OnSwapD;
         _useDAction.performed += OnUseD;
+        _interactAction.performed += OnInteract;
 
         _movementAction.started += OnMovement;
         _movementAction.performed += OnMovement;
@@ -70,6 +74,7 @@ public class InputManager : MonoBehaviour
         _onEscapeAction.performed -= OnEscape;
         _swapDAction.performed -= OnSwapD;
         _useDAction.performed -= OnUseD;
+        _interactAction.performed -= OnInteract;
 
         _movementAction.started -= OnMovement;
         _movementAction.performed -= OnMovement;
@@ -126,6 +131,24 @@ public class InputManager : MonoBehaviour
         {
             _cardManager.ActivateAbilityCard();
         }
+    }
+
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+        Vector2 originalPos = PlayerScript.Instance.transform.position;
+        Vector2 originalDir = PlayerScript.Instance.getPlayerDirection();
+        float distance = 2f;
+        RaycastHit2D _rayCastHit = Physics2D.Raycast(originalPos, originalDir, distance);
+        Debug.DrawRay(originalPos, originalDir * distance, Color.red, 1);
+        if(_rayCastHit.transform != null)
+        {
+            GameObject _hitGO = _rayCastHit.transform.gameObject;
+            if (_hitGO.TryGetComponent(out IInteractable interactable))
+            {
+                interactable.ActivateInteraction();
+            }
+        }
+        
     }
 
     public void OnMovement(InputAction.CallbackContext context)

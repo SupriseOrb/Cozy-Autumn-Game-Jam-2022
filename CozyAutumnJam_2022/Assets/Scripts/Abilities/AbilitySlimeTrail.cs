@@ -8,7 +8,7 @@ public class AbilitySlimeTrail : MonoBehaviour, IAbility
     [SerializeField] private float _speed;
     [SerializeField] private Vector3 _originalPos;
     [SerializeField] private Vector3 _originalDir;
-    [SerializeField] private float _distance = 200;
+    [SerializeField] private float _distance = 2f;
     private RaycastHit2D _rayCastHit;
     private GameObject _hitGO;
     private bool _isAvailable = true;

@@ -35,7 +35,7 @@ public class QuestManager : MonoBehaviour
         } 
     }
 
-    public void CompleteQuestStep(QuestInfo qInfo) //figure out to pass 2 ints in an event (using SO)
+    public void CompleteQuestStepHuman(QuestInfo qInfo) //figure out to pass 2 ints in an event (using SO)
     {
         //if not true already
         if (_questList[qInfo.QuestIndex]._questStepCompleted[qInfo.StepIndex]!= true)
@@ -51,12 +51,40 @@ public class QuestManager : MonoBehaviour
         {
             if (_questList[qInfo.QuestIndex]._questStepCompleted[2] == true)
             {
-                _questList[qInfo.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
+                _questList[qInfo.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
             }
             if (qInfo.StepIndex == 0)
             {
                 _questList[qInfo.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
             }
+            if (qInfo.StepIndex == 1)
+            {
+                _questList[qInfo.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
+            }
+            if (qInfo.StepIndex == 2)
+            {
+                _questList[qInfo.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.AfterGiveCostume);
+            }
+            if (qInfo.StepIndex == 3)
+            {
+               _questList[qInfo.QuestIndex]._questComplete = true; 
+            }
+            
+        }
+    }
+    public void CompleteQuestStepSpirit(QuestInfo qInfo)
+    {
+        if (_questList[qInfo.QuestIndex]._questStepCompleted[qInfo.StepIndex]!= true)
+        {
+            _questList[qInfo.QuestIndex]._questStepCompleted[qInfo.StepIndex] = true;
+        }
+
+        if (_questList[qInfo.QuestIndex]._questComplete == true)
+        {
+            return;
+        }
+        else if (_questList[qInfo.QuestIndex]._questComplete != true)
+        {
             if (qInfo.StepIndex == 1)
             {
                 _questList[qInfo.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
@@ -71,22 +99,14 @@ public class QuestManager : MonoBehaviour
             {
                 _questList[qInfo.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.AfterGiveCostume);
             }
-            if (qInfo.StepIndex == 4)
-            {
-                _questList[qInfo.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
-            }
-            if (qInfo.StepIndex == 5)
-            {
-                _questList[qInfo.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.AfterGiveCostume);
-            }
             if (qInfo.StepIndex == 6)
             {
                _questList[qInfo.QuestIndex]._questComplete = true; 
             }
-            
         }
 
     }
+
         //you might need to add some logic to prevent the skipping of story beats if the player were to pick up a costume too early
         //if stepindex is 0, aka the start. set currentquesthuman story beat to waiting for costume
         //if step index is 1, set currentquestspirit story beat to waitign for costuem
@@ -97,6 +117,21 @@ public class QuestManager : MonoBehaviour
         //if step index is 4, this is when you pick up the human costume, set human story beat to give costume
         //if step index is 5, this is giving the human costume, set human story beat to aftergivecostume
         //if step index is 6, the quest is complete
+
+        public enum _questIndex
+        {
+            TalkedtoHuman = 0,
+            TalkedtoSpirit = 1,
+            PickupSpiritCostume = 2,
+            GaveSpiritCostume = 3,
+            PickupHumanCostume = 4,
+            GaveHumanCostume = 5,
+            Complete = 6
+        }
+
+        //Human: 0, 4, 5
+        //Spirit: 1, 2, 3
+        //Complete for both KEKW
 
 
         //IMPORTANT NOTE, the boss' quest will be different than the others so it will not work with this setup

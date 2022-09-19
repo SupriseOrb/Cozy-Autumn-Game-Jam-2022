@@ -8,13 +8,24 @@ public class PlayerScript : MonoBehaviour
     static public PlayerScript Instance { get { return _instance;}}
 
     //How far away the two shops are from each other in the game screen
-    [SerializeField] private Vector3 teleportDistance;
+    //Currently unused
+    [SerializeField, Tooltip("Currently Unused")] private Vector3 _teleportDistance;
 
     [Header("Movement Variables")]
-    [SerializeField] private float _speed;
+    [SerializeField, Tooltip("The speed of the player.")] 
+    private float _speed;
+    [SerializeField, Tooltip("How quickly the player will reach the target speed.")] 
+    private float _speedSmoothTime;
+    //Holder for current position (for smoothing movement)
+    private Vector2 _currentInputVector;
+    //Holder for current velocity (for smoothing movement)
+    private Vector2 _currentVelocity;
+
+    [Header("References")]
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private InputManager _inputManager;
     [SerializeField] private Vector2 _playerDirection;
+    
 
     void Awake()
     {
@@ -30,7 +41,8 @@ public class PlayerScript : MonoBehaviour
 
     private void FixedUpdate() 
     {
-        _rb.MovePosition(_rb.position + _inputManager.MovementInput * _speed * Time.deltaTime);
+        _currentInputVector = Vector2.SmoothDamp(_currentInputVector, _inputManager.MovementInput, ref _currentVelocity, _speedSmoothTime);
+        _rb.MovePosition(_rb.position + _currentInputVector * _speed * Time.deltaTime);
         if(_inputManager.MovementInput != Vector2.zero)
         {
             _playerDirection = _inputManager.MovementInput;

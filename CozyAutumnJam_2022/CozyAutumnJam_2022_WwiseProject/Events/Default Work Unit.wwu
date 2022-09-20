@@ -13,7 +13,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="HumanStore" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+											<ObjectRef Name="HumanShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -48,7 +48,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="MainMenu" ID="{209D6C24-F8CF-4F1B-B3ED-7DB48AE9A9B0}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
+											<ObjectRef Name="HumanShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -161,48 +161,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SpiritMyrtle" ID="{179D2889-84AD-452B-AADC-6B55C0E518E8}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Main_Menu" ID="{89EB4A3A-27B1-40E8-B6D2-F7AE4A2F1B37}">
-							<ChildrenList>
-								<Action Name="" ID="{07B295BF-2353-429F-B226-EA05FF142393}" ShortID="495354659">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="MainMenu" ID="{209D6C24-F8CF-4F1B-B3ED-7DB48AE9A9B0}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Spirit_V" ID="{FB4395D9-41C6-4983-AC09-520F68BE3441}">
-							<ChildrenList>
-								<Action Name="" ID="{E501BF74-D897-4FDA-8BBE-47A921619598}" ShortID="713517171">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SpiritV" ID="{E804D66D-39A0-464A-A016-D05BF0090AB8}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Spirit_Ken" ID="{4655C10E-3ED7-4581-AE92-07A65B59510D}">
-							<ChildrenList>
-								<Action Name="" ID="{BB08C93D-99FB-4576-A421-2885988D53B2}" ShortID="680857762">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SpiritKen" ID="{9F013D51-F115-41DE-BCB9-6B6DCDB38734}" WorkUnitID="{03A17065-1AF0-4C47-8720-A7A72BB29234}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

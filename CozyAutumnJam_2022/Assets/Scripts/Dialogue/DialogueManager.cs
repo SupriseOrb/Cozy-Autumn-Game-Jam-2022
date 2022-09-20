@@ -86,6 +86,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private UnityEvent _dialogueEndEvent;
     private string _currentSentence;
     private List <string> _tags;
+    private float _waitTime;
     private IEnumerator _coroutine;
     #endregion
 
@@ -98,6 +99,7 @@ public class DialogueManager : MonoBehaviour
     #endregion
     	
     #region Dialogue Box
+    [SerializeField] private GameObject _dialogueBox;
     [SerializeField] private GameObject _imageHolder;
     [SerializeField] private Image _charImage;
     [SerializeField] private GameObject _nameHolder;
@@ -151,10 +153,11 @@ public class DialogueManager : MonoBehaviour
                 SetStoryVariable(varName, varValue);
             }
             
-            animator.SetBool("isOpen", true);
+            _dialogueBox.SetActive(true);
+            //animator.SetBool("isOpen", true);
             _playerInConvo.Value = true;
             
-            StartTimer(WaitToStartStory());
+            AdvanceDialogue();
         }
     }
 
@@ -177,8 +180,16 @@ public class DialogueManager : MonoBehaviour
                     StopCoroutine(_coroutine);
                 }
                 _coroutine = TypeSentence(_currentSentence);
-                StartCoroutine(_coroutine);
-                // Kristen TODO: Start character sfx                
+
+                if(_waitTime > 0f)
+                {
+                    _dialogueBox.SetActive(false);
+                    Invoke("StartTypeWriterEffect", _waitTime);  
+                }
+                else
+                {
+                    StartCoroutine(_coroutine);
+                }
             }
             else
             {
@@ -192,6 +203,7 @@ public class DialogueManager : MonoBehaviour
     private void ParseTags()
     {
         _tags = _story.currentTags;
+        _waitTime = 0f;
         string characterName = "";
         string emotion = "";
 
@@ -214,6 +226,9 @@ public class DialogueManager : MonoBehaviour
                     break;
                 case "music":
                     // Kristen TODO: Play music
+                    break;
+                case "wait":
+                    _waitTime = float.Parse(param);
                     break;
             }
         }
@@ -288,9 +303,13 @@ public class DialogueManager : MonoBehaviour
         AdvanceDialogue();        
     }
 
+    private void StartTypeWriterEffect()
+    {
+        _dialogueBox.SetActive(true);
+        StartCoroutine(_coroutine);
+    }
     private IEnumerator TypeSentence(string sentence)
     {
-        // TODO: There might be a small bug with \n character
         _dialogueText.text = "";
 
         for(int charIndex = 1; charIndex < sentence.Length; charIndex++)
@@ -310,7 +329,8 @@ public class DialogueManager : MonoBehaviour
     private void FinishDialogue()
     {
         Debug.Log("Finish Dialogue");
-        animator.SetBool("isOpen", false);
+        _dialogueBox.SetActive(false);
+        //animator.SetBool("isOpen", false);
         
         _nameText.text = "";
         _dialogueText.text = "";
@@ -326,12 +346,6 @@ public class DialogueManager : MonoBehaviour
     private void StartTimer(IEnumerator timer)
     {
         StartCoroutine(timer);
-    }
-
-    private IEnumerator WaitToStartStory()
-    {
-        yield return new WaitForSeconds(0.25f);
-        AdvanceDialogue();
     }
 
     private IEnumerator TimeoutDialogue()

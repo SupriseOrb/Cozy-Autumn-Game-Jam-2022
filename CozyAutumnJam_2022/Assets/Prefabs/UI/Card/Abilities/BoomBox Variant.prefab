@@ -99,6 +99,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoomBox Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 54112002efafee94c916ccbd23ca9797, type: 3}
+    - target: {fileID: 3269696177942801510, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: Soul Boom Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 3953249409995055704, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 54112002efafee94c916ccbd23ca9797, type: 3}
+    - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: _icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 54112002efafee94c916ccbd23ca9797, type: 3}
+    - target: {fileID: 5371308869897057536, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: Plays a sound of an animatronic when used in front of one
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
 --- !u!1 &3965505048505759930 stripped

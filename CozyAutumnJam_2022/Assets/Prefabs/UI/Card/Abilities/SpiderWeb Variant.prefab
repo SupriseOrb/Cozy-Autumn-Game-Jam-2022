@@ -99,6 +99,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpiderWeb Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8e2b3ad310d10204199c3461be69f38f, type: 3}
+    - target: {fileID: 3269696177942801510, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: Spider Web
+      objectReference: {fileID: 0}
+    - target: {fileID: 3953249409995055704, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8e2b3ad310d10204199c3461be69f38f, type: 3}
+    - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: _icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 8e2b3ad310d10204199c3461be69f38f, type: 3}
+    - target: {fileID: 5371308869897057536, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: Puts a trap on the player's current location. The trap captures creatures
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
 --- !u!1 &1531242826513637661 stripped
@@ -120,3 +140,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cardInformation: {fileID: 0}
   _spiderWebGO: {fileID: 0}
+  _lastWeb: {fileID: 0}
+  _spiderWebDetectRadius: 0

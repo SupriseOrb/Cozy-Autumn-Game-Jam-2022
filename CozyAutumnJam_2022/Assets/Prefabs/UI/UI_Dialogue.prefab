@@ -443,7 +443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6467850270876742057
 RectTransform:
   m_ObjectHideFlags: 0
@@ -465,7 +465,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -100}
+  m_AnchoredPosition: {x: 0, y: 270}
   m_SizeDelta: {x: 1280, y: 540}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &6467850270876742070
@@ -722,7 +722,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &6467850271005281014
 MonoBehaviour:
@@ -796,6 +796,7 @@ MonoBehaviour:
   - {fileID: 751861141053318454}
   - {fileID: 751861139957935608}
   _chest: {fileID: 0}
+  _dialogueBox: {fileID: 6467850270876742056}
   _imageHolder: {fileID: 6467850272246368182}
   _charImage: {fileID: 6467850270756387519}
   _nameHolder: {fileID: 6467850271076098386}

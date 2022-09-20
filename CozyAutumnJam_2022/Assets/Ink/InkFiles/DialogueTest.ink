@@ -1,7 +1,8 @@
 #char myrtle #lines 1
 HELLO THERE!!! 
 THIS IS A TEST!!!
-OH HI CLEO!!!
+#wait 2
+WHY IS THIS ON SLOWMODE?
 
 #char cleo
 You don't have to shout.

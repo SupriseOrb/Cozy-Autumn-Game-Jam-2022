@@ -27,7 +27,6 @@ public class CardManager : MonoBehaviour
     [SerializeField] private Image _rightCardImage;
     [SerializeField] private bool _isOracleDeckActive;
     private bool _isCardExpanded;
-    private bool _isCardFront;
 
     [SerializeField] private GameObject _hintHolder;
     [SerializeField] private TextMeshProUGUI _hintText;
@@ -63,7 +62,8 @@ public class CardManager : MonoBehaviour
             currentDeck[currentCurrent].GetComponent<Animator>().Play("MidToLeft");
             currentDeck[currentNext].transform.SetAsLastSibling();
             currentDeck[currentNext].GetComponent<Animator>().Play("RightToMid");
-            _leftCardImage.sprite = currentDeck[currentPrevious].GetComponent<Image>().sprite;
+            Debug.Log(currentDeck[currentPrevious]);
+            _leftCardImage.sprite = currentDeck[currentPrevious].GetComponent<CardArtImplementation>().Icon;
             CycleCardsBy(1);
             currentDeck[currentNext].GetComponent<Animator>().Play("ToRight");
         }
@@ -72,7 +72,7 @@ public class CardManager : MonoBehaviour
             currentDeck[currentCurrent].GetComponent<Animator>().Play("MidToRight");
             currentDeck[currentPrevious].transform.SetAsLastSibling();
             currentDeck[currentPrevious].GetComponent<Animator>().Play("LeftToMid");
-            _rightCardImage.sprite = currentDeck[currentNext].GetComponent<Image>().sprite;
+            _rightCardImage.sprite = currentDeck[currentNext].GetComponent<CardArtImplementation>().Icon;
             CycleCardsBy(-1);
             currentDeck[currentPrevious].GetComponent<Animator>().Play("ToLeft");
         }
@@ -97,24 +97,10 @@ public class CardManager : MonoBehaviour
         //Show an info sprite
     }
 
-    public void FlipHelper(ref List<GameObject> currentDeck, int currentCurrent)
-    {
-        if(_isCardFront)
-        {
-            currentDeck[currentCurrent].GetComponent<Animator>().Play("FlipToBack");
-        }
-        else
-        {
-            currentDeck[currentCurrent].GetComponent<Animator>().Play("FlipToFront");
-        }
-        _isCardFront = !_isCardFront;
-    }
-
     private void OpenCard()
     {
         //Plays sound for showing card info
         AkSoundEngine.PostEvent("Play_CardPull", this.gameObject);
-        _isCardFront = true;
         if(_isOracleDeckActive)
         {
             ExpandHelper(ref _oracleCardList, _oracleCurrentCard);
@@ -143,14 +129,7 @@ public class CardManager : MonoBehaviour
 
     private void CloseHelper(ref List<GameObject> currentDeck, int currentCurrent)
     {
-        if(_isCardFront)
-        {
-            currentDeck[currentCurrent].GetComponent<Animator>().Play("FrontShrink");
-        }
-        else
-        {
-            currentDeck[currentCurrent].GetComponent<Animator>().Play("BackShrink");
-        }
+        currentDeck[currentCurrent].GetComponent<Animator>().Play("FrontShrink");
     }
 
     //Moves the array tracker by the value of cycleBy

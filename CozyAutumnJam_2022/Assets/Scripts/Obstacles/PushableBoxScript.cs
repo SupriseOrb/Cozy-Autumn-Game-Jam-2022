@@ -20,4 +20,8 @@ public class PushableBoxScript : MonoBehaviour
         }
     }
     //TODO:: If I have time, create a trigger boundary to prevent boxes getting stuck on things
+    public void StopMoving()
+    {
+        _rb.constraints = RigidbodyConstraints2D.FreezeAll;
+    }
 }

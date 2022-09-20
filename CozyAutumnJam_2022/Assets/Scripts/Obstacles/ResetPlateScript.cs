@@ -41,6 +41,10 @@ public class ResetPlateScript : MonoBehaviour
             {
                 rat.ResetRat();
             }
+            if(_resettableObjects[i].TryGetComponent(out PushableBoxScript box))
+            {
+                box.StopMoving();
+            }
             _resettableObjects[i].transform.position = _resettablePositions[i];
         }
     }

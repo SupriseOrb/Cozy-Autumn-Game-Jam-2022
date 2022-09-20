@@ -79,7 +79,7 @@ public class RatScript : MonoBehaviour
     {
         if(other.TryGetComponent(out SpiderWebObject web) && other.GetComponent<SpiderWebObject>().CanTrap)
         {
-            Instantiate(_ratPickUp, transform.position, other.transform.rotation ,other.transform);
+            Instantiate(_ratPickUp, transform.position, other.transform.rotation ,other.transform.parent);
             Destroy(gameObject);
         }
     }

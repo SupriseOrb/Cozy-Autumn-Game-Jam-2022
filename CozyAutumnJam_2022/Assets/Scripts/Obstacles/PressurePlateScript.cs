@@ -19,4 +19,9 @@ public class PressurePlateScript : MonoBehaviour
             other.GetComponent<IPressurePalatable>().ActivatePlate();
         }
     }
+
+    public void Deactivate()
+    {
+        isActivated = false;
+    }
 }

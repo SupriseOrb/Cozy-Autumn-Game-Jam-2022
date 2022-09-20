@@ -5,8 +5,16 @@ using UnityEngine;
 public class RatHoleScript : MonoBehaviour, IInteractable
 {
     [SerializeField] private RatScript _rat;
+    [SerializeField] private SpiritRatScript _spiritRat;
     public void ActivateInteraction()
     {
-        _rat.StartRunning();
+        if(_rat != null)
+        {
+            _rat.StartRunning();
+        }
+        else if(_spiritRat != null)
+        {
+            _spiritRat.StartRunning(SpiritRatScript.Direction.left);
+        }
     }
 }

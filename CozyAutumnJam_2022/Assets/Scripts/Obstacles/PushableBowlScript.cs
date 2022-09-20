@@ -22,4 +22,9 @@ public class PushableBowlScript : MonoBehaviour, IPressurePalatable
     {
         return currentCandies >= maxCandies;
     }
+
+    public void ResetCandies()
+    {
+        currentCandies = 0;
+    }
 }

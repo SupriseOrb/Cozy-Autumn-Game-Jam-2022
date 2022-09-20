@@ -14,6 +14,7 @@ public class RatScript : MonoBehaviour
     [SerializeField] private Sprite _leftSprite;
     [SerializeField] private Sprite _rightSprite;
     [SerializeField] private GameObject _ratPickUp;
+    [SerializeField] private GameObject _ratCard;
 
 
     public void Start()
@@ -55,7 +56,7 @@ public class RatScript : MonoBehaviour
         while (Vector3.Distance(transform.position, currentLocation.position) > .001f)
         {
             transform.position = Vector3.MoveTowards(transform.position, currentLocation.position, speed);
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.01f);
         }
 
         currentTransformIndex++;
@@ -79,7 +80,8 @@ public class RatScript : MonoBehaviour
     {
         if(other.TryGetComponent(out SpiderWebObject web) && other.GetComponent<SpiderWebObject>().CanTrap)
         {
-            Instantiate(_ratPickUp, transform.position, other.transform.rotation ,other.transform.parent);
+            GameObject rat = Instantiate(_ratPickUp, transform.position, other.transform.rotation ,other.transform.parent);
+            rat.GetComponent<RatPickUpScript>().SetRat(_ratCard);
             Destroy(gameObject);
         }
     }

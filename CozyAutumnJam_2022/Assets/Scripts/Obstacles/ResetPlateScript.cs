@@ -37,6 +37,10 @@ public class ResetPlateScript : MonoBehaviour
             {
                 bowl.ResetCandies();
             }
+            if(_resettableObjects[i].TryGetComponent(out SpiritRatScript rat))
+            {
+                rat.ResetRat();
+            }
             _resettableObjects[i].transform.position = _resettablePositions[i];
         }
     }

@@ -16,6 +16,7 @@ public class SpiritRatScript : MonoBehaviour
     [SerializeField] private Transform _lowerBound;
     [SerializeField] private Transform _upperBound;
     [SerializeField] private Vector2 _startLocation;
+    [SerializeField] private GameObject _ratCard;
 
     public enum Direction
     {
@@ -45,7 +46,8 @@ public class SpiritRatScript : MonoBehaviour
         }
         else if(other.TryGetComponent(out SpiderWebObject web) && web.CanTrap)
         {
-            Instantiate(_ratPickUp, transform.position, other.transform.rotation, other.transform.parent);
+            GameObject rat = Instantiate(_ratPickUp, transform.position, other.transform.rotation, other.transform.parent);
+            rat.GetComponent<RatPickUpScript>().SetRat(_ratCard);
             Destroy(gameObject);
         }
     }
@@ -59,9 +61,7 @@ public class SpiritRatScript : MonoBehaviour
         }
         if(transform.position.x > _upperBound.position.x || transform.position.x < _lowerBound.position.x || transform.position.y > _upperBound.position.y || transform.position.y < _lowerBound.position.y)
         {
-            _ratRigidBody.velocity = Vector2.zero;
-            transform.position = _startLocation;
-            transform.position = Vector3.MoveTowards(transform.position, _startLocation, speed);
+            ResetRat();
         }
     }
 
@@ -89,5 +89,12 @@ public class SpiritRatScript : MonoBehaviour
             _runDirection = Vector2.left;
         }
         _ratRigidBody.velocity = _runDirection * speed;
+    }
+
+    public void ResetRat()
+    {
+            _ratRigidBody.velocity = Vector2.zero;
+            transform.position = _startLocation;
+            transform.position = Vector3.MoveTowards(transform.position, _startLocation, speed);
     }
 }

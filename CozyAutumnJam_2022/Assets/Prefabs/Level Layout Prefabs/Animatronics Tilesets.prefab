@@ -2480,6 +2480,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6757027603415063438, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
+      propertyPath: _costume
+      value: 
+      objectReference: {fileID: 8912471503383585756}
+    - target: {fileID: 6757027603415063438, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _musicName
       value: Play_UISelect
       objectReference: {fileID: 0}
@@ -3199,6 +3203,158 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0162efaab61c8b74f98b9c5a06e4ff98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &8760679299890710185
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8760679300031121662}
+    m_Modifications:
+    - target: {fileID: 160822218151093621, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_Name
+      value: Human Chrysantha Costume
+      objectReference: {fileID: 0}
+    - target: {fileID: 160822218151093621, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046620336581199734, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: _character
+      value: 
+      objectReference: {fileID: 11400000, guid: 18eb146d2ae0382478bfc91fb1870574, type: 2}
+    - target: {fileID: 2046620336581199734, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: _costumeCard
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 32.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -11.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+--- !u!1 &8912471503383585756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160822218151093621, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+  m_PrefabInstance: {fileID: 8760679299890710185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8760679299973753603
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5742392406368383193}
+    m_Modifications:
+    - target: {fileID: 160822218151093621, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_Name
+      value: Spirit Chrysantha Costume
+      objectReference: {fileID: 0}
+    - target: {fileID: 160822218151093621, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046620336581199734, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: _character
+      value: 
+      objectReference: {fileID: 11400000, guid: 18eb146d2ae0382478bfc91fb1870574, type: 2}
+    - target: {fileID: 2046620336581199734, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: _costumeCard
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046620336581199734, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: _isSpiritCostume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 108.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+--- !u!1 &8912471504003747446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160822218151093621, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+  m_PrefabInstance: {fileID: 8760679299973753603}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8760679300366489507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3486,6 +3642,10 @@ PrefabInstance:
       propertyPath: _musicName
       value: Play_UISelect
       objectReference: {fileID: 0}
+    - target: {fileID: 6757027603415063438, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
+      propertyPath: _costume
+      value: 
+      objectReference: {fileID: 8912471504003747446}
     - target: {fileID: 6757027603415063438, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _musicName
       value: Play_UISelect

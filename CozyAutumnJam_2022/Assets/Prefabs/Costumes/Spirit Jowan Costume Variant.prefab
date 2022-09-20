@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2710505838430284441
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1838532560326802039, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838532560326802039, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 113.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838532560326802039, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838532560326802039, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838532560326802039, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838532560326802039, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838532560326802039, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838532560326802039, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838532560326802039, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838532560326802039, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838532560326802039, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885540854220548992, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: m_Name
+      value: Spirit Jowan Costume
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301054466707474819, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: _character
+      value: 
+      objectReference: {fileID: 11400000, guid: d4400d9de7e0cd94f9870d221ceb3b06, type: 2}
+    - target: {fileID: 8301054466707474819, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: _isSpiritCostume
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bb897f33ef5085540b38a025d310935d, type: 3}

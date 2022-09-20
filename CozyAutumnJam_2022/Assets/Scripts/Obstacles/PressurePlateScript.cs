@@ -7,11 +7,13 @@ public class PressurePlateScript : MonoBehaviour
     [SerializeField] private bool isActivated;
     private void OnTriggerStay2D(Collider2D other) 
     {
+        Debug.Log("isActivated = " + isActivated);
+        Debug.Log("Vel = " + other.GetComponent<Rigidbody2D>().velocity);
         if
         (
             !isActivated && 
             other.gameObject.TryGetComponent(out ItemTagScript tag) &&
-            other.GetComponent<ItemTagScript>().IsPressurePalatable() && 
+            tag.IsPressurePalatable() && 
             other.GetComponent<Rigidbody2D>().velocity == Vector2.zero
         )
         {

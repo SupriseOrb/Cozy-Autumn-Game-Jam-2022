@@ -6,6 +6,8 @@ using TMPro;
 
 public class CardManager : MonoBehaviour
 {
+    static private CardManager _instance;
+    static public CardManager Instance { get { return _instance;}}
 #region Oracle Card Variables 
     [SerializeField] private List<GameObject> _oracleCardList;
     [SerializeField] private int _oracleCurrentCard;
@@ -30,6 +32,18 @@ public class CardManager : MonoBehaviour
 
     [SerializeField] private GameObject _hintHolder;
     [SerializeField] private TextMeshProUGUI _hintText;
+
+    void Awake()
+    {
+        if(_instance == null)
+        {
+            _instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        } 
+    }
 
     //Uses animations to cycle cards in UI
     public void CycleCards(bool direction)
@@ -216,7 +230,7 @@ public class CardManager : MonoBehaviour
         AkSoundEngine.PostEvent("Play_DeckSwap", this.gameObject);
     }
 
-    public void AddActiveCard(GameObject newCard)
+    public void AddOracleCard(GameObject newCard)
     {
         _oracleCardList.Add(newCard);
         if(_isOracleDeckActive)
@@ -231,8 +245,9 @@ public class CardManager : MonoBehaviour
         }
     }    
 
-    public void AddPassiveCard(GameObject newCard)
+    public void AddPropCard(GameObject newCard)
     {
+        newCard.SetActive(true);
         _propCardList.Add(newCard);
         if(!_isOracleDeckActive)
         {
@@ -244,6 +259,18 @@ public class CardManager : MonoBehaviour
             CycleCardsBy(0);
             _isOracleDeckActive = true;
         }
+    }
+
+    public bool GetPropCard(string cardName)
+    {
+        foreach(GameObject card in _propCardList)
+        {
+            if(card.name == cardName)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void ActivateAbilityCard()

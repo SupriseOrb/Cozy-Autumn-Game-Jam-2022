@@ -230,6 +230,7 @@
 												</MusicPlaylistItem>
 												<MusicPlaylistItem Name="" ID="{7323D331-7973-4D59-9125-146E64AA3051}" ShortID="844112447">
 													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
 													<SegmentRef Name="Spooky_MainTheme_Draft_1" ID="{577C84CD-19AF-4B54-93A2-DADBEAFBF862}"/>

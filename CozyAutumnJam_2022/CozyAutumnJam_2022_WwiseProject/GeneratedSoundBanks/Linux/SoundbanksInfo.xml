@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Linux" BasePlatform="Linux" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/.cache/Linux/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/GeneratedSoundBanks/Linux/</SoundBanksRoot>
+		<ProjectRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Linux\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\GeneratedSoundBanks\Linux\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/GeneratedSoundBanks/Linux</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -22,7 +22,7 @@
 				<GameParameter Id="2731583604" Name="AllVolume" ObjectPath="\Game Parameters\Default Work Unit\AllVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4279632974">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1192432029">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -61,7 +61,7 @@
 					<IncludedMemoryFiles>
 						<File Id="844309663" Language="SFX">
 							<ShortName>CardFlip.wav</ShortName>
-							<Path>SFX/CardFlip_10C4C929.wem</Path>
+							<Path>SFX\CardFlip_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -69,11 +69,11 @@
 					<IncludedMemoryFiles>
 						<File Id="469650255" Language="SFX">
 							<ShortName>CardPull1.wav</ShortName>
-							<Path>SFX/CardPull1_10C4C929.wem</Path>
+							<Path>SFX\CardPull1_10C4C929.wem</Path>
 						</File>
 						<File Id="645855217" Language="SFX">
 							<ShortName>CardPull2.wav</ShortName>
-							<Path>SFX/CardPull2_10C4C929.wem</Path>
+							<Path>SFX\CardPull2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -81,15 +81,15 @@
 					<IncludedMemoryFiles>
 						<File Id="407509120" Language="SFX">
 							<ShortName>CardShuffle1.wav</ShortName>
-							<Path>SFX/CardShuffle1_10C4C929.wem</Path>
+							<Path>SFX\CardShuffle1_10C4C929.wem</Path>
 						</File>
 						<File Id="730900144" Language="SFX">
 							<ShortName>CardShuffle3.wav</ShortName>
-							<Path>SFX/CardShuffle3_10C4C929.wem</Path>
+							<Path>SFX\CardShuffle3_10C4C929.wem</Path>
 						</File>
 						<File Id="807983812" Language="SFX">
 							<ShortName>CardShuffle2_02.wav</ShortName>
-							<Path>SFX/CardShuffle2_02_10C4C929.wem</Path>
+							<Path>SFX\CardShuffle2_02_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -97,7 +97,7 @@
 					<IncludedMemoryFiles>
 						<File Id="530332103" Language="SFX">
 							<ShortName>CardSwap.wav</ShortName>
-							<Path>SFX/CardSwap_10C4C929.wem</Path>
+							<Path>SFX\CardSwap_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -105,7 +105,7 @@
 					<IncludedMemoryFiles>
 						<File Id="898142516" Language="SFX">
 							<ShortName>Phone Ringing.wav</ShortName>
-							<Path>SFX/Phone Ringing_10C4C929.wem</Path>
+							<Path>SFX\Phone Ringing_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -113,7 +113,7 @@
 					<IncludedMemoryFiles>
 						<File Id="906103811" Language="SFX">
 							<ShortName>UIBack.wav</ShortName>
-							<Path>SFX/UIBack_10C4C929.wem</Path>
+							<Path>SFX\UIBack_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -121,7 +121,7 @@
 					<IncludedMemoryFiles>
 						<File Id="937727332" Language="SFX">
 							<ShortName>UIPause.wav</ShortName>
-							<Path>SFX/UIPause_10C4C929.wem</Path>
+							<Path>SFX\UIPause_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -129,7 +129,7 @@
 					<IncludedMemoryFiles>
 						<File Id="35618958" Language="SFX">
 							<ShortName>UIResume.wav</ShortName>
-							<Path>SFX/UIResume_10C4C929.wem</Path>
+							<Path>SFX\UIResume_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -137,7 +137,7 @@
 					<IncludedMemoryFiles>
 						<File Id="189416120" Language="SFX">
 							<ShortName>UIScroll.wav</ShortName>
-							<Path>SFX/UIScroll_10C4C929.wem</Path>
+							<Path>SFX\UIScroll_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -145,7 +145,7 @@
 					<IncludedMemoryFiles>
 						<File Id="897019754" Language="SFX">
 							<ShortName>UISelect.wav</ShortName>
-							<Path>SFX/UISelect_10C4C929.wem</Path>
+							<Path>SFX\UISelect_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -153,47 +153,47 @@
 					<IncludedMemoryFiles>
 						<File Id="11164527" Language="SFX">
 							<ShortName>Spooky_VTheme_Draft_1.wav</ShortName>
-							<Path>SFX/Spooky_VTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_VTheme_Draft_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="84526937" Language="SFX">
 							<ShortName>Spirit_MainTheme.wav</ShortName>
-							<Path>SFX/Spirit_MainTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_MainTheme_D79FB2B7.wem</Path>
 						</File>
 						<File Id="101494922" Language="SFX">
 							<ShortName>Spooky_MainTheme_Draft_1.wav</ShortName>
-							<Path>SFX/Spooky_MainTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_MainTheme_Draft_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="181034382" Language="SFX">
 							<ShortName>Spooky_MainTheme_Intro_Draft_1.wav</ShortName>
-							<Path>SFX/Spooky_MainTheme_Intro_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_MainTheme_Intro_Draft_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="253288252" Language="SFX">
 							<ShortName>Spirit_ChrysanthaTheme.wav</ShortName>
-							<Path>SFX/Spirit_ChrysanthaTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_ChrysanthaTheme_D79FB2B7.wem</Path>
 						</File>
 						<File Id="294587160" Language="SFX">
 							<ShortName>Spooky_ChrysanthaTheme_Draft_1.wav</ShortName>
-							<Path>SFX/Spooky_ChrysanthaTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_ChrysanthaTheme_Draft_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="339010008" Language="SFX">
 							<ShortName>Spooky_JowanTheme_Draft_1.wav</ShortName>
-							<Path>SFX/Spooky_JowanTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_JowanTheme_Draft_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="520901426" Language="SFX">
 							<ShortName>Spooky_MyrtleTheme_Draft_1.wav</ShortName>
-							<Path>SFX/Spooky_MyrtleTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_MyrtleTheme_Draft_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="596672924" Language="SFX">
 							<ShortName>Spirit_MyrtleTheme.wav</ShortName>
-							<Path>SFX/Spirit_MyrtleTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_MyrtleTheme_D79FB2B7.wem</Path>
 						</File>
 						<File Id="720273982" Language="SFX">
 							<ShortName>Spooky_KenTheme_Draft_1.wav</ShortName>
-							<Path>SFX/Spooky_KenTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_KenTheme_Draft_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="860405681" Language="SFX">
 							<ShortName>Spirit_JowanTheme.wav</ShortName>
-							<Path>SFX/Spirit_JowanTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_JowanTheme_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>

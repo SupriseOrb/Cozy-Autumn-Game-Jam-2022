@@ -52,6 +52,7 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
                 }
                 else
                 {
+                    // Kristen TODO: Spirit translator sfx
                     StartCoroutine(StartTranslateCooldown());
                 }
             }
@@ -108,6 +109,7 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
                 }
                 else
                 {
+                    // Kristen TODO: spirit translator sfx
                     StartCoroutine(StartRuneCooldown());
                 }
             }

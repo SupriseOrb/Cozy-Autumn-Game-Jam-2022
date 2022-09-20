@@ -35,6 +35,7 @@ public class AbilitySlimeTrail : MonoBehaviour, IAbility
                     Debug.Log("hit something");
                     if(_hitGO.GetComponent<ItemTagScript>().IsPushable())
                     {
+                        // Kristen Todo: Slime push sfx
                         Debug.Log("Hit a pushabLe");
                         _hitGO.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
                         _hitGO.GetComponent<Rigidbody2D>().AddForce(_originalDir * _speed, ForceMode2D.Impulse);

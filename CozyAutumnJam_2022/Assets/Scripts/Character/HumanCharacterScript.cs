@@ -6,41 +6,19 @@ using UnityEngine.Events;
 public class HumanCharacterScript : MonoBehaviour, IInteractable
 {
     //GOES ON HUMAN CHARACTER GO's
-    //QuestIndex: 0 - Ken, 1 - Myrtle, 2 - Jowan, 3 - V, 4 - Chrysantha
     [SerializeField] private CharacterWithProgression _characterSO;
-    [SerializeField, Tooltip("Character ID of the Human Character. Ken = 0, Myrtle = 1, Jowan = 2, V = 3, Chrysantha = 4")] 
-    private int _characterID;
     [SerializeField] private UnityEvent _characterEvent;
     private QuestManager.HumanQuest _characterQuest;
     
     private void Start() 
     {
-        _characterQuest = QuestManager.Instance.HumanQuestList[_characterID];
+        _characterQuest = QuestManager.Instance.HumanQuestList[_characterSO.QuestIndex];
     }
-
     public void ActivateInteraction()
     {
-        //In the inspector, set to completequeststephuman from questmanager with the questinfo from _characterQuest WTF IS THIS CODE
-        DialogueManager.Instance.StartStory(_characterSO.GetStory(), DialogueManager.TRANSLATED, _characterSO.IsTranslated, _characterEvent);
+        //In the inspector, set to completequeststephuman from questmanager with _characterSO
+        DialogueManager.Instance.StartStory(_characterSO.GetStory(), _characterEvent);
+          
+        //DialogueManager.TRANSLATED, _characterSO.IsTranslated,
     }
-
-        //Ayuda ahora por favor yo llora? 
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS?  Helkp me ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? v
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        ///ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        ///ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS?  wtf is this
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        //kill me in vidhoegam
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
-        //ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? ANY DEADGERS? 
 }

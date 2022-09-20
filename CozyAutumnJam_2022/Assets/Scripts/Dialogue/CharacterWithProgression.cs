@@ -19,16 +19,19 @@ public class CharacterWithProgression : CharacterScriptableObject
         PropProgressed = 1
     }
     [SerializeField] private int _currentStoryBeat;
-    [SerializeField] private int _questIndex;
+    [SerializeField, Tooltip("Quest Index of the Character. Ken = 0, Myrtle = 1, Jowan = 2, V = 3, Chrysantha = 4")]
+    private int _questIndex;
     [SerializeField] private TextAsset[] _story;   
 
     [SerializeField] private bool _isTranslatedDefault;
     [SerializeField] private bool _isTranslated;
+    [SerializeField] private bool _isCostumeCollected;
 
     private void OnEnable()
     {
         _currentStoryBeat = 0;
         _isTranslated = _isTranslatedDefault;
+        _isCostumeCollected = false;
     }
 
     public bool IsTranslated
@@ -54,5 +57,10 @@ public class CharacterWithProgression : CharacterScriptableObject
     public int QuestIndex
     {
         get {return _questIndex;}
+    }
+    public bool IsCostumeCollected
+    {
+        get {return _isCostumeCollected;}
+        set {_isCostumeCollected = value;}
     }
 }

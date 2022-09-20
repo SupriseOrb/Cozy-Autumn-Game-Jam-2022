@@ -53,38 +53,41 @@ public class QuestManager : MonoBehaviour
 
     public void CompleteQuestStepHuman(CharacterWithProgression humanChar)
     {
-        if (_humanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted[humanChar.StepIndex]!= true)
-        {
-            _humanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted[humanChar.StepIndex] = true;
-        }
-
+        _humanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted[humanChar.StepIndex] = true;
         if (_humanQuestList[humanChar.QuestIndex]._humanQuestComplete == true)
         {
             return;
         }
         else if (_humanQuestList[humanChar.QuestIndex]._humanQuestComplete != true)
         {
-            if (_humanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted[1] == true)
-            {
-                _humanQuestList[humanChar.QuestIndex]._humanQuestStarted = true;
-                _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
-            }
             if (humanChar.StepIndex == 0)
             {
+                Debug.Log("Started Quest!");
                 _humanQuestList[humanChar.QuestIndex]._humanQuestStarted = true;
                 _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
             }
-            if (humanChar.StepIndex == 1)
+            else if (humanChar.StepIndex == 1)
             {
-                _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
+                if (humanChar.IsCostumeCollected == true)
+                {
+                    Debug.Log("Got the human costume!");
+                    _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
+                }
+                else 
+                {
+                    _humanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted[humanChar.StepIndex] = false;
+                    Debug.Log("No human costume...");
+                }
             }
-            if (humanChar.StepIndex == 2)
+            else if (humanChar.StepIndex == 2)
             {
+                Debug.Log("Gave the human costume!");
                 _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.AfterGiveCostume);
                 _humanQuestList[humanChar.QuestIndex]._humanQuestComplete = true;
             }
-            if (humanChar.StepIndex == 3)
+            else if (humanChar.StepIndex == 3)
             {
+                Debug.Log("Human Flavor Text uwu");
                 if (_humanQuestList[humanChar.QuestIndex]._humanQuestComplete != true)
                 {
                     _humanQuestList[humanChar.QuestIndex]._humanQuestComplete = true; 
@@ -95,45 +98,49 @@ public class QuestManager : MonoBehaviour
     }
     public void CompleteQuestStepSpirit(CharacterWithProgression spiritChar)
     {
-        if (_spiritQuestList[spiritChar.QuestIndex]._spiritQuestStepCompleted[spiritChar.StepIndex]!= true)
-        {
-            _spiritQuestList[spiritChar.QuestIndex]._spiritQuestStepCompleted[spiritChar.StepIndex] = true;
-        }
-
+        _spiritQuestList[spiritChar.QuestIndex]._spiritQuestStepCompleted[spiritChar.StepIndex] = true;
         if (_spiritQuestList[spiritChar.QuestIndex]._spiritQuestComplete == true)
         {
             return;
         }
         else if (_spiritQuestList[spiritChar.QuestIndex]._spiritQuestComplete != true)
         {
-            if (_spiritQuestList[spiritChar.QuestIndex]._spiritQuestStepCompleted[1] == true)
-            {
-                _spiritQuestList[spiritChar.QuestIndex]._spiritQuestStarted = true;
-                _spiritQuestList[spiritChar.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
-            }
             if (spiritChar.StepIndex == 0)
             {
+                Debug.Log("Started Spirit Quest!");
                 _spiritQuestList[spiritChar.QuestIndex]._spiritQuestStarted = true;
                 _spiritQuestList[spiritChar.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
                 //Get script component of ability and set it active (likely need to edit this)
                 _spiritQuestList[spiritChar.QuestIndex]._oracleCard.SetActive(true);
             }
-            if (spiritChar.StepIndex == 1)
+            else if (spiritChar.StepIndex == 1)
             {
-                _spiritQuestList[spiritChar.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
+                if (spiritChar.IsCostumeCollected == true)
+                {
+                    Debug.Log("Got the spirit costume!");
+                    _spiritQuestList[spiritChar.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
+                }
+                else
+                {
+                    _spiritQuestList[spiritChar.QuestIndex]._spiritQuestStepCompleted[spiritChar.StepIndex] = false;
+                    Debug.Log("No spirit costume...");
+                }
             }
-            if (spiritChar.StepIndex == 2)
+            else if (spiritChar.StepIndex == 2)
             {
+                Debug.Log("Gave the spirit costume!");
                 _spiritQuestList[spiritChar.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.AfterGiveCostume);
                 _spiritQuestList[spiritChar.QuestIndex]._spiritQuestComplete = true; 
             }
-            if (spiritChar.StepIndex == 3)
+            else if (spiritChar.StepIndex == 3)
             {
+                Debug.Log("Spirit Flavor Text uwu");
                 if (_spiritQuestList[spiritChar.QuestIndex]._spiritQuestComplete != true)
                 {
                     _spiritQuestList[spiritChar.QuestIndex]._spiritQuestComplete = true; 
                 }
             }
+               
         }
 
     }

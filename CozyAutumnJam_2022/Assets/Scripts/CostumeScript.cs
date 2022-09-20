@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class CostumeScript : MonoBehaviour, IInteractable
 {
-    //GOES ON COSTUMES GO's
-    //QuestIndex Order:
-    //StepIndex should always be 1
+    //GOES ON COSTUME GO's
     [SerializeField] private CharacterWithProgression _character;
     [SerializeField] private bool _isSpiritCostume;
 
@@ -15,9 +13,18 @@ public class CostumeScript : MonoBehaviour, IInteractable
         //Backup check
         if (this.GetComponent<ItemTagScript>().IsCostume())
         {
+            _character.IsCostumeCollected = true;
             if(_isSpiritCostume)
             {
-                QuestManager.Instance.CompleteQuestStepSpirit(_character);
+                //Check if costume was gotten w/o talking to spirit
+                if (_character.StepIndex == 0)
+                {
+                    _character.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
+                }
+                else
+                {
+                    QuestManager.Instance.CompleteQuestStepSpirit(_character);
+                }
             }
             else
             {

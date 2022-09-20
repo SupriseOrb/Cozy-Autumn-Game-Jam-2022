@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID HUMAN_MYRTLE = 3435889618U;
         static const AkUniqueID HUMAN_STORE = 2707783454U;
         static const AkUniqueID HUMAN_V = 582752983U;
+        static const AkUniqueID MAIN_MENU = 2005704188U;
         static const AkUniqueID PLAY_CARDFLIP = 884848037U;
         static const AkUniqueID PLAY_CARDPULL = 3136930057U;
         static const AkUniqueID PLAY_CARDSHUFFLE = 3192869359U;
@@ -32,8 +33,10 @@ namespace AK
         static const AkUniqueID PLAYMUSICSTART = 1068983008U;
         static const AkUniqueID SPIRIT_CHRYSANTHA = 3448711732U;
         static const AkUniqueID SPIRIT_JOWAN = 658206130U;
+        static const AkUniqueID SPIRIT_KEN = 46628949U;
         static const AkUniqueID SPIRIT_MYRTLE = 2694481824U;
         static const AkUniqueID SPIRIT_STORE = 1419433896U;
+        static const AkUniqueID SPIRIT_V = 3174091305U;
     } // namespace EVENTS
 
     namespace STATES
@@ -48,13 +51,16 @@ namespace AK
                 static const AkUniqueID HUMANJOWAN = 2790751573U;
                 static const AkUniqueID HUMANKEN = 2712708934U;
                 static const AkUniqueID HUMANMYRTLE = 1812465801U;
-                static const AkUniqueID HUMANSHOP = 919506728U;
+                static const AkUniqueID HUMANSTORE = 2158138711U;
                 static const AkUniqueID HUMANV = 2383602514U;
+                static const AkUniqueID MAINMENU = 3604647259U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID SPIRITCHRYSANTHA = 902421079U;
                 static const AkUniqueID SPIRITJOWAN = 1775093491U;
+                static const AkUniqueID SPIRITKEN = 3728463068U;
                 static const AkUniqueID SPIRITMYRTLE = 3165849807U;
                 static const AkUniqueID SPIRITSTORE = 1876881881U;
+                static const AkUniqueID SPIRITV = 2133836716U;
             } // namespace STATE
         } // namespace GAMEPLAY
 

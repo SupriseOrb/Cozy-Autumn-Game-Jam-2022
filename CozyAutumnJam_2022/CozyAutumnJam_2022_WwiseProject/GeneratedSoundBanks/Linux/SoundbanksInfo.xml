@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Linux" BasePlatform="Linux" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Linux\</SourceFilesRoot>
-		<SoundBanksRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\GeneratedSoundBanks\Linux\</SoundBanksRoot>
+		<ProjectRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/.cache/Linux/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/GeneratedSoundBanks/Linux/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/GeneratedSoundBanks/Linux</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -22,7 +22,7 @@
 				<GameParameter Id="2731583604" Name="AllVolume" ObjectPath="\Game Parameters\Default Work Unit\AllVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1192432029">
+		<SoundBank Id="3161908922" Language="SFX" Hash="363033819">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -49,7 +49,7 @@
 				</Event>
 				<Event Id="2707783454" Name="Human_Store" ObjectPath="\Events\Default Work Unit\Music Events\Human_Store" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<ActionSetState>
-						<ActionSetStateEntry Id="919506728" Name="HumanShop" ObjectPath="\States\Default Work Unit\Gameplay\HumanShop"/>
+						<ActionSetStateEntry Id="2158138711" Name="HumanStore" ObjectPath="\States\Default Work Unit\Gameplay\HumanStore"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="582752983" Name="Human_V" ObjectPath="\Events\Default Work Unit\Music Events\Human_V" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
@@ -57,11 +57,16 @@
 						<ActionSetStateEntry Id="2383602514" Name="HumanV" ObjectPath="\States\Default Work Unit\Gameplay\HumanV"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="2005704188" Name="Main_Menu" ObjectPath="\Events\Default Work Unit\Music Events\Main_Menu" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3604647259" Name="MainMenu" ObjectPath="\States\Default Work Unit\Gameplay\MainMenu"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="884848037" Name="Play_CardFlip" ObjectPath="\Events\Default Work Unit\SFX Events\Card UI\Play_CardFlip" DurationType="OneShot" DurationMin="0.081723" DurationMax="0.081723">
 					<IncludedMemoryFiles>
 						<File Id="844309663" Language="SFX">
 							<ShortName>CardFlip.wav</ShortName>
-							<Path>SFX\CardFlip_10C4C929.wem</Path>
+							<Path>SFX/CardFlip_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -69,11 +74,11 @@
 					<IncludedMemoryFiles>
 						<File Id="469650255" Language="SFX">
 							<ShortName>CardPull1.wav</ShortName>
-							<Path>SFX\CardPull1_10C4C929.wem</Path>
+							<Path>SFX/CardPull1_10C4C929.wem</Path>
 						</File>
 						<File Id="645855217" Language="SFX">
 							<ShortName>CardPull2.wav</ShortName>
-							<Path>SFX\CardPull2_10C4C929.wem</Path>
+							<Path>SFX/CardPull2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -81,15 +86,15 @@
 					<IncludedMemoryFiles>
 						<File Id="407509120" Language="SFX">
 							<ShortName>CardShuffle1.wav</ShortName>
-							<Path>SFX\CardShuffle1_10C4C929.wem</Path>
+							<Path>SFX/CardShuffle1_10C4C929.wem</Path>
 						</File>
 						<File Id="730900144" Language="SFX">
 							<ShortName>CardShuffle3.wav</ShortName>
-							<Path>SFX\CardShuffle3_10C4C929.wem</Path>
+							<Path>SFX/CardShuffle3_10C4C929.wem</Path>
 						</File>
 						<File Id="807983812" Language="SFX">
 							<ShortName>CardShuffle2_02.wav</ShortName>
-							<Path>SFX\CardShuffle2_02_10C4C929.wem</Path>
+							<Path>SFX/CardShuffle2_02_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -97,7 +102,7 @@
 					<IncludedMemoryFiles>
 						<File Id="530332103" Language="SFX">
 							<ShortName>CardSwap.wav</ShortName>
-							<Path>SFX\CardSwap_10C4C929.wem</Path>
+							<Path>SFX/CardSwap_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -105,7 +110,7 @@
 					<IncludedMemoryFiles>
 						<File Id="898142516" Language="SFX">
 							<ShortName>Phone Ringing.wav</ShortName>
-							<Path>SFX\Phone Ringing_10C4C929.wem</Path>
+							<Path>SFX/Phone Ringing_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -113,7 +118,7 @@
 					<IncludedMemoryFiles>
 						<File Id="906103811" Language="SFX">
 							<ShortName>UIBack.wav</ShortName>
-							<Path>SFX\UIBack_10C4C929.wem</Path>
+							<Path>SFX/UIBack_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -121,7 +126,7 @@
 					<IncludedMemoryFiles>
 						<File Id="937727332" Language="SFX">
 							<ShortName>UIPause.wav</ShortName>
-							<Path>SFX\UIPause_10C4C929.wem</Path>
+							<Path>SFX/UIPause_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -129,7 +134,7 @@
 					<IncludedMemoryFiles>
 						<File Id="35618958" Language="SFX">
 							<ShortName>UIResume.wav</ShortName>
-							<Path>SFX\UIResume_10C4C929.wem</Path>
+							<Path>SFX/UIResume_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -137,7 +142,7 @@
 					<IncludedMemoryFiles>
 						<File Id="189416120" Language="SFX">
 							<ShortName>UIScroll.wav</ShortName>
-							<Path>SFX\UIScroll_10C4C929.wem</Path>
+							<Path>SFX/UIScroll_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -145,7 +150,7 @@
 					<IncludedMemoryFiles>
 						<File Id="897019754" Language="SFX">
 							<ShortName>UISelect.wav</ShortName>
-							<Path>SFX\UISelect_10C4C929.wem</Path>
+							<Path>SFX/UISelect_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -153,54 +158,66 @@
 					<IncludedMemoryFiles>
 						<File Id="11164527" Language="SFX">
 							<ShortName>Spooky_VTheme_Draft_1.wav</ShortName>
-							<Path>SFX\Spooky_VTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX/Spooky_VTheme_Draft_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="84526937" Language="SFX">
 							<ShortName>Spirit_MainTheme.wav</ShortName>
-							<Path>SFX\Spirit_MainTheme_D79FB2B7.wem</Path>
-						</File>
-						<File Id="101494922" Language="SFX">
-							<ShortName>Spooky_MainTheme_Draft_1.wav</ShortName>
-							<Path>SFX\Spooky_MainTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX/Spirit_MainTheme_D79FB2B7.wem</Path>
 						</File>
 						<File Id="181034382" Language="SFX">
 							<ShortName>Spooky_MainTheme_Intro_Draft_1.wav</ShortName>
-							<Path>SFX\Spooky_MainTheme_Intro_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX/Spooky_MainTheme_Intro_Draft_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="253288252" Language="SFX">
 							<ShortName>Spirit_ChrysanthaTheme.wav</ShortName>
-							<Path>SFX\Spirit_ChrysanthaTheme_D79FB2B7.wem</Path>
+							<Path>SFX/Spirit_ChrysanthaTheme_D79FB2B7.wem</Path>
 						</File>
 						<File Id="294587160" Language="SFX">
 							<ShortName>Spooky_ChrysanthaTheme_Draft_1.wav</ShortName>
-							<Path>SFX\Spooky_ChrysanthaTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX/Spooky_ChrysanthaTheme_Draft_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="315239178" Language="SFX">
+							<ShortName>MainMenu_Loop.wav</ShortName>
+							<Path>SFX/MainMenu_Loop_D79FB2B7.wem</Path>
 						</File>
 						<File Id="339010008" Language="SFX">
 							<ShortName>Spooky_JowanTheme_Draft_1.wav</ShortName>
-							<Path>SFX\Spooky_JowanTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX/Spooky_JowanTheme_Draft_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="520901426" Language="SFX">
 							<ShortName>Spooky_MyrtleTheme_Draft_1.wav</ShortName>
-							<Path>SFX\Spooky_MyrtleTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX/Spooky_MyrtleTheme_Draft_1_D79FB2B7.wem</Path>
 						</File>
 						<File Id="596672924" Language="SFX">
 							<ShortName>Spirit_MyrtleTheme.wav</ShortName>
-							<Path>SFX\Spirit_MyrtleTheme_D79FB2B7.wem</Path>
+							<Path>SFX/Spirit_MyrtleTheme_D79FB2B7.wem</Path>
+						</File>
+						<File Id="628539542" Language="SFX">
+							<ShortName>Spirit_KenTheme.wav</ShortName>
+							<Path>SFX/Spirit_KenTheme_D79FB2B7.wem</Path>
 						</File>
 						<File Id="720273982" Language="SFX">
 							<ShortName>Spooky_KenTheme_Draft_1.wav</ShortName>
-							<Path>SFX\Spooky_KenTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX/Spooky_KenTheme_Draft_1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="857119023" Language="SFX">
+							<ShortName>Spirit_VTheme.wav</ShortName>
+							<Path>SFX/Spirit_VTheme_D79FB2B7.wem</Path>
 						</File>
 						<File Id="860405681" Language="SFX">
 							<ShortName>Spirit_JowanTheme.wav</ShortName>
-							<Path>SFX\Spirit_JowanTheme_D79FB2B7.wem</Path>
+							<Path>SFX/Spirit_JowanTheme_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1054601518" Language="SFX">
+							<ShortName>Spooky_MainTheme.wav</ShortName>
+							<Path>SFX/Spooky_MainTheme_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}">
 							<Media>
-								<File Id="101494922"/>
 								<File Id="181034382"/>
+								<File Id="1054601518"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{8582E751-3238-4044-8FC1-7B363AD5C8FD}">
@@ -248,9 +265,24 @@
 								<File Id="596672924"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9F013D51-F115-41DE-BCB9-6B6DCDB38734}">
+							<Media>
+								<File Id="628539542"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E804D66D-39A0-464A-A016-D05BF0090AB8}">
+							<Media>
+								<File Id="857119023"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{209D6C24-F8CF-4F1B-B3ED-7DB48AE9A9B0}">
+							<Media>
+								<File Id="315239178"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
 					<ActionSetState>
-						<ActionSetStateEntry Id="919506728" Name="HumanShop" ObjectPath="\States\Default Work Unit\Gameplay\HumanShop"/>
+						<ActionSetStateEntry Id="3604647259" Name="MainMenu" ObjectPath="\States\Default Work Unit\Gameplay\MainMenu"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="3448711732" Name="Spirit_Chrysantha" ObjectPath="\Events\Default Work Unit\Music Events\Spirit_Chrysantha" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
@@ -263,6 +295,11 @@
 						<ActionSetStateEntry Id="1775093491" Name="SpiritJowan" ObjectPath="\States\Default Work Unit\Gameplay\SpiritJowan"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="46628949" Name="Spirit_Ken" ObjectPath="\Events\Default Work Unit\Music Events\Spirit_Ken" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3728463068" Name="SpiritKen" ObjectPath="\States\Default Work Unit\Gameplay\SpiritKen"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="2694481824" Name="Spirit_Myrtle" ObjectPath="\Events\Default Work Unit\Music Events\Spirit_Myrtle" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<ActionSetState>
 						<ActionSetStateEntry Id="3165849807" Name="SpiritMyrtle" ObjectPath="\States\Default Work Unit\Gameplay\SpiritMyrtle"/>
@@ -273,12 +310,17 @@
 						<ActionSetStateEntry Id="1876881881" Name="SpiritStore" ObjectPath="\States\Default Work Unit\Gameplay\SpiritStore"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="3174091305" Name="Spirit_V" ObjectPath="\Events\Default Work Unit\Music Events\Spirit_V" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2133836716" Name="SpiritV" ObjectPath="\States\Default Work Unit\Gameplay\SpiritV"/>
+					</ActionSetState>
+				</Event>
 			</IncludedEvents>
 			<StateGroups>
 				<StateGroup Id="89505537" Name="Gameplay" ObjectPath="\States\Default Work Unit\Gameplay" GUID="{5FF2EE3C-97EE-4CA1-8FB4-8C8C9FB574C4}">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Gameplay\None" GUID="{18CA4891-A2DE-4614-B34D-DFBDA194D10E}"/>
-						<State Id="919506728" Name="HumanShop" ObjectPath="\States\Default Work Unit\Gameplay\HumanShop" GUID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
+						<State Id="2158138711" Name="HumanStore" ObjectPath="\States\Default Work Unit\Gameplay\HumanStore" GUID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
 						<State Id="2712708934" Name="HumanKen" ObjectPath="\States\Default Work Unit\Gameplay\HumanKen" GUID="{8582E751-3238-4044-8FC1-7B363AD5C8FD}"/>
 						<State Id="1812465801" Name="HumanMyrtle" ObjectPath="\States\Default Work Unit\Gameplay\HumanMyrtle" GUID="{75367050-8BA8-4098-8405-B87343B50AFE}"/>
 						<State Id="2383602514" Name="HumanV" ObjectPath="\States\Default Work Unit\Gameplay\HumanV" GUID="{22446ED2-264A-41EF-A1E5-D87CABBAFD19}"/>
@@ -288,12 +330,12 @@
 						<State Id="902421079" Name="SpiritChrysantha" ObjectPath="\States\Default Work Unit\Gameplay\SpiritChrysantha" GUID="{1D63F856-59CE-4A2F-9632-0210CFCCBB0E}"/>
 						<State Id="3165849807" Name="SpiritMyrtle" ObjectPath="\States\Default Work Unit\Gameplay\SpiritMyrtle" GUID="{179D2889-84AD-452B-AADC-6B55C0E518E8}"/>
 						<State Id="1775093491" Name="SpiritJowan" ObjectPath="\States\Default Work Unit\Gameplay\SpiritJowan" GUID="{C319AC7B-0335-4EFD-939F-379BCC26CA7E}"/>
+						<State Id="3604647259" Name="MainMenu" ObjectPath="\States\Default Work Unit\Gameplay\MainMenu" GUID="{209D6C24-F8CF-4F1B-B3ED-7DB48AE9A9B0}"/>
+						<State Id="2133836716" Name="SpiritV" ObjectPath="\States\Default Work Unit\Gameplay\SpiritV" GUID="{E804D66D-39A0-464A-A016-D05BF0090AB8}"/>
+						<State Id="3728463068" Name="SpiritKen" ObjectPath="\States\Default Work Unit\Gameplay\SpiritKen" GUID="{9F013D51-F115-41DE-BCB9-6B6DCDB38734}"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="902421079" Name="SpiritChrysantha" ObjectPath="\States\Default Work Unit\Gameplay\SpiritChrysantha" GUID="{1D63F856-59CE-4A2F-9632-0210CFCCBB0E}">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="919506728" Name="HumanShop" ObjectPath="\States\Default Work Unit\Gameplay\HumanShop" GUID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="1775093491" Name="SpiritJowan" ObjectPath="\States\Default Work Unit\Gameplay\SpiritJowan" GUID="{C319AC7B-0335-4EFD-939F-379BCC26CA7E}">
@@ -303,6 +345,12 @@
 					<States/>
 				</StateGroup>
 				<StateGroup Id="1876881881" Name="SpiritStore" ObjectPath="\States\Default Work Unit\Gameplay\SpiritStore" GUID="{9E5BE5B5-6E95-4EB6-906E-72FC6A53811F}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2133836716" Name="SpiritV" ObjectPath="\States\Default Work Unit\Gameplay\SpiritV" GUID="{E804D66D-39A0-464A-A016-D05BF0090AB8}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2158138711" Name="HumanStore" ObjectPath="\States\Default Work Unit\Gameplay\HumanStore" GUID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="2383602514" Name="HumanV" ObjectPath="\States\Default Work Unit\Gameplay\HumanV" GUID="{22446ED2-264A-41EF-A1E5-D87CABBAFD19}">
@@ -318,6 +366,12 @@
 					<States/>
 				</StateGroup>
 				<StateGroup Id="3165849807" Name="SpiritMyrtle" ObjectPath="\States\Default Work Unit\Gameplay\SpiritMyrtle" GUID="{179D2889-84AD-452B-AADC-6B55C0E518E8}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3604647259" Name="MainMenu" ObjectPath="\States\Default Work Unit\Gameplay\MainMenu" GUID="{209D6C24-F8CF-4F1B-B3ED-7DB48AE9A9B0}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3728463068" Name="SpiritKen" ObjectPath="\States\Default Work Unit\Gameplay\SpiritKen" GUID="{9F013D51-F115-41DE-BCB9-6B6DCDB38734}">
 					<States/>
 				</StateGroup>
 			</StateGroups>

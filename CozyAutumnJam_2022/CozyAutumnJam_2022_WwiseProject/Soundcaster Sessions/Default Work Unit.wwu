@@ -36,7 +36,7 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="HumanShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
+						<CurrentStateRef Name="HumanStore" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
@@ -63,8 +63,16 @@
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Spirit_Ken" ID="{4655C10E-3ED7-4581-AE92-07A65B59510D}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Spirit_Jowan" ID="{EEB54F43-CB9C-4870-9B17-01FB4DCE45B1}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
 							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Spirit_V" ID="{FB4395D9-41C6-4983-AC09-520F68BE3441}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="3" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -86,7 +94,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="HumanShop" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
+						<CurrentStateRef Name="HumanStore" ID="{B3695065-ACD1-4B32-A7AB-9D677B6D680F}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

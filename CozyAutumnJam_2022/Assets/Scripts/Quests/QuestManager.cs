@@ -8,19 +8,35 @@ public class QuestManager : MonoBehaviour
     static public QuestManager Instance { get { return _instance;}}
     
     [System.Serializable]
-    public class Quest
+    public class HumanQuest
     {
         public CharacterWithProgression _currentQuestHuman;
-        public CharacterWithProgression _currentQuestSpirit;
-        //add a variable for the oracle card associated with this quest
-        public GameObject _oracleCard;
-        public bool[] _questStepCompleted;
-        public bool _questComplete;
-        public bool _questStarted;
-        public QuestInfo _questInfo;
+        public bool[] _humanQuestStepCompleted;
+        public bool _humanQuestComplete;
+        public bool _humanQuestStarted;
     }
 
-    [SerializeField] private Quest[] _questList;
+    [System.Serializable]
+    public class SpiritQuest
+    {
+        public CharacterWithProgression _currentQuestSpirit;
+        public GameObject _oracleCard;
+        public bool[] _spiritQuestStepCompleted;
+        public bool _spiritQuestComplete;
+        public bool _spiritQuestStarted;
+    }
+
+    [SerializeField] private HumanQuest[] _humanQuestList;
+    [SerializeField] private SpiritQuest[] _spiritQuestList;
+
+    public HumanQuest[] HumanQuestList
+    {
+        get {return _humanQuestList;}
+    }
+    public SpiritQuest[] SpiritQuestList
+    {
+        get {return _spiritQuestList;}
+    }
 
 
     void Awake()
@@ -35,73 +51,88 @@ public class QuestManager : MonoBehaviour
         } 
     }
 
-    public void CompleteQuestStepHuman(QuestInfo qInfo) //figure out to pass 2 ints in an event (using SO)
+    public void CompleteQuestStepHuman(CharacterWithProgression humanChar)
     {
-        //if not true already
-        if (_questList[qInfo.QuestIndex]._questStepCompleted[qInfo.StepIndex]!= true)
+        if (_humanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted[humanChar.StepIndex]!= true)
         {
-            _questList[qInfo.QuestIndex]._questStepCompleted[qInfo.StepIndex] = true;
+            _humanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted[humanChar.StepIndex] = true;
         }
 
-        if (_questList[qInfo.QuestIndex]._questComplete == true)
+        if (_humanQuestList[humanChar.QuestIndex]._humanQuestComplete == true)
         {
             return;
         }
-        else if (_questList[qInfo.QuestIndex]._questComplete != true)
+        else if (_humanQuestList[humanChar.QuestIndex]._humanQuestComplete != true)
         {
-            if (_questList[qInfo.QuestIndex]._questStepCompleted[2] == true)
+            if (_humanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted[1] == true)
             {
-                _questList[qInfo.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
+                _humanQuestList[humanChar.QuestIndex]._humanQuestStarted = true;
+                _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
             }
-            if (qInfo.StepIndex == 0)
+            if (humanChar.StepIndex == 0)
             {
-                _questList[qInfo.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
+                _humanQuestList[humanChar.QuestIndex]._humanQuestStarted = true;
+                _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
             }
-            if (qInfo.StepIndex == 1)
+            if (humanChar.StepIndex == 1)
             {
-                _questList[qInfo.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
+                _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
             }
-            if (qInfo.StepIndex == 2)
+            if (humanChar.StepIndex == 2)
             {
-                _questList[qInfo.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.AfterGiveCostume);
+                _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.AfterGiveCostume);
+                _humanQuestList[humanChar.QuestIndex]._humanQuestComplete = true;
             }
-            if (qInfo.StepIndex == 3)
+            if (humanChar.StepIndex == 3)
             {
-               _questList[qInfo.QuestIndex]._questComplete = true; 
+                if (_humanQuestList[humanChar.QuestIndex]._humanQuestComplete != true)
+                {
+                    _humanQuestList[humanChar.QuestIndex]._humanQuestComplete = true; 
+                }
             }
             
         }
     }
-    public void CompleteQuestStepSpirit(QuestInfo qInfo)
+    public void CompleteQuestStepSpirit(CharacterWithProgression spiritChar)
     {
-        if (_questList[qInfo.QuestIndex]._questStepCompleted[qInfo.StepIndex]!= true)
+        if (_spiritQuestList[spiritChar.QuestIndex]._spiritQuestStepCompleted[spiritChar.StepIndex]!= true)
         {
-            _questList[qInfo.QuestIndex]._questStepCompleted[qInfo.StepIndex] = true;
+            _spiritQuestList[spiritChar.QuestIndex]._spiritQuestStepCompleted[spiritChar.StepIndex] = true;
         }
 
-        if (_questList[qInfo.QuestIndex]._questComplete == true)
+        if (_spiritQuestList[spiritChar.QuestIndex]._spiritQuestComplete == true)
         {
             return;
         }
-        else if (_questList[qInfo.QuestIndex]._questComplete != true)
+        else if (_spiritQuestList[spiritChar.QuestIndex]._spiritQuestComplete != true)
         {
-            if (qInfo.StepIndex == 1)
+            if (_spiritQuestList[spiritChar.QuestIndex]._spiritQuestStepCompleted[1] == true)
             {
-                _questList[qInfo.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
+                _spiritQuestList[spiritChar.QuestIndex]._spiritQuestStarted = true;
+                _spiritQuestList[spiritChar.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
+            }
+            if (spiritChar.StepIndex == 0)
+            {
+                _spiritQuestList[spiritChar.QuestIndex]._spiritQuestStarted = true;
+                _spiritQuestList[spiritChar.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
                 //Get script component of ability and set it active (likely need to edit this)
-                _questList[qInfo.QuestIndex]._oracleCard.SetActive(true);
+                _spiritQuestList[spiritChar.QuestIndex]._oracleCard.SetActive(true);
             }
-            if (qInfo.StepIndex == 2)
+            if (spiritChar.StepIndex == 1)
             {
-                _questList[qInfo.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
+                _spiritQuestList[spiritChar.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
             }
-            if (qInfo.StepIndex == 3)
+            if (spiritChar.StepIndex == 2)
             {
-                _questList[qInfo.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.AfterGiveCostume);
+                _spiritQuestList[spiritChar.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.AfterGiveCostume);
+                _spiritQuestList[spiritChar.QuestIndex]._spiritQuestComplete = true; 
             }
-            if (qInfo.StepIndex == 6)
+            if (spiritChar.StepIndex == 3)
             {
-               _questList[qInfo.QuestIndex]._questComplete = true; 
+                if (_spiritQuestList[spiritChar.QuestIndex]._spiritQuestComplete != true)
+                {
+                    _spiritQuestList[spiritChar.QuestIndex]._spiritQuestComplete = true; 
+                }
             }
         }
 
@@ -117,22 +148,6 @@ public class QuestManager : MonoBehaviour
         //if step index is 4, this is when you pick up the human costume, set human story beat to give costume
         //if step index is 5, this is giving the human costume, set human story beat to aftergivecostume
         //if step index is 6, the quest is complete
-
-        public enum _questIndex
-        {
-            TalkedtoHuman = 0,
-            TalkedtoSpirit = 1,
-            PickupSpiritCostume = 2,
-            GaveSpiritCostume = 3,
-            PickupHumanCostume = 4,
-            GaveHumanCostume = 5,
-            Complete = 6
-        }
-
-        //Human: 0, 4, 5
-        //Spirit: 1, 2, 3
-        //Complete for both KEKW
-
 
         //IMPORTANT NOTE, the boss' quest will be different than the others so it will not work with this setup
         //also there may be items that the player gets that I forgot to mention

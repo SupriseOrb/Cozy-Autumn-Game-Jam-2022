@@ -5,14 +5,13 @@ using UnityEngine;
 public class ItemTagScript : MonoBehaviour
 {
     [SerializeField] private bool isTrash;
-    [SerializeField] private bool isTrap;
+    [SerializeField] private bool isTrap; //
     [SerializeField] private bool isTrappable;
     [SerializeField] private bool isRune;
-    [SerializeField] private bool isPushable;
+    [SerializeField] private bool isPushable; //
     [SerializeField] private bool isPressurePalatable;
-    [SerializeField] private bool isInteractable;
     [SerializeField] private bool isAnimatronic;
-    [SerializeField] private bool isCharacter;
+    [SerializeField] private bool isCostume;
 
     public bool IsTrash()
     {
@@ -22,11 +21,6 @@ public class ItemTagScript : MonoBehaviour
     public bool IsTrap()
     {
         return isTrap;
-    }
-
-    public bool IsTrappable()
-    {
-        return isTrappable;
     }
 
     public bool IsRune()
@@ -44,18 +38,12 @@ public class ItemTagScript : MonoBehaviour
         return isPressurePalatable;
     }
 
-    public bool IsInteractable()
-    {
-        return isInteractable;
-    }
-
     public bool IsAnimatronic()
     {
         return isAnimatronic;
     }
-
-    public bool IsCharacter()
+    public bool IsCostume()
     {
-        return isCharacter;
+        return isCostume;
     }
 }

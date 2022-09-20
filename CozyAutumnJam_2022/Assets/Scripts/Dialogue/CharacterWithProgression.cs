@@ -19,6 +19,7 @@ public class CharacterWithProgression : CharacterScriptableObject
         PropProgressed = 1
     }
     [SerializeField] private int _currentStoryBeat;
+    [SerializeField] private int _questIndex;
     [SerializeField] private TextAsset[] _story;   
 
     [SerializeField] private bool _isTranslatedDefault;
@@ -45,5 +46,13 @@ public class CharacterWithProgression : CharacterScriptableObject
     public TextAsset GetStory()
     {
         return _story[_currentStoryBeat];
+    }
+    public int StepIndex
+    {
+        get {return _currentStoryBeat;}
+    }
+    public int QuestIndex
+    {
+        get {return _questIndex;}
     }
 }

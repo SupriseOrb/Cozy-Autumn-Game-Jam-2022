@@ -55,7 +55,7 @@ public class RatScript : MonoBehaviour
         while (Vector3.Distance(transform.position, currentLocation.position) > .001f)
         {
             transform.position = Vector3.MoveTowards(transform.position, currentLocation.position, speed);
-            yield return new WaitForSeconds(.01f);
+            yield return new WaitForSeconds(.1f);
         }
 
         currentTransformIndex++;

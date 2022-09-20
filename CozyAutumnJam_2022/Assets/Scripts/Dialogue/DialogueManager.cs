@@ -224,9 +224,6 @@ public class DialogueManager : MonoBehaviour
                 case "lines":
                     UpdateCurrentLines(Int32.Parse(param));
                     break;
-                case "music":
-                    // Kristen TODO: Play music
-                    break;
                 case "wait":
                     _waitTime = float.Parse(param);
                     break;
@@ -310,6 +307,10 @@ public class DialogueManager : MonoBehaviour
     }
     private IEnumerator TypeSentence(string sentence)
     {
+        //Kristen TODO: start character SFX based on the var _currentChar.Name
+        // names are lowercase, and spirits version would have _spirit have the person's name
+        // e.g. ken, ken_spirit
+
         _dialogueText.text = "";
 
         for(int charIndex = 1; charIndex < sentence.Length; charIndex++)

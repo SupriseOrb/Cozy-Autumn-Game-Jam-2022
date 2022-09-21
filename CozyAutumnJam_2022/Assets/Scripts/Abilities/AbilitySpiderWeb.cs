@@ -27,7 +27,8 @@ public class AbilitySpiderWeb : MonoBehaviour, IAbility
                         Destroy(_lastWeb);
                     }
                     _lastWeb = Instantiate(_spiderWebGO, c.transform.position, _spiderWebRot, c.transform);
-                    // Kristen TODO: Spider web place down sfx
+                    //Spider web place down sfx
+                    AkSoundEngine.PostEvent("Play_SpiderWeb", this.gameObject);
                 }
             }
         }

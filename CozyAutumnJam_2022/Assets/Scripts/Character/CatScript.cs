@@ -9,12 +9,15 @@ public class CatScript : MonoBehaviour, IInteractable
     {
         if(CardManager.Instance.GetPropCard(_ratCard))
         {
+            //Play cat meow
+            AkSoundEngine.PostEvent("Play_CatMeow", this.gameObject);
             //Play poof vfx
             gameObject.SetActive(false);
         }
         else
         {
-            //error sound or something
+            //Play error sound or something
+            AkSoundEngine.PostEvent("Play_Error", this.gameObject);
         }
     }
 }

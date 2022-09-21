@@ -52,7 +52,8 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
                 }
                 else
                 {
-                    // Kristen TODO: Spirit translator sfx
+                    //Spirit translator sfx
+                    AkSoundEngine.PostEvent("Play_Translator", this.gameObject);
                     StartCoroutine(StartTranslateCooldown());
                 }
             }

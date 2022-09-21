@@ -1,19 +1,31 @@
 Event	ID	Name			Wwise Object Path	Notes
 	46628949	Spirit_Ken			\Default Work Unit\Music Events\Spirit_Ken	
 	235035089	Play_UIResume			\Default Work Unit\SFX Events\General UI SFX\Play_UIResume	
+	235104698	Play_CatMeow			\Default Work Unit\SFX Events\Puzzle SFX\Play_CatMeow	
 	384231010	Human_Chrysantha			\Default Work Unit\Music Events\Human_Chrysantha	
+	500046663	Play_RatCapture			\Default Work Unit\SFX Events\Puzzle SFX\Play_RatCapture	
 	582752983	Human_V			\Default Work Unit\Music Events\Human_V	
 	658206130	Spirit_Jowan			\Default Work Unit\Music Events\Spirit_Jowan	
 	884848037	Play_CardFlip			\Default Work Unit\SFX Events\Card UI\Play_CardFlip	
 	1068983008	PlayMusicStart			\Default Work Unit\Music Events\PlayMusicStart	
 	1224305705	Play_UIBack			\Default Work Unit\SFX Events\General UI SFX\Play_UIBack	
+	1410879499	Play_PowerPlate			\Default Work Unit\SFX Events\Puzzle SFX\Play_PowerPlate	
 	1419433896	Spirit_Store			\Default Work Unit\Music Events\Spirit_Store	
+	1521641822	Play_Vaccuum			\Default Work Unit\SFX Events\Card Ability SFX\Play_Vaccuum	
 	1830907318	Play_UIPause			\Default Work Unit\SFX Events\General UI SFX\Play_UIPause	
+	1914422699	Play_PlateReset			\Default Work Unit\SFX Events\Puzzle SFX\Play_PlateReset	
+	1953011658	Play_SlimePush			\Default Work Unit\SFX Events\Card Ability SFX\Play_SlimePush	
 	2005704188	Main_Menu			\Default Work Unit\Music Events\Main_Menu	
+	2012702053	Play_SpiderWeb			\Default Work Unit\SFX Events\Card Ability SFX\Play_SpiderWeb	
+	2450707257	Play_RatStart			\Default Work Unit\SFX Events\Puzzle SFX\Play_RatStart	
+	2539951888	Play_Translator			\Default Work Unit\SFX Events\Card Ability SFX\Play_Translator	
+	2629021827	Play_BoxImpact			\Default Work Unit\SFX Events\Puzzle SFX\Play_BoxImpact	
 	2630114156	Human_Jowan			\Default Work Unit\Music Events\Human_Jowan	
 	2694481824	Spirit_Myrtle			\Default Work Unit\Music Events\Spirit_Myrtle	
 	2707783454	Human_Store			\Default Work Unit\Music Events\Human_Store	
+	2713813216	Play_Error			\Default Work Unit\SFX Events\Puzzle SFX\Play_Error	
 	2752533807	Play_TestSound			\Default Work Unit\SFX Events\Play_TestSound	
+	2790307850	Play_Plate			\Default Work Unit\SFX Events\Puzzle SFX\Play_Plate	
 	2994644335	Human_Ken			\Default Work Unit\Music Events\Human_Ken	
 	3136930057	Play_CardPull			\Default Work Unit\SFX Events\Card UI\Play_CardPull	
 	3174091305	Spirit_V			\Default Work Unit\Music Events\Spirit_V	
@@ -22,6 +34,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3435889618	Human_Myrtle			\Default Work Unit\Music Events\Human_Myrtle	
 	3448711732	Spirit_Chrysantha			\Default Work Unit\Music Events\Spirit_Chrysantha	
 	3703192648	Play_UISelect			\Default Work Unit\SFX Events\General UI SFX\Play_UISelect	
+	3785065891	Play_Teleport			\Default Work Unit\SFX Events\Card Ability SFX\Play_Teleport	
 	4280915480	Play_DeckSwap			\Default Work Unit\SFX Events\Card UI\Play_DeckSwap	
 
 State Group	ID	Name			Wwise Object Path	Notes
@@ -44,31 +57,49 @@ State	ID	Name	State Group			Notes
 	3728463068	SpiritKen	Gameplay			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	11164527	Spooky_VTheme_Draft_1	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_VTheme_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\VTheme\Spooky_VTheme_Draft_1\Spooky_VTheme_Draft_1		13883932
-	35618958	UIResume	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\UIResume_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UIResume		358672
-	84526937	Spirit_MainTheme	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spirit_MainTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritMainTheme\Spirit_MainTheme\Spirit_MainTheme		10205976
-	181034382	Spooky_MainTheme_Intro_Draft_1	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_MainTheme_Intro_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\HumanMainTheme\Spooky_MainTheme_Intro\Spooky_MainTheme_Intro_Draft_1		2350652
-	189416120	UIScroll	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\UIScroll_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UIScroll		507832
-	253288252	Spirit_ChrysanthaTheme	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spirit_ChrysanthaTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritChrysanthaTheme\Spirit_ChrysanthaTheme\Spirit_ChrysanthaTheme		10205976
-	294587160	Spooky_ChrysanthaTheme_Draft_1	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_ChrysanthaTheme_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\ChrysanthaTheme\Spooky_ChrysanthaTheme_Draft_1\Spooky_ChrysanthaTheme_Draft_1		13883932
-	315239178	MainMenu_Loop	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\MainMenu_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\MenuMusic\MainMenu_Loop\MainMenu_Loop		6544924
-	339010008	Spooky_JowanTheme_Draft_1	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_JowanTheme_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\JowanTheme\Spooky_JowanTheme_Draft_1\Spooky_JowanTheme_Draft_1		13883932
-	407509120	CardShuffle1	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardShuffle1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardShuffle\CardShuffle1		85784
-	469650255	CardPull1	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardPull1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardPull\CardPull1		55252
-	520901426	Spooky_MyrtleTheme_Draft_1	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_MyrtleTheme_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\MyrtleTheme\Spooky_MyrtleTheme_Draft_1\Spooky_MyrtleTheme_Draft_1		13884988
-	530332103	DeckSwap	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardSwap_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\DeckSwap		30660
-	596672924	Spirit_MyrtleTheme	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spirit_MyrtleTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritMyrtleTheme\Spirit_MyrtleTheme\Spirit_MyrtleTheme		10205976
-	628539542	Spirit_KenTheme	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spirit_KenTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritKenTheme\Spirit_KenTheme\Spirit_KenTheme		10468120
-	645855217	CardPull2	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardPull2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardPull\CardPull2		67128
-	720273982	Spooky_KenTheme_Draft_1	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_KenTheme_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\KenTheme\Spooky_KenTheme_Draft_1\Spooky_KenTheme_Draft_1		13884988
-	730900144	CardShuffle3	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardShuffle3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardShuffle\CardShuffle3		86632
-	807983812	CardShuffle2	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardShuffle2_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardShuffle\CardShuffle2		62036
-	844309663	CardFlip	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardFlip_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardFlip		14544
-	857119023	Spirit_VTheme	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spirit_VTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritVTheme\Spirit_VTheme\Spirit_VTheme		9681688
-	860405681	Spirit_JowanTheme	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spirit_JowanTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritJowanTheme\Spirit_JowanTheme\Spirit_JowanTheme		10205976
-	897019754	UISelect	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\UISelect_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UISelect		259028
-	898142516	Z_TestSound	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Phone Ringing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Z_TestSound		973648
-	906103811	UIBack	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\UIBack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UIBack		259028
-	937727332	UIPause	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\UIPause_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UIPause		358672
-	1054601518	Spooky_MainTheme	Y:\Documents\GitHub\Cozy-Autumn-Game-Jam-2022\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_MainTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\HumanMainTheme\Spooky_MainTheme\Spooky_MainTheme		13884988
+	9234424	Vaccuum	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Vaccuum_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\Vaccuum		190944
+	11164527	Spooky_VTheme_Draft_1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_VTheme_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\VTheme\Spooky_VTheme_Draft_1\Spooky_VTheme_Draft_1		13883932
+	12785306	PowerPlate	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\PowerPlate_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\PowerPlate		153628
+	28665575	BoxImpact01	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\BoxImpact01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\BoxImpact\BoxImpact01		140908
+	84526937	Spirit_MainTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spirit_MainTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritMainTheme\Spirit_MainTheme\Spirit_MainTheme		10205976
+	121403960	Slime02	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Slime02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\SlimePush\Slime02		119408
+	165147037	RatStart	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\RatStart_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\RatStart		70520
+	181034382	Spooky_MainTheme_Intro_Draft_1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_MainTheme_Intro_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\HumanMainTheme\Spooky_MainTheme_Intro\Spooky_MainTheme_Intro_Draft_1		2350652
+	189416120	UIScroll	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\UIScroll_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UIScroll		507832
+	191987060	CatMeow	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CatMeow_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\CatMeow		102744
+	250265649	Slime01	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Slime01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\SlimePush\Slime01		119408
+	253288252	Spirit_ChrysanthaTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spirit_ChrysanthaTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritChrysanthaTheme\Spirit_ChrysanthaTheme\Spirit_ChrysanthaTheme		10205976
+	294587160	Spooky_ChrysanthaTheme_Draft_1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_ChrysanthaTheme_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\ChrysanthaTheme\Spooky_ChrysanthaTheme_Draft_1\Spooky_ChrysanthaTheme_Draft_1		13883932
+	315239178	MainMenu_Loop	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\MainMenu_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\MenuMusic\MainMenu_Loop\MainMenu_Loop		6544924
+	339010008	Spooky_JowanTheme_Draft_1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_JowanTheme_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\JowanTheme\Spooky_JowanTheme_Draft_1\Spooky_JowanTheme_Draft_1		13883932
+	401289580	RatCapture	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\RatCapture_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\RatCapture		87480
+	407509120	CardShuffle1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardShuffle1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardShuffle\CardShuffle1		85784
+	428636673	BoxImpact02	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\BoxImpact02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\BoxImpact\BoxImpact02		101048
+	469650255	CardPull1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardPull1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardPull\CardPull1		55252
+	520901426	Spooky_MyrtleTheme_Draft_1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_MyrtleTheme_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\MyrtleTheme\Spooky_MyrtleTheme_Draft_1\Spooky_MyrtleTheme_Draft_1		13884988
+	530332103	DeckSwap	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardSwap_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\DeckSwap		30660
+	596672924	Spirit_MyrtleTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spirit_MyrtleTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritMyrtleTheme\Spirit_MyrtleTheme\Spirit_MyrtleTheme		10205976
+	628539542	Spirit_KenTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spirit_KenTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritKenTheme\Spirit_KenTheme\Spirit_KenTheme		10468120
+	628776196	Slime03	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Slime03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\SlimePush\Slime03		119408
+	645855217	CardPull2	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardPull2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardPull\CardPull2		67128
+	654445567	SpiderWeb01	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\SpiderWeb01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\SpiderWeb\SpiderWeb01		114620
+	720273982	Spooky_KenTheme_Draft_1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_KenTheme_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\KenTheme\Spooky_KenTheme_Draft_1\Spooky_KenTheme_Draft_1		13884988
+	730900144	CardShuffle3	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardShuffle3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardShuffle\CardShuffle3		86632
+	742781176	UIPause	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\UIPause_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UIPause		220060
+	755363995	PlateReset	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\PlateReset_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\PlateReset		160416
+	807983812	CardShuffle2	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardShuffle2_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardShuffle\CardShuffle2		62036
+	813959866	SpiderWeb03	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\SpiderWeb03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\SpiderWeb\SpiderWeb03		114620
+	844309663	CardFlip	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\CardFlip_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardFlip		14544
+	857119023	Spirit_VTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spirit_VTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritVTheme\Spirit_VTheme\Spirit_VTheme		9681688
+	860405681	Spirit_JowanTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spirit_JowanTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritJowanTheme\Spirit_JowanTheme\Spirit_JowanTheme		10205976
+	897019754	UISelect	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\UISelect_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UISelect		259028
+	898142516	Z_TestSound	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Phone Ringing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Z_TestSound		973648
+	906103811	UIBack	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\UIBack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UIBack		259028
+	931782914	Error	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Error_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\Error		120656
+	962176852	Teleport	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Teleport03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\Teleport		167200
+	983873992	UIResume	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\UIResume_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UIResume		220060
+	1005373722	SpiderWeb02	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\SpiderWeb02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\SpiderWeb\SpiderWeb02		114620
+	1054201599	Plate	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Plate_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\Plate		30660
+	1054601518	Spooky_MainTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Spooky_MainTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\HumanMainTheme\Spooky_MainTheme\Spooky_MainTheme		13884988
+	1060875194	Translator	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Windows\SFX\Translator_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\Translator		325788
 

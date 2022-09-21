@@ -46,6 +46,8 @@ public class SpiritRatScript : MonoBehaviour
         }
         else if(other.TryGetComponent(out SpiderWebObject web) && web.CanTrap)
         {
+            //Play rat capture sound
+            AkSoundEngine.PostEvent("Play_RatCapture", this.gameObject);
             GameObject rat = Instantiate(_ratPickUp, transform.position, other.transform.rotation, other.transform.parent);
             rat.GetComponent<RatPickUpScript>().SetRat(_ratCard);
             Destroy(gameObject);
@@ -67,6 +69,8 @@ public class SpiritRatScript : MonoBehaviour
 
     public void StartRunning(Direction ratFacing)
     {
+        //Play rat squeak
+        AkSoundEngine.PostEvent("Play_RatStart", this.gameObject);
         _isStopping = false;
         if(ratFacing == Direction.up)
         {

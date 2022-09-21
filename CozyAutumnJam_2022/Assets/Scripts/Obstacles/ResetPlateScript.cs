@@ -26,6 +26,8 @@ public class ResetPlateScript : MonoBehaviour
 
     public void ResetObjects()
     {
+        //Play plate sfx
+        AkSoundEngine.PostEvent("Play_PlateReset", this.gameObject);
         for(int i = 0; i < _resettableObjects.Length; i++)
         {
             _resettableObjects[i].SetActive(true);

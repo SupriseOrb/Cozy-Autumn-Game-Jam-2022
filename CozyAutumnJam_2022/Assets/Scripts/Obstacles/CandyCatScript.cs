@@ -9,6 +9,8 @@ public class CandyCatScript : MonoBehaviour, IInteractable
     {
         if(pushableBowl.HitMaxCandies())
         {
+            //Play cat meow
+            AkSoundEngine.PostEvent("Play_CatMeow", this.gameObject);
             pushableBowl.ActivatePlate();
             //hide the cat?
             gameObject.SetActive(false);

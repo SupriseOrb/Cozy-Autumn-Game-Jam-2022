@@ -38,7 +38,8 @@ public class AbilityTeleport : MonoBehaviour, IAbility
             }
             else
             {
-                // Kristen TODO: teleport sound
+                //Teleport sound
+                AkSoundEngine.PostEvent("Play_Teleport", this.gameObject);
                 PlayerScript.Instance.transform.position = (inHumanWorld)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist); 
             }
             inHumanWorld = !inHumanWorld;

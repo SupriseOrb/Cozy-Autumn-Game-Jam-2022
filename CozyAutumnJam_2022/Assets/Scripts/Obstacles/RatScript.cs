@@ -20,7 +20,6 @@ public class RatScript : MonoBehaviour
     public void Start()
     {
         currentLocation = _runToLocation[0];
-        StartRunning();
     }
 
     public void StartRunning()
@@ -29,6 +28,9 @@ public class RatScript : MonoBehaviour
         //Note the locations will only be placed in 90 degree shit
         //rat runs directly to the location
         //When it runs to the final location it dissapears
+       
+        //Play rat squeak
+        AkSoundEngine.PostEvent("Play_RatStart", this.gameObject);
         StartCoroutine(MoveObject(currentLocation));
     }
     IEnumerator MoveObject(Transform intendedTarget = null)
@@ -80,6 +82,8 @@ public class RatScript : MonoBehaviour
     {
         if(other.TryGetComponent(out SpiderWebObject web) && other.GetComponent<SpiderWebObject>().CanTrap)
         {
+            //Play rat capture sound
+            AkSoundEngine.PostEvent("Play_RatCapture", this.gameObject);
             GameObject rat = Instantiate(_ratPickUp, transform.position, other.transform.rotation ,other.transform.parent);
             rat.GetComponent<RatPickUpScript>().SetRat(_ratCard);
             Destroy(gameObject);

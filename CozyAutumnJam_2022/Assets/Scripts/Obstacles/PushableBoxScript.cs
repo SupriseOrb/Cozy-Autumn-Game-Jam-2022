@@ -6,11 +6,14 @@ public class PushableBoxScript : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private bool hasStartedMoving;
+    [SerializeField] private string _impactSound = "Play_BoxImpact";
     // Start is called before the first frame update
     private void FixedUpdate() 
     {
         if(_rb.constraints != RigidbodyConstraints2D.FreezeAll && hasStartedMoving && _rb.velocity == Vector2.zero)
         {
+            //Play sound for when box hits wall
+            AkSoundEngine.PostEvent(_impactSound, this.gameObject);
             hasStartedMoving = false;
             _rb.constraints = RigidbodyConstraints2D.FreezeAll;
         }    

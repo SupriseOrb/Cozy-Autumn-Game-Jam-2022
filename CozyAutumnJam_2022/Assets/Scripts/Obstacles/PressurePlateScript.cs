@@ -17,6 +17,8 @@ public class PressurePlateScript : MonoBehaviour
             other.GetComponent<Rigidbody2D>().velocity == Vector2.zero
         )
         {
+            //Play plate sfx
+            AkSoundEngine.PostEvent("Play_Plate", this.gameObject);
             isActivated = true;
             other.GetComponent<IPressurePalatable>().ActivatePlate();
         }

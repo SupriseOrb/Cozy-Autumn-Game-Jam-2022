@@ -330,6 +330,157 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Card Ability SFX" ID="{99B0A793-C7FC-467B-82B9-6A4AB8562CEC}" ShortID="331327853">
+							<ChildrenList>
+								<Event Name="Play_SlimePush" ID="{8AFC0E62-92AF-4D85-80B7-EE4D6905C2A2}">
+									<ChildrenList>
+										<Action Name="" ID="{A772C603-3859-4E45-A222-235738F32403}" ShortID="585379450">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SlimePush" ID="{84C6ED6A-6D95-4760-9D43-A2800DB05F7C}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SpiderWeb" ID="{12363371-1934-4185-8988-02F258C3CB8B}">
+									<ChildrenList>
+										<Action Name="" ID="{96E57CB7-8478-4832-9AB6-F84A23F24927}" ShortID="873187589">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SpiderWeb" ID="{73755DE5-FE9E-42F7-8C12-D825F8A5C283}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Teleport" ID="{56274B68-36C1-4C44-9B47-675DF38DDCB2}">
+									<ChildrenList>
+										<Action Name="" ID="{E6D8FCE1-4261-48FF-9780-465AB377C90F}" ShortID="116705293">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Teleport" ID="{74DEC238-3FBC-4EB5-A02C-E3B3372F1783}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Translator" ID="{AA801307-4095-41E8-A6D8-91B1DE9636DA}">
+									<ChildrenList>
+										<Action Name="" ID="{D1C5AFA0-251A-4CC1-AE10-EE2712C7C1F7}" ShortID="344667053">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Translator" ID="{6F9AF4B7-1484-4E44-A477-6CA42C8B6DD0}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Vaccuum" ID="{75492D66-1B2E-4A5F-A493-6EAA20DFB57D}">
+									<ChildrenList>
+										<Action Name="" ID="{F9234DD0-DB68-46A3-98F2-BE2211C6220E}" ShortID="116878582">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Vaccuum" ID="{319858DE-FA95-4047-BEFC-3E66812928B2}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Puzzle SFX" ID="{5496FBB3-3E98-4C16-BBCC-266359B26FB8}" ShortID="349669558">
+							<ChildrenList>
+								<Event Name="Play_BoxImpact" ID="{05A1DD4C-9281-48E9-B7FC-E8884418906A}">
+									<ChildrenList>
+										<Action Name="" ID="{CD054E53-57CF-4F89-8D86-EE434F4EDA7B}" ShortID="995195466">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="BoxImpact" ID="{81DB7BD0-7074-4A30-BCB3-442AED5B3D74}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_PowerPlate" ID="{0B266432-F864-4019-B253-C29F815C9C70}">
+									<ChildrenList>
+										<Action Name="" ID="{08620112-C99A-42EE-B08B-7C1C49029B8E}" ShortID="864447900">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PowerPlate" ID="{F097E7FE-72DC-4EC1-A5FE-C8D36F81FF16}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_RatCapture" ID="{5F58E902-999A-418B-AEE2-22690A84D490}">
+									<ChildrenList>
+										<Action Name="" ID="{F55DF022-B903-4C21-AF39-66836127E0C1}" ShortID="678031137">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RatCapture" ID="{E9D8EC7F-A8DB-4A95-A956-1664FFD8EA5D}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_CatMeow" ID="{3FB38758-2298-4501-9123-B2A38FE69D16}">
+									<ChildrenList>
+										<Action Name="" ID="{5AFAC412-F57F-44EA-A4AE-DF6D74178A96}" ShortID="574023215">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CatMeow" ID="{A03223BD-7DED-4E44-B15B-858355881907}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Plate" ID="{446442D9-331C-4909-8241-09D36C7307EE}">
+									<ChildrenList>
+										<Action Name="" ID="{FDEF8C44-C667-4259-8EC5-AC67EA0B7C58}" ShortID="567343519">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Plate" ID="{48DE1550-318B-450E-883C-82E775F42B31}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_PlateReset" ID="{02BB3A40-2D88-4ECF-AE82-ABEE90A323C9}">
+									<ChildrenList>
+										<Action Name="" ID="{324FB1C2-C44F-41C2-8393-48846A0F1F12}" ShortID="930782153">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PlateReset" ID="{F9643592-A42B-4A9C-B322-7EADF152410C}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_RatStart" ID="{0CF5A6AE-01D6-44C5-A7C5-ACCAD4347078}">
+									<ChildrenList>
+										<Action Name="" ID="{8D5318C7-DD38-483F-8504-B3598097F401}" ShortID="910715017">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RatStart" ID="{C712FB8C-4F77-4FCC-861C-2A3C33F2A031}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Error" ID="{DAE53E28-B72A-49D5-80B1-7BFFD9E67992}">
+									<ChildrenList>
+										<Action Name="" ID="{89B03C38-90EA-462A-A96B-D76B6197F379}" ShortID="294536716">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Error" ID="{AD6C7E4B-B1AB-40B5-95E8-CE9328EF775C}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

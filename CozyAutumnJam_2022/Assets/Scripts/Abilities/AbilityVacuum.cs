@@ -46,7 +46,8 @@ public class AbilityVacuum : MonoBehaviour, IAbility
                 }
                 else
                 {
-                    // Kristen todo: vacuum suck sfx
+                    //Vacuum suck sfx
+                    AkSoundEngine.PostEvent("Play_Vaccuum", this.gameObject);
                     StartCoroutine(StartCooldown());
                 }
             }

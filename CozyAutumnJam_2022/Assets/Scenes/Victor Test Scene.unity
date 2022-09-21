@@ -1247,10 +1247,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Masks Tilesets
       objectReference: {fileID: 0}
-    - target: {fileID: 7054045341765165481, guid: fd35b5f5631ee7d49994ee13a97def92, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8195786463213714833, guid: fd35b5f5631ee7d49994ee13a97def92, type: 3}
       propertyPath: _costumeCard
       value: 
@@ -1269,18 +1265,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1202742962}
     m_Modifications:
-    - target: {fileID: 46902952, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: _vfx
-      value: 
-      objectReference: {fileID: 3074666689013589529, guid: 55bd0234a69e9b3489d271b7da8912fe, type: 3}
     - target: {fileID: 410443762, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
       propertyPath: _ratCard
       value: 
       objectReference: {fileID: 6957888}
-    - target: {fileID: 805470719, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: _vfx
-      value: 
-      objectReference: {fileID: 3074666689013589529, guid: 55bd0234a69e9b3489d271b7da8912fe, type: 3}
     - target: {fileID: 1234981880036913691, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
       propertyPath: _costumeCard
       value: 
@@ -1355,10 +1343,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1202742962}
     m_Modifications:
-    - target: {fileID: 1070654889364993599, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: _vfx
-      value: 
-      objectReference: {fileID: 3074666689013589529, guid: 55bd0234a69e9b3489d271b7da8912fe, type: 3}
     - target: {fileID: 3980950316512806852, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1411,10 +1395,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Props Tilesets
       objectReference: {fileID: 0}
-    - target: {fileID: 8388415546125851612, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: _vfx
-      value: 
-      objectReference: {fileID: 3074666689013589529, guid: 55bd0234a69e9b3489d271b7da8912fe, type: 3}
     - target: {fileID: 9072782912854773747, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
       propertyPath: _costumeCard
       value: 
@@ -1437,10 +1417,6 @@ PrefabInstance:
       propertyPath: _costumeCard
       value: 
       objectReference: {fileID: 949359020}
-    - target: {fileID: 2741805156266823195, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
-      propertyPath: _vfx
-      value: 
-      objectReference: {fileID: 3074666689013589529, guid: 55bd0234a69e9b3489d271b7da8912fe, type: 3}
     - target: {fileID: 5542634199089381534, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
       propertyPath: _costumeCard
       value: 
@@ -1507,34 +1483,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1202742962}
     m_Modifications:
-    - target: {fileID: 788448, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: _vfx
-      value: 
-      objectReference: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
-    - target: {fileID: 634327010, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: _vfx
-      value: 
-      objectReference: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
-    - target: {fileID: 1568840210, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: _vfx
-      value: 
-      objectReference: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
-    - target: {fileID: 1913845935, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: _vfx
-      value: 
-      objectReference: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
     - target: {fileID: 1097947826901655891, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
       propertyPath: m_Name
       value: Animatronics Tilesets
       objectReference: {fileID: 0}
-    - target: {fileID: 1329929365754807559, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: _vfx
-      value: 
-      objectReference: {fileID: 3074666689013589529, guid: 55bd0234a69e9b3489d271b7da8912fe, type: 3}
-    - target: {fileID: 2617127560460959008, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: _vfx
-      value: 
-      objectReference: {fileID: 3074666689013589529, guid: 55bd0234a69e9b3489d271b7da8912fe, type: 3}
     - target: {fileID: 3494564438208299073, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
       propertyPath: m_RootOrder
       value: 3

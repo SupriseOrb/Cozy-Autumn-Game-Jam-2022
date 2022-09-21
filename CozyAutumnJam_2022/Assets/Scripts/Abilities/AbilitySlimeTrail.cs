@@ -13,37 +13,41 @@ public class AbilitySlimeTrail : MonoBehaviour, IAbility
     private GameObject _hitGO;
     private bool _isAvailable = true;
     [SerializeField] private float _abilityCooldown = 3f;
+    private bool abilityObtained = false;
 
     public void ActivateAbility()
     {
-        if (_isAvailable == false)
+        if(abilityObtained)
         {
-            Debug.Log("Slime Trail Ability on cooldown!");
-            return;
-        }
-        else
-        {
-            _originalPos = PlayerScript.Instance.transform.position;
-            _originalDir = PlayerScript.Instance.getPlayerDirection();
-            _rayCastHit = Physics2D.Raycast(_originalPos, _originalDir, _distance);
-            Debug.DrawRay(_originalPos, _originalDir * _distance, Color.red, 1);
-            if(_rayCastHit.transform != null)
+            if (_isAvailable == false)
             {
-                _hitGO = _rayCastHit.transform.gameObject;
-                if (_hitGO.TryGetComponent(out ItemTagScript interactable))
+                Debug.Log("Slime Trail Ability on cooldown!");
+                return;
+            }
+            else
+            {
+                _originalPos = PlayerScript.Instance.transform.position;
+                _originalDir = PlayerScript.Instance.getPlayerDirection();
+                _rayCastHit = Physics2D.Raycast(_originalPos, _originalDir, _distance);
+                Debug.DrawRay(_originalPos, _originalDir * _distance, Color.red, 1);
+                if(_rayCastHit.transform != null)
                 {
-                    Debug.Log("hit something");
-                    if(_hitGO.GetComponent<ItemTagScript>().IsPushable())
+                    _hitGO = _rayCastHit.transform.gameObject;
+                    if (_hitGO.TryGetComponent(out ItemTagScript interactable))
                     {
-                        // Kristen Todo: Slime push sfx
-                        AkSoundEngine.PostEvent("Play_SlimePush", this.gameObject);
-                        Debug.Log("Hit a pushabLe");
-                        _hitGO.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-                        _hitGO.GetComponent<Rigidbody2D>().AddForce(_originalDir * _speed, ForceMode2D.Impulse);
-                        StartCoroutine(StartCooldown());
+                        Debug.Log("hit something");
+                        if(_hitGO.GetComponent<ItemTagScript>().IsPushable())
+                        {
+                            // Kristen Todo: Slime push sfx
+                            AkSoundEngine.PostEvent("Play_SlimePush", this.gameObject);
+                            Debug.Log("Hit a pushabLe");
+                            _hitGO.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+                            _hitGO.GetComponent<Rigidbody2D>().AddForce(_originalDir * _speed, ForceMode2D.Impulse);
+                            StartCoroutine(StartCooldown());
+                        }
+                        //If collides into something specific (probably with interface tag), do x?
+                        //If not, reset position?
                     }
-                    //If collides into something specific (probably with interface tag), do x?
-                    //If not, reset position?
                 }
             }
         }
@@ -54,5 +58,10 @@ public class AbilitySlimeTrail : MonoBehaviour, IAbility
         _isAvailable = false;
         yield return new WaitForSeconds (_abilityCooldown);
         _isAvailable = true;
+    }
+
+    public void ObtainAbility()
+    {
+        abilityObtained = true;
     }
 }

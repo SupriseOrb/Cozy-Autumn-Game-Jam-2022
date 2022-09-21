@@ -13,6 +13,7 @@ public class AbilityTeleport : MonoBehaviour, IAbility
     [SerializeField] private float teleportReturnDelay = .5f;
     [SerializeField] private float _abilityCooldown = 5f;
     [SerializeField] private GameObject _vfx;
+    private bool abilityObtained = false;
 
     private void Start()
     {
@@ -20,44 +21,47 @@ public class AbilityTeleport : MonoBehaviour, IAbility
     }
     public void ActivateAbility()
     {
-        if (_isAvailable == false)
+        if(abilityObtained)
         {
-            Debug.Log("Ability on cooldown!");
-            return;
-        }
-        else
-        {
-            Instantiate(_vfx, PlayerScript.Instance.transform);
-            Debug.Log("teleporting...");
-            _originalPos = PlayerScript.Instance.transform.position;
-            Collider2D[] allColliders = Physics2D.OverlapCircleAll((_inHumanWorld.Value)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist), _teleportRadius);
-            if (allColliders.Length > 0)
+            if (_isAvailable == false)
             {
-                PlayerScript.Instance.transform.position = ((_inHumanWorld.Value)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist));
-                Debug.Log("You cannot teleport there!");
-                foreach(Collider2D obstacle in allColliders)
-                {
-                    Debug.Log("Hit: " + obstacle.gameObject.name);
-                }
-                StartCoroutine(TeleportBackDelay());
-                StartCoroutine(StartCooldown());
-                _inHumanWorld.Value = !_inHumanWorld.Value;
+                Debug.Log("Ability on cooldown!");
+                return;
             }
             else
             {
-                //Teleport sound
-                AkSoundEngine.PostEvent("Play_Teleport", this.gameObject);
-                PlayerScript.Instance.transform.position = (_inHumanWorld.Value)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist);
-                _inHumanWorld.Value = !_inHumanWorld.Value;
-                if(_inHumanWorld.Value)
+                Instantiate(_vfx, PlayerScript.Instance.transform);
+                Debug.Log("teleporting...");
+                _originalPos = PlayerScript.Instance.transform.position;
+                Collider2D[] allColliders = Physics2D.OverlapCircleAll((_inHumanWorld.Value)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist), _teleportRadius);
+                if (allColliders.Length > 0)
                 {
-                    AkSoundEngine.SetState("Gameplay", "HumanStore");
+                    PlayerScript.Instance.transform.position = ((_inHumanWorld.Value)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist));
+                    Debug.Log("You cannot teleport there!");
+                    foreach(Collider2D obstacle in allColliders)
+                    {
+                        Debug.Log("Hit: " + obstacle.gameObject.name);
+                    }
+                    StartCoroutine(TeleportBackDelay());
+                    StartCoroutine(StartCooldown());
+                    _inHumanWorld.Value = !_inHumanWorld.Value;
                 }
                 else
                 {
-                    AkSoundEngine.SetState("Gameplay", "SpiritStore");
-                }
-            }            
+                    //Teleport sound
+                    AkSoundEngine.PostEvent("Play_Teleport", this.gameObject);
+                    PlayerScript.Instance.transform.position = (_inHumanWorld.Value)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist);
+                    _inHumanWorld.Value = !_inHumanWorld.Value;
+                    if(_inHumanWorld.Value)
+                    {
+                        AkSoundEngine.SetState("Gameplay", "HumanStore");
+                    }
+                    else
+                    {
+                        AkSoundEngine.SetState("Gameplay", "SpiritStore");
+                    }
+                }            
+            }
         }
     }
 
@@ -73,5 +77,10 @@ public class AbilityTeleport : MonoBehaviour, IAbility
         _isAvailable = false;
         yield return new WaitForSeconds (_abilityCooldown);
         _isAvailable = true;
+    }
+
+    public void ObtainAbility()
+    {
+        abilityObtained = true;
     }
 }

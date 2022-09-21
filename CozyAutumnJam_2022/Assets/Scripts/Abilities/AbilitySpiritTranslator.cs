@@ -14,11 +14,15 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
     [SerializeField] private float _abilityTranslateCooldown = 1f;
     [SerializeField] private float _abilityRuneCooldown = 3f;
     [SerializeField] private GameObject _vfx;
+    private bool abilityObtained = false;
 
     public void ActivateAbility()
     {
-        Translate();
-        InteractRune();
+        if(abilityObtained)
+        {
+            Translate();
+            InteractRune();
+        }
     }
 
     private void Translate()
@@ -133,5 +137,10 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
         _isRuneAvailable = false;
         yield return new WaitForSeconds (_abilityRuneCooldown);
         _isRuneAvailable = true;
+    }
+
+    public void ObtainAbility()
+    {
+        abilityObtained = true;
     }
 }

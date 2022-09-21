@@ -14,84 +14,88 @@ public class AbilitySoulBoomBox : MonoBehaviour, IAbility
     private GameObject _hitGO;
     private bool _isAvailable = true;
     [SerializeField] private float _abilityCooldown = 1f;
+    private bool abilityObtained = false;
 
     public void ActivateAbility()
     {
-        if (_isAvailable == false)
+        if(abilityObtained)
         {
-            Debug.Log("Boom Box Ability on cooldown!");
-            return;
-        }
-        else
-        {
-            //_originalPos = PlayerScript.Instance.transform.position;
-            //_offset = PlayerScript.Instance.getPlayerDirection();
-            //Collider2D[] allColliders = Physics2D.OverlapCircleAll(_originalPos + _offset, _boomBoxRadius);
-            //int animatronicCount = 0;
-            _originalPos = PlayerScript.Instance.transform.position;
-            _originalDir = PlayerScript.Instance.getPlayerDirection();
-            _rayCastHit = Physics2D.Raycast(_originalPos, _originalDir, _distance);
-            Debug.DrawRay(_originalPos, _originalDir * _distance, Color.red, 1);
-            if(_rayCastHit.transform != null)
+            if (_isAvailable == false)
             {
-                _hitGO = _rayCastHit.transform.gameObject;
-                if (_hitGO.TryGetComponent(out ItemTagScript interactable))
-                {
-                    Debug.Log("hit something");
-                    if(interactable.IsAnimatronic())
-                    {
-                        if(_hitGO.TryGetComponent(out AnimatronicScript animatronic))
-                        {
-                            animatronic.ActivateAnimatronic();
-                        }
-                        else if(_hitGO.TryGetComponent(out AnimatronicObstacleScript obstacle))
-                        {
-                            obstacle.ActivateAnimatronic();
-                        }
-                        else
-                        {
-                            _hitGO.GetComponent<AnimatronicManager>().ActivateAnimatronic();
-                        }
-                        StartCoroutine(StartCooldown());
-                    }
-                }
+                Debug.Log("Boom Box Ability on cooldown!");
+                return;
             }
-            /*if (allColliders.Length > 0)
+            else
             {
-                foreach (Collider2D c in allColliders)
+                //_originalPos = PlayerScript.Instance.transform.position;
+                //_offset = PlayerScript.Instance.getPlayerDirection();
+                //Collider2D[] allColliders = Physics2D.OverlapCircleAll(_originalPos + _offset, _boomBoxRadius);
+                //int animatronicCount = 0;
+                _originalPos = PlayerScript.Instance.transform.position;
+                _originalDir = PlayerScript.Instance.getPlayerDirection();
+                _rayCastHit = Physics2D.Raycast(_originalPos, _originalDir, _distance);
+                Debug.DrawRay(_originalPos, _originalDir * _distance, Color.red, 1);
+                if(_rayCastHit.transform != null)
                 {
-                    if(c.TryGetComponent(out ItemTagScript interactable))
+                    _hitGO = _rayCastHit.transform.gameObject;
+                    if (_hitGO.TryGetComponent(out ItemTagScript interactable))
                     {
-                        //Only one character, set their bool variable to false
-                        if(c.gameObject.GetComponent<ItemTagScript>().IsAnimatronic())
+                        Debug.Log("hit something");
+                        if(interactable.IsAnimatronic())
                         {
-                            if(c.TryGetComponent(out AnimatronicScript animatronic))
+                            if(_hitGO.TryGetComponent(out AnimatronicScript animatronic))
                             {
-                                c.GetComponent<AnimatronicScript>().ActivateAnimatronic();
+                                animatronic.ActivateAnimatronic();
                             }
-                            else if(c.TryGetComponent(out AnimatronicObstacleScript obstacle))
+                            else if(_hitGO.TryGetComponent(out AnimatronicObstacleScript obstacle))
                             {
                                 obstacle.ActivateAnimatronic();
                             }
                             else
                             {
-                                c.GetComponent<AnimatronicManager>().ActivateAnimatronic();
+                                _hitGO.GetComponent<AnimatronicManager>().ActivateAnimatronic();
                             }
+                            StartCoroutine(StartCooldown());
                         }
-                        animatronicCount++;   
                     }
-                 else {}
                 }
+                /*if (allColliders.Length > 0)
+                {
+                    foreach (Collider2D c in allColliders)
+                    {
+                        if(c.TryGetComponent(out ItemTagScript interactable))
+                        {
+                            //Only one character, set their bool variable to false
+                            if(c.gameObject.GetComponent<ItemTagScript>().IsAnimatronic())
+                            {
+                                if(c.TryGetComponent(out AnimatronicScript animatronic))
+                                {
+                                    c.GetComponent<AnimatronicScript>().ActivateAnimatronic();
+                                }
+                                else if(c.TryGetComponent(out AnimatronicObstacleScript obstacle))
+                                {
+                                    obstacle.ActivateAnimatronic();
+                                }
+                                else
+                                {
+                                    c.GetComponent<AnimatronicManager>().ActivateAnimatronic();
+                                }
+                            }
+                            animatronicCount++;   
+                        }
+                    else {}
+                    }
+                }
+                if (animatronicCount == 0)
+                {
+                    //No animatronics found
+                    Debug.Log("No animatronics found!");
+                }
+                else
+                {
+                    StartCoroutine(StartCooldown());
+                }*/
             }
-            if (animatronicCount == 0)
-            {
-                //No animatronics found
-                Debug.Log("No animatronics found!");
-            }
-            else
-            {
-                StartCoroutine(StartCooldown());
-            }*/
         }
     }
 
@@ -100,5 +104,10 @@ public class AbilitySoulBoomBox : MonoBehaviour, IAbility
         _isAvailable = false;
         yield return new WaitForSeconds (_abilityCooldown);
         _isAvailable = true;
+    }
+
+    public void ObtainAbility()
+    {
+        abilityObtained = true;
     }
 }

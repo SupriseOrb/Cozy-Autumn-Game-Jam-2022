@@ -111,7 +111,7 @@ public class QuestManager : MonoBehaviour
                 _spiritQuestList[spiritChar.QuestIndex]._spiritQuestStarted = true;
                 _spiritQuestList[spiritChar.QuestIndex]._currentQuestSpirit.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
                 //Get script component of ability and set it active (likely need to edit this)
-                _spiritQuestList[spiritChar.QuestIndex]._oracleCard.SetActive(true);
+                _spiritQuestList[spiritChar.QuestIndex]._oracleCard.GetComponent<IAbility>().ObtainAbility();
             }
             else if (spiritChar.StepIndex == 1)
             {

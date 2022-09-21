@@ -1,5 +1,6 @@
-#char myrtle
+#char myrtle #music HumanMyrtle #emotion happy
 Oh, it's so fluffy...
+#emotion happy
 I can't wait to wear this...
 
 -> END

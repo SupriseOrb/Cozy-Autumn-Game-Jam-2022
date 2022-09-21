@@ -120,11 +120,12 @@ public class DialogueManager : MonoBehaviour
     /*
         BossHatOff = Happy;
     */
-    private static string[] _emotions = new string[] {"Default", "Happy", "Tired"};
-    private static string[] _emotionsCleo = new string[] {"Default", "Happy", "Tired", "NoUniform", "NoUniformTired"};
+    private static string[] _emotions = new string[] {"default", "happy"};
+    private static string[] _emotionsCleo = new string[] {"default", "happy", "tired", "noUniform", "noUniformTired"};
     [SerializeField] private string[] _characterNames;
     [SerializeField] private CharacterScriptableObject[] _characterInfos;
     private CharacterScriptableObject _currentChar;
+    private String _currentCharSFXString;
     #endregion
 
     void Awake()
@@ -260,12 +261,17 @@ public class DialogueManager : MonoBehaviour
         {
             if(characterIndex >= 0)
             {
+                _currentCharSFXString = charName;
                 _currentChar = _characterInfos[characterIndex];
                 _nameText.text = _currentChar.Name;
             }
+            else if(charName == "None")
+            {
+                _currentCharSFXString = "";
+            }
             
             int emotionIndex;
-            if(charName == "cleo")
+            if(_currentChar.Name == "Cleo")
             {
                 emotionIndex = emotion != "" ? Array.IndexOf(_emotionsCleo, emotion) : 0;
             }
@@ -325,7 +331,7 @@ public class DialogueManager : MonoBehaviour
         //Start character SFX based on the var _currentChar.Name
         // names are lowercase, and spirits version would have _spirit have the person's name
         // e.g. ken, ken_spirit
-        string nameForSFX = _currentChar.Name.Split('_')[0];
+        string nameForSFX = _currentCharSFXString.Split('_')[0];
         nameForSFX = char.ToUpper(nameForSFX[0]) + nameForSFX.Substring(1);
         AkSoundEngine.PostEvent("Play_Dialogue"+ nameForSFX, this.gameObject);
 

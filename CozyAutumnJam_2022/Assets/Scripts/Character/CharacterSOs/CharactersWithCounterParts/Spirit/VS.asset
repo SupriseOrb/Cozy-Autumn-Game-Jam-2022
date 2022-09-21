@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3db17c638b994343af964639e872cc9, type: 3}
   m_Name: VS
   m_EditorClassIdentifier: 
-  _name: Cuboidal Slime Cat Slime
+  _name: Slime
   _emotes:
   - {fileID: 21300000, guid: 716862cf45e353e47b91904d8708634e, type: 3}
   - {fileID: 21300000, guid: 63a5d08f34f2ea749934ac4c5e58510b, type: 3}
   _characterID: 0
-  _currentStoryBeat: 0
+  _currentStoryBeat: 1
   _questIndex: 3
   _story:
   - {fileID: 4900000, guid: 3050da61bddc699419266fa4268fb5b4, type: 3}

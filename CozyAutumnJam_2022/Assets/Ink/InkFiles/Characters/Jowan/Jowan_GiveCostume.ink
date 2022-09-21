@@ -1,14 +1,14 @@
-#char jowan
+#char jowan #music HumanJowan
 Hey!
 
-#char cleo
+#char cleo #emotion happy
 Hey, you two!
 I found some pretty cool matching costumes for you two.
 
 #char jay
 Oh? What kind of costume?
 
-#char cleo
+#char cleo #emotion happy
 Oh, you're gonna love this.
 
 #char jowan
@@ -26,7 +26,7 @@ Oh, y'know, no reason. Just a hunch.
 #char jay
 Well, I think these are gonna be great! Let's take them to the checkout.
 
-#char jowan
+#char jowan #emotion happy
 Yeah!
 ...
 ...
@@ -37,6 +37,7 @@ Yeah?
 
 #char jowan
 Sorry for just springing this on you, but...
+#emotion happy
 Thanks for being such a great partner.
 I'm sorry if I'm ever really obnoxious to be with.
 
@@ -50,12 +51,13 @@ Sorry. I just get insecure a lot.
 Hey, me too. Don't worry about it.
 I love you, okay?
 
-#char jowan
+#char jowan #emotion happy
 ...Okay. I love you too.
 ...
+#emotion happy
 Hey, thanks for helping us out.
 
-#char cleo
+#char cleo #emotion happy
 Sure thing.
 
 -> END

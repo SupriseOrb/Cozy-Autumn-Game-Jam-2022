@@ -1,4 +1,4 @@
-#char myrtle_spirit
+#char myrtle_spirit #music SpiritMyrtle #emotion happy
 Eee hee hee! Hello again, human!
 I don't suppose you've found something to change my mind about things?
 
@@ -22,7 +22,7 @@ Very clever, human.
 But that doesn't solve my problem!
 Ugh! I hate this place, hate this place!
 
-#char cleo
+#char cleo #emotion tired
 Okay, look...
 Yeah, it sucks that you're stuck in here, but...
 It seems like you've been getting some enjoyment out of it, too, right?
@@ -41,13 +41,15 @@ I mean, yeah, totally.
 #char myrtle_spirit
 Hm...
 You've given me a lot to think about, human.
+#emotion happy
 Thank you.
 
-#char cleo
+#char cleo #emotion happy
 Sure thing.
 
-#char myrtle_spirit
+#char myrtle_spirit #emotion happy
 Now, if you'll excuse me...
+#emotion happy
 ...I'm going to tear this uniform to ribbons now.
 Eee hee hee!
 

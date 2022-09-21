@@ -210,7 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _teleportDistance: {x: 0, y: 0, z: 0}
   _speed: 5
-  _speedSmoothTime: 0.25
+  _speedSmoothTime: 0.05
   _rb: {fileID: 2448369009358849145}
   _inputManager: {fileID: 17740070}
   _playerDirection: {x: 0, y: 0}

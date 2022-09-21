@@ -1,10 +1,10 @@
-#char jowan_spirit
+#char jowan_spirit #music SpiritJowan
 Uh, h-hi again.
 
 #char jay_spirit
 Did you find a costume?
 
-#char cleo
+#char cleo #emotion happy
 Oh, you'd better believe I did.
 Check this out.
 
@@ -18,7 +18,9 @@ W-why...?
 #char cleo
 Hey.
 Take a look at this ghost.
+#emotion tired
 Is this really the person who loves you?
+#emotion tired
 Or are they some fabrication you created?
 
 #char jowan_spirit
@@ -41,7 +43,7 @@ I'm good enough for Jay, and you're going to leave now, because you're not Jay!
 NOOOOOOOOOOOOOOO!!
 
 #wait 3
-#char jay_spirit_true
+#char jay_spirit #emotion happy
 Gah... what happened?
 Jowan, you OK?
 
@@ -50,19 +52,21 @@ Jowan, you OK?
 Y-yeah.
 Sorry for being like this all the time.
 
-#char jay_spirit_true
+#char jay_spirit #emotion happy
 Hey, don't be so hard on yourself.
 
 #wait 1
-#char cleo
+#char cleo #emotion happy
 Well, glad you two were able to sort things out.
 
 #char jowan_spirit
 Yeah...
+#emotion happy
 Thank you.
+#emotion happy
 And, thanks for the costume, too.
 
-#char cleo
+#char cleo #emotion happy
 Sure thing.
 
 -> END

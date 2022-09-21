@@ -1,4 +1,4 @@
-#char v_spirit
+#char v_spirit #music SpiritV
 Oh, hi...
 Did you find something that could help me...?
 
@@ -39,21 +39,23 @@ I'd really like to be a cat...
 ...
 Maybe if I just...
 
-#char v_spirit_cat
+#char v_spirit #emotion happy
 Nyah!~
 
 #char cleo
 Whoa! You're a... slime cat!
 
-#char v_spirit_cat
+#char v_spirit #emotion happy
 Yeah! Look at me! I really like this!
+#emotion happy
 I guess it just took a bit of thinking to really figure out who I wanted to be.
+#emotion happy
 ...And a bit of help from a friend.
 
-#char cleo
+#char cleo #emotion happy
 Well, I'm glad you were able to figure yourself out! And I'm glad I could help!
 
-#char v_spirit_cat
+#char v_spirit #emotion happy
 Yeah! Thanks for helping me out!
 
 -> END

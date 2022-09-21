@@ -1,8 +1,9 @@
-#char myrtle_spirit
+#char myrtle_spirit #music SpiritMyrtle #emotion happy
 Eee hee hee hee!! What're YOU doing here, you glum-looking human?
 
-#char cleo
+#char cleo #emotion tired
 Uh... wh...
+#emotion tired
 What ARE you, exactly?
 
 #char myrtle_spirit
@@ -11,11 +12,11 @@ I'm a DEMON! Haven't you ever seen one before?
 #char cleo
 Well, demons aren't usually so... fluffy.
 
-#char myrtle_spirit
+#char myrtle_spirit #emotion happy
 Eee hee hee! You don't know us very well, then!
 Now go away before I knock you over, along with the contents of these shelves!
 
-#char cleo
+#char cleo #emotion tired
 What? Why do you want to do that?
 
 #char myrtle_spirit
@@ -24,7 +25,7 @@ Do you know how long I've been stuck in this place?
 It's awful, awful! I just want to leave!
 I'll mess things up and knock things over and destroy this store until they throw me out!
 
-#char cleo
+#char cleo #emotion tired
 What's... trapping you in here?
 
 #char myrtle_spirit
@@ -44,8 +45,9 @@ Unless you can find something that shows me that this isn't all hopeless, you're
 ...
 I'll see what I can do.
 
-#char myrtle_spirit
+#char myrtle_spirit #emotion happy
 You sure will, human!
+#emotion happy
 Eee hee hee!
 
 -> END

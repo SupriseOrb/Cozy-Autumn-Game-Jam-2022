@@ -1,12 +1,13 @@
-#char cleo
+#char cleo #music SpiritKen
 Hello there, mister werewolf.
 
 #char ken_spirit
 Hello there, young lady.
+#emotion happy
 AWOOOOOOOO!
 Ahem. Sorry. Instinctual urges.
 
-#char cleo
+#char cleo #emotion tired
 Right...
 How's the shopping going? Do you need help finding anything?
 
@@ -34,7 +35,7 @@ I think dressing more like a human this year could be fun.
 #char cleo
 Okay. I'll see what I can find.
 
-#char ken_spirit
+#char ken_spirit #emotion happy
 Great! Thanks, young lady.
 A-CHOO!!
 Agh...

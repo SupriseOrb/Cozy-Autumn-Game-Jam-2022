@@ -283,6 +283,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2650161887793585093, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
   m_PrefabInstance: {fileID: 40151172}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &40151174 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4681972123343849859, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
+  m_PrefabInstance: {fileID: 40151172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe342a9ad2ae3be4a8ac8cc6a3dfbe7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &77986946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -673,6 +684,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 588238164006830240, guid: d653fdc6b4259d64abcae1ad86b114dd, type: 3}
   m_PrefabInstance: {fileID: 77986946}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &77986948 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 588238164006830247, guid: d653fdc6b4259d64abcae1ad86b114dd, type: 3}
+  m_PrefabInstance: {fileID: 77986946}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f46f8ddc59b2064fb2e7e961b18ff48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &121359599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20884,6 +20906,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 17740070, guid: d092237fd8e6cd540ba79edf6b61edb1, type: 3}
+      propertyPath: _pauseMenu
+      value: 
+      objectReference: {fileID: 77986948}
+    - target: {fileID: 17740070, guid: d092237fd8e6cd540ba79edf6b61edb1, type: 3}
+      propertyPath: _cardManager
+      value: 
+      objectReference: {fileID: 40151174}
     - target: {fileID: 215318249, guid: d092237fd8e6cd540ba79edf6b61edb1, type: 3}
       propertyPath: _data._json
       value: '{"nest":{"source":"Embed","macro":null,"embed":{"variables":{"Kind":"Flow","collection":{"$content":[{"name":"Speed","value":{"$content":0.1,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,

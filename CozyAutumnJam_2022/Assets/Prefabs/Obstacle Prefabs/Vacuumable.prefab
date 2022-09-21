@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220283254696092756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.97, y: -2.57, z: 0.8866296}
+  m_LocalPosition: {x: 10.97, y: -2.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -130,6 +130,5 @@ MonoBehaviour:
   isRune: 0
   isPushable: 0
   isPressurePalatable: 0
-  isInteractable: 0
   isAnimatronic: 0
-  isCharacter: 0
+  isCostume: 0

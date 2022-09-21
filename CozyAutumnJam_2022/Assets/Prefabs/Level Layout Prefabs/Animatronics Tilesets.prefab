@@ -2670,6 +2670,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6757027603415063438, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
+      propertyPath: _vfx
+      value: 
+      objectReference: {fileID: 3074666689013589529, guid: 55bd0234a69e9b3489d271b7da8912fe, type: 3}
+    - target: {fileID: 6757027603415063438, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _costume
       value: 
       objectReference: {fileID: 8912471503383585756}
@@ -3194,6 +3198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0162efaab61c8b74f98b9c5a06e4ff98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _vfx: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
 --- !u!1001 &8760679299306484313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3269,6 +3274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0162efaab61c8b74f98b9c5a06e4ff98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _vfx: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
 --- !u!1001 &8760679299336822945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3504,6 +3510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0162efaab61c8b74f98b9c5a06e4ff98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _vfx: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
 --- !u!1001 &8760679299480396932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3765,6 +3772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0162efaab61c8b74f98b9c5a06e4ff98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _vfx: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
 --- !u!1001 &8760679299890710185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4266,6 +4274,10 @@ PrefabInstance:
       propertyPath: _musicName
       value: Play_UISelect
       objectReference: {fileID: 0}
+    - target: {fileID: 6757027603415063438, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
+      propertyPath: _vfx
+      value: 
+      objectReference: {fileID: 3074666689013589529, guid: 55bd0234a69e9b3489d271b7da8912fe, type: 3}
     - target: {fileID: 6757027603415063438, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _costume
       value: 

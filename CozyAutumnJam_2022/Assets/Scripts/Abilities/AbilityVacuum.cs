@@ -10,6 +10,7 @@ public class AbilityVacuum : MonoBehaviour, IAbility
     private Vector3 _offset;
     private bool _isAvailable = true;
     [SerializeField] private float _abilityCooldown = 1f;
+    [SerializeField] private GameObject _vfx;
 
 
     public void ActivateAbility()
@@ -20,7 +21,9 @@ public class AbilityVacuum : MonoBehaviour, IAbility
             return;        
         }
         else
-        {
+        {   
+            //Vacuum VFX
+            Instantiate(_vfx, PlayerScript.Instance.transform);
             _originalPos = PlayerScript.Instance.transform.position;
             _offset = PlayerScript.Instance.getPlayerDirection();
             Collider2D[] allColliders = Physics2D.OverlapCircleAll(_originalPos, _vacuumRadius);

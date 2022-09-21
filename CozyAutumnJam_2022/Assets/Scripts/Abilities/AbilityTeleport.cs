@@ -12,6 +12,7 @@ public class AbilityTeleport : MonoBehaviour, IAbility
     private bool _isAvailable = true;
     [SerializeField] private float teleportReturnDelay = .5f;
     [SerializeField] private float _abilityCooldown = 5f;
+    [SerializeField] private GameObject _vfx;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class AbilityTeleport : MonoBehaviour, IAbility
         }
         else
         {
+            Instantiate(_vfx, PlayerScript.Instance.transform);
             Debug.Log("teleporting...");
             _originalPos = PlayerScript.Instance.transform.position;
             Collider2D[] allColliders = Physics2D.OverlapCircleAll((_inHumanWorld.Value)? (_originalPos + _teleportDist) : (_originalPos - _teleportDist), _teleportRadius);

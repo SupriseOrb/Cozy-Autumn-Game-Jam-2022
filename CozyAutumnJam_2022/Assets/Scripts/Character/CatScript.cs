@@ -5,6 +5,7 @@ using UnityEngine;
 public class CatScript : MonoBehaviour, IInteractable
 {
     [SerializeField] private string _ratCard;
+    [SerializeField] private GameObject _vfx;
     public void ActivateInteraction()
     {
         if(CardManager.Instance.GetPropCard(_ratCard))
@@ -12,6 +13,7 @@ public class CatScript : MonoBehaviour, IInteractable
             //Play cat meow
             AkSoundEngine.PostEvent("Play_CatMeow", this.gameObject);
             //Play poof vfx
+            Instantiate(_vfx);
             gameObject.SetActive(false);
         }
         else

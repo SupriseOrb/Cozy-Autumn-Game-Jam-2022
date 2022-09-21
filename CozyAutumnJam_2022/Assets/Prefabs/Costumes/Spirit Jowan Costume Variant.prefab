@@ -53,8 +53,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7885540854220548992, guid: bb897f33ef5085540b38a025d310935d, type: 3}
       propertyPath: m_Name
-      value: Spirit Jowan Costume
+      value: Spirit Jowan Costume Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8301054466707474819, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: _vfx
+      value: 
+      objectReference: {fileID: 3074666689013589529, guid: 55bd0234a69e9b3489d271b7da8912fe, type: 3}
     - target: {fileID: 8301054466707474819, guid: bb897f33ef5085540b38a025d310935d, type: 3}
       propertyPath: _character
       value: 

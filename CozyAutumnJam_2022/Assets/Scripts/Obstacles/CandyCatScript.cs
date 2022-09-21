@@ -5,6 +5,7 @@ using UnityEngine;
 public class CandyCatScript : MonoBehaviour, IInteractable
 {
     [SerializeField] private PushableBowlScript pushableBowl; 
+    [SerializeField] private GameObject _vfx;
     public void ActivateInteraction()
     {
         if(pushableBowl.HitMaxCandies())
@@ -13,6 +14,7 @@ public class CandyCatScript : MonoBehaviour, IInteractable
             AkSoundEngine.PostEvent("Play_CatMeow", this.gameObject);
             pushableBowl.ActivatePlate();
             //hide the cat?
+            Instantiate(_vfx, PlayerScript.Instance.transform);
             gameObject.SetActive(false);
         }
     }

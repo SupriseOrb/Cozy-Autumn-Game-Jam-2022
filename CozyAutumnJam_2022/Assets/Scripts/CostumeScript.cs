@@ -8,12 +8,15 @@ public class CostumeScript : MonoBehaviour, IInteractable
     [SerializeField] private CharacterWithProgression _character;
     [SerializeField] private GameObject _costumeCard;
     [SerializeField] private bool _isSpiritCostume;
+    [SerializeField] private GameObject _vfx;
 
     public void ActivateInteraction()
     {
         //Backup check
         if (this.GetComponent<ItemTagScript>().IsCostume())
         {
+            //Costume VFX
+            Instantiate(_vfx);
             _character.IsCostumeCollected = true;
             CardManager.Instance.AddPropCard(_costumeCard);
             if(_isSpiritCostume)

@@ -6,6 +6,7 @@ public class AnimatronicObstacleScript : MonoBehaviour
 {
     [SerializeField] private string _musicName; 
     [SerializeField] private bool _isPowered = true;
+    [SerializeField] private GameObject _vfx;
 
     public void ActivateAnimatronic()
     {
@@ -14,6 +15,7 @@ public class AnimatronicObstacleScript : MonoBehaviour
             //Play music
             AkSoundEngine.PostEvent(_musicName, this.gameObject);
             //Add poof sfx
+            Instantiate(_vfx, PlayerScript.Instance.transform);
             Destroy(this.gameObject);
         }
     }

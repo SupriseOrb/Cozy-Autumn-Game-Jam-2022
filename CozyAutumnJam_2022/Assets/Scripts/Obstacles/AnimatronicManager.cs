@@ -8,6 +8,7 @@ public class AnimatronicManager : MonoBehaviour, IAnimatronic, IInteractable
     [SerializeField] private bool[] _songsPlayedInOrder;
     [SerializeField] private bool _songComplete = false;
     [SerializeField] GameObject _costume;
+    [SerializeField] private GameObject _vfx;
 
     // Start is called before the first frame update
     public void ActivateAnimatronic()
@@ -25,6 +26,7 @@ public class AnimatronicManager : MonoBehaviour, IAnimatronic, IInteractable
         else
         {
             //Open Chest
+            Instantiate(_vfx);
             _costume.SetActive(true);
             gameObject.SetActive(false);
         }

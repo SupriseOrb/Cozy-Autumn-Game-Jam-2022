@@ -2956,6 +2956,10 @@ PrefabInstance:
       value: Candy Cat
       objectReference: {fileID: 0}
     - target: {fileID: 4316541516843853389, guid: ed67319b7c0d719488ad1a1dd5c47e82, type: 3}
+      propertyPath: _vfx
+      value: 
+      objectReference: {fileID: 3074666689013589529, guid: 55bd0234a69e9b3489d271b7da8912fe, type: 3}
+    - target: {fileID: 4316541516843853389, guid: ed67319b7c0d719488ad1a1dd5c47e82, type: 3}
       propertyPath: pushableBowl
       value: 
       objectReference: {fileID: 4600463845066736486}
@@ -6327,7 +6331,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4685265509724016234, guid: e1ecc4936101dd347954cce8f9c993a8, type: 3}
       propertyPath: _resettableObjects.Array.size
-      value: 26
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4685265509724016234, guid: e1ecc4936101dd347954cce8f9c993a8, type: 3}
       propertyPath: _resettableObjects.Array.data[0]

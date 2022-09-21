@@ -9,6 +9,7 @@ public class PasscodeChestScript : MonoBehaviour, IInteractable
     [SerializeField] bool _inputCorrectCode;
     [SerializeField] GameObject _costume;
     [SerializeField] TextAsset _chestDialogue;
+    [SerializeField] private GameObject _vfx;
 
     public void ActivateInteraction()
     {
@@ -48,6 +49,7 @@ public class PasscodeChestScript : MonoBehaviour, IInteractable
 
     public void OpenChest()
     {
+        Instantiate(_vfx);
         _costume.SetActive(true);
         gameObject.SetActive(false);
     }

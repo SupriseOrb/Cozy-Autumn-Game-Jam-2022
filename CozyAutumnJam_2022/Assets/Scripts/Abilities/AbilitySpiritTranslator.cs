@@ -13,6 +13,7 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
     private bool _isRuneAvailable = true;
     [SerializeField] private float _abilityTranslateCooldown = 1f;
     [SerializeField] private float _abilityRuneCooldown = 3f;
+    [SerializeField] private GameObject _vfx;
 
     public void ActivateAbility()
     {
@@ -52,6 +53,8 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
                 }
                 else
                 {
+                    //Spirit translator vfx
+                    Instantiate(_vfx, PlayerScript.Instance.transform);            
                     //Spirit translator sfx
                     AkSoundEngine.PostEvent("Play_Translator", this.gameObject);
                     StartCoroutine(StartTranslateCooldown());

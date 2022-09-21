@@ -83,6 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _smallVersion: {fileID: 1720359892937916186}
   _bigVersion: {fileID: 6234301111961450592}
+  _icon: {fileID: 0}
 --- !u!1 &673064064060217283
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,8 +459,8 @@ MonoBehaviour:
   m_text: This card does things. What it does, we don't know. But we can trust that
     it will leave you with the ability to be the next great Loword.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}
+  m_sharedMaterial: {fileID: 9198052892992681617, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -483,8 +484,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5.9
-  m_fontSizeBase: 5.9
+  m_fontSize: 6
+  m_fontSizeBase: 6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -669,8 +670,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Card Name UWU
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}
+  m_sharedMaterial: {fileID: 9198052892992681617, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -694,8 +695,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5.9
-  m_fontSizeBase: 5.9
+  m_fontSize: 6
+  m_fontSizeBase: 6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

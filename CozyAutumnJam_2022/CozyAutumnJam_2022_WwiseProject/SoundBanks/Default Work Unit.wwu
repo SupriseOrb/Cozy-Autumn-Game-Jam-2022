@@ -16,7 +16,7 @@
 						<ObjectRef Name="Play_RatCapture" ID="{5F58E902-999A-418B-AEE2-22690A84D490}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UIBack" ID="{E4F782A1-C9BF-41C8-8C39-C4BE3121831B}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Translator" ID="{AA801307-4095-41E8-A6D8-91B1DE9636DA}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_DialogueBoss" ID="{B91ECF0C-2E48-423B-ACB8-5679DA3FDD84}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_DialogueManuel" ID="{B91ECF0C-2E48-423B-ACB8-5679DA3FDD84}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UISelect" ID="{C4CED4A4-1238-4347-BD13-6FDADB4C9671}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CardShuffle" ID="{81251156-964A-4390-BDC2-65B5AF08418C}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Human_Ken" ID="{A9661CD6-DA4E-43F4-AB6F-E7DC7D2A67B3}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
@@ -57,7 +57,7 @@
 						<ObjectRef Name="Play_PlateReset" ID="{02BB3A40-2D88-4ECF-AE82-ABEE90A323C9}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_DialogueJay" ID="{7A0B77DA-486F-4F1B-A1CB-1E585579CAF8}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Spirit_Chrysantha" ID="{FE853D0A-6BD2-4F6E-ADA1-40223FD8A41F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_DialogueBoss" ID="{BF425054-6114-4F8E-B04C-8D66BD0051E4}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_DialogueManuel" ID="{BF425054-6114-4F8E-B04C-8D66BD0051E4}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

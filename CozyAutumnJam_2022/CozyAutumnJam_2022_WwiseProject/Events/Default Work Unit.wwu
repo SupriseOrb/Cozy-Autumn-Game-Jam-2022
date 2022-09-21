@@ -567,7 +567,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Stop_DialogueBoss" ID="{BF425054-6114-4F8E-B04C-8D66BD0051E4}">
+								<Event Name="Stop_DialogueManuel" ID="{BF425054-6114-4F8E-B04C-8D66BD0051E4}">
 									<ChildrenList>
 										<Action Name="" ID="{D4395D8B-1339-432C-B3A9-ABCF6D7A7420}" ShortID="543807767">
 											<PropertyList>
@@ -595,7 +595,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_DialogueBoss" ID="{B91ECF0C-2E48-423B-ACB8-5679DA3FDD84}">
+								<Event Name="Play_DialogueManuel" ID="{B91ECF0C-2E48-423B-ACB8-5679DA3FDD84}">
 									<ChildrenList>
 										<Action Name="" ID="{E6FC1B70-1EAB-48F6-99CD-6AE9A3B1F02F}" ShortID="739392699">
 											<ReferenceList>

@@ -22,7 +22,7 @@
 				<GameParameter Id="2731583604" Name="AllVolume" ObjectPath="\Game Parameters\Default Work Unit\AllVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3502757976">
+		<SoundBank Id="3161908922" Language="SFX" Hash="789258186">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -66,11 +66,11 @@
 					<IncludedMemoryFiles>
 						<File Id="28665575" Language="SFX">
 							<ShortName>BoxImpact01.wav</ShortName>
-							<Path>SFX\BoxImpact01_10C4C929.wem</Path>
+							<Path>SFX\BoxImpact01_E9045315.wem</Path>
 						</File>
 						<File Id="428636673" Language="SFX">
 							<ShortName>BoxImpact02.wav</ShortName>
-							<Path>SFX\BoxImpact02_10C4C929.wem</Path>
+							<Path>SFX\BoxImpact02_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -78,7 +78,7 @@
 					<IncludedMemoryFiles>
 						<File Id="844309663" Language="SFX">
 							<ShortName>CardFlip.wav</ShortName>
-							<Path>SFX\CardFlip_10C4C929.wem</Path>
+							<Path>SFX\CardFlip_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -86,11 +86,11 @@
 					<IncludedMemoryFiles>
 						<File Id="469650255" Language="SFX">
 							<ShortName>CardPull1.wav</ShortName>
-							<Path>SFX\CardPull1_10C4C929.wem</Path>
+							<Path>SFX\CardPull1_E9045315.wem</Path>
 						</File>
 						<File Id="645855217" Language="SFX">
 							<ShortName>CardPull2.wav</ShortName>
-							<Path>SFX\CardPull2_10C4C929.wem</Path>
+							<Path>SFX\CardPull2_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -98,15 +98,15 @@
 					<IncludedMemoryFiles>
 						<File Id="407509120" Language="SFX">
 							<ShortName>CardShuffle1.wav</ShortName>
-							<Path>SFX\CardShuffle1_10C4C929.wem</Path>
+							<Path>SFX\CardShuffle1_E9045315.wem</Path>
 						</File>
 						<File Id="730900144" Language="SFX">
 							<ShortName>CardShuffle3.wav</ShortName>
-							<Path>SFX\CardShuffle3_10C4C929.wem</Path>
+							<Path>SFX\CardShuffle3_E9045315.wem</Path>
 						</File>
 						<File Id="807983812" Language="SFX">
 							<ShortName>CardShuffle2_02.wav</ShortName>
-							<Path>SFX\CardShuffle2_02_10C4C929.wem</Path>
+							<Path>SFX\CardShuffle2_02_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -114,7 +114,7 @@
 					<IncludedMemoryFiles>
 						<File Id="191987060" Language="SFX">
 							<ShortName>CatMeow.wav</ShortName>
-							<Path>SFX\CatMeow_10C4C929.wem</Path>
+							<Path>SFX\CatMeow_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -122,15 +122,7 @@
 					<IncludedMemoryFiles>
 						<File Id="530332103" Language="SFX">
 							<ShortName>CardSwap.wav</ShortName>
-							<Path>SFX\CardSwap_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="4206748575" Name="Play_DialogueBoss" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Play_DialogueBoss" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="232612060" Language="SFX">
-							<ShortName>DialogueBoss02.wav</ShortName>
-							<Path>SFX\DialogueBoss02_D79FB2B7.wem</Path>
+							<Path>SFX\CardSwap_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -138,7 +130,7 @@
 					<IncludedMemoryFiles>
 						<File Id="453561335" Language="SFX">
 							<ShortName>DialogueChrysantha.wav</ShortName>
-							<Path>SFX\DialogueChrysantha_D79FB2B7.wem</Path>
+							<Path>SFX\DialogueChrysantha_9B11A8F3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -146,7 +138,7 @@
 					<IncludedMemoryFiles>
 						<File Id="192456104" Language="SFX">
 							<ShortName>DialogueCleo.wav</ShortName>
-							<Path>SFX\DialogueCleo_D79FB2B7.wem</Path>
+							<Path>SFX\DialogueCleo_9B11A8F3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -154,7 +146,7 @@
 					<IncludedMemoryFiles>
 						<File Id="930094902" Language="SFX">
 							<ShortName>DialogueJay.wav</ShortName>
-							<Path>SFX\DialogueJay_D79FB2B7.wem</Path>
+							<Path>SFX\DialogueJay_9B11A8F3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -162,7 +154,7 @@
 					<IncludedMemoryFiles>
 						<File Id="361527793" Language="SFX">
 							<ShortName>DialogueJowan02.wav</ShortName>
-							<Path>SFX\DialogueJowan02_D79FB2B7.wem</Path>
+							<Path>SFX\DialogueJowan02_9B11A8F3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -170,7 +162,15 @@
 					<IncludedMemoryFiles>
 						<File Id="119914060" Language="SFX">
 							<ShortName>DialogueKen02.wav</ShortName>
-							<Path>SFX\DialogueKen02_D79FB2B7.wem</Path>
+							<Path>SFX\DialogueKen02_9B11A8F3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2800016978" Name="Play_DialogueManuel" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Play_DialogueManuel" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="232612060" Language="SFX">
+							<ShortName>DialogueBoss02.wav</ShortName>
+							<Path>SFX\DialogueBoss02_9B11A8F3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -178,7 +178,7 @@
 					<IncludedMemoryFiles>
 						<File Id="310593437" Language="SFX">
 							<ShortName>DialogueMyrtle.wav</ShortName>
-							<Path>SFX\DialogueMyrtle_D79FB2B7.wem</Path>
+							<Path>SFX\DialogueMyrtle_9B11A8F3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -186,7 +186,7 @@
 					<IncludedMemoryFiles>
 						<File Id="763874355" Language="SFX">
 							<ShortName>DialogueV.wav</ShortName>
-							<Path>SFX\DialogueV_D79FB2B7.wem</Path>
+							<Path>SFX\DialogueV_9B11A8F3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -194,7 +194,7 @@
 					<IncludedMemoryFiles>
 						<File Id="931782914" Language="SFX">
 							<ShortName>Error.wav</ShortName>
-							<Path>SFX\Error_10C4C929.wem</Path>
+							<Path>SFX\Error_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -202,7 +202,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1054201599" Language="SFX">
 							<ShortName>Plate.wav</ShortName>
-							<Path>SFX\Plate_10C4C929.wem</Path>
+							<Path>SFX\Plate_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -210,7 +210,7 @@
 					<IncludedMemoryFiles>
 						<File Id="755363995" Language="SFX">
 							<ShortName>PlateReset.wav</ShortName>
-							<Path>SFX\PlateReset_10C4C929.wem</Path>
+							<Path>SFX\PlateReset_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -218,7 +218,7 @@
 					<IncludedMemoryFiles>
 						<File Id="12785306" Language="SFX">
 							<ShortName>PowerPlate.wav</ShortName>
-							<Path>SFX\PowerPlate_10C4C929.wem</Path>
+							<Path>SFX\PowerPlate_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -226,7 +226,7 @@
 					<IncludedMemoryFiles>
 						<File Id="401289580" Language="SFX">
 							<ShortName>RatCapture.wav</ShortName>
-							<Path>SFX\RatCapture_10C4C929.wem</Path>
+							<Path>SFX\RatCapture_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -234,7 +234,7 @@
 					<IncludedMemoryFiles>
 						<File Id="165147037" Language="SFX">
 							<ShortName>RatStart.wav</ShortName>
-							<Path>SFX\RatStart_10C4C929.wem</Path>
+							<Path>SFX\RatStart_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -242,15 +242,15 @@
 					<IncludedMemoryFiles>
 						<File Id="121403960" Language="SFX">
 							<ShortName>Slime02.wav</ShortName>
-							<Path>SFX\Slime02_10C4C929.wem</Path>
+							<Path>SFX\Slime02_E9045315.wem</Path>
 						</File>
 						<File Id="250265649" Language="SFX">
 							<ShortName>Slime01.wav</ShortName>
-							<Path>SFX\Slime01_10C4C929.wem</Path>
+							<Path>SFX\Slime01_E9045315.wem</Path>
 						</File>
 						<File Id="628776196" Language="SFX">
 							<ShortName>Slime03.wav</ShortName>
-							<Path>SFX\Slime03_10C4C929.wem</Path>
+							<Path>SFX\Slime03_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -258,15 +258,15 @@
 					<IncludedMemoryFiles>
 						<File Id="654445567" Language="SFX">
 							<ShortName>SpiderWeb01.wav</ShortName>
-							<Path>SFX\SpiderWeb01_10C4C929.wem</Path>
+							<Path>SFX\SpiderWeb01_E9045315.wem</Path>
 						</File>
 						<File Id="813959866" Language="SFX">
 							<ShortName>SpiderWeb03.wav</ShortName>
-							<Path>SFX\SpiderWeb03_10C4C929.wem</Path>
+							<Path>SFX\SpiderWeb03_E9045315.wem</Path>
 						</File>
 						<File Id="1005373722" Language="SFX">
 							<ShortName>SpiderWeb02.wav</ShortName>
-							<Path>SFX\SpiderWeb02_10C4C929.wem</Path>
+							<Path>SFX\SpiderWeb02_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -274,7 +274,7 @@
 					<IncludedMemoryFiles>
 						<File Id="962176852" Language="SFX">
 							<ShortName>Teleport03.wav</ShortName>
-							<Path>SFX\Teleport03_10C4C929.wem</Path>
+							<Path>SFX\Teleport03_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -282,7 +282,7 @@
 					<IncludedMemoryFiles>
 						<File Id="898142516" Language="SFX">
 							<ShortName>Phone Ringing.wav</ShortName>
-							<Path>SFX\Phone Ringing_10C4C929.wem</Path>
+							<Path>SFX\Phone Ringing_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -290,7 +290,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1060875194" Language="SFX">
 							<ShortName>Translator.wav</ShortName>
-							<Path>SFX\Translator_10C4C929.wem</Path>
+							<Path>SFX\Translator_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -298,7 +298,7 @@
 					<IncludedMemoryFiles>
 						<File Id="906103811" Language="SFX">
 							<ShortName>UIBack.wav</ShortName>
-							<Path>SFX\UIBack_10C4C929.wem</Path>
+							<Path>SFX\UIBack_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -306,7 +306,7 @@
 					<IncludedMemoryFiles>
 						<File Id="742781176" Language="SFX">
 							<ShortName>UIPause_02.wav</ShortName>
-							<Path>SFX\UIPause_02_10C4C929.wem</Path>
+							<Path>SFX\UIPause_02_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -314,7 +314,7 @@
 					<IncludedMemoryFiles>
 						<File Id="983873992" Language="SFX">
 							<ShortName>UIResume_02.wav</ShortName>
-							<Path>SFX\UIResume_02_10C4C929.wem</Path>
+							<Path>SFX\UIResume_02_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -322,7 +322,7 @@
 					<IncludedMemoryFiles>
 						<File Id="189416120" Language="SFX">
 							<ShortName>UIScroll.wav</ShortName>
-							<Path>SFX\UIScroll_10C4C929.wem</Path>
+							<Path>SFX\UIScroll_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -330,7 +330,7 @@
 					<IncludedMemoryFiles>
 						<File Id="897019754" Language="SFX">
 							<ShortName>UISelect.wav</ShortName>
-							<Path>SFX\UISelect_10C4C929.wem</Path>
+							<Path>SFX\UISelect_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -338,7 +338,7 @@
 					<IncludedMemoryFiles>
 						<File Id="9234424" Language="SFX">
 							<ShortName>Vaccuum.wav</ShortName>
-							<Path>SFX\Vaccuum_10C4C929.wem</Path>
+							<Path>SFX\Vaccuum_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -346,59 +346,59 @@
 					<IncludedMemoryFiles>
 						<File Id="11164527" Language="SFX">
 							<ShortName>Spooky_VTheme_Draft_1.wav</ShortName>
-							<Path>SFX\Spooky_VTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_VTheme_Draft_1_9B11A8F3.wem</Path>
 						</File>
 						<File Id="84526937" Language="SFX">
 							<ShortName>Spirit_MainTheme.wav</ShortName>
-							<Path>SFX\Spirit_MainTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_MainTheme_9B11A8F3.wem</Path>
 						</File>
 						<File Id="181034382" Language="SFX">
 							<ShortName>Spooky_MainTheme_Intro_Draft_1.wav</ShortName>
-							<Path>SFX\Spooky_MainTheme_Intro_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_MainTheme_Intro_Draft_1_9B11A8F3.wem</Path>
 						</File>
 						<File Id="253288252" Language="SFX">
 							<ShortName>Spirit_ChrysanthaTheme.wav</ShortName>
-							<Path>SFX\Spirit_ChrysanthaTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_ChrysanthaTheme_9B11A8F3.wem</Path>
 						</File>
 						<File Id="294587160" Language="SFX">
 							<ShortName>Spooky_ChrysanthaTheme_Draft_1.wav</ShortName>
-							<Path>SFX\Spooky_ChrysanthaTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_ChrysanthaTheme_Draft_1_9B11A8F3.wem</Path>
 						</File>
 						<File Id="315239178" Language="SFX">
 							<ShortName>MainMenu_Loop.wav</ShortName>
-							<Path>SFX\MainMenu_Loop_D79FB2B7.wem</Path>
+							<Path>SFX\MainMenu_Loop_9B11A8F3.wem</Path>
 						</File>
 						<File Id="339010008" Language="SFX">
 							<ShortName>Spooky_JowanTheme_Draft_1.wav</ShortName>
-							<Path>SFX\Spooky_JowanTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_JowanTheme_Draft_1_9B11A8F3.wem</Path>
 						</File>
 						<File Id="520901426" Language="SFX">
 							<ShortName>Spooky_MyrtleTheme_Draft_1.wav</ShortName>
-							<Path>SFX\Spooky_MyrtleTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_MyrtleTheme_Draft_1_9B11A8F3.wem</Path>
 						</File>
 						<File Id="596672924" Language="SFX">
 							<ShortName>Spirit_MyrtleTheme.wav</ShortName>
-							<Path>SFX\Spirit_MyrtleTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_MyrtleTheme_9B11A8F3.wem</Path>
 						</File>
 						<File Id="628539542" Language="SFX">
 							<ShortName>Spirit_KenTheme.wav</ShortName>
-							<Path>SFX\Spirit_KenTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_KenTheme_9B11A8F3.wem</Path>
 						</File>
 						<File Id="720273982" Language="SFX">
 							<ShortName>Spooky_KenTheme_Draft_1.wav</ShortName>
-							<Path>SFX\Spooky_KenTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_KenTheme_Draft_1_9B11A8F3.wem</Path>
 						</File>
 						<File Id="857119023" Language="SFX">
 							<ShortName>Spirit_VTheme.wav</ShortName>
-							<Path>SFX\Spirit_VTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_VTheme_9B11A8F3.wem</Path>
 						</File>
 						<File Id="860405681" Language="SFX">
 							<ShortName>Spirit_JowanTheme.wav</ShortName>
-							<Path>SFX\Spirit_JowanTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_JowanTheme_9B11A8F3.wem</Path>
 						</File>
 						<File Id="1054601518" Language="SFX">
 							<ShortName>Spooky_MainTheme.wav</ShortName>
-							<Path>SFX\Spooky_MainTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_MainTheme_9B11A8F3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -503,12 +503,12 @@
 						<ActionSetStateEntry Id="2133836716" Name="SpiritV" ObjectPath="\States\Default Work Unit\Gameplay\SpiritV"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="2315912653" Name="Stop_DialogueBoss" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueBoss" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2651780219" Name="Stop_DialogueChrysantha" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueChrysantha" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3907661771" Name="Stop_DialogueCleo" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueCleo" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="225669318" Name="Stop_DialogueJay" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueJay" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2083436231" Name="Stop_DialogueJowan" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueJowan" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="762700248" Name="Stop_DialogueKen" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueKen" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="765457860" Name="Stop_DialogueManuel" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueManuel" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2822206803" Name="Stop_DialogueMyrtle" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueMyrtle" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="4256426928" Name="Stop_DialogueV" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueV" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>

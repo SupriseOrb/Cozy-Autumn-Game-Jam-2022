@@ -16,11 +16,14 @@ MonoBehaviour:
   _emotes:
   - {fileID: 0}
   - {fileID: 0}
+  _characterID: 0
   _currentStoryBeat: 0
+  _questIndex: 2
   _story:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4900000, guid: 2555c6d70f4109e47a06cd03e85f4997, type: 3}
+  - {fileID: 4900000, guid: fe2fcb6c423ed2e408d77f1b44d34c2a, type: 3}
+  - {fileID: 4900000, guid: 707567121b2aa474bb343c772da73b33, type: 3}
+  - {fileID: 4900000, guid: d9e76e380fbbfc146bbd1e4730dd0423, type: 3}
   _isTranslatedDefault: 1
   _isTranslated: 1
+  _isCostumeCollected: 0

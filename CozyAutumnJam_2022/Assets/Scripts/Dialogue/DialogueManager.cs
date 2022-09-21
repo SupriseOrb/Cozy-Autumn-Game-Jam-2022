@@ -262,7 +262,7 @@ public class DialogueManager : MonoBehaviour
             }
             
             int emotionIndex = emotion != "" ? Array.IndexOf(_emotions, emotion) : 0;
-            _charImage = _currentChar.GetEmote(emotionIndex);
+            _charImage.sprite = _currentChar.GetEmote(emotionIndex);
 
             _nameHolder.SetActive(true);
             _imageHolder.SetActive(true);

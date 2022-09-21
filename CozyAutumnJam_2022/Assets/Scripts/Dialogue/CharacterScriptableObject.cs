@@ -10,7 +10,7 @@ public class CharacterScriptableObject : ScriptableObject
     #region Fields
     [SerializeField] private string _name;
     // TODO: Figure out how to do it for V's Spirit who changes sprites MIDWAY
-    [SerializeField] private Image[] _emotes;
+    [SerializeField] private Sprite[] _emotes;
     [SerializeField] private int _characterID;
     #endregion
 
@@ -19,7 +19,7 @@ public class CharacterScriptableObject : ScriptableObject
         get {return _name;}
     }
 
-    public Image GetEmote(int index = 0)
+    public Sprite GetEmote(int index = 0)
     {
         return _emotes[index]; 
     }

@@ -14,13 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Jowan
   _emotes:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 7d6e39e7f678b6a498124294bd2bfa98, type: 3}
+  - {fileID: 21300000, guid: 90532cb59297cb54e8021ae76d6a2d28, type: 3}
+  _characterID: 0
   _currentStoryBeat: 0
+  _questIndex: 2
   _story:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4900000, guid: 9f9592e57294c2444be87f1dc104292b, type: 3}
+  - {fileID: 4900000, guid: 8359966c3edc19f489c2b9d77998a94f, type: 3}
+  - {fileID: 4900000, guid: 0e8fcacd281b49d46b509d2878136e7d, type: 3}
+  - {fileID: 4900000, guid: f85717df90324d9459e0670a75674ba7, type: 3}
   _isTranslatedDefault: 1
   _isTranslated: 1
+  _isCostumeCollected: 0

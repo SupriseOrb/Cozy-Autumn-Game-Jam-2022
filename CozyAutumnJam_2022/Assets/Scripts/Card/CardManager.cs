@@ -45,6 +45,11 @@ public class CardManager : MonoBehaviour
         } 
     }
 
+    private void Start() 
+    {
+        CycleCardsBy(0);    
+    }
+
     //Uses animations to cycle cards in UI
     public void CycleCards(bool direction)
     {

@@ -1,0 +1,1 @@
+﻿{"inkVersion":20,"root":[[{"#":"char v_spirit"},"^You didn't find anything, did you...?","\n","^I knew it... It's hopeless...","\n",{"#":"char cleo"},"^I'm still looking, bud!","\n",{"#":"char v_spirit"},"^Oh... okay...","\n","end",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}

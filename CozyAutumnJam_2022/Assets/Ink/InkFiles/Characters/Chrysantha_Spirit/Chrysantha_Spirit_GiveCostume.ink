@@ -1,7 +1,3 @@
-﻿VAR given_costume = false
-
-{given_costume: -> subsequent}
-
 #char chrysantha_spirit
 Oh, hello!
 
@@ -28,12 +24,5 @@ So how about you spare them a thought while you wear this?
 Mmmgh.
 Fine.
 Thanks, I guess.
-
--> END
-
-=== subsequent ===
-
-#char chrysantha_spirit
-Grumble...
 
 -> END

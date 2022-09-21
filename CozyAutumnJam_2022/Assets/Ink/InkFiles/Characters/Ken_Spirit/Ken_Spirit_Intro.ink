@@ -1,7 +1,3 @@
-﻿VAR gotten_costume_request = false
-
-{gotten_costume_request: -> subsequent}
-
 #char cleo
 Hello there, mister werewolf.
 
@@ -42,13 +38,5 @@ Okay. I'll see what I can find.
 Great! Thanks, young lady.
 A-CHOO!!
 Agh...
-
--> END
-
-=== subsequent ===
-
-#char ken_spirit
-Try looking for a costume that would fit a human.
-Doesn't have to be complex. Just something that'll be different.
 
 -> END

@@ -1,7 +1,3 @@
-﻿VAR given_costume = false
-
-{given_costume: -> subsequent}
-
 #char ken
 Ugh... you again? What now?
 
@@ -36,12 +32,5 @@ But who even cares? It's Halloween! Have some fun with it!
 Yeah. You're right.
 ...
 And, thanks.
-
--> END
-
-=== subsequent ===
-
-#char ken
-Yeah, I think my son is gonna be really impressed with this...
 
 -> END

@@ -1,7 +1,3 @@
-﻿VAR gotten_costume_request = false
-
-{gotten_costume_request: -> subsequent}
-
 #char jowan
 Hey there!
 
@@ -24,16 +20,4 @@ Maybe something more... down to earth than usual?
 
 #char jay
 That could work.
-
-=== subsequent ===
-
-#char jowan
-How do you think I'd look in a Dracula costume?
-
-#char jay
-I think you'd look great!
-
-#char jowan
-R-really?
-
 -> END

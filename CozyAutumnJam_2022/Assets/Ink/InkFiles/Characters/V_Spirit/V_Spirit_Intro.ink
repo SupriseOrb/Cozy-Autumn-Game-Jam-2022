@@ -1,7 +1,3 @@
-﻿VAR gotten_costume_request = false
-
-{gotten_costume_request: -> subsequent}
-
 #char v_spirit
 Oh...
 Hello...
@@ -36,19 +32,5 @@ I can try and help you out. Maybe I can find something that'll help you discover
 You'd really do that for me...?
 Thank you...
 Good luck...
-
--> END
-
-=== subsequent ===
-
-#char v_spirit
-You didn't find anything, did you...?
-I knew it... It's hopeless...
-
-#char cleo
-I'm still looking, bud!
-
-#char v_spirit
-Oh... okay...
 
 -> END

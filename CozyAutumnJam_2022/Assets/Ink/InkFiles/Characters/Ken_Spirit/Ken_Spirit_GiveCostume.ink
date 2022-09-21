@@ -1,7 +1,3 @@
-﻿VAR given_costume = false
-
-{given_costume: -> subsequent}
-
 #char ken_spirit
 Oh, hello again.
 Find any good costumes?
@@ -42,12 +38,5 @@ Glad you like the costume!
 
 #char ken_spirit
 Thanks for the help!
-
--> END
-
-=== subsequent ===
-
-#char ken_spirit
-Maybe this suit will make me sneeze less somehow...
 
 -> END

@@ -1,7 +1,3 @@
-﻿VAR given_costume = false
-
-{given_costume: -> subsequent}
-
 #char v
 ...Hey.
 
@@ -41,12 +37,5 @@ Thanks.
 
 #char cleo
 Sure thing.
-
--> END
-
-=== subsequent ===
-
-#char v
-This is a really cute slime cat. I can't wait to try this on!
 
 -> END

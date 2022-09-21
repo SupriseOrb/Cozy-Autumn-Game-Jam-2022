@@ -1,7 +1,3 @@
-﻿VAR gotten_costume_request = false
-
-{gotten_costume_request: -> subsequent}
-
 #char cleo
 Uh, hey.
 
@@ -17,12 +13,5 @@ Need help finding anything?
 ...
 I just need some time alone, I think.
 ...Sorry.
-
--> END
-
-=== subsequent ===
-
-#char v
-Hm...
 
 -> END

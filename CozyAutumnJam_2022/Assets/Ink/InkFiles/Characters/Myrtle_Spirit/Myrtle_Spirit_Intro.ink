@@ -1,7 +1,3 @@
-﻿VAR gotten_costume_request = false
-
-{gotten_costume_request: -> subsequent}
-
 #char myrtle_spirit
 Eee hee hee hee!! What're YOU doing here, you glum-looking human?
 
@@ -51,13 +47,5 @@ I'll see what I can do.
 #char myrtle_spirit
 You sure will, human!
 Eee hee hee!
-
--> END
-
-=== subsequent ===
-
-#char myrtle_spirit
-Eee hee hee! Better hurry, human!
-I'm going to trash this place if you don't help me!
 
 -> END

@@ -1,7 +1,3 @@
-﻿VAR gotten_costume_request = false
-
-{gotten_costume_request: -> subsequent}
-
 #char jowan_spirit
 Hello...
 
@@ -42,15 +38,5 @@ I should be better.
 #char cleo
 ...
 I'll try to find a costume for you two.
-
--> END
-
-=== subsequent ===
-
-#char jay_spirit
-Ugh... would you hurry up and find a costume?
-
-#char jowan_spirit
-Y-yes, please...
 
 -> END

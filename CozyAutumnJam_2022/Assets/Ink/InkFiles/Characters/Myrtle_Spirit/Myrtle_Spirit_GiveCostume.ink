@@ -1,7 +1,3 @@
-﻿VAR given_costume = false
-
-{given_costume: -> subsequent}
-
 #char myrtle_spirit
 Eee hee hee! Hello again, human!
 I don't suppose you've found something to change my mind about things?
@@ -54,12 +50,5 @@ Sure thing.
 Now, if you'll excuse me...
 ...I'm going to tear this uniform to ribbons now.
 Eee hee hee!
-
--> END
-
-=== subsequent ===
-
-#char myrtle_spirit
-Go away, human! I'm busy now! Eee hee hee!
 
 -> END

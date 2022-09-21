@@ -1,7 +1,3 @@
-﻿VAR given_costume = false
-
-{given_costume: -> subsequent}
-
 #char v_spirit
 Oh, hi...
 Did you find something that could help me...?
@@ -59,12 +55,5 @@ Well, I'm glad you were able to figure yourself out! And I'm glad I could help!
 
 #char v_spirit_cat
 Yeah! Thanks for helping me out!
-
--> END
-
-=== subsequent ===
-
-#char v_spirit_cat
-I'm glad I finally found a form that suits me! Nyah!
 
 -> END

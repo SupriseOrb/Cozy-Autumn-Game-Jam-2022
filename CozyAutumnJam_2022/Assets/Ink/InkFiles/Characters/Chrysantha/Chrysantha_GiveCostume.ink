@@ -1,7 +1,3 @@
-﻿VAR given_costume = false
-
-{given_costume: -> subsequent}
-
 #char chrysantha
 Oh, h-hi!
 
@@ -41,13 +37,5 @@ Good luck with everything.
 
 #char chrysantha
 Oh, thanks!
-
--> END
-
-=== subsequent ===
-
-#char chrysantha
-Hey, thanks again for the encouragement.
-...And the costume. It's pretty cool.
 
 -> END

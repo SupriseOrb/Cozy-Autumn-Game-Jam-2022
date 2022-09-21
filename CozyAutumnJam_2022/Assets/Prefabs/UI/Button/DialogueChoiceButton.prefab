@@ -50,11 +50,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3797269039234965106, guid: 66077088cfa93d54aa9d4e70169574ef, type: 3}
       propertyPath: m_Color.g
-      value: 0.63529414
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3797269039234965106, guid: 66077088cfa93d54aa9d4e70169574ef, type: 3}
       propertyPath: m_Color.r
-      value: 0.6509804
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3797269039234965116, guid: 66077088cfa93d54aa9d4e70169574ef, type: 3}
       propertyPath: m_Pivot.x
@@ -143,6 +143,14 @@ PrefabInstance:
     - target: {fileID: 3797269039234965119, guid: 66077088cfa93d54aa9d4e70169574ef, type: 3}
       propertyPath: m_Name
       value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797269040254900421, guid: 66077088cfa93d54aa9d4e70169574ef, type: 3}
+      propertyPath: m_fontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797269040254900421, guid: 66077088cfa93d54aa9d4e70169574ef, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66077088cfa93d54aa9d4e70169574ef, type: 3}

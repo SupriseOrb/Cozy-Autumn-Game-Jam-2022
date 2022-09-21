@@ -71,7 +71,9 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.057355583
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1365906607139600396, guid: 14d7c3df6abfa7d498a72cc8c540c672, type: 3}
+    - {fileID: 4880641327989386524, guid: 14d7c3df6abfa7d498a72cc8c540c672, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 14d7c3df6abfa7d498a72cc8c540c672, type: 3}
 --- !u!1 &8179957361016094879 stripped
 GameObject:

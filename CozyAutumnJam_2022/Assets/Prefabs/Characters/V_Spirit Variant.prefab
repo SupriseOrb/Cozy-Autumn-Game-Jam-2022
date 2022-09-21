@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: V_Spirit Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4880641327989386524, guid: 14d7c3df6abfa7d498a72cc8c540c672, type: 3}
+      propertyPath: _characterSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 204b83339f5056544a65b871e5b928cf, type: 2}
     - target: {fileID: 5024587310190415875, guid: 14d7c3df6abfa7d498a72cc8c540c672, type: 3}
       propertyPath: m_Size.x
       value: 0.80212855
@@ -79,7 +83,8 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.15301871
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1365906607139600396, guid: 14d7c3df6abfa7d498a72cc8c540c672, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 14d7c3df6abfa7d498a72cc8c540c672, type: 3}
 --- !u!1 &3546296350710155352 stripped
 GameObject:

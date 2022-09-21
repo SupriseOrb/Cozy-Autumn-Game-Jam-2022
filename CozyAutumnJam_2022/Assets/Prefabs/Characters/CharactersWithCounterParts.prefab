@@ -94,6 +94,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2952435603658065382}
   - component: {fileID: 5024587310190415875}
+  - component: {fileID: 1365906607139600396}
+  - component: {fileID: 4880641327989386524}
   m_Layer: 0
   m_Name: CharactersWithCounterParts
   m_TagString: Untagged
@@ -143,3 +145,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1365906607139600396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2952435603658065383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457501e13164cf549a85e10c7ee76fac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterSO: {fileID: 0}
+  _characterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4880641327989386524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2952435603658065383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f8b518963bde4e4ca45a75a2dacb35d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterSO: {fileID: 0}
+  _characterEvent:
+    m_PersistentCalls:
+      m_Calls: []

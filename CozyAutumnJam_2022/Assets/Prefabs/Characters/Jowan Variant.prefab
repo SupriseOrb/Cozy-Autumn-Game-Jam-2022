@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1365906607139600396, guid: 14d7c3df6abfa7d498a72cc8c540c672, type: 3}
+      propertyPath: _characterSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 07e4c0c55ad78894a806a6801de3fd2b, type: 2}
     - target: {fileID: 2952435603516216083, guid: 14d7c3df6abfa7d498a72cc8c540c672, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -71,7 +75,8 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.033988476
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4880641327989386524, guid: 14d7c3df6abfa7d498a72cc8c540c672, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 14d7c3df6abfa7d498a72cc8c540c672, type: 3}
 --- !u!1 &606873888146114123 stripped
 GameObject:

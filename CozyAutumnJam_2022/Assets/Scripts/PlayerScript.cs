@@ -20,12 +20,12 @@ public class PlayerScript : MonoBehaviour
     private Vector2 _currentInputVector;
     //Holder for current velocity (for smoothing movement)
     private Vector2 _currentVelocity;
+    private Vector2 _moveInput;
 
     [Header("References")]
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private InputManager _inputManager;
     [SerializeField] private Vector2 _playerDirection;
-    
 
     void Awake()
     {
@@ -41,9 +41,10 @@ public class PlayerScript : MonoBehaviour
 
     private void FixedUpdate() 
     {
+        _moveInput = _inputManager.MovementInput;
         _currentInputVector = Vector2.SmoothDamp(_currentInputVector, _inputManager.MovementInput, ref _currentVelocity, _speedSmoothTime);
         _rb.MovePosition(_rb.position + _currentInputVector * _speed * Time.deltaTime);
-        if(_inputManager.MovementInput != Vector2.zero)
+        if(_moveInput != Vector2.zero)
         {
             _playerDirection = _inputManager.MovementInput;
         }

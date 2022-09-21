@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3db17c638b994343af964639e872cc9, type: 3}
   m_Name: JowanS
   m_EditorClassIdentifier: 
-  _name: Jowan
+  _name: Nervous Pumpkinhead
   _emotes:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 98f485f918caba64f9be06da9d1255fd, type: 3}
+  - {fileID: 21300000, guid: 60b14ac36d28bf04f99c97fa910f2118, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
   _questIndex: 2

@@ -1,9 +1,9 @@
-﻿VAR activated = false
+VAR activated = false
 
 {activated: -> is_activated}
 
 #char none
-(A small animatronic bat. It looks like it has a sound box built into it.)
+(A small animatronic skull. It looks like it has a sound box built into it.)
 
 #char cleo
 I wonder if there's some way I can power this.

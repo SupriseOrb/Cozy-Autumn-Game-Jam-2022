@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Chrysantha
   _emotes:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: bfbf95e60c6742f48982e52561d0554b, type: 3}
+  - {fileID: 21300000, guid: 4ed27a151da14fc43870f204ffb31b99, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
   _questIndex: 4

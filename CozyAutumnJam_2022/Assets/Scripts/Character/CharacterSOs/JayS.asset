@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c87e642dfc82542aa46a95c3dc9b73, type: 3}
   m_Name: JayS
   m_EditorClassIdentifier: 
-  _name: Jay
+  _name: Irritable Pumpkinhead
   _emotes:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 4a95985d78e6b6740a978e655018df5e, type: 3}
+  - {fileID: 21300000, guid: 2ba164ee91b7b504aa423480f9201d1d, type: 3}
+  _characterID: 0

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3db17c638b994343af964639e872cc9, type: 3}
   m_Name: ChrysanthaS
   m_EditorClassIdentifier: 
-  _name: Chrysantha
+  _name: Smug Vampire
   _emotes:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 298210554f33ff9418f6236b075d2f56, type: 3}
+  - {fileID: 21300000, guid: 33b111820bbfaeb489bfcc37dedca522, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
   _questIndex: 4

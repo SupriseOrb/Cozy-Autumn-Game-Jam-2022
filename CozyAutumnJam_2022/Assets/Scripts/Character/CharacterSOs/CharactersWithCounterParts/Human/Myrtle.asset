@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Myrtle
   _emotes:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: ce8259d6ee43294409e98b434cd269e7, type: 3}
+  - {fileID: 21300000, guid: e3a32b285673b6c4883679f2356a23a2, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
   _questIndex: 1

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3db17c638b994343af964639e872cc9, type: 3}
   m_Name: KenS
   m_EditorClassIdentifier: 
-  _name: Ken
+  _name: Sniffly Werewolf
   _emotes:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 2b374a6e349c8c748a501a83bf682d54, type: 3}
+  - {fileID: 21300000, guid: 03524a52ff5681d45aac539d12b300fc, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
   _questIndex: 0

@@ -117,8 +117,11 @@ public class DialogueManager : MonoBehaviour
     #endregion
 
     #region Character Info
-    // TODO: Figure out how to do hat off boss
+    /*
+        BossHatOff = Happy;
+    */
     private static string[] _emotions = new string[] {"Default", "Happy", "Tired"};
+    private static string[] _emotionsCleo = new string[] {"Default", "Happy", "Tired", "NoUniform", "NoUniformTired"};
     [SerializeField] private string[] _characterNames;
     [SerializeField] private CharacterScriptableObject[] _characterInfos;
     private CharacterScriptableObject _currentChar;
@@ -261,7 +264,15 @@ public class DialogueManager : MonoBehaviour
                 _nameText.text = _currentChar.Name;
             }
             
-            int emotionIndex = emotion != "" ? Array.IndexOf(_emotions, emotion) : 0;
+            int emotionIndex;
+            if(charName == "cleo")
+            {
+                emotionIndex = emotion != "" ? Array.IndexOf(_emotionsCleo, emotion) : 0;
+            }
+            else
+            {
+                emotionIndex = emotion != "" ? Array.IndexOf(_emotions, emotion) : 0;
+            }
             _charImage.sprite = _currentChar.GetEmote(emotionIndex);
 
             _nameHolder.SetActive(true);

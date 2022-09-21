@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3db17c638b994343af964639e872cc9, type: 3}
   m_Name: VS
   m_EditorClassIdentifier: 
-  _name: V
+  _name: Cuboidal Slime Cat Slime
   _emotes:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 716862cf45e353e47b91904d8708634e, type: 3}
+  - {fileID: 21300000, guid: 63a5d08f34f2ea749934ac4c5e58510b, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
   _questIndex: 3

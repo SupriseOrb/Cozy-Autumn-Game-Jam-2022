@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Ken
   _emotes:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: a3824c72ca2c4a542b68f87be583c59c, type: 3}
+  - {fileID: 21300000, guid: 75e8d860925fabe46b98a764810ede89, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
   _questIndex: 0

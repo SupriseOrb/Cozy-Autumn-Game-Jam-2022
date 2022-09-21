@@ -13,7 +13,7 @@ public class CatScript : MonoBehaviour, IInteractable
             //Play cat meow
             AkSoundEngine.PostEvent("Play_CatMeow", this.gameObject);
             //Play poof vfx
-            Instantiate(_vfx);
+            Instantiate(_vfx, gameObject.transform.position, Quaternion.identity);
             gameObject.SetActive(false);
         }
         else

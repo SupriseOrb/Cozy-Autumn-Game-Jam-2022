@@ -15,7 +15,7 @@ public class AnimatronicObstacleScript : MonoBehaviour
             //Play music
             AkSoundEngine.PostEvent(_musicName, this.gameObject);
             //Add poof sfx
-            Instantiate(_vfx, PlayerScript.Instance.transform);
+            Instantiate(_vfx, gameObject.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

@@ -100,6 +100,7 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
                     {
                         if(c.TryGetComponent(out RuneScript floatingRune))
                         {
+                            Instantiate(_vfx, c.transform.position, Quaternion.identity);            
                             c.GetComponent<RuneScript>().TranslateRune();
                         }
                         //Interacts with inky bool variable, sets it to true to start dialogue? Possibly needs to interact

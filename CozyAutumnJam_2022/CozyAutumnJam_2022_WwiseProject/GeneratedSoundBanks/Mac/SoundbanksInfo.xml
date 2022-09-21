@@ -11,11 +11,23 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="284292888">
+		<SoundBank Id="393239870" Language="SFX" Hash="4250007954">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2629021827" Name="Play_BoxImpact" ObjectPath="\Events\Default Work Unit\SFX Events\Puzzle SFX\Play_BoxImpact" DurationType="OneShot" DurationMin="0.539999" DurationMax="0.845528">
+					<IncludedMemoryFiles>
+						<File Id="28665575" Language="SFX">
+							<ShortName>BoxImpact01.wav</ShortName>
+							<Path>SFX\BoxImpact01_E9045315.wem</Path>
+						</File>
+						<File Id="428636673" Language="SFX">
+							<ShortName>BoxImpact02.wav</ShortName>
+							<Path>SFX\BoxImpact02_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="884848037" Name="Play_CardFlip" ObjectPath="\Events\Default Work Unit\SFX Events\Card UI SFX\Play_CardFlip" DurationType="OneShot" DurationMin="0.081723" DurationMax="0.081723">
 					<IncludedMemoryFiles>
 						<File Id="844309663" Language="SFX">
@@ -52,11 +64,91 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="235104698" Name="Play_CatMeow" ObjectPath="\Events\Default Work Unit\SFX Events\Puzzle SFX\Play_CatMeow" DurationType="OneShot" DurationMin="0.581723" DurationMax="0.581723">
+					<IncludedMemoryFiles>
+						<File Id="191987060" Language="SFX">
+							<ShortName>CatMeow.wav</ShortName>
+							<Path>SFX\CatMeow_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="4280915480" Name="Play_DeckSwap" ObjectPath="\Events\Default Work Unit\SFX Events\Card UI SFX\Play_DeckSwap" DurationType="OneShot" DurationMin="0.173084" DurationMax="0.173084">
 					<IncludedMemoryFiles>
 						<File Id="530332103" Language="SFX">
 							<ShortName>CardSwap.wav</ShortName>
 							<Path>SFX\CardSwap_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4086805381" Name="Play_DialogueChrysantha" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Play_DialogueChrysantha" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="453561335" Language="SFX">
+							<ShortName>DialogueChrysantha.wav</ShortName>
+							<Path>SFX\DialogueChrysantha_9B11A8F3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2240950997" Name="Play_DialogueCleo" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Play_DialogueCleo" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="192456104" Language="SFX">
+							<ShortName>DialogueCleo.wav</ShortName>
+							<Path>SFX\DialogueCleo_9B11A8F3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="661091160" Name="Play_DialogueJay" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Play_DialogueJay" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="930094902" Language="SFX">
+							<ShortName>DialogueJay.wav</ShortName>
+							<Path>SFX\DialogueJay_9B11A8F3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1082913317" Name="Play_DialogueJowan" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Play_DialogueJowan" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="361527793" Language="SFX">
+							<ShortName>DialogueJowan02.wav</ShortName>
+							<Path>SFX\DialogueJowan02_9B11A8F3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="124354358" Name="Play_DialogueKen" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Play_DialogueKen" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="119914060" Language="SFX">
+							<ShortName>DialogueKen02.wav</ShortName>
+							<Path>SFX\DialogueKen02_9B11A8F3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2800016978" Name="Play_DialogueManuel" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Play_DialogueManuel" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="232612060" Language="SFX">
+							<ShortName>DialogueBoss02.wav</ShortName>
+							<Path>SFX\DialogueBoss02_9B11A8F3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3130910329" Name="Play_DialogueMyrtle" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Play_DialogueMyrtle" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="310593437" Language="SFX">
+							<ShortName>DialogueMyrtle.wav</ShortName>
+							<Path>SFX\DialogueMyrtle_9B11A8F3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4285197602" Name="Play_DialogueV" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Play_DialogueV" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="763874355" Language="SFX">
+							<ShortName>DialogueV.wav</ShortName>
+							<Path>SFX\DialogueV_9B11A8F3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2713813216" Name="Play_Error" ObjectPath="\Events\Default Work Unit\SFX Events\Puzzle SFX\Play_Error" DurationType="OneShot" DurationMin="0.683265" DurationMax="0.683265">
+					<IncludedMemoryFiles>
+						<File Id="931782914" Language="SFX">
+							<ShortName>Error.wav</ShortName>
+							<Path>SFX\Error_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -76,7 +168,94 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2752533807" Name="Play_TestSound" ObjectPath="\Events\Default Work Unit\SFX Events\Play_TestSound" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2790307850" Name="Play_Plate" ObjectPath="\Events\Default Work Unit\SFX Events\Puzzle SFX\Play_Plate" DurationType="OneShot" DurationMin="0.173084" DurationMax="0.173084">
+					<IncludedMemoryFiles>
+						<File Id="1054201599" Language="SFX">
+							<ShortName>Plate.wav</ShortName>
+							<Path>SFX\Plate_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1914422699" Name="Play_PlateReset" ObjectPath="\Events\Default Work Unit\SFX Events\Puzzle SFX\Play_PlateReset" DurationType="OneShot" DurationMin="0.908662" DurationMax="0.908662">
+					<IncludedMemoryFiles>
+						<File Id="755363995" Language="SFX">
+							<ShortName>PlateReset.wav</ShortName>
+							<Path>SFX\PlateReset_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1410879499" Name="Play_PowerPlate" ObjectPath="\Events\Default Work Unit\SFX Events\Puzzle SFX\Play_PowerPlate" DurationType="OneShot" DurationMin="0.870181" DurationMax="0.870181">
+					<IncludedMemoryFiles>
+						<File Id="12785306" Language="SFX">
+							<ShortName>PowerPlate.wav</ShortName>
+							<Path>SFX\PowerPlate_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="500046663" Name="Play_RatCapture" ObjectPath="\Events\Default Work Unit\SFX Events\Puzzle SFX\Play_RatCapture" DurationType="OneShot" DurationMin="0.495193" DurationMax="0.495193">
+					<IncludedMemoryFiles>
+						<File Id="401289580" Language="SFX">
+							<ShortName>RatCapture.wav</ShortName>
+							<Path>SFX\RatCapture_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2450707257" Name="Play_RatStart" ObjectPath="\Events\Default Work Unit\SFX Events\Puzzle SFX\Play_RatStart" DurationType="OneShot" DurationMin="0.399048" DurationMax="0.399048">
+					<IncludedMemoryFiles>
+						<File Id="165147037" Language="SFX">
+							<ShortName>RatStart.wav</ShortName>
+							<Path>SFX\RatStart_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1953011658" Name="Play_SlimePush" ObjectPath="\Events\Default Work Unit\SFX Events\Card Ability SFX\Play_SlimePush" DurationType="OneShot" DurationMin="0.67619" DurationMax="0.67619">
+					<IncludedMemoryFiles>
+						<File Id="121403960" Language="SFX">
+							<ShortName>Slime02.wav</ShortName>
+							<Path>SFX\Slime02_E9045315.wem</Path>
+						</File>
+						<File Id="250265649" Language="SFX">
+							<ShortName>Slime01.wav</ShortName>
+							<Path>SFX\Slime01_E9045315.wem</Path>
+						</File>
+						<File Id="628776196" Language="SFX">
+							<ShortName>Slime03.wav</ShortName>
+							<Path>SFX\Slime03_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2012702053" Name="Play_SpiderWeb" ObjectPath="\Events\Default Work Unit\SFX Events\Card Ability SFX\Play_SpiderWeb" DurationType="OneShot" DurationMin="0.649048" DurationMax="0.649048">
+					<IncludedMemoryFiles>
+						<File Id="654445567" Language="SFX">
+							<ShortName>SpiderWeb01.wav</ShortName>
+							<Path>SFX\SpiderWeb01_E9045315.wem</Path>
+						</File>
+						<File Id="813959866" Language="SFX">
+							<ShortName>SpiderWeb03.wav</ShortName>
+							<Path>SFX\SpiderWeb03_E9045315.wem</Path>
+						</File>
+						<File Id="1005373722" Language="SFX">
+							<ShortName>SpiderWeb02.wav</ShortName>
+							<Path>SFX\SpiderWeb02_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3785065891" Name="Play_Teleport" ObjectPath="\Events\Default Work Unit\SFX Events\Card Ability SFX\Play_Teleport" DurationType="OneShot" DurationMin="0.94712" DurationMax="0.94712">
+					<IncludedMemoryFiles>
+						<File Id="962176852" Language="SFX">
+							<ShortName>Teleport03.wav</ShortName>
+							<Path>SFX\Teleport03_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2539951888" Name="Play_Translator" ObjectPath="\Events\Default Work Unit\SFX Events\Card Ability SFX\Play_Translator" DurationType="OneShot" DurationMin="1.846145" DurationMax="1.846145">
+					<IncludedMemoryFiles>
+						<File Id="1060875194" Language="SFX">
+							<ShortName>Translator.wav</ShortName>
+							<Path>SFX\Translator_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1224305705" Name="Play_UIBack" ObjectPath="\Events\Default Work Unit\SFX Events\General UI SFX\Play_UIBack" DurationType="OneShot" DurationMin="1.467687" DurationMax="1.467687">
 					<IncludedMemoryFiles>
 						<File Id="906103811" Language="SFX">
@@ -117,6 +296,22 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1521641822" Name="Play_Vaccuum" ObjectPath="\Events\Default Work Unit\SFX Events\Card Ability SFX\Play_Vaccuum" DurationType="OneShot" DurationMin="1.081723" DurationMax="1.081723">
+					<IncludedMemoryFiles>
+						<File Id="9234424" Language="SFX">
+							<ShortName>Vaccuum.wav</ShortName>
+							<Path>SFX\Vaccuum_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2651780219" Name="Stop_DialogueChrysantha" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Stop_DialogueChrysantha" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3907661771" Name="Stop_DialogueCleo" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Stop_DialogueCleo" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="225669318" Name="Stop_DialogueJay" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Stop_DialogueJay" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2083436231" Name="Stop_DialogueJowan" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Stop_DialogueJowan" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="762700248" Name="Stop_DialogueKen" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Stop_DialogueKen" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="765457860" Name="Stop_DialogueManuel" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Stop_DialogueManuel" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2822206803" Name="Stop_DialogueMyrtle" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Stop_DialogueMyrtle" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="4256426928" Name="Stop_DialogueV" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue SFX\Stop_DialogueV" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="162000352">

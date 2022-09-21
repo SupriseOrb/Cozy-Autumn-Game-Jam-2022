@@ -5,18 +5,11 @@
 			<ChildrenList>
 				<SoundBank Name="SFX" ID="{67FB1E2B-96DD-412E-8860-B146083BD172}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_UIPause" ID="{7C13ED6C-245F-4099-94A5-B8DF48F3C8DD}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_DeckSwap" ID="{93BAF24F-C3C8-40B5-826A-048D777E1A8F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_UIBack" ID="{E4F782A1-C9BF-41C8-8C39-C4BE3121831B}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_UISelect" ID="{C4CED4A4-1238-4347-BD13-6FDADB4C9671}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_CardShuffle" ID="{81251156-964A-4390-BDC2-65B5AF08418C}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_GroceryBagImpact" ID="{E3BDE6C1-B7C8-4630-B31B-5CC75C731611}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_TestSound" ID="{B0A3C6A5-15F8-482D-9F35-E7100994E20F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_UIResume" ID="{C21120F1-2652-4873-A952-8717062E41EA}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_GroceryItemDrop" ID="{77D68CE9-8C78-48B6-91BA-7C170E14562F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_UIScroll" ID="{063729F0-36B8-4B2D-822A-A2B239E0D0AE}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_CardFlip" ID="{313B9074-E8CC-4CC7-8B6E-C8D997C5A566}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_CardPull" ID="{AC004D5D-0225-4E40-8781-F74FA18B7378}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="General UI SFX" ID="{3ADDB331-12FA-4458-B80E-43DF87F3AB94}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Card Ability SFX" ID="{99B0A793-C7FC-467B-82B9-6A4AB8562CEC}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Card UI SFX" ID="{6AAD80A5-CC72-4BF5-A85C-CCA18A4307CB}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Dialogue SFX" ID="{BD45F560-DFF1-4C12-AFE9-50C9F8F62E11}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Puzzle SFX" ID="{5496FBB3-3E98-4C16-BBCC-266359B26FB8}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

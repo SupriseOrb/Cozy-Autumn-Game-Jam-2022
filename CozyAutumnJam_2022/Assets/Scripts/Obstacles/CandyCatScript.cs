@@ -14,7 +14,7 @@ public class CandyCatScript : MonoBehaviour, IInteractable
             AkSoundEngine.PostEvent("Play_CatMeow", this.gameObject);
             pushableBowl.ActivatePlate();
             //hide the cat?
-            Instantiate(_vfx, PlayerScript.Instance.transform);
+            Instantiate(_vfx, gameObject.transform.position, Quaternion.identity);
             gameObject.SetActive(false);
         }
     }

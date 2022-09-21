@@ -16,7 +16,7 @@ public class CostumeScript : MonoBehaviour, IInteractable
         if (this.GetComponent<ItemTagScript>().IsCostume())
         {
             //Costume VFX
-            Instantiate(_vfx);
+            Instantiate(_vfx, gameObject.transform.position, Quaternion.identity);
             _character.IsCostumeCollected = true;
             CardManager.Instance.AddPropCard(_costumeCard);
             if(_isSpiritCostume)

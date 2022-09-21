@@ -2362,7 +2362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicName: Play_UISelect
   _isPowered: 1
-  _vfx: {fileID: 0}
+  _vfx: {fileID: 3074666689013589529, guid: 55bd0234a69e9b3489d271b7da8912fe, type: 3}
 --- !u!1 &1954737557
 GameObject:
   m_ObjectHideFlags: 0

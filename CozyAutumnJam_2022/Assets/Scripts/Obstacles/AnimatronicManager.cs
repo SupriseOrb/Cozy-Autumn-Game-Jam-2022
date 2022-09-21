@@ -26,7 +26,7 @@ public class AnimatronicManager : MonoBehaviour, IAnimatronic, IInteractable
         else
         {
             //Open Chest
-            Instantiate(_vfx);
+            Instantiate(_vfx, gameObject.transform.position, Quaternion.identity);
             _costume.SetActive(true);
             gameObject.SetActive(false);
         }

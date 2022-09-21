@@ -49,7 +49,7 @@ public class PasscodeChestScript : MonoBehaviour, IInteractable
 
     public void OpenChest()
     {
-        Instantiate(_vfx);
+        Instantiate(_vfx, gameObject.transform.position, Quaternion.identity);
         _costume.SetActive(true);
         gameObject.SetActive(false);
     }

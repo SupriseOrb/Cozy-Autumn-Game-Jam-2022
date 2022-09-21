@@ -11,7 +11,7 @@ public class RatPickUpScript : MonoBehaviour, IInteractable
         Debug.Log("Pickup");
         //add rat card to props deck
         CardManager.Instance.AddPropCard(_ratCard);
-        Instantiate(_vfx);
+        Instantiate(_vfx, gameObject.transform.position, Quaternion.identity);
         gameObject.SetActive(false);
     }
 

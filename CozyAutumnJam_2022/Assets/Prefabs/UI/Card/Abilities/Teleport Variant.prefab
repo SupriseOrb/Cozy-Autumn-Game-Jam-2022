@@ -141,5 +141,6 @@ MonoBehaviour:
   _cardInformation: {fileID: 11400000, guid: 1f3f1ec43dd1e304d825fda784e1a655, type: 2}
   _teleportDist: {x: 75, y: 0, z: 0}
   _teleportRadius: 0
+  _inHumanWorld: {fileID: 11400000, guid: 1b622ee53df957c409573be632378064, type: 2}
   teleportReturnDelay: 0.5
   _abilityCooldown: 0.6

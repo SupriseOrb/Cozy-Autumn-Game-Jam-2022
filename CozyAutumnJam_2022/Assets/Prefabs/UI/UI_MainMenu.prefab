@@ -184,6 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _settingsCanvas: {fileID: 355742076926127953}
+  _isMusicPlaying: {fileID: 11400000, guid: 1e19b689eb666f74ba22c51327bbac38, type: 2}
   _creditsCanvas: {fileID: 355742076134108532}
 --- !u!1 &355742076695032011
 GameObject:

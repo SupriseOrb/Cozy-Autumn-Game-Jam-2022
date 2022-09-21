@@ -806,6 +806,7 @@ MonoBehaviour:
   animator: {fileID: 6467850270876742070}
   _playerCanContinue: 1
   _playerInConvo: {fileID: 11400000, guid: 55ce68a57896ef84b84c51c96c030ef4, type: 2}
+  _inHumanWorld: {fileID: 11400000, guid: 1b622ee53df957c409573be632378064, type: 2}
   _characterNames:
   - cleo
   - manuel

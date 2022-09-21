@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    [SerializeField] private GameObject _settingsCanvas;    
+    [SerializeField] private GameObject _settingsCanvas;
+    [SerializeField] protected BoolVariable _isMusicPlaying; 
 
     protected void LoadScene(int sceneIndex)
     {

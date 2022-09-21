@@ -113,6 +113,7 @@ public class DialogueManager : MonoBehaviour
     #region Checks
     [SerializeField] private bool _playerCanContinue;
     [SerializeField] private BoolVariable _playerInConvo;
+    [SerializeField] private BoolVariable _inHumanWorld;
     #endregion
 
     #region Character Info
@@ -227,6 +228,9 @@ public class DialogueManager : MonoBehaviour
                 case "wait":
                     _waitTime = float.Parse(param);
                     break;
+                case "music":
+                    AkSoundEngine.SetState("Gameplay", param);
+                    break;
             }
         }
         SetChar(characterName, emotion);
@@ -340,6 +344,15 @@ public class DialogueManager : MonoBehaviour
         _playerCanContinue = false;
         _story = null;
 
+        if(_inHumanWorld.Value)
+        {
+            AkSoundEngine.SetState("Gameplay", "HumanStore");
+        }
+        else
+        {
+            AkSoundEngine.SetState("Gameplay", "SpiritStore");
+        }        
+        
         StartTimer(TimeoutDialogue());
         TriggerEndBehavior();
     }

@@ -10,8 +10,10 @@
 						<ObjectRef Name="Play_UIBack" ID="{E4F782A1-C9BF-41C8-8C39-C4BE3121831B}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UISelect" ID="{C4CED4A4-1238-4347-BD13-6FDADB4C9671}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CardShuffle" ID="{81251156-964A-4390-BDC2-65B5AF08418C}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_GroceryBagImpact" ID="{E3BDE6C1-B7C8-4630-B31B-5CC75C731611}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_TestSound" ID="{B0A3C6A5-15F8-482D-9F35-E7100994E20F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UIResume" ID="{C21120F1-2652-4873-A952-8717062E41EA}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_GroceryItemDrop" ID="{77D68CE9-8C78-48B6-91BA-7C170E14562F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UIScroll" ID="{063729F0-36B8-4B2D-822A-A2B239E0D0AE}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CardFlip" ID="{313B9074-E8CC-4CC7-8B6E-C8D997C5A566}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CardPull" ID="{AC004D5D-0225-4E40-8781-F74FA18B7378}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
@@ -21,6 +23,7 @@
 				</SoundBank>
 				<SoundBank Name="Music" ID="{D66A8460-0F96-4B29-B58D-A23159F19B2D}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Puzzle_Music_Full" ID="{FFEBB85E-C6C0-405E-B403-787120E6CC5D}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Main_Menu" ID="{89EB4A3A-27B1-40E8-B6D2-F7AE4A2F1B37}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Human_Myrtle" ID="{490D8A68-088D-413B-AACB-8E2B7E804CA2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Human_Ken" ID="{A9661CD6-DA4E-43F4-AB6F-E7DC7D2A67B3}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
@@ -28,12 +31,16 @@
 						<ObjectRef Name="Human_Store" ID="{1A0763CA-9E64-4680-9310-131230902572}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Spirit_Jowan" ID="{EEB54F43-CB9C-4870-9B17-01FB4DCE45B1}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Spirit_V" ID="{FB4395D9-41C6-4983-AC09-520F68BE3441}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MusicPuzzle_Seg4" ID="{C50358A4-5824-4AC0-B6B7-3470ECFA96AF}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MusicPuzzle_Seg2" ID="{4D3D305B-671B-4B08-9B15-64EE4F99456F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Spirit_Store" ID="{4E40E017-7FAD-4B19-865D-FB524030F341}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Spirit_Myrtle" ID="{C207CCF1-E10A-4B6D-A227-CF5E73FDC888}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Human_Jowan" ID="{C0A07559-FDF3-4C18-8DF6-7E282EEB83B2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Human_V" ID="{F40A95F7-2B59-4CA2-8A5D-B09772D855D4}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MusicPuzzle_Seg3" ID="{D31AE465-1805-4CA5-BF9E-12984579A082}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Human_Chrysantha" ID="{4EC72FB5-13F0-4CB9-80F1-17D13D5568EF}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayMusicStart" ID="{B279BAD9-7539-4CD8-A67C-A1B17C510EB5}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MusicPuzzle_Seg1" ID="{06E2077E-A808-4D47-BFA7-0336D19DE6DC}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Spirit_Chrysantha" ID="{FE853D0A-6BD2-4F6E-ADA1-40223FD8A41F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

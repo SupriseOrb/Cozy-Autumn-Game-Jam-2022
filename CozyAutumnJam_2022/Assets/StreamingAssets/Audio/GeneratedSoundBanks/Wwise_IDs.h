@@ -24,6 +24,13 @@ namespace AK
         static const AkUniqueID PLAY_CARDPULL = 3136930057U;
         static const AkUniqueID PLAY_CARDSHUFFLE = 3192869359U;
         static const AkUniqueID PLAY_DECKSWAP = 4280915480U;
+        static const AkUniqueID PLAY_GROCERYBAGIMPACT = 3491353433U;
+        static const AkUniqueID PLAY_GROCERYITEMDROP = 3055723057U;
+        static const AkUniqueID PLAY_MUSICPUZZLE_SEG1 = 1986454562U;
+        static const AkUniqueID PLAY_MUSICPUZZLE_SEG2 = 1986454561U;
+        static const AkUniqueID PLAY_MUSICPUZZLE_SEG3 = 1986454560U;
+        static const AkUniqueID PLAY_MUSICPUZZLE_SEG4 = 1986454567U;
+        static const AkUniqueID PLAY_PUZZLE_MUSIC_FULL = 1658747734U;
         static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
         static const AkUniqueID PLAY_UIBACK = 1224305705U;
         static const AkUniqueID PLAY_UIPAUSE = 1830907318U;

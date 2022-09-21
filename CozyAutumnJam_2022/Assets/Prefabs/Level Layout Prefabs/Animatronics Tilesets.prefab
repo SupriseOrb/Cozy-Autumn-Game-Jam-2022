@@ -2595,7 +2595,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2693846608851228873, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _musicName
-      value: Play_UISelect
+      value: Play_MusicPuzzle_Seg2
       objectReference: {fileID: 0}
     - target: {fileID: 2693846608851228873, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _animatronicOrderIndex
@@ -2603,11 +2603,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3383568192078333112, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _musicName
-      value: Play_UISelect
+      value: Play_MusicPuzzle_Seg1
       objectReference: {fileID: 0}
     - target: {fileID: 3901590692740330859, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _musicName
-      value: Play_UISelect
+      value: Play_MusicPuzzle_Seg3
       objectReference: {fileID: 0}
     - target: {fileID: 3901590692740330859, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _animatronicOrderIndex
@@ -2663,7 +2663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6444900518784799808, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _musicName
-      value: Play_UISelect
+      value: Play_MusicPuzzle_Seg4
       objectReference: {fileID: 0}
     - target: {fileID: 6444900518784799808, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _animatronicOrderIndex
@@ -2679,7 +2679,7 @@ PrefabInstance:
       objectReference: {fileID: 8912471503383585756}
     - target: {fileID: 6757027603415063438, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _musicName
-      value: Play_UISelect
+      value: Play_Puzzle_Music_Full
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
@@ -4164,7 +4164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2693846608851228873, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _musicName
-      value: Play_UISelect
+      value: Play_MusicPuzzle_Seg3
       objectReference: {fileID: 0}
     - target: {fileID: 3383568192078333112, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _isPowered
@@ -4172,7 +4172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3383568192078333112, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _musicName
-      value: Play_UISelect
+      value: Play_MusicPuzzle_Seg1
       objectReference: {fileID: 0}
     - target: {fileID: 3901590692740330856, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: m_Sprite
@@ -4200,7 +4200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3901590692740330859, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _musicName
-      value: Play_UISelect
+      value: Play_MusicPuzzle_Seg4
       objectReference: {fileID: 0}
     - target: {fileID: 3901590693419964020, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: m_Name
@@ -4272,7 +4272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6444900518784799808, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _musicName
-      value: Play_UISelect
+      value: Play_MusicPuzzle_Seg2
       objectReference: {fileID: 0}
     - target: {fileID: 6757027603415063438, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _vfx
@@ -4284,7 +4284,7 @@ PrefabInstance:
       objectReference: {fileID: 8912471504003747446}
     - target: {fileID: 6757027603415063438, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: _musicName
-      value: Play_UISelect
+      value: Play_Music_Music_Full
       objectReference: {fileID: 0}
     - target: {fileID: 8070855486001453901, guid: 5d5d4a3a626692d4184f2f0e6033ea6e, type: 3}
       propertyPath: m_LocalPosition.x

@@ -1,94 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Linux" BasePlatform="Linux" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/.cache/Linux/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/GeneratedSoundBanks/Linux/</SoundBanksRoot>
+		<ProjectRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Linux\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\GeneratedSoundBanks\Linux\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/collin_anderson/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Cozy-Autumn-Game-Jam-2022/CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/GeneratedSoundBanks/Linux</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\GeneratedSoundBanks\Linux</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="2899879894">
+		<SoundBank Id="393239870" Language="SFX" Hash="284292888">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="884848037" Name="Play_CardFlip" ObjectPath="\Events\Default Work Unit\SFX Events\Card UI\Play_CardFlip" DurationType="OneShot" DurationMin="0.081723" DurationMax="0.081723">
+				<Event Id="884848037" Name="Play_CardFlip" ObjectPath="\Events\Default Work Unit\SFX Events\Card UI SFX\Play_CardFlip" DurationType="OneShot" DurationMin="0.081723" DurationMax="0.081723">
 					<IncludedMemoryFiles>
 						<File Id="844309663" Language="SFX">
 							<ShortName>CardFlip.wav</ShortName>
-							<Path>SFX/CardFlip_10C4C929.wem</Path>
+							<Path>SFX\CardFlip_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3136930057" Name="Play_CardPull" ObjectPath="\Events\Default Work Unit\SFX Events\Card UI\Play_CardPull" DurationType="OneShot" DurationMin="0.294955" DurationMax="0.402404">
+				<Event Id="3136930057" Name="Play_CardPull" ObjectPath="\Events\Default Work Unit\SFX Events\Card UI SFX\Play_CardPull" DurationType="OneShot" DurationMin="0.294955" DurationMax="0.402404">
 					<IncludedMemoryFiles>
 						<File Id="469650255" Language="SFX">
 							<ShortName>CardPull1.wav</ShortName>
-							<Path>SFX/CardPull1_10C4C929.wem</Path>
+							<Path>SFX\CardPull1_E9045315.wem</Path>
 						</File>
 						<File Id="645855217" Language="SFX">
 							<ShortName>CardPull2.wav</ShortName>
-							<Path>SFX/CardPull2_10C4C929.wem</Path>
+							<Path>SFX\CardPull2_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3192869359" Name="Play_CardShuffle" ObjectPath="\Events\Default Work Unit\SFX Events\Card UI\Play_CardShuffle" DurationType="OneShot" DurationMin="0.331255" DurationMax="0.519545">
+				<Event Id="3192869359" Name="Play_CardShuffle" ObjectPath="\Events\Default Work Unit\SFX Events\Card UI SFX\Play_CardShuffle" DurationType="OneShot" DurationMin="0.331255" DurationMax="0.519545">
 					<IncludedMemoryFiles>
 						<File Id="407509120" Language="SFX">
 							<ShortName>CardShuffle1.wav</ShortName>
-							<Path>SFX/CardShuffle1_10C4C929.wem</Path>
+							<Path>SFX\CardShuffle1_E9045315.wem</Path>
 						</File>
 						<File Id="730900144" Language="SFX">
 							<ShortName>CardShuffle3.wav</ShortName>
-							<Path>SFX/CardShuffle3_10C4C929.wem</Path>
+							<Path>SFX\CardShuffle3_E9045315.wem</Path>
 						</File>
 						<File Id="807983812" Language="SFX">
 							<ShortName>CardShuffle2_02.wav</ShortName>
-							<Path>SFX/CardShuffle2_02_10C4C929.wem</Path>
+							<Path>SFX\CardShuffle2_02_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4280915480" Name="Play_DeckSwap" ObjectPath="\Events\Default Work Unit\SFX Events\Card UI\Play_DeckSwap" DurationType="OneShot" DurationMin="0.173084" DurationMax="0.173084">
+				<Event Id="4280915480" Name="Play_DeckSwap" ObjectPath="\Events\Default Work Unit\SFX Events\Card UI SFX\Play_DeckSwap" DurationType="OneShot" DurationMin="0.173084" DurationMax="0.173084">
 					<IncludedMemoryFiles>
 						<File Id="530332103" Language="SFX">
 							<ShortName>CardSwap.wav</ShortName>
-							<Path>SFX/CardSwap_10C4C929.wem</Path>
+							<Path>SFX\CardSwap_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2752533807" Name="Play_TestSound" ObjectPath="\Events\Default Work Unit\SFX Events\Play_TestSound" DurationType="OneShot" DurationMin="5.070416" DurationMax="5.070416">
+				<Event Id="3491353433" Name="Play_GroceryBagImpact" ObjectPath="\Events\Default Work Unit\SFX Events\Puzzle SFX\Play_GroceryBagImpact" DurationType="OneShot" DurationMin="0.418277" DurationMax="0.418277">
 					<IncludedMemoryFiles>
-						<File Id="898142516" Language="SFX">
-							<ShortName>Phone Ringing.wav</ShortName>
-							<Path>SFX/Phone Ringing_10C4C929.wem</Path>
+						<File Id="1045526071" Language="SFX">
+							<ShortName>GroceryBagImpact.wav</ShortName>
+							<Path>SFX\GroceryBagImpact_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3055723057" Name="Play_GroceryItemDrop" ObjectPath="\Events\Default Work Unit\SFX Events\Puzzle SFX\Play_GroceryItemDrop" DurationType="OneShot" DurationMin="0.495193" DurationMax="0.495193">
+					<IncludedMemoryFiles>
+						<File Id="514938978" Language="SFX">
+							<ShortName>GroceryItemDrop.wav</ShortName>
+							<Path>SFX\GroceryItemDrop_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2752533807" Name="Play_TestSound" ObjectPath="\Events\Default Work Unit\SFX Events\Play_TestSound" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1224305705" Name="Play_UIBack" ObjectPath="\Events\Default Work Unit\SFX Events\General UI SFX\Play_UIBack" DurationType="OneShot" DurationMin="1.467687" DurationMax="1.467687">
 					<IncludedMemoryFiles>
 						<File Id="906103811" Language="SFX">
 							<ShortName>UIBack.wav</ShortName>
-							<Path>SFX/UIBack_10C4C929.wem</Path>
+							<Path>SFX\UIBack_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1830907318" Name="Play_UIPause" ObjectPath="\Events\Default Work Unit\SFX Events\General UI SFX\Play_UIPause" DurationType="OneShot" DurationMin="2.032562" DurationMax="2.032562">
+				<Event Id="1830907318" Name="Play_UIPause" ObjectPath="\Events\Default Work Unit\SFX Events\General UI SFX\Play_UIPause" DurationType="OneShot" DurationMin="1.24678" DurationMax="1.24678">
 					<IncludedMemoryFiles>
-						<File Id="937727332" Language="SFX">
-							<ShortName>UIPause.wav</ShortName>
-							<Path>SFX/UIPause_10C4C929.wem</Path>
+						<File Id="742781176" Language="SFX">
+							<ShortName>UIPause_02.wav</ShortName>
+							<Path>SFX\UIPause_02_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="235035089" Name="Play_UIResume" ObjectPath="\Events\Default Work Unit\SFX Events\General UI SFX\Play_UIResume" DurationType="OneShot" DurationMin="2.032562" DurationMax="2.032562">
+				<Event Id="235035089" Name="Play_UIResume" ObjectPath="\Events\Default Work Unit\SFX Events\General UI SFX\Play_UIResume" DurationType="OneShot" DurationMin="1.24678" DurationMax="1.24678">
 					<IncludedMemoryFiles>
-						<File Id="35618958" Language="SFX">
-							<ShortName>UIResume.wav</ShortName>
-							<Path>SFX/UIResume_10C4C929.wem</Path>
+						<File Id="983873992" Language="SFX">
+							<ShortName>UIResume_02.wav</ShortName>
+							<Path>SFX\UIResume_02_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -96,7 +105,7 @@
 					<IncludedMemoryFiles>
 						<File Id="189416120" Language="SFX">
 							<ShortName>UIScroll.wav</ShortName>
-							<Path>SFX/UIScroll_10C4C929.wem</Path>
+							<Path>SFX\UIScroll_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -104,7 +113,7 @@
 					<IncludedMemoryFiles>
 						<File Id="897019754" Language="SFX">
 							<ShortName>UISelect.wav</ShortName>
-							<Path>SFX/UISelect_10C4C929.wem</Path>
+							<Path>SFX\UISelect_E9045315.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -121,7 +130,7 @@
 				<GameParameter Id="2731583604" Name="AllVolume" ObjectPath="\Game Parameters\Default Work Unit\AllVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="4247577308">
+		<SoundBank Id="3991942870" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -161,63 +170,103 @@
 						<ActionSetStateEntry Id="3604647259" Name="MainMenu" ObjectPath="\States\Default Work Unit\Gameplay\MainMenu"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="1986454562" Name="Play_MusicPuzzle_Seg1" ObjectPath="\Events\Default Work Unit\SFX Events\Music Puzzle\Play_MusicPuzzle_Seg1" DurationType="OneShot" DurationMin="1.92" DurationMax="1.92">
+					<IncludedMemoryFiles>
+						<File Id="115187649" Language="SFX">
+							<ShortName>MusicPuzzle_Seg1.wav</ShortName>
+							<Path>SFX\MusicPuzzle_Seg1_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1986454561" Name="Play_MusicPuzzle_Seg2" ObjectPath="\Events\Default Work Unit\SFX Events\Music Puzzle\Play_MusicPuzzle_Seg2" DurationType="OneShot" DurationMin="1.92" DurationMax="1.92">
+					<IncludedMemoryFiles>
+						<File Id="57490300" Language="SFX">
+							<ShortName>MusicPuzzle_Seg2.wav</ShortName>
+							<Path>SFX\MusicPuzzle_Seg2_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1986454560" Name="Play_MusicPuzzle_Seg3" ObjectPath="\Events\Default Work Unit\SFX Events\Music Puzzle\Play_MusicPuzzle_Seg3" DurationType="OneShot" DurationMin="1.92" DurationMax="1.92">
+					<IncludedMemoryFiles>
+						<File Id="845094769" Language="SFX">
+							<ShortName>MusicPuzzle_Seg3.wav</ShortName>
+							<Path>SFX\MusicPuzzle_Seg3_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1986454567" Name="Play_MusicPuzzle_Seg4" ObjectPath="\Events\Default Work Unit\SFX Events\Music Puzzle\Play_MusicPuzzle_Seg4" DurationType="OneShot" DurationMin="4.357234" DurationMax="4.357234">
+					<IncludedMemoryFiles>
+						<File Id="1034646002" Language="SFX">
+							<ShortName>MusicPuzzle_Seg4.wav</ShortName>
+							<Path>SFX\MusicPuzzle_Seg4_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1658747734" Name="Play_Puzzle_Music_Full" ObjectPath="\Events\Default Work Unit\SFX Events\Music Puzzle\Play_Puzzle_Music_Full" DurationType="OneShot" DurationMin="10.301542" DurationMax="10.301542">
+					<IncludedMemoryFiles>
+						<File Id="146023130" Language="SFX">
+							<ShortName>Puzzle_Music_Full.wav</ShortName>
+							<Path>SFX\Puzzle_Music_Full_E9045315.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1068983008" Name="PlayMusicStart" ObjectPath="\Events\Default Work Unit\Music Events\PlayMusicStart" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="11164527" Language="SFX">
 							<ShortName>Spooky_VTheme_Draft_1.wav</ShortName>
-							<Path>SFX/Spooky_VTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_VTheme_Draft_1_9B11A8F3.wem</Path>
 						</File>
 						<File Id="84526937" Language="SFX">
 							<ShortName>Spirit_MainTheme.wav</ShortName>
-							<Path>SFX/Spirit_MainTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_MainTheme_9B11A8F3.wem</Path>
 						</File>
 						<File Id="181034382" Language="SFX">
 							<ShortName>Spooky_MainTheme_Intro_Draft_1.wav</ShortName>
-							<Path>SFX/Spooky_MainTheme_Intro_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_MainTheme_Intro_Draft_1_9B11A8F3.wem</Path>
 						</File>
 						<File Id="253288252" Language="SFX">
 							<ShortName>Spirit_ChrysanthaTheme.wav</ShortName>
-							<Path>SFX/Spirit_ChrysanthaTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_ChrysanthaTheme_9B11A8F3.wem</Path>
 						</File>
 						<File Id="294587160" Language="SFX">
 							<ShortName>Spooky_ChrysanthaTheme_Draft_1.wav</ShortName>
-							<Path>SFX/Spooky_ChrysanthaTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_ChrysanthaTheme_Draft_1_9B11A8F3.wem</Path>
 						</File>
 						<File Id="315239178" Language="SFX">
 							<ShortName>MainMenu_Loop.wav</ShortName>
-							<Path>SFX/MainMenu_Loop_D79FB2B7.wem</Path>
+							<Path>SFX\MainMenu_Loop_9B11A8F3.wem</Path>
 						</File>
 						<File Id="339010008" Language="SFX">
 							<ShortName>Spooky_JowanTheme_Draft_1.wav</ShortName>
-							<Path>SFX/Spooky_JowanTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_JowanTheme_Draft_1_9B11A8F3.wem</Path>
 						</File>
 						<File Id="520901426" Language="SFX">
 							<ShortName>Spooky_MyrtleTheme_Draft_1.wav</ShortName>
-							<Path>SFX/Spooky_MyrtleTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_MyrtleTheme_Draft_1_9B11A8F3.wem</Path>
 						</File>
 						<File Id="596672924" Language="SFX">
 							<ShortName>Spirit_MyrtleTheme.wav</ShortName>
-							<Path>SFX/Spirit_MyrtleTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_MyrtleTheme_9B11A8F3.wem</Path>
 						</File>
 						<File Id="628539542" Language="SFX">
 							<ShortName>Spirit_KenTheme.wav</ShortName>
-							<Path>SFX/Spirit_KenTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_KenTheme_9B11A8F3.wem</Path>
 						</File>
 						<File Id="720273982" Language="SFX">
 							<ShortName>Spooky_KenTheme_Draft_1.wav</ShortName>
-							<Path>SFX/Spooky_KenTheme_Draft_1_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_KenTheme_Draft_1_9B11A8F3.wem</Path>
 						</File>
 						<File Id="857119023" Language="SFX">
 							<ShortName>Spirit_VTheme.wav</ShortName>
-							<Path>SFX/Spirit_VTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_VTheme_9B11A8F3.wem</Path>
 						</File>
 						<File Id="860405681" Language="SFX">
 							<ShortName>Spirit_JowanTheme.wav</ShortName>
-							<Path>SFX/Spirit_JowanTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spirit_JowanTheme_9B11A8F3.wem</Path>
 						</File>
 						<File Id="1054601518" Language="SFX">
 							<ShortName>Spooky_MainTheme.wav</ShortName>
-							<Path>SFX/Spooky_MainTheme_D79FB2B7.wem</Path>
+							<Path>SFX\Spooky_MainTheme_9B11A8F3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>

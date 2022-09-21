@@ -311,9 +311,12 @@ public class DialogueManager : MonoBehaviour
     }
     private IEnumerator TypeSentence(string sentence)
     {
-        //Kristen TODO: start character SFX based on the var _currentChar.Name
+        //Start character SFX based on the var _currentChar.Name
         // names are lowercase, and spirits version would have _spirit have the person's name
         // e.g. ken, ken_spirit
+        string nameForSFX = _currentChar.Name.Split('_')[0];
+        nameForSFX = char.ToUpper(nameForSFX[0]) + nameForSFX.Substring(1);
+        AkSoundEngine.PostEvent("Play_Dialogue"+ nameForSFX, this.gameObject);
 
         _dialogueText.text = "";
 
@@ -326,7 +329,8 @@ public class DialogueManager : MonoBehaviour
             yield return null;            
         }
 
-        // Kristen TODO: end character SFX
+        //End character SFX
+        AkSoundEngine.PostEvent("Stop_Dialogue"+ nameForSFX, this.gameObject);
         ParseChoices();
     }
 

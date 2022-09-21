@@ -481,6 +481,210 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Dialogue" ID="{BD45F560-DFF1-4C12-AFE9-50C9F8F62E11}" ShortID="265815021">
+							<ChildrenList>
+								<Event Name="Stop_DialogueChrysantha" ID="{3AEB8150-7D46-4672-BE21-CA321A134629}">
+									<ChildrenList>
+										<Action Name="" ID="{14C46F29-17E9-483B-8ADF-B2B0332B703C}" ShortID="330133055">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueChrysantha" ID="{EB0299D6-9BCE-46E9-A0FC-0CFD82E6ACC4}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_DialogueCleo" ID="{A4F570F9-FAF9-4D20-8A33-97FAA1802993}">
+									<ChildrenList>
+										<Action Name="" ID="{43180CF0-0E92-47E2-B8C6-EE7FA05A7687}" ShortID="164973810">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueCleo" ID="{69E6DA75-6415-444B-A27A-872D0C0B8849}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_DialogueJowan" ID="{B6130997-1F22-46FE-A99E-60EBD6E08A18}">
+									<ChildrenList>
+										<Action Name="" ID="{9605EF54-7216-4ABE-B1F4-D19D011C7AA9}" ShortID="132716306">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueJowan" ID="{CA40AD6D-8E61-4504-B1B8-EBA3FC507614}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_DialogueKen" ID="{16D371E6-8BE9-4A9A-8561-E90C35AC1043}">
+									<ChildrenList>
+										<Action Name="" ID="{2DF81DEA-7CC5-4CA8-86D6-87BD8E86B5CF}" ShortID="860497875">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueKen" ID="{C75D5A5A-DA6D-475C-A666-AF3215BBBF60}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_DialogueV" ID="{9CDA2B79-141C-485B-8EFE-3F43F21E9361}">
+									<ChildrenList>
+										<Action Name="" ID="{72314F1B-0835-4DDF-A5B8-0B18AABFD973}" ShortID="573383167">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueV" ID="{E9B6C37E-3DF6-479C-AF49-97C00EE791E6}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_DialogueMyrtle" ID="{E7147AF4-7204-48D9-9E57-CB9952F40B95}">
+									<ChildrenList>
+										<Action Name="" ID="{4F91FF36-AE75-455A-AC7B-33AFD97013BE}" ShortID="85064698">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueMyrtle" ID="{5FCAE7FB-F69B-4247-B869-C44E2470E33B}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_DialogueBoss" ID="{BF425054-6114-4F8E-B04C-8D66BD0051E4}">
+									<ChildrenList>
+										<Action Name="" ID="{D4395D8B-1339-432C-B3A9-ABCF6D7A7420}" ShortID="543807767">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueBoss" ID="{760E29E9-154F-4F77-8F5A-7E94DB4D8E38}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_DialogueJay" ID="{7A0B77DA-486F-4F1B-A1CB-1E585579CAF8}">
+									<ChildrenList>
+										<Action Name="" ID="{5AFC38DC-96E5-4E42-8A01-1ACCA7EE6C65}" ShortID="471786009">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueJay" ID="{9EE14CC8-BB86-4E24-AE4A-FC1A991CBB3D}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_DialogueBoss" ID="{B91ECF0C-2E48-423B-ACB8-5679DA3FDD84}">
+									<ChildrenList>
+										<Action Name="" ID="{E6FC1B70-1EAB-48F6-99CD-6AE9A3B1F02F}" ShortID="739392699">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueBoss" ID="{760E29E9-154F-4F77-8F5A-7E94DB4D8E38}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_DialogueKen" ID="{CB450E66-9E5D-4D48-A17F-70F3CA8925FD}">
+									<ChildrenList>
+										<Action Name="" ID="{FDFA86B1-C834-451C-A0CC-EA27B04F07E6}" ShortID="97012515">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueKen" ID="{C75D5A5A-DA6D-475C-A666-AF3215BBBF60}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_DialogueV" ID="{DA566A9E-E825-4D98-B4D3-4EE7E4657E4E}">
+									<ChildrenList>
+										<Action Name="" ID="{2D68ECCF-6865-4BE7-B3AF-1BD76655CAE2}" ShortID="146044866">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueV" ID="{E9B6C37E-3DF6-479C-AF49-97C00EE791E6}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_DialogueChrysantha" ID="{25392586-F20E-476A-A3C9-AA41431D5364}">
+									<ChildrenList>
+										<Action Name="" ID="{3D15A4AC-EE14-4686-9E53-2757F2961ED4}" ShortID="972484009">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueChrysantha" ID="{EB0299D6-9BCE-46E9-A0FC-0CFD82E6ACC4}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_DialogueMyrtle" ID="{56F0CCD3-54CB-4EC5-9BBC-0EFC7D782ECA}">
+									<ChildrenList>
+										<Action Name="" ID="{70ACFA9E-3B6A-46C5-8FAA-C82F4DBB3536}" ShortID="790014224">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueMyrtle" ID="{5FCAE7FB-F69B-4247-B869-C44E2470E33B}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_DialogueJowan" ID="{C2CECB7B-444C-407A-9453-6970BB1AAE24}">
+									<ChildrenList>
+										<Action Name="" ID="{C869746E-7F88-4112-A6DF-D2AB7AF50013}" ShortID="60170580">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueJowan" ID="{CA40AD6D-8E61-4504-B1B8-EBA3FC507614}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_DialogueJay" ID="{A9BB4550-8465-47E9-9BEC-F9B9649DE43A}">
+									<ChildrenList>
+										<Action Name="" ID="{BCCFFA8F-02CD-49F4-AB2C-4EE49F7CBF65}" ShortID="440017560">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueJay" ID="{9EE14CC8-BB86-4E24-AE4A-FC1A991CBB3D}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_DialogueCleo" ID="{828AC9F1-9731-4080-94C5-3CE6EF0BC280}">
+									<ChildrenList>
+										<Action Name="" ID="{56748D81-7EFB-4CCC-8AF2-7358C73BD9A8}" ShortID="806536509">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DialogueCleo" ID="{69E6DA75-6415-444B-A27A-872D0C0B8849}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

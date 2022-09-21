@@ -22,7 +22,7 @@
 				<GameParameter Id="2731583604" Name="AllVolume" ObjectPath="\Game Parameters\Default Work Unit\AllVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1245411336">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3502757976">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -123,6 +123,70 @@
 						<File Id="530332103" Language="SFX">
 							<ShortName>CardSwap.wav</ShortName>
 							<Path>SFX\CardSwap_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4206748575" Name="Play_DialogueBoss" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Play_DialogueBoss" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="232612060" Language="SFX">
+							<ShortName>DialogueBoss02.wav</ShortName>
+							<Path>SFX\DialogueBoss02_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4086805381" Name="Play_DialogueChrysantha" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Play_DialogueChrysantha" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="453561335" Language="SFX">
+							<ShortName>DialogueChrysantha.wav</ShortName>
+							<Path>SFX\DialogueChrysantha_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2240950997" Name="Play_DialogueCleo" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Play_DialogueCleo" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="192456104" Language="SFX">
+							<ShortName>DialogueCleo.wav</ShortName>
+							<Path>SFX\DialogueCleo_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="661091160" Name="Play_DialogueJay" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Play_DialogueJay" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="930094902" Language="SFX">
+							<ShortName>DialogueJay.wav</ShortName>
+							<Path>SFX\DialogueJay_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1082913317" Name="Play_DialogueJowan" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Play_DialogueJowan" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="361527793" Language="SFX">
+							<ShortName>DialogueJowan02.wav</ShortName>
+							<Path>SFX\DialogueJowan02_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="124354358" Name="Play_DialogueKen" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Play_DialogueKen" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="119914060" Language="SFX">
+							<ShortName>DialogueKen02.wav</ShortName>
+							<Path>SFX\DialogueKen02_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3130910329" Name="Play_DialogueMyrtle" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Play_DialogueMyrtle" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="310593437" Language="SFX">
+							<ShortName>DialogueMyrtle.wav</ShortName>
+							<Path>SFX\DialogueMyrtle_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4285197602" Name="Play_DialogueV" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Play_DialogueV" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="763874355" Language="SFX">
+							<ShortName>DialogueV.wav</ShortName>
+							<Path>SFX\DialogueV_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -439,6 +503,14 @@
 						<ActionSetStateEntry Id="2133836716" Name="SpiritV" ObjectPath="\States\Default Work Unit\Gameplay\SpiritV"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="2315912653" Name="Stop_DialogueBoss" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueBoss" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2651780219" Name="Stop_DialogueChrysantha" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueChrysantha" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3907661771" Name="Stop_DialogueCleo" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueCleo" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="225669318" Name="Stop_DialogueJay" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueJay" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2083436231" Name="Stop_DialogueJowan" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueJowan" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="762700248" Name="Stop_DialogueKen" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueKen" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2822206803" Name="Stop_DialogueMyrtle" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueMyrtle" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="4256426928" Name="Stop_DialogueV" ObjectPath="\Events\Default Work Unit\SFX Events\Dialogue\Stop_DialogueV" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<StateGroups>
 				<StateGroup Id="89505537" Name="Gameplay" ObjectPath="\States\Default Work Unit\Gameplay" GUID="{5FF2EE3C-97EE-4CA1-8FB4-8C8C9FB574C4}">

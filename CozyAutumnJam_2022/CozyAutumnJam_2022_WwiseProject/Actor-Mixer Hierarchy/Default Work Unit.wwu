@@ -920,6 +920,258 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Dialogue SFX" ID="{415C15CE-6ED9-41EE-9BB0-ED993430919A}" ShortID="564944115">
+					<ChildrenList>
+						<Sound Name="DialogueBoss" ID="{760E29E9-154F-4F77-8F5A-7E94DB4D8E38}" ShortID="1028725038">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DialogueBoss02" ID="{0A4C6BDB-69E4-4A5B-A352-9772647994B2}">
+									<Language>SFX</Language>
+									<AudioFile>DialogueBoss02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="232612060"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DialogueBoss02" ID="{0A4C6BDB-69E4-4A5B-A352-9772647994B2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DialogueChrysantha" ID="{EB0299D6-9BCE-46E9-A0FC-0CFD82E6ACC4}" ShortID="976719004">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DialogueChrysantha" ID="{C76E862E-633F-4A3C-97EC-2C1121746768}">
+									<Language>SFX</Language>
+									<AudioFile>DialogueChrysantha.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="453561335"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DialogueChrysantha" ID="{C76E862E-633F-4A3C-97EC-2C1121746768}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DialogueCleo" ID="{69E6DA75-6415-444B-A27A-872D0C0B8849}" ShortID="480405790">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DialogueCleo" ID="{EE4A67B8-EBF5-44D8-9833-877A712F91CF}">
+									<Language>SFX</Language>
+									<AudioFile>DialogueCleo.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="192456104"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DialogueCleo" ID="{EE4A67B8-EBF5-44D8-9833-877A712F91CF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DialogueJay" ID="{9EE14CC8-BB86-4E24-AE4A-FC1A991CBB3D}" ShortID="930579120">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DialogueJay" ID="{98A4402A-FF9D-4868-84FD-39028D085B9D}">
+									<Language>SFX</Language>
+									<AudioFile>DialogueJay.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="930094902"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DialogueJay" ID="{98A4402A-FF9D-4868-84FD-39028D085B9D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DialogueJowan" ID="{CA40AD6D-8E61-4504-B1B8-EBA3FC507614}" ShortID="267517617">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DialogueJowan02" ID="{BE905055-D99F-4F99-99EF-E9C2425EB65E}">
+									<Language>SFX</Language>
+									<AudioFile>DialogueJowan02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="361527793"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DialogueJowan02" ID="{BE905055-D99F-4F99-99EF-E9C2425EB65E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DialogueKen" ID="{C75D5A5A-DA6D-475C-A666-AF3215BBBF60}" ShortID="90463440">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DialogueKen02" ID="{2B08143B-AD7C-4403-BFD2-AE9E8A60E78C}">
+									<Language>SFX</Language>
+									<AudioFile>DialogueKen02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="119914060"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DialogueKen02" ID="{2B08143B-AD7C-4403-BFD2-AE9E8A60E78C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DialogueMyrtle" ID="{5FCAE7FB-F69B-4247-B869-C44E2470E33B}" ShortID="310086012">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DialogueMyrtle" ID="{847FE046-9041-4DF2-B3B4-D10CD3B6636F}">
+									<Language>SFX</Language>
+									<AudioFile>DialogueMyrtle.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="310593437"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DialogueMyrtle" ID="{847FE046-9041-4DF2-B3B4-D10CD3B6636F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DialogueV" ID="{E9B6C37E-3DF6-479C-AF49-97C00EE791E6}" ShortID="16558745">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DialogueV" ID="{EE454640-1B48-44DE-A603-1E460571DACE}">
+									<Language>SFX</Language>
+									<AudioFile>DialogueV.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="763874355"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DialogueV" ID="{EE454640-1B48-44DE-A603-1E460571DACE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

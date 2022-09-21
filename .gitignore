@@ -77,3 +77,11 @@ Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
 
 WwiseUnityIntegration_*_Src.zip
 CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/CozyAutumnJam_2022_WwiseProject.krisc.wsettings
+*.wem
+CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/CozyAutumnJam_2022_WwiseProject.krisc.wsettings
+
+CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/.cache/CacheVersion
+CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/.cache/SoundBankInfoCache.dat
+CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/.cache/Windows/SFX/Wwise.dat
+CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/.cache/Mac/SFX/Wwise.dat
+CozyAutumnJam_2022/CozyAutumnJam_2022_WwiseProject/.cache/Linux/SFX/Wwise.dat

@@ -1,13 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
 	46628949	Spirit_Ken			\Default Work Unit\Music Events\Spirit_Ken	
+	124354358	Play_DialogueKen			\Default Work Unit\SFX Events\Dialogue\Play_DialogueKen	
+	225669318	Stop_DialogueJay			\Default Work Unit\SFX Events\Dialogue\Stop_DialogueJay	
 	235035089	Play_UIResume			\Default Work Unit\SFX Events\General UI SFX\Play_UIResume	
 	235104698	Play_CatMeow			\Default Work Unit\SFX Events\Puzzle SFX\Play_CatMeow	
 	384231010	Human_Chrysantha			\Default Work Unit\Music Events\Human_Chrysantha	
 	500046663	Play_RatCapture			\Default Work Unit\SFX Events\Puzzle SFX\Play_RatCapture	
 	582752983	Human_V			\Default Work Unit\Music Events\Human_V	
 	658206130	Spirit_Jowan			\Default Work Unit\Music Events\Spirit_Jowan	
+	661091160	Play_DialogueJay			\Default Work Unit\SFX Events\Dialogue\Play_DialogueJay	
+	762700248	Stop_DialogueKen			\Default Work Unit\SFX Events\Dialogue\Stop_DialogueKen	
 	884848037	Play_CardFlip			\Default Work Unit\SFX Events\Card UI\Play_CardFlip	
 	1068983008	PlayMusicStart			\Default Work Unit\Music Events\PlayMusicStart	
+	1082913317	Play_DialogueJowan			\Default Work Unit\SFX Events\Dialogue\Play_DialogueJowan	
 	1224305705	Play_UIBack			\Default Work Unit\SFX Events\General UI SFX\Play_UIBack	
 	1410879499	Play_PowerPlate			\Default Work Unit\SFX Events\Puzzle SFX\Play_PowerPlate	
 	1419433896	Spirit_Store			\Default Work Unit\Music Events\Spirit_Store	
@@ -17,16 +22,22 @@ Event	ID	Name			Wwise Object Path	Notes
 	1953011658	Play_SlimePush			\Default Work Unit\SFX Events\Card Ability SFX\Play_SlimePush	
 	2005704188	Main_Menu			\Default Work Unit\Music Events\Main_Menu	
 	2012702053	Play_SpiderWeb			\Default Work Unit\SFX Events\Card Ability SFX\Play_SpiderWeb	
+	2083436231	Stop_DialogueJowan			\Default Work Unit\SFX Events\Dialogue\Stop_DialogueJowan	
+	2240950997	Play_DialogueCleo			\Default Work Unit\SFX Events\Dialogue\Play_DialogueCleo	
+	2315912653	Stop_DialogueBoss			\Default Work Unit\SFX Events\Dialogue\Stop_DialogueBoss	
 	2450707257	Play_RatStart			\Default Work Unit\SFX Events\Puzzle SFX\Play_RatStart	
 	2539951888	Play_Translator			\Default Work Unit\SFX Events\Card Ability SFX\Play_Translator	
 	2629021827	Play_BoxImpact			\Default Work Unit\SFX Events\Puzzle SFX\Play_BoxImpact	
 	2630114156	Human_Jowan			\Default Work Unit\Music Events\Human_Jowan	
+	2651780219	Stop_DialogueChrysantha			\Default Work Unit\SFX Events\Dialogue\Stop_DialogueChrysantha	
 	2694481824	Spirit_Myrtle			\Default Work Unit\Music Events\Spirit_Myrtle	
 	2707783454	Human_Store			\Default Work Unit\Music Events\Human_Store	
 	2713813216	Play_Error			\Default Work Unit\SFX Events\Puzzle SFX\Play_Error	
 	2752533807	Play_TestSound			\Default Work Unit\SFX Events\Play_TestSound	
 	2790307850	Play_Plate			\Default Work Unit\SFX Events\Puzzle SFX\Play_Plate	
+	2822206803	Stop_DialogueMyrtle			\Default Work Unit\SFX Events\Dialogue\Stop_DialogueMyrtle	
 	2994644335	Human_Ken			\Default Work Unit\Music Events\Human_Ken	
+	3130910329	Play_DialogueMyrtle			\Default Work Unit\SFX Events\Dialogue\Play_DialogueMyrtle	
 	3136930057	Play_CardPull			\Default Work Unit\SFX Events\Card UI\Play_CardPull	
 	3174091305	Spirit_V			\Default Work Unit\Music Events\Spirit_V	
 	3192869359	Play_CardShuffle			\Default Work Unit\SFX Events\Card UI\Play_CardShuffle	
@@ -35,7 +46,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	3448711732	Spirit_Chrysantha			\Default Work Unit\Music Events\Spirit_Chrysantha	
 	3703192648	Play_UISelect			\Default Work Unit\SFX Events\General UI SFX\Play_UISelect	
 	3785065891	Play_Teleport			\Default Work Unit\SFX Events\Card Ability SFX\Play_Teleport	
+	3907661771	Stop_DialogueCleo			\Default Work Unit\SFX Events\Dialogue\Stop_DialogueCleo	
+	4086805381	Play_DialogueChrysantha			\Default Work Unit\SFX Events\Dialogue\Play_DialogueChrysantha	
+	4206748575	Play_DialogueBoss			\Default Work Unit\SFX Events\Dialogue\Play_DialogueBoss	
+	4256426928	Stop_DialogueV			\Default Work Unit\SFX Events\Dialogue\Stop_DialogueV	
 	4280915480	Play_DeckSwap			\Default Work Unit\SFX Events\Card UI\Play_DeckSwap	
+	4285197602	Play_DialogueV			\Default Work Unit\SFX Events\Dialogue\Play_DialogueV	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	89505537	Gameplay			\Default Work Unit\Gameplay	
@@ -62,19 +78,25 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	12785306	PowerPlate	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\PowerPlate_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\PowerPlate		153628
 	28665575	BoxImpact01	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\BoxImpact01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\BoxImpact\BoxImpact01		140908
 	84526937	Spirit_MainTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spirit_MainTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritMainTheme\Spirit_MainTheme\Spirit_MainTheme		10205976
+	119914060	DialogueKen	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\DialogueKen02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue SFX\DialogueKen		104148
 	121403960	Slime02	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Slime02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\SlimePush\Slime02		119408
 	165147037	RatStart	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\RatStart_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\RatStart		70520
 	181034382	Spooky_MainTheme_Intro_Draft_1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spooky_MainTheme_Intro_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\HumanMainTheme\Spooky_MainTheme_Intro\Spooky_MainTheme_Intro_Draft_1		2350652
 	189416120	UIScroll	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\UIScroll_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UIScroll		507832
 	191987060	CatMeow	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\CatMeow_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\CatMeow		102744
+	192456104	DialogueCleo	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\DialogueCleo_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue SFX\DialogueCleo		104148
+	232612060	DialogueBoss	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\DialogueBoss02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue SFX\DialogueBoss		104148
 	250265649	Slime01	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Slime01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\SlimePush\Slime01		119408
 	253288252	Spirit_ChrysanthaTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spirit_ChrysanthaTheme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritChrysanthaTheme\Spirit_ChrysanthaTheme\Spirit_ChrysanthaTheme		10205976
 	294587160	Spooky_ChrysanthaTheme_Draft_1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spooky_ChrysanthaTheme_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\ChrysanthaTheme\Spooky_ChrysanthaTheme_Draft_1\Spooky_ChrysanthaTheme_Draft_1		13883932
+	310593437	DialogueMyrtle	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\DialogueMyrtle_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue SFX\DialogueMyrtle		104148
 	315239178	MainMenu_Loop	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\MainMenu_Loop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\MenuMusic\MainMenu_Loop\MainMenu_Loop		6544924
 	339010008	Spooky_JowanTheme_Draft_1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spooky_JowanTheme_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\JowanTheme\Spooky_JowanTheme_Draft_1\Spooky_JowanTheme_Draft_1		13883932
+	361527793	DialogueJowan	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\DialogueJowan02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue SFX\DialogueJowan		104148
 	401289580	RatCapture	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\RatCapture_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\RatCapture		87480
 	407509120	CardShuffle1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\CardShuffle1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardShuffle\CardShuffle1		85784
 	428636673	BoxImpact02	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\BoxImpact02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\BoxImpact\BoxImpact02		101048
+	453561335	DialogueChrysantha	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\DialogueChrysantha_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue SFX\DialogueChrysantha		104148
 	469650255	CardPull1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\CardPull1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardPull\CardPull1		55252
 	520901426	Spooky_MyrtleTheme_Draft_1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spooky_MyrtleTheme_Draft_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\MyrtleTheme\Spooky_MyrtleTheme_Draft_1\Spooky_MyrtleTheme_Draft_1		13884988
 	530332103	DeckSwap	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\CardSwap_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\DeckSwap		30660
@@ -87,6 +109,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	730900144	CardShuffle3	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\CardShuffle3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardShuffle\CardShuffle3		86632
 	742781176	UIPause	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\UIPause_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UIPause		220060
 	755363995	PlateReset	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\PlateReset_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\PlateReset		160416
+	763874355	DialogueV	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\DialogueV_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue SFX\DialogueV		104148
 	807983812	CardShuffle2	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\CardShuffle2_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardShuffle\CardShuffle2		62036
 	813959866	SpiderWeb03	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\SpiderWeb03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\SpiderWeb\SpiderWeb03		114620
 	844309663	CardFlip	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\CardFlip_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardFlip		14544
@@ -95,6 +118,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	897019754	UISelect	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\UISelect_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UISelect		259028
 	898142516	Z_TestSound	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Phone Ringing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Z_TestSound		973648
 	906103811	UIBack	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\UIBack_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UIBack		259028
+	930094902	DialogueJay	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\DialogueJay_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue SFX\DialogueJay		104148
 	931782914	Error	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Error_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\Error		120656
 	962176852	Teleport	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Teleport03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\Teleport		167200
 	983873992	UIResume	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\UIResume_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UIResume		220060

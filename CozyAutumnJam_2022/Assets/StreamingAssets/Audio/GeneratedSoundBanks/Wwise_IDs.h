@@ -26,6 +26,14 @@ namespace AK
         static const AkUniqueID PLAY_CARDSHUFFLE = 3192869359U;
         static const AkUniqueID PLAY_CATMEOW = 235104698U;
         static const AkUniqueID PLAY_DECKSWAP = 4280915480U;
+        static const AkUniqueID PLAY_DIALOGUEBOSS = 4206748575U;
+        static const AkUniqueID PLAY_DIALOGUECHRYSANTHA = 4086805381U;
+        static const AkUniqueID PLAY_DIALOGUECLEO = 2240950997U;
+        static const AkUniqueID PLAY_DIALOGUEJAY = 661091160U;
+        static const AkUniqueID PLAY_DIALOGUEJOWAN = 1082913317U;
+        static const AkUniqueID PLAY_DIALOGUEKEN = 124354358U;
+        static const AkUniqueID PLAY_DIALOGUEMYRTLE = 3130910329U;
+        static const AkUniqueID PLAY_DIALOGUEV = 4285197602U;
         static const AkUniqueID PLAY_ERROR = 2713813216U;
         static const AkUniqueID PLAY_PLATE = 2790307850U;
         static const AkUniqueID PLAY_PLATERESET = 1914422699U;
@@ -50,6 +58,14 @@ namespace AK
         static const AkUniqueID SPIRIT_MYRTLE = 2694481824U;
         static const AkUniqueID SPIRIT_STORE = 1419433896U;
         static const AkUniqueID SPIRIT_V = 3174091305U;
+        static const AkUniqueID STOP_DIALOGUEBOSS = 2315912653U;
+        static const AkUniqueID STOP_DIALOGUECHRYSANTHA = 2651780219U;
+        static const AkUniqueID STOP_DIALOGUECLEO = 3907661771U;
+        static const AkUniqueID STOP_DIALOGUEJAY = 225669318U;
+        static const AkUniqueID STOP_DIALOGUEJOWAN = 2083436231U;
+        static const AkUniqueID STOP_DIALOGUEKEN = 762700248U;
+        static const AkUniqueID STOP_DIALOGUEMYRTLE = 2822206803U;
+        static const AkUniqueID STOP_DIALOGUEV = 4256426928U;
     } // namespace EVENTS
 
     namespace STATES

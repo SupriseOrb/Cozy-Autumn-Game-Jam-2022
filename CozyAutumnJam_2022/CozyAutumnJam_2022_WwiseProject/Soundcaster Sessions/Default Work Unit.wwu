@@ -98,6 +98,88 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
+				<SoundcasterSession Name="All Test" ID="{1BFA7EE0-4F17-4932-9A50-F35703889BEF}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PlayMusicStart" ID="{B279BAD9-7539-4CD8-A67C-A1B17C510EB5}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Main_Menu" ID="{89EB4A3A-27B1-40E8-B6D2-F7AE4A2F1B37}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Human_Store" ID="{1A0763CA-9E64-4680-9310-131230902572}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Human_Chrysantha" ID="{4EC72FB5-13F0-4CB9-80F1-17D13D5568EF}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Human_Ken" ID="{A9661CD6-DA4E-43F4-AB6F-E7DC7D2A67B3}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Human_V" ID="{F40A95F7-2B59-4CA2-8A5D-B09772D855D4}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Human_Jowan" ID="{C0A07559-FDF3-4C18-8DF6-7E282EEB83B2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Human_Myrtle" ID="{490D8A68-088D-413B-AACB-8E2B7E804CA2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Spirit_Store" ID="{4E40E017-7FAD-4B19-865D-FB524030F341}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Spirit_Ken" ID="{4655C10E-3ED7-4581-AE92-07A65B59510D}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Spirit_V" ID="{FB4395D9-41C6-4983-AC09-520F68BE3441}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Spirit_Jowan" ID="{EEB54F43-CB9C-4870-9B17-01FB4DCE45B1}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Spirit_Myrtle" ID="{C207CCF1-E10A-4B6D-A227-CF5E73FDC888}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Spirit_Chrysantha" ID="{FE853D0A-6BD2-4F6E-ADA1-40223FD8A41F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<Position X="4" Y="4"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="AmbianceVolume" ID="{49799403-D70F-45C0-AAA4-8DCE8F33D12C}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MusicVolume" ID="{D5572AA5-4DED-46E6-9DAF-09DA22C9DA65}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFXVolume" ID="{2B1002D6-A73D-4BDE-81E1-929D2B9D365D}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="AllVolume" ID="{67DAC697-9984-4C5F-B393-D2074AF58593}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="SpiritStore" ID="{9E5BE5B5-6E95-4EB6-906E-72FC6A53811F}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

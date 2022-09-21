@@ -3,61 +3,38 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{2B671B6F-8E3F-4C2D-979B-3EB7CBEE4FA4}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Main" ID="{67FB1E2B-96DD-412E-8860-B146083BD172}">
+				<SoundBank Name="SFX" ID="{67FB1E2B-96DD-412E-8860-B146083BD172}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_PowerPlate" ID="{0B266432-F864-4019-B253-C29F815C9C70}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_DialogueJowan" ID="{C2CECB7B-444C-407A-9453-6970BB1AAE24}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_DialogueCleo" ID="{828AC9F1-9731-4080-94C5-3CE6EF0BC280}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UIPause" ID="{7C13ED6C-245F-4099-94A5-B8DF48F3C8DD}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_DeckSwap" ID="{93BAF24F-C3C8-40B5-826A-048D777E1A8F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Main_Menu" ID="{89EB4A3A-27B1-40E8-B6D2-F7AE4A2F1B37}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Human_Myrtle" ID="{490D8A68-088D-413B-AACB-8E2B7E804CA2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_SpiderWeb" ID="{12363371-1934-4185-8988-02F258C3CB8B}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_RatCapture" ID="{5F58E902-999A-418B-AEE2-22690A84D490}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UIBack" ID="{E4F782A1-C9BF-41C8-8C39-C4BE3121831B}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Translator" ID="{AA801307-4095-41E8-A6D8-91B1DE9636DA}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_DialogueManuel" ID="{B91ECF0C-2E48-423B-ACB8-5679DA3FDD84}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UISelect" ID="{C4CED4A4-1238-4347-BD13-6FDADB4C9671}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CardShuffle" ID="{81251156-964A-4390-BDC2-65B5AF08418C}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Human_Ken" ID="{A9661CD6-DA4E-43F4-AB6F-E7DC7D2A67B3}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_RatStart" ID="{0CF5A6AE-01D6-44C5-A7C5-ACCAD4347078}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_CatMeow" ID="{3FB38758-2298-4501-9123-B2A38FE69D16}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Spirit_Ken" ID="{4655C10E-3ED7-4581-AE92-07A65B59510D}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_DialogueChrysantha" ID="{3AEB8150-7D46-4672-BE21-CA321A134629}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Human_Store" ID="{1A0763CA-9E64-4680-9310-131230902572}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_DialogueJowan" ID="{B6130997-1F22-46FE-A99E-60EBD6E08A18}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_DialogueChrysantha" ID="{25392586-F20E-476A-A3C9-AA41431D5364}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_DialogueJay" ID="{A9BB4550-8465-47E9-9BEC-F9B9649DE43A}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_TestSound" ID="{B0A3C6A5-15F8-482D-9F35-E7100994E20F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_DialogueV" ID="{9CDA2B79-141C-485B-8EFE-3F43F21E9361}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Spirit_Jowan" ID="{EEB54F43-CB9C-4870-9B17-01FB4DCE45B1}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UIResume" ID="{C21120F1-2652-4873-A952-8717062E41EA}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_DialogueMyrtle" ID="{E7147AF4-7204-48D9-9E57-CB9952F40B95}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_BoxImpact" ID="{05A1DD4C-9281-48E9-B7FC-E8884418906A}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Plate" ID="{446442D9-331C-4909-8241-09D36C7307EE}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Spirit_V" ID="{FB4395D9-41C6-4983-AC09-520F68BE3441}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Error" ID="{DAE53E28-B72A-49D5-80B1-7BFFD9E67992}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Vaccuum" ID="{75492D66-1B2E-4A5F-A493-6EAA20DFB57D}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_DialogueKen" ID="{16D371E6-8BE9-4A9A-8561-E90C35AC1043}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Spirit_Store" ID="{4E40E017-7FAD-4B19-865D-FB524030F341}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UIScroll" ID="{063729F0-36B8-4B2D-822A-A2B239E0D0AE}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CardFlip" ID="{313B9074-E8CC-4CC7-8B6E-C8D997C5A566}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_CardPull" ID="{AC004D5D-0225-4E40-8781-F74FA18B7378}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music" ID="{D66A8460-0F96-4B29-B58D-A23159F19B2D}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Main_Menu" ID="{89EB4A3A-27B1-40E8-B6D2-F7AE4A2F1B37}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Human_Myrtle" ID="{490D8A68-088D-413B-AACB-8E2B7E804CA2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Human_Ken" ID="{A9661CD6-DA4E-43F4-AB6F-E7DC7D2A67B3}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Spirit_Ken" ID="{4655C10E-3ED7-4581-AE92-07A65B59510D}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Human_Store" ID="{1A0763CA-9E64-4680-9310-131230902572}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Spirit_Jowan" ID="{EEB54F43-CB9C-4870-9B17-01FB4DCE45B1}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Spirit_V" ID="{FB4395D9-41C6-4983-AC09-520F68BE3441}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Spirit_Store" ID="{4E40E017-7FAD-4B19-865D-FB524030F341}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Spirit_Myrtle" ID="{C207CCF1-E10A-4B6D-A227-CF5E73FDC888}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Human_Jowan" ID="{C0A07559-FDF3-4C18-8DF6-7E282EEB83B2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Teleport" ID="{56274B68-36C1-4C44-9B47-675DF38DDCB2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Human_V" ID="{F40A95F7-2B59-4CA2-8A5D-B09772D855D4}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Human_Chrysantha" ID="{4EC72FB5-13F0-4CB9-80F1-17D13D5568EF}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_CardFlip" ID="{313B9074-E8CC-4CC7-8B6E-C8D997C5A566}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayMusicStart" ID="{B279BAD9-7539-4CD8-A67C-A1B17C510EB5}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_DialogueCleo" ID="{A4F570F9-FAF9-4D20-8A33-97FAA1802993}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_DialogueKen" ID="{CB450E66-9E5D-4D48-A17F-70F3CA8925FD}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_SlimePush" ID="{8AFC0E62-92AF-4D85-80B7-EE4D6905C2A2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_DialogueV" ID="{DA566A9E-E825-4D98-B4D3-4EE7E4657E4E}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_CardPull" ID="{AC004D5D-0225-4E40-8781-F74FA18B7378}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_DialogueMyrtle" ID="{56F0CCD3-54CB-4EC5-9BBC-0EFC7D782ECA}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_PlateReset" ID="{02BB3A40-2D88-4ECF-AE82-ABEE90A323C9}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_DialogueJay" ID="{7A0B77DA-486F-4F1B-A1CB-1E585579CAF8}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Spirit_Chrysantha" ID="{FE853D0A-6BD2-4F6E-ADA1-40223FD8A41F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_DialogueManuel" ID="{BF425054-6114-4F8E-B04C-8D66BD0051E4}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

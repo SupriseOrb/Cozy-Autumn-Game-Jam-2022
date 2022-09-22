@@ -42767,6 +42767,10 @@ PrefabInstance:
       propertyPath: _costumeCard
       value: 
       objectReference: {fileID: 40151184}
+    - target: {fileID: 4383896954629906727, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 31.52
+      objectReference: {fileID: 0}
     - target: {fileID: 5542634199089381534, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
       propertyPath: _costumeCard
       value: 

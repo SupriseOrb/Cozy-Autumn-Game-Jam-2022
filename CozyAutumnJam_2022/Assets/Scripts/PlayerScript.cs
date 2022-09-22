@@ -47,6 +47,10 @@ public class PlayerScript : MonoBehaviour
         if(_moveInput != Vector2.zero)
         {
             _playerDirection = _inputManager.MovementInput;
+            if(_playerDirection.x != 0 && _playerDirection.y != 0)
+            {
+                _playerDirection.x = 0;
+            }
         }
     }
 

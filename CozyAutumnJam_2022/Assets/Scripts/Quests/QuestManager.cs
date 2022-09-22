@@ -7,6 +7,7 @@ public class QuestManager : MonoBehaviour
     static private QuestManager _instance;
     static public QuestManager Instance { get { return _instance;}}
     [SerializeField] private bool _allQuestsComplete;
+    [SerializeField] private int _bossEndQuestIndex;
     
     [System.Serializable]
     public class HumanQuest
@@ -262,7 +263,11 @@ public class QuestManager : MonoBehaviour
         {
             _allQuestsComplete = true;
         }
-
+        
+        if (_allQuestsComplete == true)
+        {
+            _bossQuestList[_bossEndQuestIndex]._currentQuestBoss.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.BossEndGame);
+        }
     }
 
         //you might need to add some logic to prevent the skipping of story beats if the player were to pick up a costume too early

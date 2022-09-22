@@ -6748,6 +6748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5454360541329140248, guid: b4002a81366efa8429085ee437075eaf, type: 3}
+    - {fileID: 7091302679528854154, guid: b4002a81366efa8429085ee437075eaf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b4002a81366efa8429085ee437075eaf, type: 3}
 --- !u!4 &2584022966089825150 stripped
 Transform:
@@ -6771,7 +6772,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0162efaab61c8b74f98b9c5a06e4ff98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _vfx: {fileID: 0}
+  _vfx: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
+--- !u!58 &980177242
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7847742770084724762}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4
 --- !u!1001 &956037592477579234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7436,6 +7453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5454360541329140248, guid: b4002a81366efa8429085ee437075eaf, type: 3}
+    - {fileID: 7091302679528854154, guid: b4002a81366efa8429085ee437075eaf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b4002a81366efa8429085ee437075eaf, type: 3}
 --- !u!4 &2584022965404177254 stripped
 Transform:
@@ -7459,7 +7477,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0162efaab61c8b74f98b9c5a06e4ff98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _vfx: {fileID: 0}
+  _vfx: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
+--- !u!58 &936087608
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7847742769671464962}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.4
 --- !u!1001 &956037593298854792
 PrefabInstance:
   m_ObjectHideFlags: 0

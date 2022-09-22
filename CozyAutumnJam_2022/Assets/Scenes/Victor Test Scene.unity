@@ -1437,14 +1437,6 @@ PrefabInstance:
       propertyPath: _ratCard
       value: 
       objectReference: {fileID: 6957888}
-    - target: {fileID: 1128311066, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: _vfx
-      value: 
-      objectReference: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
-    - target: {fileID: 1780646162, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: _vfx
-      value: 
-      objectReference: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
     - target: {fileID: 1234981880036913691, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
       propertyPath: _costumeCard
       value: 

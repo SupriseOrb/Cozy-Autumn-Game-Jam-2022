@@ -180,6 +180,7 @@ MonoBehaviour:
   _useDString: ActivateCard
   _movementString: Movement
   _interactString: Interact
+  _resizeCardString: ResizeCard
 --- !u!114 &215318249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +215,7 @@ MonoBehaviour:
   _rb: {fileID: 2448369009358849145}
   _inputManager: {fileID: 17740070}
   _playerDirection: {x: 0, y: 0}
+  _fakeMyrtle: {fileID: 0}
 --- !u!1 &3218927989246380640
 GameObject:
   m_ObjectHideFlags: 0

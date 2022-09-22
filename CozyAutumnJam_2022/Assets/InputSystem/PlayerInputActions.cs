@@ -98,6 +98,15 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ResizeCard"",
+                    ""type"": ""Button"",
+                    ""id"": ""b2b8dc3f-826c-4086-9e23-9abdffc2e4c4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -225,11 +234,22 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""c212fee1-9d10-456b-8af6-86d8ec52dc13"",
-                    ""path"": ""<Keyboard>/i"",
+                    ""path"": ""<Keyboard>/enter"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a920fa70-b7c4-44ad-8e1e-1ba3df0a6ad2"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""ResizeCard"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -309,6 +329,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         m_Player_ActivateCard = m_Player.FindAction("ActivateCard", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
+        m_Player_ResizeCard = m_Player.FindAction("ResizeCard", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -376,6 +397,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_ActivateCard;
     private readonly InputAction m_Player_Movement;
     private readonly InputAction m_Player_Interact;
+    private readonly InputAction m_Player_ResizeCard;
     public struct PlayerActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -388,6 +410,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         public InputAction @ActivateCard => m_Wrapper.m_Player_ActivateCard;
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
+        public InputAction @ResizeCard => m_Wrapper.m_Player_ResizeCard;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -421,6 +444,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @Interact.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
+                @ResizeCard.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnResizeCard;
+                @ResizeCard.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnResizeCard;
+                @ResizeCard.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnResizeCard;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -449,6 +475,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @ResizeCard.started += instance.OnResizeCard;
+                @ResizeCard.performed += instance.OnResizeCard;
+                @ResizeCard.canceled += instance.OnResizeCard;
             }
         }
     }
@@ -508,5 +537,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         void OnActivateCard(InputAction.CallbackContext context);
         void OnMovement(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnResizeCard(InputAction.CallbackContext context);
     }
 }

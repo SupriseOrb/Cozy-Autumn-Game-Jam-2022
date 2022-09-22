@@ -27,6 +27,7 @@ public class InputManager : MonoBehaviour
     [SerializeField] private string _useDString;
     [SerializeField] private string _movementString;
     [SerializeField] private string _interactString;
+    [SerializeField] private string _resizeCardString;
 
     private InputAction _cycleLAction;
     private InputAction _cycleRAction;
@@ -36,7 +37,7 @@ public class InputManager : MonoBehaviour
     private InputAction _useDAction;
     private InputAction _movementAction;
     private InputAction _interactAction;
-
+    private InputAction _resizeCardAction;
     
 
     void Awake()
@@ -49,6 +50,7 @@ public class InputManager : MonoBehaviour
         _useDAction = _playerInput.actions[_useDString];
         _movementAction = _playerInput.actions[_movementString];
         _interactAction = _playerInput.actions[_interactString];
+        _resizeCardAction = _playerInput.actions[_resizeCardString];
     }
 
     private void OnEnable() 
@@ -60,6 +62,8 @@ public class InputManager : MonoBehaviour
         _swapDAction.performed += OnSwapD;
         _useDAction.performed += OnUseD;
         _interactAction.performed += OnInteract;
+        _resizeCardAction.performed += OnResizeCard;
+
 
         _movementAction.started += OnMovement;
         _movementAction.performed += OnMovement;
@@ -80,6 +84,13 @@ public class InputManager : MonoBehaviour
         _movementAction.performed -= OnMovement;
         _movementAction.canceled -= OnMovement; 
     }
+    public void OnResizeCard(InputAction.CallbackContext context)
+    {
+        if (!_isPaused.Value && !_playerInConvo.Value)
+        {
+            _cardManager.EditCardSize();
+        }
+    }
 
     public void OnCycleLeft(InputAction.CallbackContext context)
     {
@@ -99,11 +110,8 @@ public class InputManager : MonoBehaviour
 
     public void OnSpace(InputAction.CallbackContext context)
     {
-        if (!_isPaused.Value && !_playerInConvo.Value)
-        {
-            _cardManager.EditCardSize();
-        }
-        else if (_playerInConvo)
+        
+        if (_playerInConvo)
         {
             DialogueManager.Instance.OnAdvanceDialogue();
         }

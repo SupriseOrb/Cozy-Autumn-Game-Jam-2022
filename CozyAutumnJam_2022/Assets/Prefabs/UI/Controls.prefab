@@ -87,7 +87,9 @@ MonoBehaviour:
     Escape
     - Pause Game
 
-    Space - Interact / Continue Dialogue'
+    Space - Continue Dialogue
+
+    F - Interact'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}
   m_sharedMaterial: {fileID: 9198052892992681617, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}

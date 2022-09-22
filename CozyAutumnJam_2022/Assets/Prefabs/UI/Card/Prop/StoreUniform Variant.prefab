@@ -12,6 +12,10 @@ PrefabInstance:
       value: A store uniform costume. It looks quite familiar, probably because you're
         currently wearing one.
       objectReference: {fileID: 0}
+    - target: {fileID: 4522474510778806646, guid: 860521798c171904daf86f307620675c, type: 3}
+      propertyPath: _icon
+      value: 
+      objectReference: {fileID: 21300000, guid: db7ca84f3bfac494eadec95ee7fdbbc8, type: 3}
     - target: {fileID: 4708939580936860178, guid: 860521798c171904daf86f307620675c, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -26,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8125772495729431533, guid: 860521798c171904daf86f307620675c, type: 3}
       propertyPath: m_Name
-      value: StoreUniform
+      value: StoreUniform Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8125772495729431534, guid: 860521798c171904daf86f307620675c, type: 3}
       propertyPath: m_Pivot.x

@@ -13,6 +13,10 @@ PrefabInstance:
         It would take a very specific creature to be able to make this work as a
         costume.
       objectReference: {fileID: 0}
+    - target: {fileID: 4522474510778806646, guid: 860521798c171904daf86f307620675c, type: 3}
+      propertyPath: _icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 666f483e36cd12e4893f8dd41d937766, type: 3}
     - target: {fileID: 4708939580936860178, guid: 860521798c171904daf86f307620675c, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -27,7 +31,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8125772495729431533, guid: 860521798c171904daf86f307620675c, type: 3}
       propertyPath: m_Name
-      value: AutumnMisc
+      value: AutumnMisc Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8125772495729431534, guid: 860521798c171904daf86f307620675c, type: 3}
       propertyPath: m_Pivot.x

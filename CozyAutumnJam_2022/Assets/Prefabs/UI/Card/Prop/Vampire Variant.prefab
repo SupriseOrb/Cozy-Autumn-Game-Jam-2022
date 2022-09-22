@@ -12,6 +12,10 @@ PrefabInstance:
       value: A vampire costume. Comes with fangs for optimal blood sucking and candy
         munching.
       objectReference: {fileID: 0}
+    - target: {fileID: 4522474510778806646, guid: 860521798c171904daf86f307620675c, type: 3}
+      propertyPath: _icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 19746769dc5c1cc4ab97f64602d7dedb, type: 3}
     - target: {fileID: 4708939580936860178, guid: 860521798c171904daf86f307620675c, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -26,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8125772495729431533, guid: 860521798c171904daf86f307620675c, type: 3}
       propertyPath: m_Name
-      value: Vampire
+      value: Vampire Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8125772495729431534, guid: 860521798c171904daf86f307620675c, type: 3}
       propertyPath: m_Pivot.x

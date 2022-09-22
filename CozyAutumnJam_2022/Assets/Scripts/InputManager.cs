@@ -148,6 +148,7 @@ public class InputManager : MonoBehaviour
         float distance = 2f;
         RaycastHit2D _rayCastHit = Physics2D.Raycast(originalPos, originalDir, distance);
         Debug.DrawRay(originalPos, originalDir * distance, Color.red, 1);
+        _movementInput = Vector2.zero;
         if(_rayCastHit.transform != null)
         {
             GameObject _hitGO = _rayCastHit.transform.gameObject;

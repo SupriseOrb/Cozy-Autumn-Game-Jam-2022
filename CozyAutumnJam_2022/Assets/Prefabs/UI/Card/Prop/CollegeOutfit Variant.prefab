@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_text
       value: A college outfit costume. Looking at this brings back some uneasy memories.
       objectReference: {fileID: 0}
+    - target: {fileID: 4522474510778806646, guid: 860521798c171904daf86f307620675c, type: 3}
+      propertyPath: _icon
+      value: 
+      objectReference: {fileID: 21300000, guid: 91391657c3adf604d9616ba47c426318, type: 3}
     - target: {fileID: 4708939580936860178, guid: 860521798c171904daf86f307620675c, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -25,7 +29,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8125772495729431533, guid: 860521798c171904daf86f307620675c, type: 3}
       propertyPath: m_Name
-      value: CollegeOutfit
+      value: CollegeOutfit Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8125772495729431534, guid: 860521798c171904daf86f307620675c, type: 3}
       propertyPath: m_Pivot.x

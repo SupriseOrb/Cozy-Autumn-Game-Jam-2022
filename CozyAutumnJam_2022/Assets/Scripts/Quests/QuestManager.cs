@@ -31,6 +31,7 @@ public class QuestManager : MonoBehaviour
     public class BossQuest
     {
         public CharacterWithProgression _currentQuestBoss;
+        public GameObject _oracleCard;
         public bool[] _bossQuestStepCompleted;
         public bool _bossQuestStarted;
         public bool _bossQuestComplete;
@@ -189,6 +190,10 @@ public class QuestManager : MonoBehaviour
                 _bossQuestList[bossChar.QuestIndex]._bossQuestStarted = true;
                 _bossQuestList[bossChar.QuestIndex]._currentQuestBoss.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.BossAfterSpiritWorld);
                 _bossQuestList[bossChar.QuestIndex]._bossQuestComplete = true;
+                if (_stepCount == 2)
+                {
+                    _bossQuestList[bossChar.QuestIndex]._oracleCard.GetComponent<IAbility>().ObtainAbility();
+                }
             }
             if (bossChar.StepIndex == 1)
             {

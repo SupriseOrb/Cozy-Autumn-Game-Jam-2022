@@ -810,6 +810,7 @@ MonoBehaviour:
   _characterNames:
   - cleo
   - manuel
+  - manuel_spirit
   - chrysantha
   - jowan
   - ken
@@ -824,7 +825,8 @@ MonoBehaviour:
   - jay_spirit
   _characterInfos:
   - {fileID: 11400000, guid: 78803146d89adde44abeaedbcd1e5547, type: 2}
-  - {fileID: 11400000, guid: cd8d20c4f02c48248bf9c37ed6559975, type: 2}
+  - {fileID: 11400000, guid: f8d480ea3d247a74ebb3c90477963187, type: 2}
+  - {fileID: 11400000, guid: fa67f1860e129bc468c5ab7f492a865d, type: 2}
   - {fileID: 11400000, guid: 18eb146d2ae0382478bfc91fb1870574, type: 2}
   - {fileID: 11400000, guid: 07e4c0c55ad78894a806a6801de3fd2b, type: 2}
   - {fileID: 11400000, guid: 0aec6f9edf923ae4ca4c600cc8ae6794, type: 2}

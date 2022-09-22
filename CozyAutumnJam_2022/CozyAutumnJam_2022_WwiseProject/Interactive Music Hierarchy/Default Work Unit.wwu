@@ -34,7 +34,7 @@
 									<ChildrenList>
 										<MusicSegment Name="Spooky_MainTheme_Intro" ID="{0A42D00D-F6F9-4DE3-B079-9EF74FBF3C19}" ShortID="204088781">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="7374.39909297052"/>
+												<Property Name="EndPosition" Type="Real64" Value="13324.693877551"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -45,23 +45,23 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicTrack Name="Spooky_MainTheme_Intro_Draft_1" ID="{5D050214-D33F-469B-BF2F-56E34EEA4D43}" ShortID="356162239">
+												<MusicTrack Name="Spooky_MainTheme_Intro" ID="{62686412-F231-4E27-85E6-0F25E7FBB590}" ShortID="841115453">
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Spooky_MainTheme_Intro_Draft_1" ID="{FCA31C0A-8F0F-4076-AC40-7A924CD9FE1A}">
+														<AudioFileSource Name="Spooky_MainTheme_Intro" ID="{796DBA92-D4DA-43C2-BF4B-B42A1BC89AEB}">
 															<Language>SFX</Language>
-															<AudioFile>Spooky_MainTheme_Intro_Draft_1.wav</AudioFile>
+															<AudioFile>Spooky_MainTheme_Intro.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="181034382"/>
+																<MediaID ID="324982090"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
-														<MusicTransition Name="Root" ID="{21395C5A-576F-426C-9033-0EFCF97C555C}">
+														<MusicTransition Name="Root" ID="{55105F7A-04A8-4486-9DD9-8075B57A4667}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -72,18 +72,18 @@
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
-																	<MusicTrackSequence Name="" ID="{71F3344D-93C8-49DC-AA81-ACC617E22309}">
+																	<MusicTrackSequence Name="" ID="{32DBA3C6-24A4-4B65-B456-0DB0EA169AE9}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="Spooky_MainTheme_Intro_Draft_1" ID="{BB6A383F-36B5-4BCA-896B-CE2D7F1842BB}">
+																						<MusicClip Name="Spooky_MainTheme_Intro" ID="{06543850-9EC7-486D-A1F2-8E5B495F432D}">
 																							<PropertyList>
-																								<Property Name="EndTrimOffset" Type="Real64" Value="7374.39909297052"/>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="13324.693877551"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
 																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="Spooky_MainTheme_Intro_Draft_1" ID="{FCA31C0A-8F0F-4076-AC40-7A924CD9FE1A}"/>
+																							<AudioSourceRef Name="Spooky_MainTheme_Intro" ID="{796DBA92-D4DA-43C2-BF4B-B42A1BC89AEB}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -108,7 +108,7 @@
 															<MusicCue Name="Exit Cue" ID="{23193B1C-174D-43A7-AEC8-46805C7D8440}">
 																<PropertyList>
 																	<Property Name="CueType" Type="int16" Value="1"/>
-																	<Property Name="TimeMs" Type="Real64" Value="6000"/>
+																	<Property Name="TimeMs" Type="Real64" Value="5806.45161290323"/>
 																</PropertyList>
 															</MusicCue>
 														</Local>
@@ -149,6 +149,7 @@
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
+															<ReferenceList/>
 															<TransitionInfo/>
 														</MusicTransition>
 													</TransitionList>
@@ -327,23 +328,23 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicTrack Name="Spooky_KenTheme" ID="{25BA98EA-CF50-4343-9155-9E7FC5B32E03}" ShortID="447616186">
+												<MusicTrack Name="Spooky_KenTheme" ID="{22489491-D505-47DD-B01D-2D89826CC57F}" ShortID="898056780">
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Spooky_KenTheme_Draft_1" ID="{06601CD2-F10E-49CC-ADC1-510CB27FBE0B}">
+														<AudioFileSource Name="Spooky_KenTheme" ID="{DBA2D25F-194C-4A20-B3FB-61339EADEC86}">
 															<Language>SFX</Language>
-															<AudioFile>Spooky_KenTheme_Draft_1.wav</AudioFile>
+															<AudioFile>Spooky_KenTheme.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="720273982"/>
+																<MediaID ID="456155305"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
-														<MusicTransition Name="Root" ID="{C2D0670C-FF00-47B5-9E42-5DB46652E06C}">
+														<MusicTransition Name="Root" ID="{B905E7CB-FB76-4642-BBC8-7963D7AB02D2}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -354,18 +355,18 @@
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
-																	<MusicTrackSequence Name="" ID="{614F2BA0-9308-42BE-B54C-D3A9FEBC8890}">
+																	<MusicTrackSequence Name="" ID="{49BC2696-9928-4769-AE23-9229894ECFA9}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="Spooky_KenTheme_Draft_1" ID="{4ED4BC3D-152C-4F6D-8216-15E28BA5B606}">
+																						<MusicClip Name="Spooky_KenTheme" ID="{47196EA6-86CA-4E1E-9FAE-7FA0C8BDC0E1}">
 																							<PropertyList>
-																								<Property Name="EndTrimOffset" Type="Real64" Value="78712.0861678004"/>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="75739.9319727891"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
 																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="Spooky_KenTheme_Draft_1" ID="{06601CD2-F10E-49CC-ADC1-510CB27FBE0B}"/>
+																							<AudioSourceRef Name="Spooky_KenTheme" ID="{DBA2D25F-194C-4A20-B3FB-61339EADEC86}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -390,7 +391,7 @@
 															<MusicCue Name="Exit Cue" ID="{F5A2E151-E7A3-4563-B6E2-CD6B300CC2DF}">
 																<PropertyList>
 																	<Property Name="CueType" Type="int16" Value="1"/>
-																	<Property Name="TimeMs" Type="Real64" Value="72000"/>
+																	<Property Name="TimeMs" Type="Real64" Value="69677.4193548387"/>
 																</PropertyList>
 															</MusicCue>
 														</Local>
@@ -455,23 +456,23 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicTrack Name="Spooky_MyrtleTheme" ID="{7FE8055B-7674-426E-BFEB-189B01299834}" ShortID="928012218">
+												<MusicTrack Name="Spooky_MyrtleTheme" ID="{8B660472-4C15-4A72-B7AE-3619B0E8AFB7}" ShortID="786855803">
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Spooky_MyrtleTheme_Draft_1" ID="{D8529740-832E-4546-BDE9-9FBD662C22FD}">
+														<AudioFileSource Name="Spooky_MyrtleTheme" ID="{91039E03-DA57-46EE-BA40-3A71F9D573C3}">
 															<Language>SFX</Language>
-															<AudioFile>Spooky_MyrtleTheme_Draft_1.wav</AudioFile>
+															<AudioFile>Spooky_MyrtleTheme.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="520901426"/>
+																<MediaID ID="943329430"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
-														<MusicTransition Name="Root" ID="{34A67875-3F22-4296-96DF-65E36B62346F}">
+														<MusicTransition Name="Root" ID="{F96982FF-830A-4D72-B5C9-E66D7920B630}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -482,18 +483,18 @@
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
-																	<MusicTrackSequence Name="" ID="{9A347B49-83E8-4111-A66A-FC97CF1BD95D}">
+																	<MusicTrackSequence Name="" ID="{D811C7A0-5E77-4EE9-B231-B894DBB0AA63}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="Spooky_MyrtleTheme_Draft_1" ID="{9966FF1C-95CF-4C00-815A-A02FF8DFED81}">
+																						<MusicClip Name="Spooky_MyrtleTheme" ID="{8EAE8160-8ECC-4380-A98E-47818FC555D9}">
 																							<PropertyList>
-																								<Property Name="EndTrimOffset" Type="Real64" Value="78712.0861678004"/>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="75739.9319727891"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
-																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="5342.73039497303"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="Spooky_MyrtleTheme_Draft_1" ID="{D8529740-832E-4546-BDE9-9FBD662C22FD}"/>
+																							<AudioSourceRef Name="Spooky_MyrtleTheme" ID="{91039E03-DA57-46EE-BA40-3A71F9D573C3}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -518,7 +519,7 @@
 															<MusicCue Name="Exit Cue" ID="{80785C20-0B29-4964-B8AC-7020448A8D4B}">
 																<PropertyList>
 																	<Property Name="CueType" Type="int16" Value="1"/>
-																	<Property Name="TimeMs" Type="Real64" Value="72000"/>
+																	<Property Name="TimeMs" Type="Real64" Value="69677.4193548387"/>
 																</PropertyList>
 															</MusicCue>
 														</Local>
@@ -572,7 +573,7 @@
 									<ChildrenList>
 										<MusicSegment Name="Spooky_ChrysanthaTheme" ID="{CF8B15BF-0D7F-42E1-AEDA-06F827E14CE1}" ShortID="909757053">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="78706.0997732426"/>
+												<Property Name="EndPosition" Type="Real64" Value="154446.031746032"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -583,23 +584,23 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicTrack Name="Spooky_ChrysanthaTheme" ID="{1455628B-D3D2-4966-9B87-544498B05C01}" ShortID="979733295">
+												<MusicTrack Name="Spooky_ChrysanthaTheme" ID="{809767AD-ACD8-466C-9D13-0FC1573CB844}" ShortID="65058264">
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Spooky_ChrysanthaTheme_Draft_1" ID="{0ED9086B-C5B8-4480-8E7D-64F63F1BF221}">
+														<AudioFileSource Name="Spooky_ChrysanthaTheme" ID="{3B9077C6-8743-4E73-9D29-A675B19A0403}">
 															<Language>SFX</Language>
-															<AudioFile>Spooky_ChrysanthaTheme_Draft_1.wav</AudioFile>
+															<AudioFile>Spooky_ChrysanthaTheme.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="294587160"/>
+																<MediaID ID="1064088409"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
-														<MusicTransition Name="Root" ID="{6D599AD4-F9BC-424E-8109-2680D3914920}">
+														<MusicTransition Name="Root" ID="{0B8C81B2-D070-4DC2-810D-D60E6E22CC65}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -610,18 +611,18 @@
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
-																	<MusicTrackSequence Name="" ID="{F2DAB58E-C5E2-4218-9820-519FB3269754}">
+																	<MusicTrackSequence Name="" ID="{23CAF798-DFEF-4A32-A5F4-AFACA5263A0C}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="Spooky_ChrysanthaTheme_Draft_1" ID="{29508F35-4E68-4D1B-B1C1-9B0A80818B33}">
+																						<MusicClip Name="Spooky_ChrysanthaTheme" ID="{42A2AFEE-62D0-4808-93DA-EBBCA9E67D50}">
 																							<PropertyList>
-																								<Property Name="EndTrimOffset" Type="Real64" Value="78706.0997732426"/>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="75739.9319727891"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
-																								<Property Name="FadeOutDuration" Type="Real64" Value="6522.60495358364"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="Spooky_ChrysanthaTheme_Draft_1" ID="{0ED9086B-C5B8-4480-8E7D-64F63F1BF221}"/>
+																							<AudioSourceRef Name="Spooky_ChrysanthaTheme" ID="{3B9077C6-8743-4E73-9D29-A675B19A0403}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -646,7 +647,7 @@
 															<MusicCue Name="Exit Cue" ID="{78CF24FB-953E-4610-AA93-E5A586F6B4FD}">
 																<PropertyList>
 																	<Property Name="CueType" Type="int16" Value="1"/>
-																	<Property Name="TimeMs" Type="Real64" Value="72000"/>
+																	<Property Name="TimeMs" Type="Real64" Value="69677.4193548387"/>
 																</PropertyList>
 															</MusicCue>
 														</Local>
@@ -711,23 +712,23 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicTrack Name="Spooky_VTheme" ID="{AF1B97D6-C9E1-47D2-8B37-C6E308B6B24D}" ShortID="503801282">
+												<MusicTrack Name="Spooky_VTheme" ID="{E97F8846-287A-488D-83E4-917E339A43CB}" ShortID="783498547">
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Spooky_VTheme_Draft_1" ID="{74106915-E47B-421C-876B-84EE7344D02A}">
+														<AudioFileSource Name="Spooky_VTheme" ID="{30E08F3E-32C0-47AE-8385-0A8A49110471}">
 															<Language>SFX</Language>
-															<AudioFile>Spooky_VTheme_Draft_1.wav</AudioFile>
+															<AudioFile>Spooky_VTheme.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="11164527"/>
+																<MediaID ID="668347524"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
-														<MusicTransition Name="Root" ID="{28648FD7-C79D-45C1-A298-6F6B30A32CD9}">
+														<MusicTransition Name="Root" ID="{DF3CD083-10AF-49AF-A240-AE31AA1B6700}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -738,18 +739,18 @@
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
-																	<MusicTrackSequence Name="" ID="{FAB7B4F7-8442-49ED-A67D-D97291D10107}">
+																	<MusicTrackSequence Name="" ID="{D0906DC7-2EDD-4DAA-A8B5-D9DBB0B40B41}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="Spooky_VTheme_Draft_1" ID="{6D1DFED4-C4B8-4F44-A835-68275A019B6E}">
+																						<MusicClip Name="Spooky_VTheme" ID="{A486E2EB-A67D-431F-87BD-ACCDCF11644B}">
 																							<PropertyList>
-																								<Property Name="EndTrimOffset" Type="Real64" Value="78706.0997732426"/>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="75739.9319727891"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
-																								<Property Name="FadeOutDuration" Type="Real64" Value="6087.76462334474"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="Spooky_VTheme_Draft_1" ID="{74106915-E47B-421C-876B-84EE7344D02A}"/>
+																							<AudioSourceRef Name="Spooky_VTheme" ID="{30E08F3E-32C0-47AE-8385-0A8A49110471}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -774,7 +775,7 @@
 															<MusicCue Name="Exit Cue" ID="{B5F989F5-D5D3-4424-8C11-67E221168D51}">
 																<PropertyList>
 																	<Property Name="CueType" Type="int16" Value="1"/>
-																	<Property Name="TimeMs" Type="Real64" Value="72000"/>
+																	<Property Name="TimeMs" Type="Real64" Value="69677.4193548387"/>
 																</PropertyList>
 															</MusicCue>
 														</Local>
@@ -839,23 +840,23 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicTrack Name="Spooky_JowanTheme" ID="{B47C8B33-C77B-4923-83DD-D22F37171462}" ShortID="652542705">
+												<MusicTrack Name="Spooky_JowanTheme" ID="{5FBF96FB-9803-48C6-A22B-C7FBABFC3E51}" ShortID="1015247891">
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Spooky_JowanTheme_Draft_1" ID="{BAD3186C-4AEB-415F-8F28-5B164D0C849E}">
+														<AudioFileSource Name="Spooky_JowanTheme" ID="{0204DA44-CE58-4F9B-A74D-713B94B181B9}">
 															<Language>SFX</Language>
-															<AudioFile>Spooky_JowanTheme_Draft_1.wav</AudioFile>
+															<AudioFile>Spooky_JowanTheme.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="339010008"/>
+																<MediaID ID="136651003"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
-														<MusicTransition Name="Root" ID="{958EE9A4-69F6-4F1A-9D0A-CDD96A69F4ED}">
+														<MusicTransition Name="Root" ID="{14005E09-EC79-4C93-8F2F-114D63459BBC}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -866,18 +867,18 @@
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
-																	<MusicTrackSequence Name="" ID="{AF7BA9EA-2348-44FA-A85D-1ABF9CD82033}">
+																	<MusicTrackSequence Name="" ID="{B32BB58E-FA84-4AF7-ADBE-1D4E2A257114}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="Spooky_JowanTheme_Draft_1" ID="{1D52E2FF-5D92-42BE-9C92-F3AA141F46EE}">
+																						<MusicClip Name="Spooky_JowanTheme" ID="{9B7A221D-93FC-498A-98CD-24E2A55DD634}">
 																							<PropertyList>
-																								<Property Name="EndTrimOffset" Type="Real64" Value="78706.0997732426"/>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="75739.9319727891"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
-																								<Property Name="FadeOutDuration" Type="Real64" Value="5652.92429310583"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="Spooky_JowanTheme_Draft_1" ID="{BAD3186C-4AEB-415F-8F28-5B164D0C849E}"/>
+																							<AudioSourceRef Name="Spooky_JowanTheme" ID="{0204DA44-CE58-4F9B-A74D-713B94B181B9}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -902,7 +903,7 @@
 															<MusicCue Name="Exit Cue" ID="{51D9CF8F-F9F6-43D2-80E2-982549852A50}">
 																<PropertyList>
 																	<Property Name="CueType" Type="int16" Value="1"/>
-																	<Property Name="TimeMs" Type="Real64" Value="72000"/>
+																	<Property Name="TimeMs" Type="Real64" Value="69677.4193548387"/>
 																</PropertyList>
 															</MusicCue>
 														</Local>
@@ -961,7 +962,7 @@
 									<ChildrenList>
 										<MusicSegment Name="Spirit_MainTheme" ID="{EF4535EC-2050-4648-BC7B-A5B7B87839DC}" ShortID="485741504">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="57856.0090702948"/>
+												<Property Name="EndPosition" Type="Real64" Value="61742.0861678005"/>
 												<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 												<Property Name="Tempo" Type="Real64" Value="125"/>
 											</PropertyList>
@@ -974,14 +975,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicTrack Name="Spirit_MainTheme" ID="{FE004B85-4774-4AEE-9501-86D3B92C02F8}" ShortID="111460342">
+												<MusicTrack Name="Spirit_MainTheme" ID="{9D7B9082-E0CF-4C05-9733-238BAE8C48BE}" ShortID="959036245">
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Spirit_MainTheme" ID="{266C5C32-CD37-485D-9AC0-FF328579DCC2}">
+														<AudioFileSource Name="Spirit_MainTheme" ID="{D1B5B960-A6BE-4C36-A974-0E41B56D0428}">
 															<Language>SFX</Language>
 															<AudioFile>Spirit_MainTheme.wav</AudioFile>
 															<MediaIDList>
@@ -990,7 +991,7 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
-														<MusicTransition Name="Root" ID="{DB12EA99-8880-4939-BA0A-7EFEDC1A427E}">
+														<MusicTransition Name="Root" ID="{7847E53A-0062-46E1-A3BB-D8E528B74D57}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1001,18 +1002,79 @@
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
-																	<MusicTrackSequence Name="" ID="{219DE6B3-D479-4025-8759-F74F139DFD25}">
+																	<MusicTrackSequence Name="" ID="{28201CDD-3038-445C-8EC3-8EE19D15E394}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="Spirit_MainTheme" ID="{7DCC82A9-FBC1-4854-8500-4C6DD4F214D6}">
+																						<MusicClip Name="Spirit_MainTheme" ID="{98DA25DE-60AB-4F44-AAC6-85B60D9C7A39}">
 																							<PropertyList>
-																								<Property Name="EndTrimOffset" Type="Real64" Value="57856.0090702948"/>
+																								<Property Name="BeginTrimOffset" Type="Real64" Value="1920"/>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="59342.0861678005"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
-																								<Property Name="FadeOutDuration" Type="Real64" Value="3193.94371839167"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																								<Property Name="PlayAt" Type="Real64" Value="-1874.3722325944"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="Spirit_MainTheme" ID="{266C5C32-CD37-485D-9AC0-FF328579DCC2}"/>
+																							<AudioSourceRef Name="Spirit_MainTheme" ID="{D1B5B960-A6BE-4C36-A974-0E41B56D0428}"/>
+																							<PropertyCurveList>
+																								<PropertyCurve PropertyName="Highpass">
+																									<Curve Name="" ID="{8518D8CF-30EB-4E0D-B291-92D0151AA97E}">
+																										<PropertyList>
+																											<Property Name="Flags" Type="int32" Value="1"/>
+																										</PropertyList>
+																										<PointList>
+																											<Point>
+																												<XPos>1.92</XPos>
+																												<YPos>0</YPos>
+																												<Flags>5</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>59.3420861678005</XPos>
+																												<YPos>0</YPos>
+																												<Flags>37</Flags>
+																											</Point>
+																										</PointList>
+																									</Curve>
+																								</PropertyCurve>
+																								<PropertyCurve PropertyName="Lowpass">
+																									<Curve Name="" ID="{2A48D737-B463-495B-9DFB-6FF8D6D480BC}">
+																										<PropertyList>
+																											<Property Name="Flags" Type="int32" Value="1"/>
+																										</PropertyList>
+																										<PointList>
+																											<Point>
+																												<XPos>1.92</XPos>
+																												<YPos>0</YPos>
+																												<Flags>5</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>59.3420861678005</XPos>
+																												<YPos>0</YPos>
+																												<Flags>37</Flags>
+																											</Point>
+																										</PointList>
+																									</Curve>
+																								</PropertyCurve>
+																								<PropertyCurve PropertyName="Volume">
+																									<Curve Name="" ID="{484329CD-7540-4FFE-B03B-3FF0A9D8ECD7}">
+																										<PropertyList>
+																											<Property Name="Flags" Type="int32" Value="3"/>
+																										</PropertyList>
+																										<PointList>
+																											<Point>
+																												<XPos>1.92</XPos>
+																												<YPos>0</YPos>
+																												<Flags>5</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>59.3420861678005</XPos>
+																												<YPos>0</YPos>
+																												<Flags>37</Flags>
+																											</Point>
+																										</PointList>
+																									</Curve>
+																								</PropertyCurve>
+																							</PropertyCurveList>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -1029,7 +1091,11 @@
 												<ObjectList Name="Cues">
 													<Reference>
 														<Local>
-															<MusicCue Name="Entry Cue" ID="{2DD3C39E-0B26-47EF-80F7-F76D9266C83A}"/>
+															<MusicCue Name="Entry Cue" ID="{2DD3C39E-0B26-47EF-80F7-F76D9266C83A}">
+																<PropertyList>
+																	<Property Name="TimeMs" Type="Real64" Value="45.6277674055953"/>
+																</PropertyList>
+															</MusicCue>
 														</Local>
 													</Reference>
 													<Reference>
@@ -1037,7 +1103,7 @@
 															<MusicCue Name="Exit Cue" ID="{DF91E046-5DD0-4A2D-BB2B-045DE60CB4C3}">
 																<PropertyList>
 																	<Property Name="CueType" Type="int16" Value="1"/>
-																	<Property Name="TimeMs" Type="Real64" Value="53760"/>
+																	<Property Name="TimeMs" Type="Real64" Value="53805.6277674056"/>
 																</PropertyList>
 															</MusicCue>
 														</Local>
@@ -1105,14 +1171,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicTrack Name="Spirit_ChrysanthaTheme" ID="{7AAD8664-AEAD-4DF7-AA04-F8E5BAFB7D6C}" ShortID="558917648">
+												<MusicTrack Name="Spirit_ChrysanthaTheme" ID="{7DACBA0E-499F-4243-AD61-F265A3D5E78C}" ShortID="288205290">
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Spirit_ChrysanthaTheme" ID="{60A53D5D-ED82-4836-8312-F0CEB78EDC6C}">
+														<AudioFileSource Name="Spirit_ChrysanthaTheme" ID="{EC32F84C-58C5-4844-8734-F67365CB05D1}">
 															<Language>SFX</Language>
 															<AudioFile>Spirit_ChrysanthaTheme.wav</AudioFile>
 															<MediaIDList>
@@ -1121,7 +1187,7 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
-														<MusicTransition Name="Root" ID="{A5A73762-7DEE-4DC1-AC0D-A107F8548D7F}">
+														<MusicTransition Name="Root" ID="{9421C5EA-8A5E-4980-BA92-7D61DA6B40A6}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1132,18 +1198,18 @@
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
-																	<MusicTrackSequence Name="" ID="{5BF70660-8ACF-4124-9257-A9C92E87F351}">
+																	<MusicTrackSequence Name="" ID="{E4DA34F2-3CF8-409C-A0B9-746362273F2C}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="Spirit_ChrysanthaTheme" ID="{EFD9BD31-1215-49B9-9C48-AA63470C0E09}">
+																						<MusicClip Name="Spirit_ChrysanthaTheme" ID="{F8F8859B-686D-4B4C-9F74-86B5F4EB0D5A}">
 																							<PropertyList>
-																								<Property Name="EndTrimOffset" Type="Real64" Value="57856.0090702948"/>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="54883.8548752834"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
-																								<Property Name="FadeOutDuration" Type="Real64" Value="3057.06041617489"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="Spirit_ChrysanthaTheme" ID="{60A53D5D-ED82-4836-8312-F0CEB78EDC6C}"/>
+																							<AudioSourceRef Name="Spirit_ChrysanthaTheme" ID="{EC32F84C-58C5-4844-8734-F67365CB05D1}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -1236,14 +1302,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicTrack Name="Spirit_JowanTheme" ID="{1E907F42-1EC3-4E23-9E00-16C54F0DE0F6}" ShortID="860105749">
+												<MusicTrack Name="Spirit_JowanTheme" ID="{A8155FF0-68D4-497A-A3B6-37BF5CFF4B1D}" ShortID="925316080">
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Spirit_JowanTheme" ID="{DA243178-4CED-44FB-96D3-E7FE3EFE1403}">
+														<AudioFileSource Name="Spirit_JowanTheme" ID="{198FDCBA-6AC4-4167-94E6-C752DA1FDD93}">
 															<Language>SFX</Language>
 															<AudioFile>Spirit_JowanTheme.wav</AudioFile>
 															<MediaIDList>
@@ -1252,7 +1318,7 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
-														<MusicTransition Name="Root" ID="{00D5F535-3B54-40F5-BA0E-8332C6393074}">
+														<MusicTransition Name="Root" ID="{15D18F8E-35FE-409F-A712-70DEC97DBC2B}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1263,18 +1329,18 @@
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
-																	<MusicTrackSequence Name="" ID="{7FE0FEA3-A333-4488-89E6-4BB5EE359261}">
+																	<MusicTrackSequence Name="" ID="{F1F19809-7F9A-4D9B-989D-831E3B3C75E7}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="Spirit_JowanTheme" ID="{3FF0B31F-6F62-42E0-A0D6-1C1DA0417C31}">
+																						<MusicClip Name="Spirit_JowanTheme" ID="{078D29AD-52CC-4229-ACEF-6138034797EF}">
 																							<PropertyList>
-																								<Property Name="EndTrimOffset" Type="Real64" Value="57856.0090702948"/>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="54883.8548752834"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
-																								<Property Name="FadeOutDuration" Type="Real64" Value="3650.22139244762"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="Spirit_JowanTheme" ID="{DA243178-4CED-44FB-96D3-E7FE3EFE1403}"/>
+																							<AudioSourceRef Name="Spirit_JowanTheme" ID="{198FDCBA-6AC4-4167-94E6-C752DA1FDD93}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -1367,14 +1433,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MusicTrack Name="Spirit_MyrtleTheme" ID="{EA650D4B-0890-49F0-A7B1-6457E1CC8505}" ShortID="219483768">
+												<MusicTrack Name="Spirit_MyrtleTheme" ID="{A0726A3A-6451-4ED5-A568-D3758C1E20EB}" ShortID="578121075">
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Spirit_MyrtleTheme" ID="{60A2A6E0-446D-4C43-A3C5-5AC89577357C}">
+														<AudioFileSource Name="Spirit_MyrtleTheme" ID="{F5989B56-E8D0-43E5-A7A7-C45CFA9CA616}">
 															<Language>SFX</Language>
 															<AudioFile>Spirit_MyrtleTheme.wav</AudioFile>
 															<MediaIDList>
@@ -1383,7 +1449,7 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
-														<MusicTransition Name="Root" ID="{251DEA70-7A78-4654-B70E-98E060E713FA}">
+														<MusicTransition Name="Root" ID="{723408ED-562C-4590-9C45-968B10BFD00C}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -1394,18 +1460,18 @@
 														<ObjectList Name="Sequences">
 															<Reference>
 																<Local>
-																	<MusicTrackSequence Name="" ID="{CAF9DB46-B2B5-4028-8D82-4DFC1E737D1C}">
+																	<MusicTrackSequence Name="" ID="{F8F27C7C-B39B-4B5E-A415-36BB89B74699}">
 																		<ObjectLists>
 																			<ObjectList Name="Clips">
 																				<Reference>
 																					<Local>
-																						<MusicClip Name="Spirit_MyrtleTheme" ID="{3933F7ED-984A-492C-9328-4AC703B88FE2}">
+																						<MusicClip Name="Spirit_MyrtleTheme" ID="{C7CA758B-B93E-4E44-9D00-E3C874D93844}">
 																							<PropertyList>
 																								<Property Name="EndTrimOffset" Type="Real64" Value="57856.0090702948"/>
 																								<Property Name="FadeInMode" Type="int16" Value="0"/>
-																								<Property Name="FadeOutDuration" Type="Real64" Value="3650.22139244762"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																							</PropertyList>
-																							<AudioSourceRef Name="Spirit_MyrtleTheme" ID="{60A2A6E0-446D-4C43-A3C5-5AC89577357C}"/>
+																							<AudioSourceRef Name="Spirit_MyrtleTheme" ID="{F5989B56-E8D0-43E5-A7A7-C45CFA9CA616}"/>
 																						</MusicClip>
 																					</Local>
 																				</Reference>
@@ -1877,18 +1943,23 @@
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
 											<ObjectRef Name="Spooky_KenTheme" ID="{5F3C5AC4-BD4C-477B-8BE2-2C2693F0165F}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="HumanMainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{EFDC4345-FE29-4240-97CB-D108F60E3B62}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -1911,18 +1982,23 @@
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
 											<ObjectRef Name="Spooky_MyrtleTheme" ID="{CD9303F9-6399-461C-AE7F-7703A714D034}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="HumanMainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{953891EA-3F88-4C63-9959-6E10445F8001}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -1945,18 +2021,23 @@
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
 											<ObjectRef Name="Spooky_JowanTheme" ID="{DD7443BD-2528-4E03-9570-CB41554363B2}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="HumanMainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{7393DA5E-2216-428D-8798-5C27FA634CAF}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -1979,18 +2060,23 @@
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
 											<ObjectRef Name="Spooky_VTheme" ID="{56A5F5A9-9DCF-4A85-A6BD-967982C277A9}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="HumanMainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{5B87B395-C986-4B31-B3C7-5BCB21557522}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2013,18 +2099,23 @@
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
 											<ObjectRef Name="Spooky_ChrysanthaTheme" ID="{CF8B15BF-0D7F-42E1-AEDA-06F827E14CE1}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="HumanMainTheme" ID="{1C63EBED-2D11-423D-8DAB-3286183A0086}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{46F1ED74-5455-4F05-B2E8-A503C325ECE6}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2061,8 +2152,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{D086B76C-AF9A-4E2D-BAD2-27496BE2BF34}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3.5"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2070,7 +2162,7 @@
 										<DestinationFadeIn>
 											<MusicFade Name="Destination Fade-in" ID="{8C1D6A82-FD64-45AD-B7C6-641CD8C09D80}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeOffset" Type="Real64" Value="-2"/>
 													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
@@ -2099,8 +2191,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{A08C5062-99E6-402A-BB53-DFB1C0DBD8DE}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3.5"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2108,7 +2201,7 @@
 										<DestinationFadeIn>
 											<MusicFade Name="Destination Fade-in" ID="{843F7AF0-505C-4883-A440-D9B53B7ACF1B}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeOffset" Type="Real64" Value="-2"/>
 													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
@@ -2137,8 +2230,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{5FE7BF81-4D6E-4B3D-8000-AA737807D1E4}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3.5"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2146,7 +2240,7 @@
 										<DestinationFadeIn>
 											<MusicFade Name="Destination Fade-in" ID="{8F6815C1-C5AD-4182-86BF-5E9EF9E77CD5}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeOffset" Type="Real64" Value="-2"/>
 													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
@@ -2175,8 +2269,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{54ACF80A-9B3C-4D43-8FC9-D398FE33E867}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3.5"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2184,7 +2279,7 @@
 										<DestinationFadeIn>
 											<MusicFade Name="Destination Fade-in" ID="{54704860-0E29-4D41-88BE-E5F742CBE7CA}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeOffset" Type="Real64" Value="-2"/>
 													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
@@ -2213,8 +2308,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{F83BB52E-8748-4743-AB98-52662654DD70}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="3.5"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2222,7 +2318,7 @@
 										<DestinationFadeIn>
 											<MusicFade Name="Destination Fade-in" ID="{8E3E0A21-A84E-4996-B887-EA9C3156736F}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeOffset" Type="Real64" Value="-2"/>
 													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
@@ -2251,8 +2347,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{9EDD305E-2B28-4EB1-811D-0743CF0690F3}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2289,8 +2386,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{127629DF-498F-41B5-B6B5-AAB33F801F02}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2327,8 +2425,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{3FEC9F7E-FFF8-41F7-A430-B3B6C0DD2603}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2365,8 +2464,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{162817BD-DF26-4DA4-BF9D-8D1ABFA245D3}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2403,8 +2503,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{9064F2E9-42C3-4E50-850A-D2BF07DF91C4}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2441,8 +2542,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{97B57DD9-A2CF-463B-8E75-D2A43B8CFBEC}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2450,7 +2552,7 @@
 										<DestinationFadeIn>
 											<MusicFade Name="Destination Fade-in" ID="{5346C96D-3D77-40EC-97FD-260BBE4407F6}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeOffset" Type="Real64" Value="-3"/>
 													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
@@ -2479,8 +2581,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{32AF0703-E66C-454C-9C41-DD1E5EC8EFDA}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2488,7 +2591,7 @@
 										<DestinationFadeIn>
 											<MusicFade Name="Destination Fade-in" ID="{43CF95CA-8D9C-4EBF-B2E0-FDF5557A15CD}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeOffset" Type="Real64" Value="-3"/>
 													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
@@ -2517,8 +2620,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{F43DDC03-4047-455E-9297-63BA52A7BB46}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2526,7 +2630,7 @@
 										<DestinationFadeIn>
 											<MusicFade Name="Destination Fade-in" ID="{DB10CD30-4660-4FCF-BBCB-7B5E8C50DDD3}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeOffset" Type="Real64" Value="-3"/>
 													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
@@ -2555,8 +2659,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{2391CE3A-7936-4D83-A8A6-D7D80E5D4FC7}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2564,7 +2669,7 @@
 										<DestinationFadeIn>
 											<MusicFade Name="Destination Fade-in" ID="{08567C12-C335-4E99-B6BE-95868A769B47}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeOffset" Type="Real64" Value="-3"/>
 													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
@@ -2593,8 +2698,9 @@
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{DD41C183-3A86-4978-A8A5-B3773C3CA721}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="1"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="7"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -2602,7 +2708,7 @@
 										<DestinationFadeIn>
 											<MusicFade Name="Destination Fade-in" ID="{F7E067A7-D817-497A-A5C7-2965BAAC321A}">
 												<PropertyList>
-													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeOffset" Type="Real64" Value="-3"/>
 													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
@@ -2681,16 +2787,12 @@
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{92FD5AB0-BB03-474F-9FAC-6170FF0C8099}">
 									<PropertyList>
-										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="Spooky_MainTheme_Intro" ID="{0A42D00D-F6F9-4DE3-B079-9EF74FBF3C19}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
-										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="MenuMusic" ID="{CD3AE6EB-A6DC-4F39-8479-2F913644BADA}" WorkUnitID="{799B66E6-66D0-4130-B9A1-BBABC515EE5A}"/>
 										</Reference>

@@ -22,6 +22,7 @@ public class AnimatronicManager : MonoBehaviour, IAnimatronic, IInteractable
         {
             //Play music
             AkSoundEngine.PostEvent(_musicName, this.gameObject);
+            SettingsManager.Instance.StartPuzzle(10f);
         }
         else
         {

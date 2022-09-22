@@ -6,6 +6,10 @@ public class QuestManager : MonoBehaviour
 {
     static private QuestManager _instance;
     static public QuestManager Instance { get { return _instance;}}
+    [SerializeField] private bool _allQuestsComplete;
+    [SerializeField] private bool _humanQuestsComplete;
+    [SerializeField] private bool _spiritQuestsComplete;
+    [SerializeField] private bool _bossQuestsComplete;
     
     [System.Serializable]
     public class HumanQuest
@@ -33,7 +37,6 @@ public class QuestManager : MonoBehaviour
         public bool[] _bossQuestStepCompleted;
         public bool _bossQuestStarted;
         public bool _bossQuestComplete;
-        public bool _allQuestsComplete;
     }
 
     [SerializeField] private HumanQuest[] _humanQuestList;
@@ -57,7 +60,6 @@ public class QuestManager : MonoBehaviour
         get {return _bossQuestList;}
     }
 
-
     void Awake()
     {
         if(_instance == null)
@@ -72,46 +74,46 @@ public class QuestManager : MonoBehaviour
 
     public void CompleteQuestStepHuman(CharacterWithProgression humanChar)
     {
-        _humanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted[humanChar.StepIndex] = true;
-        int _stepCount = _humanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted.Length;
-        if (_humanQuestList[humanChar.QuestIndex]._humanQuestComplete == true)
+        HumanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted[humanChar.StepIndex] = true;
+        int _stepCount = HumanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted.Length;
+        if (HumanQuestList[humanChar.QuestIndex]._humanQuestComplete == true)
         {
             return;
         }
-        else if (_humanQuestList[humanChar.QuestIndex]._humanQuestComplete != true)
+        else if (HumanQuestList[humanChar.QuestIndex]._humanQuestComplete != true)
         {
             if (humanChar.StepIndex == 0)
             {
                 Debug.Log("Started Quest!");
-                _humanQuestList[humanChar.QuestIndex]._humanQuestStarted = true;
+                HumanQuestList[humanChar.QuestIndex]._humanQuestStarted = true;
                 
-                    _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
+                HumanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
             }
             else if (humanChar.StepIndex == 1)
             {
                 if (humanChar.IsCostumeCollected == true)
                 {
                     Debug.Log("Got the human costume!");
-                    _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
+                    HumanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.GiveCostume);
                 }
                 else 
                 {
-                    _humanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted[humanChar.StepIndex] = false;
+                    HumanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted[humanChar.StepIndex] = false;
                     Debug.Log("No human costume...");
                 }
             }
             else if (humanChar.StepIndex == 2)
             {
                 Debug.Log("Gave the human costume!");
-                _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.AfterGiveCostume);
-                _humanQuestList[humanChar.QuestIndex]._humanQuestComplete = true;
+                HumanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.AfterGiveCostume);
+                HumanQuestList[humanChar.QuestIndex]._humanQuestComplete = true;
             }
             else if (humanChar.StepIndex == 3)
             {
                 Debug.Log("Human Flavor Text uwu");
-                if (_humanQuestList[humanChar.QuestIndex]._humanQuestComplete != true)
+                if (HumanQuestList[humanChar.QuestIndex]._humanQuestComplete != true)
                 {
-                    _humanQuestList[humanChar.QuestIndex]._humanQuestComplete = true; 
+                    HumanQuestList[humanChar.QuestIndex]._humanQuestComplete = true; 
                 }
             }
             
@@ -163,6 +165,9 @@ public class QuestManager : MonoBehaviour
             }
                
         }
+        
+
+
 
     }
 
@@ -171,7 +176,7 @@ public class QuestManager : MonoBehaviour
     {
         _bossQuestList[bossChar.QuestIndex]._bossQuestStepCompleted[bossChar.StepIndex] = true;
         int _stepCount = _bossQuestList[bossChar.QuestIndex]._bossQuestStepCompleted.Length;
-        if (_bossQuestList[bossChar.QuestIndex]._allQuestsComplete == true)
+        if (_allQuestsComplete == true)
         {
             //Indicate the game is over? This would happen after the final dialogue from the boss
         }
@@ -179,7 +184,7 @@ public class QuestManager : MonoBehaviour
         {
             return;
         }
-        else if (_humanQuestList[bossChar.QuestIndex]._humanQuestComplete != true)
+        else if (HumanQuestList[bossChar.QuestIndex]._humanQuestComplete != true)
         {
             if (bossChar.StepIndex == 0)
             {
@@ -192,7 +197,7 @@ public class QuestManager : MonoBehaviour
             {
                 Debug.Log("Played Boss Text!");
                 _bossQuestList[bossChar.QuestIndex]._bossQuestComplete = true;
-                if (_stepCount == 3 && _bossQuestList[bossChar.QuestIndex]._allQuestsComplete == true)
+                if (_allQuestsComplete == true)
                 {
                     _bossQuestList[bossChar.QuestIndex]._currentQuestBoss.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.BossEndGame);
                 }
@@ -214,6 +219,48 @@ public class QuestManager : MonoBehaviour
         _disappearShelf.SetActive(false);
         _myrtleIntroGO.SetActive(false);
         _myrtleGO.SetActive(true);
+    }
+
+    public void CheckForCompletion()
+    {
+        int _humanQuestCount = _humanQuestList.Length;
+        int _spiritQuestCount = _spiritQuestList.Length;
+        int _bossQuestCount = _bossQuestList.Length;
+
+        int _humanQuestsComplete = 0;
+        int _spiritQuestsComplete = 0;
+        int _bossQuestsComplete = 0;
+
+        foreach (HumanQuest hquest in _humanQuestList)
+        {
+            if (hquest._humanQuestComplete == true)
+            {
+                _humanQuestsComplete++;
+            }
+        }
+
+        foreach (SpiritQuest squest in _spiritQuestList)
+        {
+            if (squest._spiritQuestComplete == true)
+            {
+                _spiritQuestsComplete++;
+            }
+        }
+
+        foreach (BossQuest bquest in _bossQuestList)
+        {
+            if (bquest._bossQuestComplete == true)
+            {
+                _bossQuestsComplete++;
+            }
+        }
+
+        if (_humanQuestsComplete == _humanQuestCount && _spiritQuestsComplete == _spiritQuestCount && 
+            _bossQuestsComplete == _bossQuestCount)
+        {
+            _allQuestsComplete = true;
+        }
+
     }
 
         //you might need to add some logic to prevent the skipping of story beats if the player were to pick up a costume too early

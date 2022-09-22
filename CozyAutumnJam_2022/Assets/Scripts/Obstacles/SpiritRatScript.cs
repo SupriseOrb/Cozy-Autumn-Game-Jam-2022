@@ -27,7 +27,7 @@ public class SpiritRatScript : MonoBehaviour
     }
 
 #region Rat Obstacles
-    [SerializeField] private Transform _stopLocation;
+    [SerializeField] private Vector2 _stopLocation;
 #endregion
 
     [SerializeField] private bool _isStopping = false;
@@ -42,7 +42,7 @@ public class SpiritRatScript : MonoBehaviour
         if(other.TryGetComponent(out RatBlockerScript blocker))
         {
             _isStopping = true;
-            _stopLocation = other.GetComponent<RatBlockerScript>().GetStopLocation();
+            _stopLocation = other.GetComponent<RatBlockerScript>().GetStopLocation().position;
         }
         else if(other.TryGetComponent(out SpiderWebObject web) && web.CanTrap)
         {
@@ -59,7 +59,7 @@ public class SpiritRatScript : MonoBehaviour
         if(_isStopping)
         {
             _ratRigidBody.velocity = Vector2.zero;
-            transform.position = Vector3.MoveTowards(transform.position, _stopLocation.position, speed);
+            transform.position = Vector3.MoveTowards(transform.position, _stopLocation, speed);
         }
         if(transform.position.x > _upperBound.position.x || transform.position.x < _lowerBound.position.x || transform.position.y > _upperBound.position.y || transform.position.y < _lowerBound.position.y)
         {
@@ -99,6 +99,7 @@ public class SpiritRatScript : MonoBehaviour
     {
             _ratRigidBody.velocity = Vector2.zero;
             transform.position = _startLocation;
-            transform.position = Vector3.MoveTowards(transform.position, _startLocation, speed);
+            _stopLocation = _startLocation;
+            _isStopping = true;
     }
 }

@@ -14,6 +14,7 @@ public class RatHoleScript : MonoBehaviour, IInteractable
         }
         else if(_spiritRat != null)
         {
+            _spiritRat.ResetRat();
             _spiritRat.StartRunning(SpiritRatScript.Direction.left);
         }
     }

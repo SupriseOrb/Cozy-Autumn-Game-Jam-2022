@@ -93,12 +93,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 522923286830777255, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Name
-      value: CardBase
+      value: PropCardBase
       objectReference: {fileID: 0}
     - target: {fileID: 995620194950515355, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 9143d1559c3a2444790ebcf2be1ba0b9, type: 3}
+    - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: isOracleCard
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9197609479839594100, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite
       value: 

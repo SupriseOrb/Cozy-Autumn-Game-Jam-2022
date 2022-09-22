@@ -115,9 +115,17 @@ PrefabInstance:
       propertyPath: _icon
       value: 
       objectReference: {fileID: 21300000, guid: 8e2b3ad310d10204199c3461be69f38f, type: 3}
+    - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: _hintHolder
+      value: 
+      objectReference: {fileID: 4870603392202412895}
+    - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: _isOracleCard
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5371308869897057536, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: Puts a trap on the player's current location. The trap captures creatures
+      value: Place down a spider web to trap small creatures.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
@@ -142,3 +150,9 @@ MonoBehaviour:
   _spiderWebGO: {fileID: 0}
   _lastWeb: {fileID: 0}
   _spiderWebDetectRadius: 0
+  abilityObtained: 0
+--- !u!1 &4870603392202412895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5878887683700847077, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+  m_PrefabInstance: {fileID: 1297558727022469818}
+  m_PrefabAsset: {fileID: 0}

@@ -115,12 +115,26 @@ PrefabInstance:
       propertyPath: _icon
       value: 
       objectReference: {fileID: 21300000, guid: 632fcb6bcfca64249a5d4b8b15b301c4, type: 3}
+    - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: _hintHolder
+      value: 
+      objectReference: {fileID: 1269093691931929679}
+    - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: _isOracleCard
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5371308869897057536, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: Activate to understand non-humanoid spirits / Interacts with runes
+      value: Activate to automatically translate the speech of non-human beings and
+        unreadable runes.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+--- !u!1 &1269093691931929679 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5878887683700847077, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+  m_PrefabInstance: {fileID: 4614703965163150762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5137326497445895693 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 522923286830777255, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
@@ -142,3 +156,5 @@ MonoBehaviour:
   _runeRadius: 0
   _abilityTranslateCooldown: 1
   _abilityRuneCooldown: 3
+  _vfx: {fileID: 0}
+  abilityObtained: 0

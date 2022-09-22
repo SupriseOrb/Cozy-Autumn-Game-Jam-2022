@@ -7,6 +7,8 @@ public class CardArtImplementation : MonoBehaviour
     [SerializeField] private GameObject _smallVersion;
     [SerializeField] private GameObject _bigVersion;
     [SerializeField] private Sprite _icon;
+    [SerializeField] private bool _isOracleCard;
+    [SerializeField] private GameObject _hintHolder;
     public Sprite Icon
     {
         get{return _icon;}
@@ -22,5 +24,21 @@ public class CardArtImplementation : MonoBehaviour
     {
         _smallVersion.SetActive(true);
         _bigVersion.SetActive(false);
+    }
+
+    public void ShowHint()
+    {
+        if(_isOracleCard)
+        {
+            _hintHolder.SetActive(true);
+        }
+    }
+
+    public void HideHint()
+    {
+        if(_isOracleCard)
+        {
+            _hintHolder.SetActive(false);
+        }
     }
 }

@@ -16,7 +16,6 @@ public class BossCharacterScript : MonoBehaviour, IInteractable
     }
     public void ActivateInteraction()
     {
-        //In the inspector, set to completequeststephuman from questmanager with _characterSO
         DialogueManager.Instance.StartStory(_bossSO.GetStory(), _characterEvent);
         
     }

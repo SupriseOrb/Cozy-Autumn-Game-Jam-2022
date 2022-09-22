@@ -39,6 +39,10 @@ public class QuestManager : MonoBehaviour
     [SerializeField] private HumanQuest[] _humanQuestList;
     [SerializeField] private SpiritQuest[] _spiritQuestList;
     [SerializeField] private BossQuest[] _bossQuestList;
+    [SerializeField] private GameObject _myrtleIntroGO;
+    [SerializeField] private GameObject _myrtleGO;
+    [SerializeField] private GameObject _bossGO;
+    [SerializeField] private GameObject _disappearShelf;
 
     public HumanQuest[] HumanQuestList
     {
@@ -80,15 +84,8 @@ public class QuestManager : MonoBehaviour
             {
                 Debug.Log("Started Quest!");
                 _humanQuestList[humanChar.QuestIndex]._humanQuestStarted = true;
-                if (_stepCount == 1)
-                {
-                    Debug.Log("Intor Myrtle Dialogue Complete!");
-                    _humanQuestList[humanChar.QuestIndex]._humanQuestComplete = true;
-                }
-                else
-                {
+                
                     _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
-                }
             }
             else if (humanChar.StepIndex == 1)
             {
@@ -203,6 +200,22 @@ public class QuestManager : MonoBehaviour
         }   
 
     }
+
+    //TODO: Instead of calling this function directly from the UnityEvent, instead call through the animation transition
+    public void IntroTeleport(DoubleVector2Var teleDistance)
+    {
+        _myrtleIntroGO.transform.position = teleDistance.ValueFirst;
+        PlayerScript.Instance.transform.position = teleDistance.ValueSecond;
+    }
+
+    //TODO: Add Vfx & call through animation transition instead
+    public void IntroEnd()
+    {
+        _disappearShelf.SetActive(false);
+        _myrtleIntroGO.SetActive(false);
+        _myrtleGO.SetActive(true);
+    }
+
         //you might need to add some logic to prevent the skipping of story beats if the player were to pick up a costume too early
         //if stepindex is 0, aka the start. set currentquesthuman story beat to waiting for costume
         //if step index is 1, set currentquestspirit story beat to waitign for costuem

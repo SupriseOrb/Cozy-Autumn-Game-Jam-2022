@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3db17c638b994343af964639e872cc9, type: 3}
   m_Name: Myrtle_Intro
   m_EditorClassIdentifier: 
-  _name: Myrtle Intro
+  _name: Myrtle
   _emotes:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: ce8259d6ee43294409e98b434cd269e7, type: 3}
+  - {fileID: 21300000, guid: e3a32b285673b6c4883679f2356a23a2, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
-  _questIndex: 5
+  _questIndex: 0
   _story:
   - {fileID: 4900000, guid: 2bc717e3329c039429783a34ec673002, type: 3}
   _isTranslatedDefault: 1

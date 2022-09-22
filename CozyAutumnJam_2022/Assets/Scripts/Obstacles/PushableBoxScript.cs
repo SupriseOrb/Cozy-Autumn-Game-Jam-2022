@@ -15,6 +15,7 @@ public class PushableBoxScript : MonoBehaviour
             //Play sound for when box hits wall
             AkSoundEngine.PostEvent(_impactSound, this.gameObject);
             hasStartedMoving = false;
+            Reposition();
             _rb.constraints = RigidbodyConstraints2D.FreezeAll;
         }    
         if(_rb.velocity != Vector2.zero)
@@ -26,5 +27,14 @@ public class PushableBoxScript : MonoBehaviour
     public void StopMoving()
     {
         _rb.constraints = RigidbodyConstraints2D.FreezeAll;
+    }
+
+    public void Reposition()
+    {
+        float currentX = gameObject.transform.position.x;
+        float currentY = gameObject.transform.position.y;
+        currentX = Mathf.Round(currentX * 2) * .5f;
+        currentY = Mathf.Round(currentY * 2) * .5f;
+        gameObject.transform.position = new Vector2(currentX, currentY);
     }
 }

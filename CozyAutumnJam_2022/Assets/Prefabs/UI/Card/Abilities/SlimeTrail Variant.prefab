@@ -99,6 +99,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlimeTrail Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: 'This card seems wet to the touch. Huh
+
+
+        All this candy is blocking
+        your path to the good stuff
+
+
+        This cat looks hungry, maybe all you
+        can get some food so it can move'
+      objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -117,8 +129,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 145ac4ff1cc589e43adc5fb5bdd60767, type: 3}
     - target: {fileID: 5371308869897057536, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: Allows for movement of pushable objects in a single direction until
-        it collides with something
+      value: Push an object forward until it collides with another object.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
@@ -145,3 +156,4 @@ MonoBehaviour:
   _originalDir: {x: 0, y: 0, z: 0}
   _distance: 2
   _abilityCooldown: 0.6
+  abilityObtained: 0

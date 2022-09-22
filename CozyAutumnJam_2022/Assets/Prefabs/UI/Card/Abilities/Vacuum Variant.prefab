@@ -99,6 +99,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vacuum Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: 'This card has a bunch of loose hairs on it, but looks like its missing
+        something. Maybe you should ask one of the customers about it?
+
+
+        Maybe
+        you''ll find something nice if you get all this clutter out of the way
+
+
+        The
+        shelves and aisles are different in both worlds? such a pain'
+      objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -117,7 +130,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: ebc9800efa7983640a1d49325278cd13, type: 3}
     - target: {fileID: 5371308869897057536, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: Removes blockages / terrain / fur / pollen / puddles
+      value: Dispatch obnoxious clutter and blockages in the store.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
@@ -141,3 +154,5 @@ MonoBehaviour:
   _cardInformation: {fileID: 0}
   _vacuumRadius: 1
   _abilityCooldown: 1
+  _vfx: {fileID: 0}
+  abilityObtained: 0

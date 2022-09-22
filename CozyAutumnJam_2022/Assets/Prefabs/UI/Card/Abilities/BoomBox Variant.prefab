@@ -99,6 +99,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoomBox Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: 'This card seems like its missing something fun.
+
+
+        Is that chest
+        playing a song? I dont know any key that would fit that type of lock, maybe
+        theres another way to open it
+
+
+        Another musical chest? And these
+        music boxes wont make any sound though, maybe they need power.'
+      objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -117,7 +130,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 54112002efafee94c916ccbd23ca9797, type: 3}
     - target: {fileID: 5371308869897057536, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: Plays a sound of an animatronic when used in front of one
+      value: Activate music blocks to play some soulful music.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
@@ -140,4 +153,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cardInformation: {fileID: 0}
   _boomBoxRadius: 0
+  _distance: 2
   _abilityCooldown: 1
+  abilityObtained: 0

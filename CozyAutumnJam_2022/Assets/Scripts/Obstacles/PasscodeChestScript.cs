@@ -16,7 +16,7 @@ public class PasscodeChestScript : MonoBehaviour, IInteractable
         _inputCorrectCode = true;
         _currentCodeIndex = 0;
         //Start chest dialogue
-        DialogueManager.Instance.StartStory(_chestDialogue);
+        DialogueManager.Instance.StartStory(_chestDialogue, this, false);
     }
 
     //Is called by the dialogue choice buttons

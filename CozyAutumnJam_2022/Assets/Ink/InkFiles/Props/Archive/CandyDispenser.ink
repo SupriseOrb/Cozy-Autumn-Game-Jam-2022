@@ -1,4 +1,4 @@
-﻿#char none
+#char none
 (A candy dispenser.)
 
 #char cleo

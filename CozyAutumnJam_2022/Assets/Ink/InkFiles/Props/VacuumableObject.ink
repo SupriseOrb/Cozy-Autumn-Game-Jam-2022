@@ -1,4 +1,4 @@
-﻿#char none
+#char none
 (Rubbish.)
 
 #char cleo

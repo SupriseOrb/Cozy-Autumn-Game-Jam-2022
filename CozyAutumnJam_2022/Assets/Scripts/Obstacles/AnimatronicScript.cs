@@ -10,6 +10,8 @@ public class AnimatronicScript : MonoBehaviour, IAnimatronic
     [SerializeField] private AnimatronicManager _managerScript;
     [SerializeField] private SpiritRatScript _ratScript = null;
     [SerializeField] private SpiritRatScript.Direction _runDirection;
+    [SerializeField] private Sprite _unpoweredSprite;
+    [SerializeField] private Sprite _poweredSprite;
 
     public void ActivateAnimatronic()
     {
@@ -39,5 +41,13 @@ public class AnimatronicScript : MonoBehaviour, IAnimatronic
     public void SetPowerOfAnimatronic(bool power)
     {
         _isPowered = power;
+        if(_isPowered)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = _poweredSprite;
+        }
+        else
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = _unpoweredSprite;
+        }
     }
 }

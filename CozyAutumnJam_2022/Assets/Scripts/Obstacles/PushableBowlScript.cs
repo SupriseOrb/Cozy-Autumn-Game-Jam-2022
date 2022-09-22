@@ -6,10 +6,12 @@ public class PushableBowlScript : MonoBehaviour, IPressurePalatable
 {
     [SerializeField] private int maxCandies = 3;
     [SerializeField] private int currentCandies = 0;
+    [SerializeField] private GameObject[] groceries;
     public void ActivatePlate()
     {
         if(currentCandies < maxCandies)
         {
+            groceries[currentCandies].SetActive(true);
             currentCandies++;
         }
         else

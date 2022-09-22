@@ -99,6 +99,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoomBox Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: 'This card seems like its missing something fun.
+
+
+        Is that chest
+        playing a song? I dont know any key that would fit that type of lock, maybe
+        theres another way to open it
+
+
+        Another musical chest? And these
+        music boxes wont make any sound though, maybe they need power.'
+      objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -115,14 +128,6 @@ PrefabInstance:
       propertyPath: _icon
       value: 
       objectReference: {fileID: 21300000, guid: 54112002efafee94c916ccbd23ca9797, type: 3}
-    - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
-      propertyPath: _hintHolder
-      value: 
-      objectReference: {fileID: 7052504056925276920}
-    - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
-      propertyPath: _isOracleCard
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5371308869897057536, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
       value: Activate music blocks to play some soulful music.
@@ -151,8 +156,3 @@ MonoBehaviour:
   _distance: 2
   _abilityCooldown: 1
   abilityObtained: 0
---- !u!1 &7052504056925276920 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5878887683700847077, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
-  m_PrefabInstance: {fileID: 3479459666354780957}
-  m_PrefabAsset: {fileID: 0}

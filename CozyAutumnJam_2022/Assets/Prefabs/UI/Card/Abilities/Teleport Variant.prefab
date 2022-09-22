@@ -99,6 +99,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teleport Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: What are you doing looking at this card? You need to go find your boss!
+        What do you think is in that glowing closet in the back?
+      objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -115,10 +120,6 @@ PrefabInstance:
       propertyPath: _icon
       value: 
       objectReference: {fileID: 21300000, guid: 097c5b3c9a42d27408e1258f76b1c32b, type: 3}
-    - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
-      propertyPath: _hintHolder
-      value: 
-      objectReference: {fileID: 7525648648712256702}
     - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: _isOracleCard
       value: 1
@@ -154,8 +155,3 @@ MonoBehaviour:
   _abilityCooldown: 0.6
   _vfx: {fileID: 0}
   abilityObtained: 0
---- !u!1 &7525648648712256702 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5878887683700847077, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
-  m_PrefabInstance: {fileID: 4172154740232949083}
-  m_PrefabAsset: {fileID: 0}

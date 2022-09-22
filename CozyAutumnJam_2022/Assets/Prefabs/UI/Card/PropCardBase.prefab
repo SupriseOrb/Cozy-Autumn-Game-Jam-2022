@@ -103,6 +103,26 @@ PrefabInstance:
       propertyPath: isOracleCard
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: _isOracleCard
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640535113143438406, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6685550453658820728, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360812979424941208, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9062149635737002595, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9197609479839594100, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite
       value: 

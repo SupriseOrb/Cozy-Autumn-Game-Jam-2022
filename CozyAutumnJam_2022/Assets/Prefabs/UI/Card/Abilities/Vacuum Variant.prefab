@@ -99,6 +99,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vacuum Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: 'This card has a bunch of loose hairs on it, but looks like its missing
+        something. Maybe you should ask one of the customers about it?
+
+
+        Maybe
+        you''ll find something nice if you get all this clutter out of the way
+
+
+        The
+        shelves and aisles are different in both worlds? such a pain'
+      objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -115,14 +128,6 @@ PrefabInstance:
       propertyPath: _icon
       value: 
       objectReference: {fileID: 21300000, guid: ebc9800efa7983640a1d49325278cd13, type: 3}
-    - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
-      propertyPath: _hintHolder
-      value: 
-      objectReference: {fileID: 6698075300768531312}
-    - target: {fileID: 5279993814901662012, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
-      propertyPath: _isOracleCard
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5371308869897057536, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
       value: Dispatch obnoxious clutter and blockages in the store.
@@ -151,8 +156,3 @@ MonoBehaviour:
   _abilityCooldown: 1
   _vfx: {fileID: 0}
   abilityObtained: 0
---- !u!1 &6698075300768531312 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5878887683700847077, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
-  m_PrefabInstance: {fileID: 964428708012634773}
-  m_PrefabAsset: {fileID: 0}

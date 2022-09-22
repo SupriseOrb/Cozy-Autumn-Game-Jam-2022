@@ -255,6 +255,7 @@ public class DialogueManager : MonoBehaviour
         {
             _nameHolder.SetActive(false);
             _imageHolder.SetActive(false);
+            _currentCharSFXString = "";
         }
         else
         {
@@ -327,12 +328,16 @@ public class DialogueManager : MonoBehaviour
     }
     private IEnumerator TypeSentence(string sentence)
     {
+        string nameForSFX = "";
         //Start character SFX based on the var _currentChar.Name
         // names are lowercase, and spirits version would have _spirit have the person's name
         // e.g. ken, ken_spirit
-        string nameForSFX = _currentCharSFXString.Split('_')[0];
-        nameForSFX = char.ToUpper(nameForSFX[0]) + nameForSFX.Substring(1);
-        AkSoundEngine.PostEvent("Play_Dialogue"+ nameForSFX, this.gameObject);
+        if(_currentCharSFXString!= "")
+        {
+            nameForSFX = _currentCharSFXString.Split('_')[0];
+            nameForSFX = char.ToUpper(nameForSFX[0]) + nameForSFX.Substring(1);
+            AkSoundEngine.PostEvent("Play_Dialogue"+ nameForSFX, this.gameObject);
+        }
 
         _dialogueText.text = "";
 
@@ -346,7 +351,10 @@ public class DialogueManager : MonoBehaviour
         }
 
         //End character SFX
-        AkSoundEngine.PostEvent("Stop_Dialogue"+ nameForSFX, this.gameObject);
+        if(_currentCharSFXString!="")
+        {
+            AkSoundEngine.PostEvent("Stop_Dialogue"+ nameForSFX, this.gameObject);
+        }
         ParseChoices();
     }
 

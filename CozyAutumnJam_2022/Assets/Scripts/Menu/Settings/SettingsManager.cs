@@ -17,6 +17,7 @@ public class SettingsManager : MonoBehaviour
     [SerializeField] private Slider _musicSlider;
     [SerializeField] private Slider _sfxSlider;
     [SerializeField] private Slider _ambianceSlider;
+    private IEnumerator _musicCoroutine;
     private static string _all = "AllVolume";
     private static string _music = "MusicVolume";
     private static string _sfx = "SFXVolume";
@@ -98,9 +99,18 @@ public class SettingsManager : MonoBehaviour
 
     public void StartPuzzle(float delay = 0)
     {
+        if (_musicCoroutine != null)
+        {
+            StopCoroutine(_musicCoroutine);
+            
+        }
+        else
+        {
+            AkSoundEngine.SetRTPCValue(_music, GetVolume(_musicSlider.value/3));
+        }
         // Set music slider to 30 % of current volume
-        AkSoundEngine.SetRTPCValue(_music, GetVolume(_musicSlider.value/3));
-        StartCoroutine(DelayEndPuzzle(delay));
+        _musicCoroutine =DelayEndPuzzle(delay);
+        StartCoroutine(_musicCoroutine);
     }
     private IEnumerator DelayEndPuzzle(float delay)
     {
@@ -110,6 +120,7 @@ public class SettingsManager : MonoBehaviour
 
     private void EndPuzzle()
     {
+        _musicCoroutine = null;
         // Set music slider back 
         AkSoundEngine.SetRTPCValue(_music, GetVolume(_musicSlider.value));
     }

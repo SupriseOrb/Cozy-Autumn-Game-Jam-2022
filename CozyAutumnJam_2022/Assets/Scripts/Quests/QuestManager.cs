@@ -7,9 +7,6 @@ public class QuestManager : MonoBehaviour
     static private QuestManager _instance;
     static public QuestManager Instance { get { return _instance;}}
     [SerializeField] private bool _allQuestsComplete;
-    [SerializeField] private bool _humanQuestsComplete;
-    [SerializeField] private bool _spiritQuestsComplete;
-    [SerializeField] private bool _bossQuestsComplete;
     
     [System.Serializable]
     public class HumanQuest

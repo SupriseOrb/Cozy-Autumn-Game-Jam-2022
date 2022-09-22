@@ -76,6 +76,9 @@
 						<Bus Name="Music" ID="{4A30EDBD-E77E-45B7-BB86-90268060F0CB}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{E1467AEB-0512-4DF2-8BDD-7CA1B9861644}" ShortID="970479429">
 											<ReferenceList>

@@ -328,6 +328,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_CostumeGet" ID="{24314A1B-2D58-43C0-AFCE-497490BEE91F}">
+									<ChildrenList>
+										<Action Name="" ID="{A33340D1-46DB-4204-A319-0A5B4E6D92B5}" ShortID="270939335">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CostumeGet" ID="{E3E87A9C-E9CD-44CF-9F02-0C3C9583E6EC}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Card Ability SFX" ID="{99B0A793-C7FC-467B-82B9-6A4AB8562CEC}" ShortID="331327853">

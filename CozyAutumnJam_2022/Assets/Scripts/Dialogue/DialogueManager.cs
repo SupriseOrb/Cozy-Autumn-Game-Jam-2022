@@ -18,8 +18,6 @@ public class DialogueManager : MonoBehaviour
     public const string ANIMATRONIC_ACTIVATED = "activated";
     public const string CHEST_OPEN = "open";
     public const string TRANSLATED = "has_translator";
-    public const string GOT_COSTUME_REQUEST = "gotten_costume_request";
-    public const string GAVE_COSTUME = "gave_costume";
     #endregion
 
     public void StartStoryViaButton(TextAsset inkFile)
@@ -37,9 +35,10 @@ public class DialogueManager : MonoBehaviour
         StartStoryHelper(inkFile, endEvent: endEvent, varName: varName, varValue: varValue);
     }
 
-    public void StartStory(TextAsset inkFile, PasscodeChestScript chest, UnityEvent endEvent = null)
+    // TODO, specicially for chest
+    public void StartStory(TextAsset inkFile, PasscodeChestScript chest, bool varValue, UnityEvent endEvent = null)
     {
-        StartStoryHelper(inkFile, endEvent, chest);
+        StartStoryHelper(inkFile, endEvent:endEvent, chest:chest, varValue:varValue, varName:CHEST_OPEN);
     }
 
     public enum PuzzleStatus

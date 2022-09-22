@@ -1,1 +1,1 @@
-﻿{"inkVersion":20,"root":[[{"#":"char jowan"},"^How do you think I'd look in a Dracula costume?","\n",{"#":"char jay"},"^I think you'd look great!","\n",{"#":"char jowan"},"^R-really?","\n","end",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}
+﻿{"inkVersion":20,"root":[[{"#":"char jowan"},{"#":"music HumanJowan"},"^How do you think I'd look in a Dracula costume?","\n",{"#":"char jay"},"^I think you'd look great!","\n",{"#":"char jowan"},{"#":"emotion happy"},"^R-really?","\n","end",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}

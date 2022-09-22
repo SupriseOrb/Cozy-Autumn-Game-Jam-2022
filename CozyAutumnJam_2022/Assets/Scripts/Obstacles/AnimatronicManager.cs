@@ -8,6 +8,7 @@ public class AnimatronicManager : MonoBehaviour, IAnimatronic, IInteractable
     [SerializeField] private bool[] _songsPlayedInOrder;
     [SerializeField] private bool _songComplete = false;
     [SerializeField] GameObject _costume;
+    [SerializeField] private GameObject _vfx;
 
     // Start is called before the first frame update
     public void ActivateAnimatronic()
@@ -21,10 +22,12 @@ public class AnimatronicManager : MonoBehaviour, IAnimatronic, IInteractable
         {
             //Play music
             AkSoundEngine.PostEvent(_musicName, this.gameObject);
+            SettingsManager.Instance.StartPuzzle(10f);
         }
         else
         {
             //Open Chest
+            Instantiate(_vfx, gameObject.transform.position, Quaternion.identity);
             _costume.SetActive(true);
             gameObject.SetActive(false);
         }

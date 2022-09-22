@@ -70,33 +70,24 @@ MonoBehaviour:
 
     ------------------
 
-    Space - Maximize card
+    I - Minimize/Maximize card
 
-    Escape
-    - Minimize card
-
-    Q/E - Swap cards
+    Q/E
+    - Swap cards
 
     O - Swap decks
 
-    P - Use current
-    card
+    P - Use current card
 
 
-    Pause Menu Controls
-
-    -----------------------------
-
-    Escape
-    - Pause / Resume
-
-
-    Dialogue Controls
+    Other
 
     ------------------------
 
-    Space
-    - Continue Dialogue'
+    Escape
+    - Pause Game
+
+    Space - Interact / Continue Dialogue'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}
   m_sharedMaterial: {fileID: 9198052892992681617, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}
@@ -130,8 +121,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

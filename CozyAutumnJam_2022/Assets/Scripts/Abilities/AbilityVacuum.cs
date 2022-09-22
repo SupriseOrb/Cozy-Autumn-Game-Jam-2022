@@ -10,48 +10,55 @@ public class AbilityVacuum : MonoBehaviour, IAbility
     private Vector3 _offset;
     private bool _isAvailable = true;
     [SerializeField] private float _abilityCooldown = 1f;
+    [SerializeField] private GameObject _vfx;
+    [SerializeField] private bool abilityObtained = false;
 
 
     public void ActivateAbility()
     {
-        if (_isAvailable == false)
+        if(abilityObtained)
         {
-            Debug.Log("Vacuum Ability on cooldown!");
-            return;        
-        }
-        else
-        {
-            _originalPos = PlayerScript.Instance.transform.position;
-            _offset = PlayerScript.Instance.getPlayerDirection();
-            Collider2D[] allColliders = Physics2D.OverlapCircleAll(_originalPos, _vacuumRadius);
-            int trashCount = 0;
-            if (allColliders.Length > 0)
+            if (_isAvailable == false)
             {
-                foreach (Collider2D c in allColliders)
-                {
-                    if (c.TryGetComponent(out ItemTagScript trash))
-                    {
-                        if(c.GetComponent<ItemTagScript>().IsTrash())
-                        {
-                            c.gameObject.SetActive(false);
-                            trashCount++;
-                        }
-                    
-                    }
-                    else {}
-                }
-                if (trashCount == 0)
-                {
-                    Debug.Log("No trash found!");
-                }
-                else
-                {
-                    //Vacuum suck sfx
-                    AkSoundEngine.PostEvent("Play_Vaccuum", this.gameObject);
-                    StartCoroutine(StartCooldown());
-                }
+                Debug.Log("Vacuum Ability on cooldown!");
+                return;        
             }
-        
+            else
+            {   
+                //Vacuum VFX
+                Instantiate(_vfx, PlayerScript.Instance.transform);
+                _originalPos = PlayerScript.Instance.transform.position;
+                _offset = PlayerScript.Instance.getPlayerDirection();
+                Collider2D[] allColliders = Physics2D.OverlapCircleAll(_originalPos, _vacuumRadius);
+                int trashCount = 0;
+                if (allColliders.Length > 0)
+                {
+                    foreach (Collider2D c in allColliders)
+                    {
+                        if (c.TryGetComponent(out ItemTagScript trash))
+                        {
+                            if(c.GetComponent<ItemTagScript>().IsTrash())
+                            {
+                                c.gameObject.SetActive(false);
+                                trashCount++;
+                            }
+                        
+                        }
+                        else {}
+                    }
+                    if (trashCount == 0)
+                    {
+                        Debug.Log("No trash found!");
+                    }
+                    else
+                    {
+                        //Vacuum suck sfx
+                        AkSoundEngine.PostEvent("Play_Vaccuum", this.gameObject);
+                        StartCoroutine(StartCooldown());
+                    }
+                }
+            
+            }
         }
     }
 
@@ -60,6 +67,11 @@ public class AbilityVacuum : MonoBehaviour, IAbility
         _isAvailable = false;
         yield return new WaitForSeconds (_abilityCooldown);
         _isAvailable = true;
+    }
+
+    public void ObtainAbility()
+    {
+        abilityObtained = true;
     }
 
 }

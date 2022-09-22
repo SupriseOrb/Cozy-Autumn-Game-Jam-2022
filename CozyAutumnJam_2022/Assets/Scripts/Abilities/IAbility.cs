@@ -5,4 +5,5 @@ using UnityEngine;
 public interface IAbility
 {
     void ActivateAbility();
+    void ObtainAbility();
 }

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35cd94933f51a014aa84bd0c0db5560b, type: 3}
+  m_Name: IntroTeleport
+  m_EditorClassIdentifier: 
+  _defaultValueFirst: {x: 4.5, y: -13.5}
+  _defaultValueSecond: {x: 4.5, y: -15.8}
+  _currentValueFirst: {x: 4.5, y: -13.5}
+  _currentValueSecond: {x: 4.5, y: -15.8}

@@ -14,12 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Manuel
   _emotes:
-  - {fileID: 0}
-  - {fileID: 0}
-  _currentStoryBeat: 0
+  - {fileID: 21300000, guid: 5f4591305c047ea4899a13d7fad06232, type: 3}
+  - {fileID: 21300000, guid: 0f9b2c16259c38b48915d70ff745aa37, type: 3}
+  _characterID: 0
+  _currentStoryBeat: 1
+  _questIndex: 0
   _story:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4900000, guid: 41ec7842624d81c4a96f644a3f8d61d3, type: 3}
+  - {fileID: 4900000, guid: d6286a898d49a9440ad83987b22d1d61, type: 3}
+  - {fileID: 4900000, guid: 62df7569303a9b9438fca07e15b71215, type: 3}
   _isTranslatedDefault: 1
   _isTranslated: 1
+  _isCostumeCollected: 0

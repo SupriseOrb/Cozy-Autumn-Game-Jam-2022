@@ -1,4 +1,4 @@
-#char jowan
+#char jowan #music HumanJowan
 Hey there!
 
 #char cleo

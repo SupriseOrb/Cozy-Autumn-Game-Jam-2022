@@ -13,6 +13,7 @@ public class PauseMenu : Menu
         {
             AkSoundEngine.PostEvent("PlayMusicStart", this.gameObject);
             _isMusicPlaying.Value = true;
+            Debug.Log("Playing Main Menu Music");
         }
         AkSoundEngine.SetState("Gameplay", "HumanStore");
     }

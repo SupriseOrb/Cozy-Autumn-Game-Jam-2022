@@ -1,4 +1,4 @@
-﻿#char manuel
+#char manuel
 Well done, well done, Cleo!
 
 #char cleo
@@ -8,7 +8,7 @@ Wait, you know about everything I did in that other world?
 Perhaps.
 Perhaps not.
 
-#char cleo
+#char cleo #emotion tired
 Oh, great. This again.
 
 #char manuel
@@ -18,7 +18,7 @@ I'd say considering the circumstances...
 All the customers in the store look so well-taken care of.
 You seem to have done a lot more for them than just finding costumes.
 
-#char cleo
+#char cleo #emotion happy
 Heh... yeah.
 
 #char manuel
@@ -29,7 +29,9 @@ Any different thoughts after your first day?
 #char cleo
 ...
 You know... I like it more than I thought I would.
+#emotion happy
 And, not gonna lie, that alternate dimension is pretty cool.
+#emotion happy
 I think I'm excited to come back and help people out some more tomorrow.
 
 #char manuel

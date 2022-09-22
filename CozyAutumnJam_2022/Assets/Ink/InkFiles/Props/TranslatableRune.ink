@@ -1,4 +1,4 @@
-﻿VAR has_translator = false
+VAR has_translator = false
 
 {has_translator: -> do_translation}
 
@@ -9,6 +9,6 @@
 
 === do_translation ===
 #char none
-(It says "this is placeholder text.")
+(There seems to be a number in place of the rune.)
 
 -> END

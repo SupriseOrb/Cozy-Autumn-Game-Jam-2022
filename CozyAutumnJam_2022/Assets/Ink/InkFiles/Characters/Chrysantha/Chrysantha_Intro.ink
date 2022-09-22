@@ -1,4 +1,4 @@
-#char chrysantha
+#char chrysantha #music HumanCrysantha 
 H-hello.
 
 #char cleo
@@ -11,7 +11,7 @@ Do you know where the lights are?
 #char cleo
 Oh, other side of the store, by the lawn ornaments.
 
-#char chrysantha
+#char chrysantha #emotion happy
 Got it, thanks!
 Do you work here?
 

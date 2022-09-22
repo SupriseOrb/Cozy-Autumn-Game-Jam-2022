@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PowerPlateScript : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D other) 
+    [SerializeField] private GameObject _vfx;
+private void OnTriggerEnter2D(Collider2D other) 
     {
         if(other.TryGetComponent(out AnimatronicScript boomBox))
         {
+            //Play plate vfx
+            Instantiate(_vfx, gameObject.transform.position, Quaternion.identity);            
             //Play plate sfx
             AkSoundEngine.PostEvent("Play_Plate", this.gameObject);
             AkSoundEngine.PostEvent("Play_PowerPlate", this.gameObject);

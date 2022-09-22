@@ -1,4 +1,4 @@
-#char jowan_spirit
+#char jowan_spirit #music SpiritJowan
 Hello...
 
 #char cleo
@@ -28,14 +28,14 @@ Ugh! Stop being so sheepish about everything! Why do you always have to be like 
 #char jowan_spirit
 S-sorry!
 
-#char cleo
+#char cleo #emotion tired
 Hey! What the hell, dude? Why are you talking to him like that?
 
 #char jowan_spirit
 N-no, it's okay...
 I should be better.
 
-#char cleo
+#char cleo #emotion tired
 ...
 I'll try to find a costume for you two.
 

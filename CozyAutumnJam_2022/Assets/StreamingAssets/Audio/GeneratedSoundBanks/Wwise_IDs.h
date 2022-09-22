@@ -35,15 +35,21 @@ namespace AK
         static const AkUniqueID PLAY_DIALOGUEMYRTLE = 3130910329U;
         static const AkUniqueID PLAY_DIALOGUEV = 4285197602U;
         static const AkUniqueID PLAY_ERROR = 2713813216U;
+        static const AkUniqueID PLAY_GROCERYBAGIMPACT = 3491353433U;
+        static const AkUniqueID PLAY_GROCERYITEMDROP = 3055723057U;
+        static const AkUniqueID PLAY_MUSICPUZZLE_SEG1 = 1986454562U;
+        static const AkUniqueID PLAY_MUSICPUZZLE_SEG2 = 1986454561U;
+        static const AkUniqueID PLAY_MUSICPUZZLE_SEG3 = 1986454560U;
+        static const AkUniqueID PLAY_MUSICPUZZLE_SEG4 = 1986454567U;
         static const AkUniqueID PLAY_PLATE = 2790307850U;
         static const AkUniqueID PLAY_PLATERESET = 1914422699U;
         static const AkUniqueID PLAY_POWERPLATE = 1410879499U;
+        static const AkUniqueID PLAY_PUZZLE_MUSIC_FULL = 1658747734U;
         static const AkUniqueID PLAY_RATCAPTURE = 500046663U;
         static const AkUniqueID PLAY_RATSTART = 2450707257U;
         static const AkUniqueID PLAY_SLIMEPUSH = 1953011658U;
         static const AkUniqueID PLAY_SPIDERWEB = 2012702053U;
         static const AkUniqueID PLAY_TELEPORT = 3785065891U;
-        static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
         static const AkUniqueID PLAY_TRANSLATOR = 2539951888U;
         static const AkUniqueID PLAY_UIBACK = 1224305705U;
         static const AkUniqueID PLAY_UIPAUSE = 1830907318U;
@@ -106,7 +112,8 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID MAIN = 3161908922U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BANKS
 
     namespace BUSSES

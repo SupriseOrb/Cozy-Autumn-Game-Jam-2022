@@ -11,26 +11,35 @@ public class AbilitySpiderWeb : MonoBehaviour, IAbility
     [SerializeField] GameObject _lastWeb;
     [SerializeField] float _spiderWebDetectRadius;
     private Quaternion _spiderWebRot;
+    [SerializeField] private bool abilityObtained = false;
 
     public void ActivateAbility()
     {
-        _spiderWebRot = PlayerScript.Instance.transform.rotation;
-        Collider2D[] allColliders = Physics2D.OverlapCircleAll(PlayerScript.Instance.transform.position, _spiderWebDetectRadius);
-        if(allColliders.Length > 0)
+        if(abilityObtained)
         {
-            foreach (Collider2D c in allColliders)
+            _spiderWebRot = PlayerScript.Instance.transform.rotation;
+            Collider2D[] allColliders = Physics2D.OverlapCircleAll(PlayerScript.Instance.transform.position, _spiderWebDetectRadius);
+            if(allColliders.Length > 0)
             {
-                if(c.TryGetComponent(out ItemTagScript trappable) && c.GetComponent<ItemTagScript>().IsTrap())
+                foreach (Collider2D c in allColliders)
                 {
-                    if(_lastWeb != null)
+                    if(c.TryGetComponent(out ItemTagScript trappable) && c.GetComponent<ItemTagScript>().IsTrap())
                     {
-                        Destroy(_lastWeb);
+                        if(_lastWeb != null)
+                        {
+                            Destroy(_lastWeb);
+                        }
+                        _lastWeb = Instantiate(_spiderWebGO, c.transform.position, _spiderWebRot, c.transform);
+                        //Spider web place down sfx
+                        AkSoundEngine.PostEvent("Play_SpiderWeb", this.gameObject);
                     }
-                    _lastWeb = Instantiate(_spiderWebGO, c.transform.position, _spiderWebRot, c.transform);
-                    //Spider web place down sfx
-                    AkSoundEngine.PostEvent("Play_SpiderWeb", this.gameObject);
                 }
             }
         }
+    }
+
+    public void ObtainAbility()
+    {
+        abilityObtained = true;
     }
 }

@@ -13,11 +13,16 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
     private bool _isRuneAvailable = true;
     [SerializeField] private float _abilityTranslateCooldown = 1f;
     [SerializeField] private float _abilityRuneCooldown = 3f;
+    [SerializeField] private GameObject _vfx;
+    [SerializeField] private bool abilityObtained = false;
 
     public void ActivateAbility()
     {
-        Translate();
-        InteractRune();
+        if(abilityObtained)
+        {
+            Translate();
+            InteractRune();
+        }
     }
 
     private void Translate()
@@ -52,6 +57,8 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
                 }
                 else
                 {
+                    //Spirit translator vfx
+                    Instantiate(_vfx, PlayerScript.Instance.transform);            
                     //Spirit translator sfx
                     AkSoundEngine.PostEvent("Play_Translator", this.gameObject);
                     StartCoroutine(StartTranslateCooldown());
@@ -97,6 +104,7 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
                     {
                         if(c.TryGetComponent(out RuneScript floatingRune))
                         {
+                            Instantiate(_vfx, c.transform.position, Quaternion.identity);            
                             c.GetComponent<RuneScript>().TranslateRune();
                         }
                         //Interacts with inky bool variable, sets it to true to start dialogue? Possibly needs to interact
@@ -129,5 +137,10 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
         _isRuneAvailable = false;
         yield return new WaitForSeconds (_abilityRuneCooldown);
         _isRuneAvailable = true;
+    }
+
+    public void ObtainAbility()
+    {
+        abilityObtained = true;
     }
 }

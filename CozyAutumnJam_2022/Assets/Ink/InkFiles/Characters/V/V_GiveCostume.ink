@@ -1,4 +1,4 @@
-#char v
+#char v #music HumanV
 ...Hey.
 
 #char cleo
@@ -15,27 +15,30 @@ Yeah, like I said, a little weird.
 
 #char v
 ...
+#emotion happy
 I think I like it!
 
-#char cleo
+#char cleo #emotion happy
 Really?
 
-#char v
+#char v #emotion happy
 Yeah. It's a bit blobulous and lacking in definite form, but it's also kinda cute.
+#emotion happy
 Like me, I guess.
 ...
 I really need to get on figuring out my identity.
 I don't know if I'm trans or non-binary or what.
 
-#char cleo
+#char cleo 
 Hey, there's no rush.
 
 #char v
 Yeah... I just hate being indecisive about it sometimes.
 Maybe I can learn a bit more about myself by wearing this costume.
+#emotion happy
 Thanks.
 
-#char cleo
+#char cleo #emotion happy
 Sure thing.
 
 -> END

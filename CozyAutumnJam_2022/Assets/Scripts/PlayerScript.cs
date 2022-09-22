@@ -26,6 +26,7 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private InputManager _inputManager;
     [SerializeField] private Vector2 _playerDirection;
+    [SerializeField] private GameObject _fakeMyrtle;
 
     void Awake()
     {
@@ -47,11 +48,21 @@ public class PlayerScript : MonoBehaviour
         if(_moveInput != Vector2.zero)
         {
             _playerDirection = _inputManager.MovementInput;
+            if(_playerDirection.x != 0 && _playerDirection.y != 0)
+            {
+                _playerDirection.x = 0;
+            }
         }
     }
 
     public Vector2 getPlayerDirection()
     {
         return _playerDirection;
+    }
+
+    //DO NOT USE TO MOVE TO SPIRIT WORLD
+    public void IntroTeleport(Vector2 teleportLocation, Vector2 fakeMyrtleLocation)
+    {
+        gameObject.transform.position = teleportLocation;
     }
 }

@@ -5,6 +5,12 @@ using UnityEngine.UI;
 
 public class SettingsManager : MonoBehaviour
 {
+    public static SettingsManager Instance
+    {
+        get{return instance;}
+    }
+    private static SettingsManager instance;
+
     [SerializeField] private Settings _savedSettings;
     [SerializeField] private Settings _defaultSettings; 
     [SerializeField] private Slider _allSlider;
@@ -16,6 +22,17 @@ public class SettingsManager : MonoBehaviour
     private static string _sfx = "SFXVolume";
     private static string _ambiance =  "AmbianceVolume";
 
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
     private void Start()
     {
         LoadPrefs();
@@ -77,5 +94,23 @@ public class SettingsManager : MonoBehaviour
     public void SetAmbianceVolume(float volume)
     {
         AkSoundEngine.SetRTPCValue(_ambiance, GetVolume(volume));
+    }
+
+    public void StartPuzzle(float delay = 0)
+    {
+        // Set music slider to 30 % of current volume
+        AkSoundEngine.SetRTPCValue(_music, GetVolume(_musicSlider.value/3));
+        StartCoroutine(DelayEndPuzzle(delay));
+    }
+    private IEnumerator DelayEndPuzzle(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        EndPuzzle();
+    }
+
+    private void EndPuzzle()
+    {
+        // Set music slider back 
+        AkSoundEngine.SetRTPCValue(_music, GetVolume(_musicSlider.value));
     }
 }

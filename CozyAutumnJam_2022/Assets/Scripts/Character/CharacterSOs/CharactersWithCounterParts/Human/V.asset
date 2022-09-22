@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: V
   _emotes:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 0589968e70107114aa85bd643118042e, type: 3}
+  - {fileID: 21300000, guid: b3934a9976312fd40a88e76e043a7d1f, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
   _questIndex: 3

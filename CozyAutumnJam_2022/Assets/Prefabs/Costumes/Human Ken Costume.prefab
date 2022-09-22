@@ -50,6 +50,7 @@ MonoBehaviour:
   _character: {fileID: 11400000, guid: 0aec6f9edf923ae4ca4c600cc8ae6794, type: 2}
   _costumeCard: {fileID: 0}
   _isSpiritCostume: 0
+  _vfx: {fileID: 3074666689013589529, guid: 55bd0234a69e9b3489d271b7da8912fe, type: 3}
 --- !u!212 &5337049175453018823
 SpriteRenderer:
   m_ObjectHideFlags: 0

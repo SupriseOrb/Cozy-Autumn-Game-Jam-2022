@@ -1,4 +1,4 @@
-#char cleo
+#char cleo #music HumanV
 Uh, hey.
 
 #char v

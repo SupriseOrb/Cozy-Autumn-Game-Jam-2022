@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3db17c638b994343af964639e872cc9, type: 3}
   m_Name: MyrtleS
   m_EditorClassIdentifier: 
-  _name: Myrtle
+  _name: Impish Demon
   _emotes:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 683b058c859487b47b39603c1e60ff42, type: 3}
+  - {fileID: 21300000, guid: 83c70b4bec4f98c4c92b0aa20f797fe2, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
   _questIndex: 1

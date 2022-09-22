@@ -117,11 +117,15 @@ public class DialogueManager : MonoBehaviour
     #endregion
 
     #region Character Info
-    // TODO: Figure out how to do hat off boss
-    private static string[] _emotions = new string[] {"Default", "Happy", "Tired"};
+    /*
+        BossHatOff = Happy;
+    */
+    private static string[] _emotions = new string[] {"default", "happy"};
+    private static string[] _emotionsCleo = new string[] {"default", "happy", "tired", "noUniform", "noUniformTired"};
     [SerializeField] private string[] _characterNames;
     [SerializeField] private CharacterScriptableObject[] _characterInfos;
     private CharacterScriptableObject _currentChar;
+    private String _currentCharSFXString;
     #endregion
 
     void Awake()
@@ -257,11 +261,24 @@ public class DialogueManager : MonoBehaviour
         {
             if(characterIndex >= 0)
             {
+                _currentCharSFXString = charName;
                 _currentChar = _characterInfos[characterIndex];
                 _nameText.text = _currentChar.Name;
             }
+            else if(charName == "None")
+            {
+                _currentCharSFXString = "";
+            }
             
-            int emotionIndex = emotion != "" ? Array.IndexOf(_emotions, emotion) : 0;
+            int emotionIndex;
+            if(_currentChar.Name == "Cleo")
+            {
+                emotionIndex = emotion != "" ? Array.IndexOf(_emotionsCleo, emotion) : 0;
+            }
+            else
+            {
+                emotionIndex = emotion != "" ? Array.IndexOf(_emotions, emotion) : 0;
+            }
             _charImage.sprite = _currentChar.GetEmote(emotionIndex);
 
             _nameHolder.SetActive(true);
@@ -314,7 +331,7 @@ public class DialogueManager : MonoBehaviour
         //Start character SFX based on the var _currentChar.Name
         // names are lowercase, and spirits version would have _spirit have the person's name
         // e.g. ken, ken_spirit
-        string nameForSFX = _currentChar.Name.Split('_')[0];
+        string nameForSFX = _currentCharSFXString.Split('_')[0];
         nameForSFX = char.ToUpper(nameForSFX[0]) + nameForSFX.Substring(1);
         AkSoundEngine.PostEvent("Play_Dialogue"+ nameForSFX, this.gameObject);
 

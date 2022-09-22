@@ -223,7 +223,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Folder Name="Card UI" ID="{6AAD80A5-CC72-4BF5-A85C-CCA18A4307CB}" ShortID="804806355">
+						<Folder Name="Card UI SFX" ID="{6AAD80A5-CC72-4BF5-A85C-CCA18A4307CB}" ShortID="804806355">
 							<ChildrenList>
 								<Event Name="Play_CardPull" ID="{AC004D5D-0225-4E40-8781-F74FA18B7378}">
 									<ChildrenList>
@@ -479,9 +479,31 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_GroceryItemDrop" ID="{77D68CE9-8C78-48B6-91BA-7C170E14562F}">
+									<ChildrenList>
+										<Action Name="" ID="{BA8F0E5C-A794-4D83-B16C-12B6E5CF8740}" ShortID="698774468">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GroceryItemDrop" ID="{99D5C2EC-7314-4DD9-AFD5-D4357FAE24CE}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_GroceryBagImpact" ID="{E3BDE6C1-B7C8-4630-B31B-5CC75C731611}">
+									<ChildrenList>
+										<Action Name="" ID="{E49E7294-DEA4-4671-A5AE-A2857843109D}" ShortID="544042323">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GroceryBagImpact" ID="{553F5DF5-99CC-45CA-B7C3-B200C239CF5B}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="Dialogue" ID="{BD45F560-DFF1-4C12-AFE9-50C9F8F62E11}" ShortID="265815021">
+						<Folder Name="Dialogue SFX" ID="{BD45F560-DFF1-4C12-AFE9-50C9F8F62E11}" ShortID="265815021">
 							<ChildrenList>
 								<Event Name="Stop_DialogueChrysantha" ID="{3AEB8150-7D46-4672-BE21-CA321A134629}">
 									<ChildrenList>
@@ -678,6 +700,65 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="DialogueCleo" ID="{69E6DA75-6415-444B-A27A-872D0C0B8849}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Music Puzzle" ID="{509367D7-30F6-4C0F-9F02-8CF7F8298F21}" ShortID="150570000">
+							<ChildrenList>
+								<Event Name="Play_Puzzle_Music_Full" ID="{FFEBB85E-C6C0-405E-B403-787120E6CC5D}">
+									<ChildrenList>
+										<Action Name="" ID="{BB22C466-34BF-4E57-AF2A-406853793FE8}" ShortID="573109063">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Puzzle_Music_Full" ID="{765AD152-AE97-4E02-9487-712C47EFEBB7}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_MusicPuzzle_Seg2" ID="{4D3D305B-671B-4B08-9B15-64EE4F99456F}">
+									<ChildrenList>
+										<Action Name="" ID="{79ADF987-863D-493B-BC6A-EC9785101786}" ShortID="151232919">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MusicPuzzle_Seg2" ID="{A46A4DBC-D211-4635-9AE4-8B60D9216F07}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_MusicPuzzle_Seg3" ID="{D31AE465-1805-4CA5-BF9E-12984579A082}">
+									<ChildrenList>
+										<Action Name="" ID="{51EC050B-DCD0-4A98-8E61-CF50057B2F1B}" ShortID="992728453">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MusicPuzzle_Seg3" ID="{BE9B4719-956A-44D0-9D46-5B3198691167}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_MusicPuzzle_Seg4" ID="{C50358A4-5824-4AC0-B6B7-3470ECFA96AF}">
+									<ChildrenList>
+										<Action Name="" ID="{A2888D7F-3F99-4516-937D-70A61814CB69}" ShortID="1046255075">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MusicPuzzle_Seg4" ID="{BACDF974-2D9E-42DB-9292-B4562434B1DD}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_MusicPuzzle_Seg1" ID="{06E2077E-A808-4D47-BFA7-0336D19DE6DC}">
+									<ChildrenList>
+										<Action Name="" ID="{EFB96330-9337-401D-A167-BAFA3B642232}" ShortID="796426747">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="MusicPuzzle_Seg1" ID="{4E5FE9EB-B454-435D-A7F9-A8A6B7F57E69}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

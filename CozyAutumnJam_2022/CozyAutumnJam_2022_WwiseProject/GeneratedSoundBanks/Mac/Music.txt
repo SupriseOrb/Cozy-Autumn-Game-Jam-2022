@@ -1,0 +1,61 @@
+Event	ID	Name			Wwise Object Path	Notes
+	46628949	Spirit_Ken			\Default Work Unit\Music Events\Spirit_Ken	
+	384231010	Human_Chrysantha			\Default Work Unit\Music Events\Human_Chrysantha	
+	582752983	Human_V			\Default Work Unit\Music Events\Human_V	
+	658206130	Spirit_Jowan			\Default Work Unit\Music Events\Spirit_Jowan	
+	1068983008	PlayMusicStart			\Default Work Unit\Music Events\PlayMusicStart	
+	1419433896	Spirit_Store			\Default Work Unit\Music Events\Spirit_Store	
+	1658747734	Play_Puzzle_Music_Full			\Default Work Unit\SFX Events\Music Puzzle\Play_Puzzle_Music_Full	
+	1986454560	Play_MusicPuzzle_Seg3			\Default Work Unit\SFX Events\Music Puzzle\Play_MusicPuzzle_Seg3	
+	1986454561	Play_MusicPuzzle_Seg2			\Default Work Unit\SFX Events\Music Puzzle\Play_MusicPuzzle_Seg2	
+	1986454562	Play_MusicPuzzle_Seg1			\Default Work Unit\SFX Events\Music Puzzle\Play_MusicPuzzle_Seg1	
+	1986454567	Play_MusicPuzzle_Seg4			\Default Work Unit\SFX Events\Music Puzzle\Play_MusicPuzzle_Seg4	
+	2005704188	Main_Menu			\Default Work Unit\Music Events\Main_Menu	
+	2630114156	Human_Jowan			\Default Work Unit\Music Events\Human_Jowan	
+	2694481824	Spirit_Myrtle			\Default Work Unit\Music Events\Spirit_Myrtle	
+	2707783454	Human_Store			\Default Work Unit\Music Events\Human_Store	
+	2994644335	Human_Ken			\Default Work Unit\Music Events\Human_Ken	
+	3174091305	Spirit_V			\Default Work Unit\Music Events\Spirit_V	
+	3435889618	Human_Myrtle			\Default Work Unit\Music Events\Human_Myrtle	
+	3448711732	Spirit_Chrysantha			\Default Work Unit\Music Events\Spirit_Chrysantha	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	89505537	Gameplay			\Default Work Unit\Gameplay	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Gameplay			
+	902421079	SpiritChrysantha	Gameplay			
+	1775093491	SpiritJowan	Gameplay			
+	1812465801	HumanMyrtle	Gameplay			
+	1876881881	SpiritStore	Gameplay			
+	2133836716	SpiritV	Gameplay			
+	2158138711	HumanStore	Gameplay			
+	2383602514	HumanV	Gameplay			
+	2712708934	HumanKen	Gameplay			
+	2783885547	HumanCrysantha	Gameplay			
+	2790751573	HumanJowan	Gameplay			
+	3165849807	SpiritMyrtle	Gameplay			
+	3604647259	MainMenu	Gameplay			
+	3728463068	SpiritKen	Gameplay			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	57490300	MusicPuzzle_Seg2	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\MusicPuzzle_Seg2_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music Puzzle\MusicPuzzle_Seg2		49106
+	84526937	Spirit_MainTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spirit_MainTheme_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritMainTheme\Spirit_MainTheme\Spirit_MainTheme		1391049
+	115187649	MusicPuzzle_Seg1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\MusicPuzzle_Seg1_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music Puzzle\MusicPuzzle_Seg1		47660
+	136651003	Spooky_JowanTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spooky_JowanTheme_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\JowanTheme\Spooky_JowanTheme\Spooky_JowanTheme		1906021
+	146023130	Puzzle_Music_Full	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Puzzle_Music_Full_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music Puzzle\Puzzle_Music_Full		222744
+	253288252	Spirit_ChrysanthaTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spirit_ChrysanthaTheme_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritChrysanthaTheme\Spirit_ChrysanthaTheme\Spirit_ChrysanthaTheme		1330033
+	315239178	MainMenu_Loop	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\MainMenu_Loop_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\MenuMusic\MainMenu_Loop\MainMenu_Loop		961394
+	324982090	Spooky_MainTheme_Intro	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spooky_MainTheme_Intro_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\HumanMainTheme\Spooky_MainTheme_Intro\Spooky_MainTheme_Intro		299031
+	456155305	Spooky_KenTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spooky_KenTheme_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\KenTheme\Spooky_KenTheme\Spooky_KenTheme		1990722
+	596672924	Spirit_MyrtleTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spirit_MyrtleTheme_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritMyrtleTheme\Spirit_MyrtleTheme\Spirit_MyrtleTheme		1532711
+	628539542	Spirit_KenTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spirit_KenTheme_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritKenTheme\Spirit_KenTheme\Spirit_KenTheme		1492223
+	668347524	Spooky_VTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spooky_VTheme_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\VTheme\Spooky_VTheme\Spooky_VTheme		1839798
+	845094769	MusicPuzzle_Seg3	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\MusicPuzzle_Seg3_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music Puzzle\MusicPuzzle_Seg3		49953
+	857119023	Spirit_VTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spirit_VTheme_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritVTheme\Spirit_VTheme\Spirit_VTheme		1361301
+	860405681	Spirit_JowanTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spirit_JowanTheme_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Spirit World\SpiritJowanTheme\Spirit_JowanTheme\Spirit_JowanTheme		1455855
+	943329430	Spooky_MyrtleTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spooky_MyrtleTheme_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\MyrtleTheme\Spooky_MyrtleTheme\Spooky_MyrtleTheme		2190827
+	1034646002	MusicPuzzle_Seg4	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\MusicPuzzle_Seg4_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music Puzzle\MusicPuzzle_Seg4		82987
+	1054601518	Spooky_MainTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spooky_MainTheme_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\HumanMainTheme\Spooky_MainTheme\Spooky_MainTheme		1981388
+	1064088409	Spooky_ChrysanthaTheme	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Spooky_ChrysanthaTheme_F2BF74AC.wem		\Interactive Music Hierarchy\Default Work Unit\Gameplay\Human World\ChrysanthaTheme\Spooky_ChrysanthaTheme\Spooky_ChrysanthaTheme		2497825
+

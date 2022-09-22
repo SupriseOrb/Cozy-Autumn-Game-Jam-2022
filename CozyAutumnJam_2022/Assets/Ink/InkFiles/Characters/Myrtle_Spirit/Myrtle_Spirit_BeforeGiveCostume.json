@@ -1,1 +1,1 @@
-﻿{"inkVersion":20,"root":[[{"#":"char myrtle_spirit"},"^Eee hee hee! Better hurry, human!","\n","^I'm going to trash this place if you don't help me!","\n","end",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}
+﻿{"inkVersion":20,"root":[[{"#":"char myrtle_spirit"},{"#":"music SpiritMyrtle"},{"#":"emotion happy"},"^Eee hee hee! Better hurry, human!","\n",{"#":"emotion happy"},"^I'm going to trash this place if you don't help me!","\n","end",["done",{"#f":5,"#n":"g-0"}],null],"done",{"#f":1}],"listDefs":{}}

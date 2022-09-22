@@ -98,8 +98,8 @@ public class SettingsManager : MonoBehaviour
 
     public void StartPuzzle(float delay = 0)
     {
-        // Set music slider by 50 - 75 % of current volume
-        AkSoundEngine.SetRTPCValue(_music, GetVolume(_musicSlider.value/2));
+        // Set music slider to 30 % of current volume
+        AkSoundEngine.SetRTPCValue(_music, GetVolume(_musicSlider.value/3));
         StartCoroutine(DelayEndPuzzle(delay));
     }
     private IEnumerator DelayEndPuzzle(float delay)

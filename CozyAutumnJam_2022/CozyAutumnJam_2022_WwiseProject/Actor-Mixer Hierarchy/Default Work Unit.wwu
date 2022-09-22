@@ -1303,6 +1303,13 @@
 				<Folder Name="Music Puzzle" ID="{104E9596-6F28-4FC2-A57B-CB5824862C9B}" ShortID="140872062">
 					<ChildrenList>
 						<Sound Name="MusicPuzzle_Seg1" ID="{4E5FE9EB-B454-435D-A7F9-A8A6B7F57E69}" ShortID="954499177">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
@@ -1326,6 +1333,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="MusicPuzzle_Seg2" ID="{A46A4DBC-D211-4635-9AE4-8B60D9216F07}" ShortID="1066322697">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
@@ -1349,6 +1363,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="MusicPuzzle_Seg3" ID="{BE9B4719-956A-44D0-9D46-5B3198691167}" ShortID="875099066">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
@@ -1372,6 +1393,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="MusicPuzzle_Seg4" ID="{BACDF974-2D9E-42DB-9292-B4562434B1DD}" ShortID="570697573">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
@@ -1395,6 +1423,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Puzzle_Music_Full" ID="{765AD152-AE97-4E02-9487-712C47EFEBB7}" ShortID="841365149">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>

@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	225669318	Stop_DialogueJay			\Default Work Unit\SFX Events\Dialogue SFX\Stop_DialogueJay	
 	235035089	Play_UIResume			\Default Work Unit\SFX Events\General UI SFX\Play_UIResume	
 	235104698	Play_CatMeow			\Default Work Unit\SFX Events\Puzzle SFX\Play_CatMeow	
+	473579208	Play_CostumeGet			\Default Work Unit\SFX Events\General UI SFX\Play_CostumeGet	
 	500046663	Play_RatCapture			\Default Work Unit\SFX Events\Puzzle SFX\Play_RatCapture	
 	661091160	Play_DialogueJay			\Default Work Unit\SFX Events\Dialogue SFX\Play_DialogueJay	
 	762700248	Stop_DialogueKen			\Default Work Unit\SFX Events\Dialogue SFX\Stop_DialogueKen	
@@ -61,6 +62,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	469650255	CardPull1	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\CardPull1_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardPull\CardPull1		7405
 	514938978	GroceryItemDrop	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\GroceryItemDrop_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\GroceryItemDrop		11800
 	530332103	DeckSwap	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\CardSwap_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\DeckSwap		5490
+	548838296	CostumeGet	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\CostumeGet_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\CostumeGet		23759
 	628776196	Slime03	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\Slime03_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\SlimePush\Slime03		14372
 	645855217	CardPull2	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\CardPull2_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardPull\CardPull2		6974
 	654445567	SpiderWeb01	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Mac\SFX\SpiderWeb01_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\SpiderWeb\SpiderWeb01		13019

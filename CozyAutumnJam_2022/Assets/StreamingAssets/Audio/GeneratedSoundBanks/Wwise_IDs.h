@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAY_CARDPULL = 3136930057U;
         static const AkUniqueID PLAY_CARDSHUFFLE = 3192869359U;
         static const AkUniqueID PLAY_CATMEOW = 235104698U;
+        static const AkUniqueID PLAY_COSTUMEGET = 473579208U;
         static const AkUniqueID PLAY_DECKSWAP = 4280915480U;
         static const AkUniqueID PLAY_DIALOGUECHRYSANTHA = 4086805381U;
         static const AkUniqueID PLAY_DIALOGUECLEO = 2240950997U;

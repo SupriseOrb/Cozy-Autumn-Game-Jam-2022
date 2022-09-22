@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX">
+		<SoundBank Id="393239870" Language="SFX" Hash="4175540261">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -69,6 +69,14 @@
 						<File Id="191987060" Language="SFX">
 							<ShortName>CatMeow.wav</ShortName>
 							<Path>SFX\CatMeow_32513D82.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="473579208" Name="Play_CostumeGet" ObjectPath="\Events\Default Work Unit\SFX Events\General UI SFX\Play_CostumeGet" DurationType="OneShot" DurationMin="1.600113" DurationMax="1.600113">
+					<IncludedMemoryFiles>
+						<File Id="548838296" Language="SFX">
+							<ShortName>CostumeGet.wav</ShortName>
+							<Path>SFX\CostumeGet_32513D82.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -325,7 +333,7 @@
 				<GameParameter Id="2731583604" Name="AllVolume" ObjectPath="\Game Parameters\Default Work Unit\AllVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2082818461">
+		<SoundBank Id="3991942870" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>

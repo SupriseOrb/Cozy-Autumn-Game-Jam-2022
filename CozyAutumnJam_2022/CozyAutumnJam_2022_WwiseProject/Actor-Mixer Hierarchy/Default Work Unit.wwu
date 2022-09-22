@@ -435,6 +435,36 @@
 								<ActiveSource Name="UISelect" ID="{738033B7-1492-475B-A7A3-48EF3AB12072}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="CostumeGet" ID="{E3E87A9C-E9CD-44CF-9F02-0C3C9583E6EC}" ShortID="928957003">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CostumeGet" ID="{A0C32381-2FAF-4610-9961-9B49E22DCBC2}">
+									<Language>SFX</Language>
+									<AudioFile>CostumeGet.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="548838296"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="CostumeGet" ID="{A0C32381-2FAF-4610-9961-9B49E22DCBC2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Card Ability SFX" ID="{AA706F35-05F9-4C45-91CC-1C205006F125}" ShortID="278942455">

@@ -1,4 +1,4 @@
-﻿#char none
+#char none
 (A small hole in the wall.)
 
 #char cleo

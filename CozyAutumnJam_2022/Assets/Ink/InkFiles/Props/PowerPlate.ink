@@ -1,4 +1,4 @@
-﻿#char none
+#char none
 (A pressure pad with a lightning bolt on it.)
 
 #char cleo

@@ -1,4 +1,4 @@
-﻿#char none
+#char none
 (Cat.)
 
 #char cleo

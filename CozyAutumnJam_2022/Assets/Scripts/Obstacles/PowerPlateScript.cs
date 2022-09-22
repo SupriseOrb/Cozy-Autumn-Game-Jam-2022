@@ -5,10 +5,13 @@ using UnityEngine;
 public class PowerPlateScript : MonoBehaviour
 {
     [SerializeField] private GameObject _vfx;
+    [SerializeField] private Sprite _upSprite;
+    [SerializeField] private Sprite _downSprite;
 private void OnTriggerEnter2D(Collider2D other) 
     {
         if(other.TryGetComponent(out AnimatronicScript boomBox))
         {
+            gameObject.GetComponent<SpriteRenderer>().sprite = _downSprite;
             //Play plate vfx
             Instantiate(_vfx, gameObject.transform.position, Quaternion.identity);            
             //Play plate sfx
@@ -22,6 +25,7 @@ private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.TryGetComponent(out AnimatronicScript boomBox))
         {
+            gameObject.GetComponent<SpriteRenderer>().sprite = _upSprite;
             other.GetComponent<AnimatronicScript>().SetPowerOfAnimatronic(false);
         }
     }

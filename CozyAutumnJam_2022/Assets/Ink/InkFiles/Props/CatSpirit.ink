@@ -1,4 +1,4 @@
-﻿#char none
+#char none
 (Ghost cat.)
 
 #char cleo

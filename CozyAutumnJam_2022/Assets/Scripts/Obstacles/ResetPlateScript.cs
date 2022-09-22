@@ -6,6 +6,8 @@ public class ResetPlateScript : MonoBehaviour
 {
     [SerializeField] private GameObject[] _resettableObjects;
     [SerializeField] private Vector2[] _resettablePositions;
+    [SerializeField] private Sprite _upSprite;
+    [SerializeField] private Sprite _downSprite;
 
     private void Start() 
     {
@@ -20,7 +22,15 @@ public class ResetPlateScript : MonoBehaviour
     {
         if(other.TryGetComponent(out PlayerScript player))
         {
+            gameObject.GetComponent<SpriteRenderer>().sprite = _downSprite;
             ResetObjects();
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other) 
+    {
+        if(other.TryGetComponent(out PlayerScript player))
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = _upSprite;
         }
     }
 

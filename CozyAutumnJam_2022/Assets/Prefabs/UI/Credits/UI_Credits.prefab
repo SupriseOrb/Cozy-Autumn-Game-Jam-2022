@@ -297,7 +297,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &1533640462746633578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,6 +432,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533640463843752072}
     m_Modifications:
+    - target: {fileID: 353916790323112353, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Kristen Campbell
+      objectReference: {fileID: 0}
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -447,6 +451,10 @@ PrefabInstance:
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 353916791576620825, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Sound Designer, Audio Engineer, Playtester
       objectReference: {fileID: 0}
     - target: {fileID: 353916791576620830, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
@@ -566,6 +574,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533640463843752072}
     m_Modifications:
+    - target: {fileID: 353916790323112353, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Collin Anderson
+      objectReference: {fileID: 0}
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -581,6 +593,10 @@ PrefabInstance:
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 353916791576620825, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Music Composer / Audio Engineer
       objectReference: {fileID: 0}
     - target: {fileID: 353916791576620830, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
@@ -700,6 +716,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533640463843752072}
     m_Modifications:
+    - target: {fileID: 353916790323112353, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: BreakerHale
+      objectReference: {fileID: 0}
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -715,6 +735,10 @@ PrefabInstance:
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 353916791576620825, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: 2D Artist (Concept, Environment & Props, UI Assistant)
       objectReference: {fileID: 0}
     - target: {fileID: 353916791576620830, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
@@ -834,6 +858,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533640463843752072}
     m_Modifications:
+    - target: {fileID: 353916790323112353, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Conall Barrett
+      objectReference: {fileID: 0}
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -849,6 +877,10 @@ PrefabInstance:
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 353916791576620825, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Narrative and System Designer, Production Assistant
       objectReference: {fileID: 0}
     - target: {fileID: 353916791576620830, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
@@ -968,6 +1000,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533640463843752072}
     m_Modifications:
+    - target: {fileID: 353916790323112353, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Kalpercio
+      objectReference: {fileID: 0}
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -983,6 +1019,10 @@ PrefabInstance:
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 353916791576620825, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Gameplay Programmer
       objectReference: {fileID: 0}
     - target: {fileID: 353916791576620830, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1102,6 +1142,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533640463843752072}
     m_Modifications:
+    - target: {fileID: 353916790323112353, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Victor Zhou
+      objectReference: {fileID: 0}
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1117,6 +1161,10 @@ PrefabInstance:
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 353916791576620825, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Gameplay Programmer, Systems and Level Designer
       objectReference: {fileID: 0}
     - target: {fileID: 353916791576620830, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1338,6 +1386,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533640463843752072}
     m_Modifications:
+    - target: {fileID: 353916790323112353, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Hung Bui
+      objectReference: {fileID: 0}
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1353,6 +1405,10 @@ PrefabInstance:
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 353916791576620825, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: 2D Artist (VFX, Particles, Animation, Character, Technical)
       objectReference: {fileID: 0}
     - target: {fileID: 353916791576620830, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1472,6 +1528,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533640463843752072}
     m_Modifications:
+    - target: {fileID: 353916790323112353, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Diane Sparks
+      objectReference: {fileID: 0}
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1487,6 +1547,10 @@ PrefabInstance:
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 353916791576620825, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Writer
       objectReference: {fileID: 0}
     - target: {fileID: 353916791576620830, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1606,6 +1670,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533640463843752072}
     m_Modifications:
+    - target: {fileID: 353916790323112353, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Paula Guerrero
+      objectReference: {fileID: 0}
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1621,6 +1689,10 @@ PrefabInstance:
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 353916791576620825, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: 2D Artist (Concept, Animation, Character)
       objectReference: {fileID: 0}
     - target: {fileID: 353916791576620830, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1740,6 +1812,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533640463843752072}
     m_Modifications:
+    - target: {fileID: 353916790323112353, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: SupriseOrb
+      objectReference: {fileID: 0}
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1755,6 +1831,10 @@ PrefabInstance:
     - target: {fileID: 353916790323112358, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 353916791576620825, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
+      propertyPath: m_text
+      value: Producer, Programmer
       objectReference: {fileID: 0}
     - target: {fileID: 353916791576620830, guid: 653bffb59664c5f4a977fd866f5f8502, type: 3}
       propertyPath: m_AnchorMax.y

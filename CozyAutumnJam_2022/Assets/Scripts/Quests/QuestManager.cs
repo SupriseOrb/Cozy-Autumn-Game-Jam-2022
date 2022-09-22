@@ -7,15 +7,14 @@ public class QuestManager : MonoBehaviour
     static private QuestManager _instance;
     static public QuestManager Instance { get { return _instance;}}
     [SerializeField] private bool _allQuestsComplete;
-    [SerializeField] private int _bossEndQuestIndex;
     
     [System.Serializable]
     public class HumanQuest
     {
         public CharacterWithProgression _currentQuestHuman;
         public bool[] _humanQuestStepCompleted;
-        public bool _humanQuestComplete;
         public bool _humanQuestStarted;
+        public bool _humanQuestComplete;
     }
 
     [System.Serializable]
@@ -24,8 +23,8 @@ public class QuestManager : MonoBehaviour
         public CharacterWithProgression _currentQuestSpirit;
         public GameObject _oracleCard;
         public bool[] _spiritQuestStepCompleted;
-        public bool _spiritQuestComplete;
         public bool _spiritQuestStarted;
+        public bool _spiritQuestComplete;
     }
 
     [System.Serializable]
@@ -45,6 +44,7 @@ public class QuestManager : MonoBehaviour
     [SerializeField] private GameObject _myrtleGO;
     [SerializeField] private GameObject _bossGO;
     [SerializeField] private GameObject _disappearShelf;
+    [SerializeField] private int _bossEndQuestIndex;
 
     public HumanQuest[] HumanQuestList
     {

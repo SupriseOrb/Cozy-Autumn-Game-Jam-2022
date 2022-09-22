@@ -392,7 +392,7 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator TimeoutDialogue()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0f);
         _playerCanContinue = true;
     }
     private void TriggerEndBehavior()

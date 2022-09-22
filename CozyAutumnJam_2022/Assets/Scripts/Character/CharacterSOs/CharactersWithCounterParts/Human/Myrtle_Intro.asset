@@ -10,18 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3db17c638b994343af964639e872cc9, type: 3}
-  m_Name: Boss_Spirit
+  m_Name: Myrtle_Intro
   m_EditorClassIdentifier: 
-  _name: Manuel
+  _name: Myrtle Intro
   _emotes:
-  - {fileID: 21300000, guid: 5f4591305c047ea4899a13d7fad06232, type: 3}
-  - {fileID: 21300000, guid: 0f9b2c16259c38b48915d70ff745aa37, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   _characterID: 0
   _currentStoryBeat: 0
-  _questIndex: 1
+  _questIndex: 5
   _story:
-  - {fileID: 4900000, guid: e9925524d45a8574e903aa253ce79018, type: 3}
-  - {fileID: 4900000, guid: c35a0787e5a90f942b4e337323c79cf3, type: 3}
+  - {fileID: 4900000, guid: 2bc717e3329c039429783a34ec673002, type: 3}
   _isTranslatedDefault: 1
   _isTranslated: 1
   _isCostumeCollected: 0

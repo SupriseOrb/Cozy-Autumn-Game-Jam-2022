@@ -14,12 +14,13 @@ public class CharacterWithProgression : CharacterScriptableObject
         CannotUnderstand = 4,
         BossFirstTime = 0,
         BossAfterSpiritWorld = 1,
+        BossEndGame = 2,
         BossWaiting = 2,
         PropGeneric = 0,
         PropProgressed = 1
     }
     [SerializeField] private int _currentStoryBeat;
-    [SerializeField, Tooltip("Quest Index of the Character. Ken = 0, Myrtle = 1, Jowan = 2, V = 3, Chrysantha = 4")]
+    [SerializeField, Tooltip("Quest Index of the Character. Ken / Boss = 0, Myrtle / BossS = 1, Jowan = 2, V = 3, Chrysantha = 4, Myrtle Intro = 5.")]
     private int _questIndex;
     [SerializeField] private TextAsset[] _story;   
 

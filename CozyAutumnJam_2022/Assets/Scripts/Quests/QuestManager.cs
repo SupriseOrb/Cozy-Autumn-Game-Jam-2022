@@ -26,8 +26,19 @@ public class QuestManager : MonoBehaviour
         public bool _spiritQuestStarted;
     }
 
+    [System.Serializable]
+    public class BossQuest
+    {
+        public CharacterWithProgression _currentQuestBoss;
+        public bool[] _bossQuestStepCompleted;
+        public bool _bossQuestStarted;
+        public bool _bossQuestComplete;
+        public bool _allQuestsComplete;
+    }
+
     [SerializeField] private HumanQuest[] _humanQuestList;
     [SerializeField] private SpiritQuest[] _spiritQuestList;
+    [SerializeField] private BossQuest[] _bossQuestList;
 
     public HumanQuest[] HumanQuestList
     {
@@ -36,6 +47,10 @@ public class QuestManager : MonoBehaviour
     public SpiritQuest[] SpiritQuestList
     {
         get {return _spiritQuestList;}
+    }
+    public BossQuest[] BossQuestList
+    {
+        get {return _bossQuestList;}
     }
 
 
@@ -54,6 +69,7 @@ public class QuestManager : MonoBehaviour
     public void CompleteQuestStepHuman(CharacterWithProgression humanChar)
     {
         _humanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted[humanChar.StepIndex] = true;
+        int _stepCount = _humanQuestList[humanChar.QuestIndex]._humanQuestStepCompleted.Length;
         if (_humanQuestList[humanChar.QuestIndex]._humanQuestComplete == true)
         {
             return;
@@ -64,7 +80,15 @@ public class QuestManager : MonoBehaviour
             {
                 Debug.Log("Started Quest!");
                 _humanQuestList[humanChar.QuestIndex]._humanQuestStarted = true;
-                _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
+                if (_stepCount == 1)
+                {
+                    Debug.Log("Intor Myrtle Dialogue Complete!");
+                    _humanQuestList[humanChar.QuestIndex]._humanQuestComplete = true;
+                }
+                else
+                {
+                    _humanQuestList[humanChar.QuestIndex]._currentQuestHuman.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.WaitingForCostume);
+                }
             }
             else if (humanChar.StepIndex == 1)
             {
@@ -145,6 +169,40 @@ public class QuestManager : MonoBehaviour
 
     }
 
+    //Used by Boss and Intro Myrtle (different functionality)
+    public void CompleteQuestStepBoss(CharacterWithProgression bossChar)
+    {
+        _bossQuestList[bossChar.QuestIndex]._bossQuestStepCompleted[bossChar.StepIndex] = true;
+        int _stepCount = _bossQuestList[bossChar.QuestIndex]._bossQuestStepCompleted.Length;
+        if (_bossQuestList[bossChar.QuestIndex]._allQuestsComplete == true)
+        {
+            //Indicate the game is over? This would happen after the final dialogue from the boss
+        }
+        if (_spiritQuestList[bossChar.QuestIndex]._spiritQuestComplete == true)
+        {
+            return;
+        }
+        else if (_humanQuestList[bossChar.QuestIndex]._humanQuestComplete != true)
+        {
+            if (bossChar.StepIndex == 0)
+            {
+                Debug.Log("Started Boss Quest!");
+                _bossQuestList[bossChar.QuestIndex]._bossQuestStarted = true;
+                _bossQuestList[bossChar.QuestIndex]._currentQuestBoss.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.BossAfterSpiritWorld);
+                _bossQuestList[bossChar.QuestIndex]._bossQuestComplete = true;
+            }
+            if (bossChar.StepIndex == 1)
+            {
+                Debug.Log("Played Boss Text!");
+                _bossQuestList[bossChar.QuestIndex]._bossQuestComplete = true;
+                if (_stepCount == 3 && _bossQuestList[bossChar.QuestIndex]._allQuestsComplete == true)
+                {
+                    _bossQuestList[bossChar.QuestIndex]._currentQuestBoss.AdvanceToStoryBeat(CharacterWithProgression.StoryBeat.BossEndGame);
+                }
+            }
+        }   
+
+    }
         //you might need to add some logic to prevent the skipping of story beats if the player were to pick up a costume too early
         //if stepindex is 0, aka the start. set currentquesthuman story beat to waiting for costume
         //if step index is 1, set currentquestspirit story beat to waitign for costuem

@@ -11,7 +11,7 @@ public class AbilityVacuum : MonoBehaviour, IAbility
     private bool _isAvailable = true;
     [SerializeField] private float _abilityCooldown = 1f;
     [SerializeField] private GameObject _vfx;
-    private bool abilityObtained = false;
+    [SerializeField] private bool abilityObtained = false;
 
 
     public void ActivateAbility()

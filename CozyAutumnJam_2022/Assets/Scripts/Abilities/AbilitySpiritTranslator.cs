@@ -14,7 +14,7 @@ public class AbilitySpiritTranslator : MonoBehaviour, IAbility
     [SerializeField] private float _abilityTranslateCooldown = 1f;
     [SerializeField] private float _abilityRuneCooldown = 3f;
     [SerializeField] private GameObject _vfx;
-    private bool abilityObtained = false;
+    [SerializeField] private bool abilityObtained = false;
 
     public void ActivateAbility()
     {

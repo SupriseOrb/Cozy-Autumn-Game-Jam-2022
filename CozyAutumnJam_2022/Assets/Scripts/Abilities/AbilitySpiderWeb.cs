@@ -11,7 +11,7 @@ public class AbilitySpiderWeb : MonoBehaviour, IAbility
     [SerializeField] GameObject _lastWeb;
     [SerializeField] float _spiderWebDetectRadius;
     private Quaternion _spiderWebRot;
-    private bool abilityObtained = false;
+    [SerializeField] private bool abilityObtained = false;
 
     public void ActivateAbility()
     {

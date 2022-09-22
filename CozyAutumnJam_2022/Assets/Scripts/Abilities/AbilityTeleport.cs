@@ -13,7 +13,7 @@ public class AbilityTeleport : MonoBehaviour, IAbility
     [SerializeField] private float teleportReturnDelay = .5f;
     [SerializeField] private float _abilityCooldown = 5f;
     [SerializeField] private GameObject _vfx;
-    private bool abilityObtained = false;
+    [SerializeField] private bool abilityObtained = false;
 
     private void Start()
     {

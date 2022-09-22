@@ -14,7 +14,7 @@ public class AbilitySoulBoomBox : MonoBehaviour, IAbility
     private GameObject _hitGO;
     private bool _isAvailable = true;
     [SerializeField] private float _abilityCooldown = 1f;
-    private bool abilityObtained = false;
+    [SerializeField] private bool abilityObtained = false;
 
     public void ActivateAbility()
     {

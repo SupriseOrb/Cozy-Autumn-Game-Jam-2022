@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3db17c638b994343af964639e872cc9, type: 3}
-  m_Name: Boss
+  m_Name: Boss_Spirit
   m_EditorClassIdentifier: 
   _name: Manuel
   _emotes:
@@ -20,9 +20,8 @@ MonoBehaviour:
   _currentStoryBeat: 0
   _questIndex: 0
   _story:
-  - {fileID: 4900000, guid: 41ec7842624d81c4a96f644a3f8d61d3, type: 3}
-  - {fileID: 4900000, guid: d6286a898d49a9440ad83987b22d1d61, type: 3}
-  - {fileID: 4900000, guid: 62df7569303a9b9438fca07e15b71215, type: 3}
+  - {fileID: 4900000, guid: e9925524d45a8574e903aa253ce79018, type: 3}
+  - {fileID: 4900000, guid: c35a0787e5a90f942b4e337323c79cf3, type: 3}
   _isTranslatedDefault: 1
   _isTranslated: 1
   _isCostumeCollected: 0

@@ -30,12 +30,12 @@ public class CostumeScript : MonoBehaviour, IInteractable
                 }
                 else
                 {
-                    QuestManager.Instance.CompleteQuestStepSpirit(_character);
+                    QuestManager.Instance.CompleteQuestStepHuman(_character);
                 }
             }
             else
             {
-                QuestManager.Instance.CompleteQuestStepHuman(_character);
+                QuestManager.Instance.CompleteQuestStepSpirit(_character);
             }
             Destroy(gameObject);
         }

@@ -1681,6 +1681,10 @@ PrefabInstance:
       propertyPath: _costumeCard
       value: 
       objectReference: {fileID: 40151183}
+    - target: {fileID: 8195786463213714833, guid: fd35b5f5631ee7d49994ee13a97def92, type: 3}
+      propertyPath: _isSpiritCostume
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd35b5f5631ee7d49994ee13a97def92, type: 3}
 --- !u!4 &438667463 stripped
@@ -3932,6 +3936,10 @@ PrefabInstance:
       propertyPath: _costumeCard
       value: 
       objectReference: {fileID: 40151177}
+    - target: {fileID: 1234981881373587234, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
+      propertyPath: _isSpiritCostume
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1288383701440222295, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -21611,6 +21619,10 @@ PrefabInstance:
       propertyPath: _costumeCard
       value: 
       objectReference: {fileID: 40151182}
+    - target: {fileID: 7346251915972242549, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
+      propertyPath: _isSpiritCostume
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7346251917768114655, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
       propertyPath: _costumeCard
       value: 
@@ -43103,6 +43115,10 @@ PrefabInstance:
       propertyPath: _costumeCard
       value: 
       objectReference: {fileID: 40151180}
+    - target: {fileID: 6374099046011273587, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
+      propertyPath: _isSpiritCostume
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7117067426465022187, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
       propertyPath: m_Name
       value: Props Tilesets

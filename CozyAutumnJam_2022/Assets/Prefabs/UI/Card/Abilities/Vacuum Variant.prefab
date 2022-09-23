@@ -99,26 +99,81 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vacuum Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 701979893158273993, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 701979893158273993, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 701979893158273993, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 701979893158273993, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 701979893158273993, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 701979893158273993, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -590
+      objectReference: {fileID: 0}
     - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'This card has a bunch of loose hairs on it, but looks like it''s missing
-        something. Maybe you should ask one of the customers about it?
+      value: 'Ability Hint: This card has a bunch of loose hairs on it, but looks
+        like it''s missing something. Maybe you should ask one of the customers about
+        it?
 
 
-        Maybe
-        you''ll find something nice if you get all this clutter out of the way.
 
 
-        The
-        shelves and aisles are different in both worlds? What a pain.'
+'
       objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: ebc9800efa7983640a1d49325278cd13, type: 3}
+    - target: {fileID: 2708758259216321933, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708758259216321933, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708758259216321933, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708758259216321933, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708758259216321933, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708758259216321933, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -340
+      objectReference: {fileID: 0}
     - target: {fileID: 3269696177942801510, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
       value: Vacuum
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706616670738513215, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: 'Spirit Costume Hint: Maybe you''ll find something nice if you get all
+        this clutter out of the way.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706616670738513215, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4284701219
       objectReference: {fileID: 0}
     - target: {fileID: 3953249409995055704, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite
@@ -131,6 +186,47 @@ PrefabInstance:
     - target: {fileID: 5371308869897057536, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
       value: Dispatch obnoxious clutter and blockages in the store.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878887683700847077, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253192679054191475, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253192679054191475, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253192679054191475, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253192679054191475, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253192679054191475, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 215
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253192679054191475, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253192679054191475, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -107.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508067896070417292, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: 'Human Costume Hint: The shelves and aisles are different in both worlds?
+        What a pain.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508067896070417292, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4283390975
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}

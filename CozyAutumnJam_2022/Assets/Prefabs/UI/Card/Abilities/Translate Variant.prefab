@@ -99,26 +99,75 @@ PrefabInstance:
       propertyPath: m_Name
       value: Translate Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 701979893158273993, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 701979893158273993, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 701979893158273993, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 701979893158273993, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 701979893158273993, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 701979893158273993, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -525
+      objectReference: {fileID: 0}
     - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'This card looks like it''s missing two things linked together.
-
-
-        Do
-        all these symbols mean something? What''s that chest over there?
-
-
-        Another
-        chest, but some of these symbols don''t have matches in the spirit world.
-        Huh...'
+      value: 'Ability Hint: This card looks like it''s missing two things linked
+        together.'
       objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 632fcb6bcfca64249a5d4b8b15b301c4, type: 3}
+    - target: {fileID: 2708758259216321933, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708758259216321933, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708758259216321933, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708758259216321933, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708758259216321933, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708758259216321933, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -275
+      objectReference: {fileID: 0}
     - target: {fileID: 3269696177942801510, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
       value: Spirit Translator
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706616670738513215, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: 'Spirit Costume Hint: Do all these symbols mean something? What''s that
+        chest over there?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706616670738513215, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4284701219
       objectReference: {fileID: 0}
     - target: {fileID: 3953249409995055704, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite
@@ -132,6 +181,43 @@ PrefabInstance:
       propertyPath: m_text
       value: Activate to automatically translate the speech of non-human beings and
         unreadable runes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878887683700847077, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253192679054191475, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253192679054191475, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253192679054191475, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253192679054191475, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253192679054191475, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253192679054191475, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508067896070417292, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_text
+      value: 'Human Costume Hint: Another chest, but some of these symbols don''t
+        have matches in the spirit world. Huh...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508067896070417292, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4283390975
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}

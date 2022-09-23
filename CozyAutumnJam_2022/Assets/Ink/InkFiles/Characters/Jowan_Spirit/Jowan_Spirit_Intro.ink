@@ -20,7 +20,7 @@ S-sorry.
 Um... what costumes are you looking for?
 
 #char jowan_spirit
-W-we don't know. M-maybe
+W-we don't know. M-maybe-
 
 #char jay_spirit
 Ugh! Stop being so sheepish about everything! Why do you always have to be like this?

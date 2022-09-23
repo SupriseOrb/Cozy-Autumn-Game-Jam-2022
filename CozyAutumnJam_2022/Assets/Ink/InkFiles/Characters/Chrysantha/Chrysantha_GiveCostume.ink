@@ -13,6 +13,9 @@ Ha ha...
 Uh... you don't seem okay.
 
 #char chrysantha
+What? No! I'm fine!
+Ha ha...
+...
 Okay yeah I'm not okay at all I'm very stressed out I have homework to do I have midterms coming up I have to get a job sometime I have to get decorations for my dorm oh my god there's so much I have to do AAAAAAAAAAAAAAAAAHHHHHH
 
 #char cleo

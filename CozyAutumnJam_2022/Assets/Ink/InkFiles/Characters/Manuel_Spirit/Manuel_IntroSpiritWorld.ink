@@ -12,9 +12,11 @@ Perhaps not.
 #char cleo #emotion tired
 Ugh...
 Can you tell me where the hell this is?
+And why does that music sound so terrible?
 
 #char manuel_spirit
-This is a world parallel to our own.
+The speakers could do with an upgrade. They're very old.
+Regardless, this is a world parallel to our own.
 A sort of spirit world, if you will.
 
 #char cleo

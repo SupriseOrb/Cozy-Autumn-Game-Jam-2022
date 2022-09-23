@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 46902953}
   - component: {fileID: 46902952}
   - component: {fileID: 46902951}
+  - component: {fileID: 648742557}
   m_Layer: 0
   m_Name: SpiritCatNPC
   m_TagString: Untagged
@@ -160,6 +161,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &648742557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46902949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73476214012d8634da9e5ca485c3e4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _story: {fileID: 4900000, guid: 866d2843c3ab30e459ea782c5150fa33, type: 3}
 --- !u!1 &87903293
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,6 +185,7 @@ GameObject:
   - component: {fileID: 87903294}
   - component: {fileID: 87903296}
   - component: {fileID: 87903295}
+  - component: {fileID: 1116576167}
   m_Layer: 0
   m_Name: RatHole (2)
   m_TagString: Untagged
@@ -271,6 +286,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1116576167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87903293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73476214012d8634da9e5ca485c3e4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _story: {fileID: 4900000, guid: afbcaa8c20e9302418b80ba6ae8b4aaf, type: 3}
 --- !u!1 &100905098
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,6 +878,7 @@ GameObject:
   - component: {fileID: 463411073}
   - component: {fileID: 463411072}
   - component: {fileID: 463411071}
+  - component: {fileID: 398919799}
   m_Layer: 0
   m_Name: Pushable Animatronic
   m_TagString: Untagged
@@ -989,6 +1018,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stopLocation: {fileID: 1120698167}
+--- !u!114 &398919799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463411069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73476214012d8634da9e5ca485c3e4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _story: {fileID: 4900000, guid: 03b8941bc458d0c4181e30de20fd8e2c, type: 3}
 --- !u!1 &471220261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,6 +1372,7 @@ GameObject:
   - component: {fileID: 805470720}
   - component: {fileID: 805470719}
   - component: {fileID: 805470718}
+  - component: {fileID: 396344481}
   m_Layer: 0
   m_Name: CatNPC
   m_TagString: Untagged
@@ -1446,6 +1489,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &396344481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805470716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73476214012d8634da9e5ca485c3e4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _story: {fileID: 4900000, guid: 20147b6dd4f2daa44b793b29f78212b2, type: 3}
 --- !u!1 &807219355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,6 +2036,7 @@ GameObject:
   - component: {fileID: 1259737088}
   - component: {fileID: 1259737089}
   - component: {fileID: 1259737090}
+  - component: {fileID: 563542484}
   m_Layer: 0
   m_Name: RatHole
   m_TagString: Untagged
@@ -2094,6 +2151,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &563542484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259737086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73476214012d8634da9e5ca485c3e4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _story: {fileID: 4900000, guid: afbcaa8c20e9302418b80ba6ae8b4aaf, type: 3}
 --- !u!1 &1392886354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2355,6 +2425,7 @@ GameObject:
   - component: {fileID: 1467697488}
   - component: {fileID: 1467697487}
   - component: {fileID: 1467697486}
+  - component: {fileID: 309784846}
   m_Layer: 0
   m_Name: RatHole (1)
   m_TagString: Untagged
@@ -2469,6 +2540,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &309784846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467697484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73476214012d8634da9e5ca485c3e4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _story: {fileID: 4900000, guid: afbcaa8c20e9302418b80ba6ae8b4aaf, type: 3}
 --- !u!1 &1549834582
 GameObject:
   m_ObjectHideFlags: 0
@@ -7464,7 +7548,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -7663,14 +7747,14 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 6
     m_Data: {fileID: 2115438259, guid: 29af49d4d37301e49bd72a44aae7421c, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 23222356, guid: 151e814138d47e44abf26b076f3ff448, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 7
     m_Data: {fileID: -2010462825, guid: 151e814138d47e44abf26b076f3ff448, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 23222356, guid: 151e814138d47e44abf26b076f3ff448, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 1799414472, guid: 29af49d4d37301e49bd72a44aae7421c, type: 3}
   - m_RefCount: 1
@@ -8741,6 +8825,19 @@ MonoBehaviour:
   _vfx: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
   _upSprite: {fileID: 21300000, guid: ccf70aa4d7af657418668c704028922e, type: 3}
   _downSprite: {fileID: 21300000, guid: 844a8347ffb289543b13e9d59cde21f2, type: 3}
+--- !u!114 &1062468761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7847742770084724762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73476214012d8634da9e5ca485c3e4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _story: {fileID: 4900000, guid: a3df82f51d3e3dd4faf749e75eae5656, type: 3}
 --- !u!1001 &956037592477579234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9460,6 +9557,19 @@ MonoBehaviour:
   _vfx: {fileID: 3411969724073743464, guid: 5f1459d43a949af4db22811ba571bc36, type: 3}
   _upSprite: {fileID: 21300000, guid: ccf70aa4d7af657418668c704028922e, type: 3}
   _downSprite: {fileID: 21300000, guid: 844a8347ffb289543b13e9d59cde21f2, type: 3}
+--- !u!114 &126945656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7847742769671464962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73476214012d8634da9e5ca485c3e4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _story: {fileID: 4900000, guid: a3df82f51d3e3dd4faf749e75eae5656, type: 3}
 --- !u!1001 &956037593298854792
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6209,6 +6209,19 @@ MonoBehaviour:
   - {fileID: 675296396}
   - {fileID: 1991658792}
   - {fileID: 240819211}
+--- !u!114 &1598383633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458243891242728313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73476214012d8634da9e5ca485c3e4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _story: {fileID: 4900000, guid: e9f8d338d24c6e1498caaf32c094abd2, type: 3}
 --- !u!1001 &4600463845169906376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8258,6 +8271,10 @@ PrefabInstance:
     - target: {fileID: 2046620336581199734, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
       propertyPath: _costumeCard
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046620336581199734, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
+      propertyPath: _isSpiritCostume
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8563468021367256194, guid: c8ce63bfb0204644a841fd78d563b772, type: 3}
       propertyPath: m_RootOrder

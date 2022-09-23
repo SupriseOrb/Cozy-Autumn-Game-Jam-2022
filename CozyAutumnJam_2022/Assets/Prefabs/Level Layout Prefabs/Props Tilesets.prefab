@@ -6019,7 +6019,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1148989215802357728, guid: 943fa1daded223540bc8241e7fa2dd4f, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1148989215841156428, guid: 943fa1daded223540bc8241e7fa2dd4f, type: 3}
       propertyPath: m_Name
@@ -6157,7 +6157,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1148989215802357728, guid: 943fa1daded223540bc8241e7fa2dd4f, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1148989215841156428, guid: 943fa1daded223540bc8241e7fa2dd4f, type: 3}
       propertyPath: m_Name
@@ -6422,7 +6422,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1148989215802357728, guid: 943fa1daded223540bc8241e7fa2dd4f, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1148989215841156428, guid: 943fa1daded223540bc8241e7fa2dd4f, type: 3}
       propertyPath: m_Name
@@ -6491,7 +6491,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1148989215802357728, guid: 943fa1daded223540bc8241e7fa2dd4f, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1148989215841156428, guid: 943fa1daded223540bc8241e7fa2dd4f, type: 3}
       propertyPath: m_Name
@@ -6782,11 +6782,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4332006740079333614, guid: 6d21ae89ed3386e44bdc233838e54096, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 227
+      value: 113.5
       objectReference: {fileID: 0}
     - target: {fileID: 4332006740079333614, guid: 6d21ae89ed3386e44bdc233838e54096, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4332006740079333614, guid: 6d21ae89ed3386e44bdc233838e54096, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6984,6 +6984,10 @@ PrefabInstance:
     - target: {fileID: 8301054466707474819, guid: bb897f33ef5085540b38a025d310935d, type: 3}
       propertyPath: _costumeCard
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301054466707474819, guid: bb897f33ef5085540b38a025d310935d, type: 3}
+      propertyPath: _isSpiritCostume
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8826006935668575409, guid: bb897f33ef5085540b38a025d310935d, type: 3}
       propertyPath: m_Sprite

@@ -5319,6 +5319,10 @@ PrefabInstance:
       propertyPath: _costumeCard
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4854320160611708917, guid: 0075cabcf51c54c4fb801d2c37e5e1d5, type: 3}
+      propertyPath: _isSpiritCostume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5337049175453018823, guid: 0075cabcf51c54c4fb801d2c37e5e1d5, type: 3}
       propertyPath: m_Sprite
       value: 

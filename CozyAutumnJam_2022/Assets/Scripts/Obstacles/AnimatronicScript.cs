@@ -24,10 +24,11 @@ public class AnimatronicScript : MonoBehaviour, IAnimatronic
         if(_isPowered)
         {
             //Play music
-            SettingsManager.Instance.StartPuzzle(4f);
+
             AkSoundEngine.PostEvent(_musicName, this.gameObject);
             if(_managerScript != null)
             {
+                SettingsManager.Instance.StartPuzzle(4f);
                 _managerScript.checkSound(_animatronicOrderIndex);
             }
             else

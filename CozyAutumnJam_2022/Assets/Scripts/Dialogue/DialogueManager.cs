@@ -165,8 +165,8 @@ public class DialogueManager : MonoBehaviour
             PlayerScript.Instance.CurrentInputVector = Vector2.zero;
             if (CardManager.Instance.IsCardExpanded)
             {
-                CardManager.Instance.IsCardExpanded = false;
                 CardManager.Instance.EditCardSize();
+                CardManager.Instance.IsCardExpanded = false;
             }
             else {}
         }

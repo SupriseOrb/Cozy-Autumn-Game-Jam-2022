@@ -8,7 +8,7 @@ public class PropDialogue : MonoBehaviour, IProp
 
     public void ActivateProp()
     {
-        if (this.GetComponent<ItemTagScript>().IsAnimatronic())
+        if (this.TryGetComponent(out ItemTagScript tagScript) && tagScript.IsAnimatronic() && tagScript.IsPushable())
         {
             DialogueManager.Instance.StartStory(_story, DialogueManager.ANIMATRONIC_ACTIVATED, 
             this.gameObject.GetComponent<AnimatronicScript>().IsPowered);

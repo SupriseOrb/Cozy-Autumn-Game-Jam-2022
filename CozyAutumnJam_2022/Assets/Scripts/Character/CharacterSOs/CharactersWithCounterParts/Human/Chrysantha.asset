@@ -18,7 +18,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4ed27a151da14fc43870f204ffb31b99, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
-  _questIndex: 4
+  _questIndex: 1
   _story:
   - {fileID: 4900000, guid: db401f12dce298b40b1cca9603c9ffe0, type: 3}
   - {fileID: 4900000, guid: 75a5142ab849e0f48959a6cf613f83c1, type: 3}

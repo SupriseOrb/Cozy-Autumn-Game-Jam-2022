@@ -47,6 +47,10 @@ public class AnimatronicManager : MonoBehaviour, IAnimatronic, IInteractable
         if(index == _songsPlayedInOrder.Length - 1)
         {
             _songComplete = true;
+            //Open Chest
+            Instantiate(_vfx, gameObject.transform.position, Quaternion.identity);
+            _costume.SetActive(true);
+            gameObject.SetActive(false);
         }
     }
 

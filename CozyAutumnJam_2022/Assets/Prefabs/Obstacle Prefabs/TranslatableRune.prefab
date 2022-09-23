@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 1148989215841156467}
   - component: {fileID: 1148989215841156464}
   - component: {fileID: 1148989215841156465}
+  - component: {fileID: 8546944500054173023}
   m_Layer: 0
   m_Name: TranslatableRune
   m_TagString: Untagged
@@ -178,6 +179,18 @@ MonoBehaviour:
   isRune: 1
   isPushable: 0
   isPressurePalatable: 0
-  isInteractable: 0
   isAnimatronic: 0
-  isCharacter: 0
+  isCostume: 0
+--- !u!114 &8546944500054173023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148989215841156428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73476214012d8634da9e5ca485c3e4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _story: {fileID: 4900000, guid: c060433833abf4148a6a962732c38886, type: 3}

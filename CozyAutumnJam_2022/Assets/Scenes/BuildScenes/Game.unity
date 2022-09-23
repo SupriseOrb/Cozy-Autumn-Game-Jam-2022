@@ -1227,27 +1227,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!1 &256095863 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1745250616582919305, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-  m_PrefabInstance: {fileID: 1471835798}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &256095868
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256095863}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.3
 --- !u!1 &259287903
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,10 +1673,6 @@ PrefabInstance:
       propertyPath: _costumeCard
       value: 
       objectReference: {fileID: 40151175}
-    - target: {fileID: 2126441459583744482, guid: fd35b5f5631ee7d49994ee13a97def92, type: 3}
-      propertyPath: _isSpiritCostume
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7054045341765165481, guid: fd35b5f5631ee7d49994ee13a97def92, type: 3}
       propertyPath: m_Name
       value: Masks Tilesets
@@ -2446,27 +2421,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22577db8a57efe64b82d0a57c412687f, type: 3}
---- !u!1 &653235669 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1745250615977225367, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-  m_PrefabInstance: {fileID: 1471835798}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &653235674
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 653235669}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.3
 --- !u!1 &665353003
 GameObject:
   m_ObjectHideFlags: 0
@@ -2822,26 +2776,6 @@ PrefabInstance:
       propertyPath: _ratCard
       value: 
       objectReference: {fileID: 1759118709}
-    - target: {fileID: 3184059978227358206, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[2].m_Data
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3184059978227358206, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[5].m_Data
-      value: 
-      objectReference: {fileID: 23222356, guid: 151e814138d47e44abf26b076f3ff448, type: 3}
-    - target: {fileID: 3184059978227358206, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[2].m_RefCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3184059978227358206, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: m_TileSpriteArray.Array.data[5].m_RefCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3184059978227358206, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: m_Tiles.Array.data[18].second.m_TileSpriteIndex
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7350795500589760960, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
       propertyPath: m_Name
       value: Decor Tilesets
@@ -20407,10 +20341,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animatronics Tilesets
       objectReference: {fileID: 0}
-    - target: {fileID: 2617127560460959008, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: _musicName
-      value: Play_Puzzle_Music_Full
-      objectReference: {fileID: 0}
     - target: {fileID: 3494564438208299073, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -20455,14 +20385,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5742392406963737540, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: m_Size.y
-      value: 0.93842715
-      objectReference: {fileID: 0}
-    - target: {fileID: 5742392406963737540, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.019213587
-      objectReference: {fileID: 0}
     - target: {fileID: 7346251915972242549, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
       propertyPath: _costumeCard
       value: 
@@ -20471,27 +20393,7 @@ PrefabInstance:
       propertyPath: _costumeCard
       value: 
       objectReference: {fileID: 40151176}
-    - target: {fileID: 7346251917768114655, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: _isSpiritCostume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207897624046605749, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: m_Size.y
-      value: 1.0345871
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207897624046605749, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9207897624046605749, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.067293525
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2016892861198031673, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-    - {fileID: 2016892861543358675, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-    - {fileID: 2016892862004951347, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-    - {fileID: 2016892861403693357, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
 --- !u!4 &1471835799 stripped
 Transform:
@@ -40836,27 +40738,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1737714150 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1745250616943807849, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-  m_PrefabInstance: {fileID: 1471835798}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &1737714155
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737714150}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.3
 --- !u!1 &1746442872
 GameObject:
   m_ObjectHideFlags: 0
@@ -41835,27 +41716,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!1 &2044266899 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1745250616308758147, guid: 4ccc86ad92628754dbf12b3f5b335eb8, type: 3}
-  m_PrefabInstance: {fileID: 1471835798}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &2044266904
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2044266899}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.3
 --- !u!1001 &2045150974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41973,34 +41833,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1634713377}
     m_Modifications:
-    - target: {fileID: 1070654889364993598, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: isAnimatronic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1148989215118243438, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1148989216136069072, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1148989216458223061, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1148989216592391744, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3658572021046506119, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 113.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3658572021046506119, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3980950316512806852, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -42053,18 +41885,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Props Tilesets
       objectReference: {fileID: 0}
-    - target: {fileID: 8388415546125851613, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: isAnimatronic
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9072782912854773747, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
       propertyPath: _costumeCard
       value: 
       objectReference: {fileID: 40151179}
-    - target: {fileID: 9072782912854773747, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
-      propertyPath: _isSpiritCostume
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4d446ed2139b4b42ba04ff6ffcba084, type: 3}
 --- !u!4 &2051684994 stripped
@@ -42087,10 +41911,6 @@ PrefabInstance:
       propertyPath: _costumeCard
       value: 
       objectReference: {fileID: 40151178}
-    - target: {fileID: 5542634199089381534, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
-      propertyPath: _isSpiritCostume
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6501587480475422098, guid: 792c7c2978dce5442a8b443fbb6f5935, type: 3}
       propertyPath: m_RootOrder
       value: 6

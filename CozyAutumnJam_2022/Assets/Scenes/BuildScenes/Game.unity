@@ -2822,10 +2822,6 @@ PrefabInstance:
       propertyPath: _costumeCard
       value: 
       objectReference: {fileID: 40151181}
-    - target: {fileID: 1234981880036913691, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
-      propertyPath: _isSpiritCostume
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1234981881373587234, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
       propertyPath: _costumeCard
       value: 

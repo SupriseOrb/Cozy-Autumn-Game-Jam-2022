@@ -63,5 +63,6 @@ public class AbilitySlimeTrail : MonoBehaviour, IAbility
     public void ObtainAbility()
     {
         abilityObtained = true;
+        CardManager.Instance.GetOracleCard(gameObject.name);
     }
 }

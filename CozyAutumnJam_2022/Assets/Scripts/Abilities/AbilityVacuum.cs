@@ -72,6 +72,7 @@ public class AbilityVacuum : MonoBehaviour, IAbility
     public void ObtainAbility()
     {
         abilityObtained = true;
+        CardManager.Instance.GetOracleCard(gameObject.name);
     }
 
 }

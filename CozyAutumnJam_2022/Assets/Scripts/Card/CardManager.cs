@@ -32,6 +32,8 @@ public class CardManager : MonoBehaviour
 
     [SerializeField] private GameObject _hintHolder;
     [SerializeField] private TextMeshProUGUI _hintText;
+    private int _newCardOldInt;
+    private bool _gotNewCard;
 
     void Awake()
     {
@@ -55,7 +57,10 @@ public class CardManager : MonoBehaviour
     {
         //Plays sound for cycling through cards
         AkSoundEngine.PostEvent("Play_CardShuffle", this.gameObject);
-
+        if(_gotNewCard)
+        {
+            CloseCard();
+        }
         _isCardExpanded = false;
         if(_isOracleDeckActive)
         {
@@ -143,6 +148,11 @@ public class CardManager : MonoBehaviour
             {
                 CloseHelper(ref _propCardList, _propCurrentCard);
             }
+        }
+        if(_gotNewCard)
+        {
+            _oracleCurrentCard = _newCardOldInt;
+            _gotNewCard = false;
         }
     }
 
@@ -249,6 +259,20 @@ public class CardManager : MonoBehaviour
             _isOracleDeckActive = false;
         }
     }    
+
+    public void GetOracleCard(string cardName)
+    {
+        for(int i = 0; i < _oracleCardList.Count; i++)
+        {
+            if(_oracleCardList[i].name == cardName)
+            {
+                _newCardOldInt = _oracleCurrentCard;
+                _gotNewCard = true;
+                _oracleCurrentCard = i;
+                OpenCard();
+            }
+        }
+    }
 
     public void AddPropCard(GameObject newCard)
     {

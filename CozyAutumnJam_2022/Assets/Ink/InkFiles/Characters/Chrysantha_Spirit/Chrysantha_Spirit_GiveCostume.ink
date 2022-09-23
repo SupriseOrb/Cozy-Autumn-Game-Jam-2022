@@ -24,7 +24,8 @@ So how about you spare them a thought while you wear this?
 #char chrysantha_spirit
 ...
 Mmmgh.
-Fine.
-Thanks, I guess.
+I guess you're right.
+This hoodie's pretty cute, actually.
+I'll give this a try. Thanks!
 
 -> END

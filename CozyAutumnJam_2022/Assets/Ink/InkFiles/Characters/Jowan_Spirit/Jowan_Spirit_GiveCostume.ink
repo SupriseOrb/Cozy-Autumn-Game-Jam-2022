@@ -40,6 +40,7 @@ I need to stop being cruel to myself!
 I'm good enough for Jay, and you're going to leave now, because you're not Jay!
 
 #char jay_spirit
+Wh-!
 NOOOOOOOOOOOOOOO!!
 
 #wait 3

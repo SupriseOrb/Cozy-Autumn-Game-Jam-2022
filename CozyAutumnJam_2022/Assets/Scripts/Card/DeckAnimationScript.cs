@@ -34,6 +34,6 @@ public class DeckAnimationScript : MonoBehaviour
     
     public void HideDeck()
     {
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
     }
 }

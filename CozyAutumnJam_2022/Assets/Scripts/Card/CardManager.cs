@@ -30,6 +30,12 @@ public class CardManager : MonoBehaviour
     [SerializeField] private bool _isOracleDeckActive;
     private bool _isCardExpanded;
 
+    public bool IsCardExpanded
+    {
+        get {return _isCardExpanded;}
+        set {_isCardExpanded = value;}
+    }
+
     [SerializeField] private GameObject _hintHolder;
     [SerializeField] private TextMeshProUGUI _hintText;
     private int _newCardOldInt;

@@ -779,6 +779,17 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_DOOT" ID="{8A571AA8-7E2F-463E-A7F6-0302A080AFDD}">
+					<ChildrenList>
+						<Action Name="" ID="{E95E9433-8D68-40DB-A74E-FEE578D685A0}" ShortID="99420142">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DOOT" ID="{C92953D6-FB0B-4D1E-A960-CBA214EDEE29}" WorkUnitID="{85F0BFB3-138E-45C9-9373-7C9ED736BF60}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

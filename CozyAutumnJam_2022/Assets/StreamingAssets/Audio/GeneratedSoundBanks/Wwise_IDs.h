@@ -35,6 +35,7 @@ namespace AK
         static const AkUniqueID PLAY_DIALOGUEMANUEL = 2800016978U;
         static const AkUniqueID PLAY_DIALOGUEMYRTLE = 3130910329U;
         static const AkUniqueID PLAY_DIALOGUEV = 4285197602U;
+        static const AkUniqueID PLAY_DOOT = 2547633864U;
         static const AkUniqueID PLAY_ERROR = 2713813216U;
         static const AkUniqueID PLAY_GROCERYBAGIMPACT = 3491353433U;
         static const AkUniqueID PLAY_GROCERYITEMDROP = 3055723057U;

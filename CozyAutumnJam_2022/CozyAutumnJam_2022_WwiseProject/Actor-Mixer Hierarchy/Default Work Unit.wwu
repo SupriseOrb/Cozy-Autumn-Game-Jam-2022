@@ -1036,7 +1036,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+									<ObjectRef Name="SFX" ID="{669C53AA-FCCF-471E-B43B-8CD2ACF961ED}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1059,7 +1059,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+									<ObjectRef Name="SFX" ID="{669C53AA-FCCF-471E-B43B-8CD2ACF961ED}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1074,6 +1074,36 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="GroceryItemDrop" ID="{6C4DFAF6-44C5-44C2-8EA1-E57C93E7B073}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="DOOT" ID="{C92953D6-FB0B-4D1E-A960-CBA214EDEE29}" ShortID="886206163">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{789EBC79-CD82-41C4-A5A8-FD50698BE9C4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{669C53AA-FCCF-471E-B43B-8CD2ACF961ED}" WorkUnitID="{66A070C8-0009-49A2-90FF-727A6CC2899E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DOOT" ID="{7628476C-526D-4B3A-BE4B-407FB35B38D9}">
+									<Language>SFX</Language>
+									<AudioFile>DOOT.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="805806268"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="DOOT" ID="{7628476C-526D-4B3A-BE4B-407FB35B38D9}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

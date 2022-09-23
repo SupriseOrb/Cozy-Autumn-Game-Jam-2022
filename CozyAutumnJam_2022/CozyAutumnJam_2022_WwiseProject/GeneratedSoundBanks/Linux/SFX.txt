@@ -21,6 +21,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2240950997	Play_DialogueCleo			\Default Work Unit\SFX Events\Dialogue SFX\Play_DialogueCleo	
 	2450707257	Play_RatStart			\Default Work Unit\SFX Events\Puzzle SFX\Play_RatStart	
 	2539951888	Play_Translator			\Default Work Unit\SFX Events\Card Ability SFX\Play_Translator	
+	2547633864	Play_DOOT			\Default Work Unit\SFX Events\Puzzle SFX\Play_DOOT	
 	2629021827	Play_BoxImpact			\Default Work Unit\SFX Events\Puzzle SFX\Play_BoxImpact	
 	2651780219	Stop_DialogueChrysantha			\Default Work Unit\SFX Events\Dialogue SFX\Stop_DialogueChrysantha	
 	2713813216	Play_Error			\Default Work Unit\SFX Events\Puzzle SFX\Play_Error	
@@ -70,6 +71,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	742781176	UIPause	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Linux\SFX\UIPause_02_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\General UI SFX\UIPause		21958
 	755363995	PlateReset	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Linux\SFX\PlateReset_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\PlateReset		29921
 	763874355	DialogueV	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Linux\SFX\DialogueV_F2BF74AC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dialogue SFX\DialogueV		4209
+	805806268	DOOT	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Linux\SFX\DOOT_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Puzzle SFX\DOOT		8720
 	807983812	CardShuffle2	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Linux\SFX\CardShuffle2_02_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardShuffle\CardShuffle2		4877
 	813959866	SpiderWeb03	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Linux\SFX\SpiderWeb03_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Ability SFX\SpiderWeb\SpiderWeb03		12171
 	844309663	CardFlip	D:\GitHub\Cozy-Autumn-Game-Jam\CozyAutumnJam_2022\CozyAutumnJam_2022_WwiseProject\.cache\Linux\SFX\CardFlip_32513D82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card UI SFX\CardFlip		3238

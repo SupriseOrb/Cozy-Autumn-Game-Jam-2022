@@ -3,7 +3,7 @@ VAR open = false
 {open: -> is_open}
 
 #char none
-(A ghostly treasure chest prop. It's locked with a 4-word padlock.)
+(A ghostly treasure chest prop. It's locked with a 4-phrase padlock.)
 * [Orange Pumpkin] -> after_choice
 * [Clown] -> after_choice
 * [Gravestone] -> after_choice

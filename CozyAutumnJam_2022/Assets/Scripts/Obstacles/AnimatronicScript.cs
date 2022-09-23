@@ -14,6 +14,11 @@ public class AnimatronicScript : MonoBehaviour, IAnimatronic
     [SerializeField] private Sprite _unpoweredSprite;
     [SerializeField] private Sprite _poweredSprite;
 
+    public bool IsPowered
+    {
+        get {return _isPowered;}
+    }
+
     public void ActivateAnimatronic()
     {
         if(_isPowered)

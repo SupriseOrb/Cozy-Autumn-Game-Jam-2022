@@ -42,6 +42,7 @@ public class ItemTagScript : MonoBehaviour
     {
         return isAnimatronic;
     }
+
     public bool IsCostume()
     {
         return isCostume;

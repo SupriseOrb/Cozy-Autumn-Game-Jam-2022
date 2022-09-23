@@ -156,6 +156,10 @@ public class InputManager : MonoBehaviour
             {
                 interactable.ActivateInteraction();
             }
+            if (_hitGO.TryGetComponent(out IProp prop))
+            {
+                prop.ActivateProp();
+            }
         }
         
     }

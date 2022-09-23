@@ -26,7 +26,6 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private InputManager _inputManager;
     [SerializeField] private Vector2 _playerDirection;
-    [SerializeField] private GameObject _fakeMyrtle;
 
     void Awake()
     {

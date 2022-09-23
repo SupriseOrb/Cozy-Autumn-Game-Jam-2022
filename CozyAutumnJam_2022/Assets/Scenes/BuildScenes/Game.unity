@@ -3991,6 +3991,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1288383701440222295, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
   m_PrefabInstance: {fileID: 708303946}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &708303948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1947914958, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
+  m_PrefabInstance: {fileID: 708303946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &708303949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708303948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73476214012d8634da9e5ca485c3e4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _story: {fileID: 4900000, guid: 6078e534ec5d7c94ab37b6846946ccc3, type: 3}
 --- !u!1 &768566813
 GameObject:
   m_ObjectHideFlags: 0
@@ -43425,67 +43443,127 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CheckForCompletion
+      objectReference: {fileID: 0}
+    - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: CompleteQuestStepHuman
       objectReference: {fileID: 0}
     - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: QuestManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 11400000, guid: 16379918319bf474abe4eefe8d62a6aa, type: 2}
     - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: CharacterWithProgression, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: CharacterWithProgression, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 415215229458653793, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CompleteQuestStepSpirit
+      value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CompleteQuestStepSpirit
+      objectReference: {fileID: 0}
+    - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: CheckForCompletion
+      objectReference: {fileID: 0}
+    - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: QuestManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: ff3d8fb0172b1734f88a62588ec77cd2, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: ff3d8fb0172b1734f88a62588ec77cd2, type: 2}
     - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: CharacterWithProgression, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: CharacterWithProgression, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 480246647123511351, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1008245413435149715, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
@@ -43574,14 +43652,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
@@ -43593,15 +43675,27 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 369984622491208856}
     - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CompleteQuestStepHuman
+      value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CompleteQuestStepHuman
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
@@ -43609,19 +43703,27 @@ PrefabInstance:
       value: QuestManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: QuestManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: 0aec6f9edf923ae4ca4c600cc8ae6794, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 0aec6f9edf923ae4ca4c600cc8ae6794, type: 2}
     - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: CharacterWithProgression, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: CharacterWithProgression, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043241699077476165, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2919313688385847387, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
@@ -43634,14 +43736,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
@@ -43653,15 +43759,27 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 369984622491208856}
     - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CompleteQuestStepBoss
+      value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CompleteQuestStepBoss
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
@@ -43673,51 +43791,91 @@ PrefabInstance:
       value: QuestManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: QuestManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 11400000, guid: fa67f1860e129bc468c5ab7f492a865d, type: 2}
     - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: CharacterWithProgression, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: CharacterWithProgression, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952863262461408076, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CompleteQuestStepSpirit
+      value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CompleteQuestStepSpirit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: CheckForCompletion
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: QuestManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: cf3665c6621620a4fb922c6081885a39, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: cf3665c6621620a4fb922c6081885a39, type: 2}
     - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: CharacterWithProgression, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: CharacterWithProgression, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602190967797569698, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3752776880135271835, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
@@ -43725,35 +43883,67 @@ PrefabInstance:
       value: 99.56
       objectReference: {fileID: 0}
     - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CompleteQuestStepHuman
+      value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CompleteQuestStepHuman
+      objectReference: {fileID: 0}
+    - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: CheckForCompletion
+      objectReference: {fileID: 0}
+    - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: QuestManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: 07e4c0c55ad78894a806a6801de3fd2b, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 07e4c0c55ad78894a806a6801de3fd2b, type: 2}
     - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: CharacterWithProgression, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: CharacterWithProgression, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3982303312531727969, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4031712910095118457, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
@@ -43765,99 +43955,195 @@ PrefabInstance:
       value: -12.4
       objectReference: {fileID: 0}
     - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CheckForCompletion
+      objectReference: {fileID: 0}
+    - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: CompleteQuestStepHuman
       objectReference: {fileID: 0}
     - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: QuestManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 11400000, guid: 23e98b5e1a316d4449236425aafa419a, type: 2}
     - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: CharacterWithProgression, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: CharacterWithProgression, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5277492636985253269, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CompleteQuestStepSpirit
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CompleteQuestStepSpirit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: CheckForCompletion
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: QuestManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 11400000, guid: f13e7bbfafefd7c449edad7d35fab468, type: 2}
     - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: CharacterWithProgression, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: CharacterWithProgression, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5882672848061250573, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CompleteQuestStepSpirit
+      value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CompleteQuestStepSpirit
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: CheckForCompletion
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: QuestManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: d4400d9de7e0cd94f9870d221ceb3b06, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: d4400d9de7e0cd94f9870d221ceb3b06, type: 2}
     - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: CharacterWithProgression, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: CharacterWithProgression, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376273959980887198, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6538980908363771992, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
@@ -43873,40 +44159,72 @@ PrefabInstance:
       value: 13.19
       objectReference: {fileID: 0}
     - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CompleteQuestStepSpirit
+      value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CompleteQuestStepSpirit
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: CheckForCompletion
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: QuestManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: 204b83339f5056544a65b871e5b928cf, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 204b83339f5056544a65b871e5b928cf, type: 2}
     - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: CharacterWithProgression, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: CharacterWithProgression, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6869721524830887265, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -43914,15 +44232,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
@@ -43943,9 +44261,13 @@ PrefabInstance:
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 369984622491208855}
+      objectReference: {fileID: 369984622491208856}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
@@ -43958,15 +44280,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: CompleteQuestStepBoss
-      objectReference: {fileID: 0}
-    - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: CompleteQuestStepBoss
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: SetActive
+      value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -43978,6 +44300,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: QuestManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: QuestManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
@@ -44003,22 +44329,22 @@ PrefabInstance:
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: f8d480ea3d247a74ebb3c90477963187, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: f8d480ea3d247a74ebb3c90477963187, type: 2}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: CharacterWithProgression, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: CharacterWithProgression, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7038589162327571663, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -44033,35 +44359,67 @@ PrefabInstance:
       value: -15.5
       objectReference: {fileID: 0}
     - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
-      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 369984622491208856}
+    - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CompleteQuestStepHuman
+      value: CheckForCompletion
       objectReference: {fileID: 0}
     - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CompleteQuestStepHuman
+      objectReference: {fileID: 0}
+    - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: CheckForCompletion
+      objectReference: {fileID: 0}
+    - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: QuestManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: 18eb146d2ae0382478bfc91fb1870574, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 18eb146d2ae0382478bfc91fb1870574, type: 2}
     - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: CharacterWithProgression, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
       propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: CharacterWithProgression, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7242626691202833498, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}
+      propertyPath: _characterEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7835683902321014908, guid: 9fcf59120acf9bc40bc03a53560375dd, type: 3}

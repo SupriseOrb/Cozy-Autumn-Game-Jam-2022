@@ -101,16 +101,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'This card has a bunch of loose hairs on it, but looks like its missing
+      value: 'This card has a bunch of loose hairs on it, but looks like it''s missing
         something. Maybe you should ask one of the customers about it?
 
 
         Maybe
-        you''ll find something nice if you get all this clutter out of the way
+        you''ll find something nice if you get all this clutter out of the way.
 
 
         The
-        shelves and aisles are different in both worlds? such a pain'
+        shelves and aisles are different in both worlds? What a pain.'
       objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite

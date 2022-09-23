@@ -109,7 +109,8 @@ PrefabInstance:
 
 
         Another
-        chest, but some of these symbols dont have matches in the spirit world. Huh'
+        chest, but some of these symbols don''t have matches in the spirit world.
+        Huh...'
       objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite

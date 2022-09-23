@@ -101,16 +101,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'This card seems like its missing something fun.
+      value: 'This card seems like it''s missing something fun.
 
 
-        Is that chest
-        playing a song? I dont know any key that would fit that type of lock, maybe
-        theres another way to open it
+        Is that
+        chest playing a song? I don''t know any key that would fit that type of lock...
+        maybe there''s another way to open it.
 
 
-        Another musical chest? And these
-        music boxes wont make any sound though, maybe they need power.'
+        Another musical chest? These
+        music boxes won''t make any sound, though. Maybe they need power.'
       objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite

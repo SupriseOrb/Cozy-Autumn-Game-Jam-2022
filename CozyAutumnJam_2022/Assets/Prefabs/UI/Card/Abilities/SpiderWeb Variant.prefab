@@ -101,17 +101,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'This card gives off a mischevious vibe.
+      value: 'This card gives off a mischievous vibe.
 
 
         This rat is such
-        a pest, and the cat wont move. Maybe if you can tempt the cat with something
+        a pest, and the cat won''t move. Maybe if you can tempt the cat with something
         it likes it will finally get up and move. You''ll need to find a way to trap
-        that rat though.
+        that rat, though.
 
 
-        How many cats are in this place? It looks bored,
-        maybe it wants something that it can chase around. This rat seems sensitive
+        How many cats are in this place? It looks bored
+        -- maybe it wants something that it can chase around. This rat seems sensitive
         to sound.'
       objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}

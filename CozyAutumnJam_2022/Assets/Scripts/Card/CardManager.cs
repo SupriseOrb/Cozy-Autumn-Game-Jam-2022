@@ -266,6 +266,7 @@ public class CardManager : MonoBehaviour
         {
             if(_oracleCardList[i].name == cardName)
             {
+                _oracleCardList[i].GetComponent<CardArtImplementation>().ShowCardInfo();
                 _newCardOldInt = _oracleCurrentCard;
                 _gotNewCard = true;
                 _oracleCurrentCard = i;

@@ -60,6 +60,12 @@ public class PlayerScript : MonoBehaviour
         return _playerDirection;
     }
 
+    public Vector2 CurrentInputVector
+    {
+        get {return _currentInputVector;}
+        set {_currentInputVector = value;}
+    }
+
     //DO NOT USE TO MOVE TO SPIRIT WORLD
     public void IntroTeleport(Vector2 teleportLocation, Vector2 fakeMyrtleLocation)
     {

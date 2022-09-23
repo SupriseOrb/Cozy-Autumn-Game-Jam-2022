@@ -101,8 +101,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: What are you doing looking at this card? You need to go find your boss!
-        What do you think is in that glowing closet in the back?
+      value: Hmm, what is your boss hiding in the glowing closet in the back? Maybe
+        the real boss is in there.
       objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite

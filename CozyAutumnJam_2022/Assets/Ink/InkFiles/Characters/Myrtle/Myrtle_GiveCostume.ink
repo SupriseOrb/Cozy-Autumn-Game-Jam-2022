@@ -1,4 +1,4 @@
-#char myrtle #music HumanMyrtle
+#char myrtle #music HumanMyrtle #emotion happy
 Hey, Cleo!
 
 #char myrtle #emotion happy

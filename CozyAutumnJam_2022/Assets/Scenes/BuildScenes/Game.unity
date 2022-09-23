@@ -188,30 +188,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 404776520}
     m_Modifications:
-    - target: {fileID: 181738392551340186, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9cac6fc339476a94fb713cf032503b7a, type: 3}
-    - target: {fileID: 475763783140778658, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: _fadeAnimationName
-      value: FadeAnimation
-      objectReference: {fileID: 0}
-    - target: {fileID: 475763783140778658, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: _teleportAnimationName
-      value: TeleportFadeAnimation
-      objectReference: {fileID: 0}
-    - target: {fileID: 615161177776923566, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: abilityObtained
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1724504213863614832, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2638984981169549110, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 2650161887793585093, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -299,38 +275,6 @@ PrefabInstance:
     - target: {fileID: 2650161887793585113, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
       propertyPath: m_Name
       value: UI_Card
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650161888817679555, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2650161889188352939, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2842762890483063149, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: abilityObtained
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3438832101873391446, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: abilityObtained
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6014959205933452202, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: abilityObtained
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6110703791503231506, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 7770716414510359484, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: abilityObtained
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8382890571925262649, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
-      propertyPath: abilityObtained
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dced7d363d50ac4084e2ad1e0f3ded4, type: 3}
@@ -2874,6 +2818,26 @@ PrefabInstance:
       propertyPath: _ratCard
       value: 
       objectReference: {fileID: 1759118709}
+    - target: {fileID: 3184059978227358206, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[2].m_Data
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184059978227358206, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[5].m_Data
+      value: 
+      objectReference: {fileID: 23222356, guid: 151e814138d47e44abf26b076f3ff448, type: 3}
+    - target: {fileID: 3184059978227358206, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[2].m_RefCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184059978227358206, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
+      propertyPath: m_TileSpriteArray.Array.data[5].m_RefCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184059978227358206, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
+      propertyPath: m_Tiles.Array.data[18].second.m_TileSpriteIndex
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7350795500589760960, guid: 90ca00e180bebaa458fe56785561d256, type: 3}
       propertyPath: m_Name
       value: Decor Tilesets

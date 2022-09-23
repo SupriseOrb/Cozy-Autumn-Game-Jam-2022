@@ -101,15 +101,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'This card seems wet to the touch. Huh
+      value: 'This card seems wet to the touch. Huh...
 
 
-        All this candy is blocking
-        your path to the good stuff
+        All this candy is
+        blocking your path to the good stuff.
 
 
-        This cat looks hungry, maybe all you
-        can get some food so it can move'
+        This cat looks hungry. Maybe
+        you can get some food so it''ll move.'
       objectReference: {fileID: 0}
     - target: {fileID: 2610317392441393382, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_Sprite

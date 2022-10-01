@@ -113,23 +113,23 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Human_Chrysantha" ID="{4EC72FB5-13F0-4CB9-80F1-17D13D5568EF}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<ObjectRef Name="Human_Myrtle" ID="{490D8A68-088D-413B-AACB-8E2B7E804CA2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Human_Ken" ID="{A9661CD6-DA4E-43F4-AB6F-E7DC7D2A67B3}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<ObjectRef Name="Human_Jowan" ID="{C0A07559-FDF3-4C18-8DF6-7E282EEB83B2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Human_V" ID="{F40A95F7-2B59-4CA2-8A5D-B09772D855D4}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<ObjectRef Name="Human_Chrysantha" ID="{4EC72FB5-13F0-4CB9-80F1-17D13D5568EF}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Human_Jowan" ID="{C0A07559-FDF3-4C18-8DF6-7E282EEB83B2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<ObjectRef Name="Human_Ken" ID="{A9661CD6-DA4E-43F4-AB6F-E7DC7D2A67B3}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Human_Myrtle" ID="{490D8A68-088D-413B-AACB-8E2B7E804CA2}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<ObjectRef Name="Human_V" ID="{F40A95F7-2B59-4CA2-8A5D-B09772D855D4}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
 							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
@@ -137,23 +137,23 @@
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Spirit_Ken" ID="{4655C10E-3ED7-4581-AE92-07A65B59510D}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<ObjectRef Name="Spirit_Myrtle" ID="{C207CCF1-E10A-4B6D-A227-CF5E73FDC888}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
 							<Position X="4" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Spirit_V" ID="{FB4395D9-41C6-4983-AC09-520F68BE3441}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<ObjectRef Name="Spirit_Jowan" ID="{EEB54F43-CB9C-4870-9B17-01FB4DCE45B1}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
 							<Position X="4" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Spirit_Jowan" ID="{EEB54F43-CB9C-4870-9B17-01FB4DCE45B1}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<ObjectRef Name="Spirit_Chrysantha" ID="{FE853D0A-6BD2-4F6E-ADA1-40223FD8A41F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
 							<Position X="4" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Spirit_Myrtle" ID="{C207CCF1-E10A-4B6D-A227-CF5E73FDC888}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<ObjectRef Name="Spirit_Ken" ID="{4655C10E-3ED7-4581-AE92-07A65B59510D}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
 							<Position X="4" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Spirit_Chrysantha" ID="{FE853D0A-6BD2-4F6E-ADA1-40223FD8A41F}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
+							<ObjectRef Name="Spirit_V" ID="{FB4395D9-41C6-4983-AC09-520F68BE3441}" WorkUnitID="{8DD2D21A-E3D0-48AC-8233-61DD9542BB4D}"/>
 							<Position X="4" Y="4"/>
 						</Module>
 					</ModuleList>
@@ -176,7 +176,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="SpiritStore" ID="{9E5BE5B5-6E95-4EB6-906E-72FC6A53811F}"/>
+						<CurrentStateRef Name="MainMenu" ID="{209D6C24-F8CF-4F1B-B3ED-7DB48AE9A9B0}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

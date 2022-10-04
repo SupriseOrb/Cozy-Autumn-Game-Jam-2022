@@ -20677,8 +20677,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1626801093}
-  - {fileID: 1252310135}
   - {fileID: 1867789360}
+  - {fileID: 1252310135}
   - {fileID: 235239835}
   - {fileID: 566773572}
   m_Father: {fileID: 0}
@@ -41279,7 +41279,7 @@ Transform:
   - {fileID: 1051528118}
   - {fileID: 1612456852}
   m_Father: {fileID: 1634713377}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907129869
 GameObject:

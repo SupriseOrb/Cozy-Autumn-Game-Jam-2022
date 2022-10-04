@@ -21,7 +21,7 @@ public class CostumeScript : MonoBehaviour, IInteractable
             CardManager.Instance.AddPropCard(_costumeCard);
             //Play Costume Get SFX
             AkSoundEngine.PostEvent("Play_CostumeGet", this.gameObject);
-            if(_isSpiritCostume)
+            if(!_isSpiritCostume)
             {
                 //Check if costume was gotten w/o talking to spirit
                 if (_character.StepIndex == 0)

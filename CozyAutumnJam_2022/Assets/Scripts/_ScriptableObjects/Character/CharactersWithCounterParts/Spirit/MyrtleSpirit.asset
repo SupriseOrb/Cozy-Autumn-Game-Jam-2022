@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3db17c638b994343af964639e872cc9, type: 3}
-  m_Name: KenS
+  m_Name: MyrtleSpirit
   m_EditorClassIdentifier: 
-  _name: Sniffly Werewolf
+  _name: Impish Demon
   _emotes:
-  - {fileID: 21300000, guid: 2b374a6e349c8c748a501a83bf682d54, type: 3}
-  - {fileID: 21300000, guid: 03524a52ff5681d45aac539d12b300fc, type: 3}
+  - {fileID: 21300000, guid: 683b058c859487b47b39603c1e60ff42, type: 3}
+  - {fileID: 21300000, guid: 83c70b4bec4f98c4c92b0aa20f797fe2, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
-  _questIndex: 0
+  _questIndex: 4
   _story:
-  - {fileID: 4900000, guid: e03e6f9866133454fa718c8b45d51244, type: 3}
-  - {fileID: 4900000, guid: 7fe8a9801b36a424b862d8489e7ce126, type: 3}
-  - {fileID: 4900000, guid: e21406d9c56c6dd4c9809eb2a2f79779, type: 3}
-  - {fileID: 4900000, guid: c47a4dc6f7c0e4d4498645d1c59c9f5b, type: 3}
+  - {fileID: 4900000, guid: 4d57b2c6b9b71de42b978f3525cb10e7, type: 3}
+  - {fileID: 4900000, guid: a73099a12e849b04db2cf556e66e9405, type: 3}
+  - {fileID: 4900000, guid: 7ddb9899ec1b80e4e8f2850f07abb975, type: 3}
+  - {fileID: 4900000, guid: 41116e0745e23854b8809e2f84755d62, type: 3}
   _isTranslatedDefault: 1
   _isTranslated: 1
   _isCostumeCollected: 0

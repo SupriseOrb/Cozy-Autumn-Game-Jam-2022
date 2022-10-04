@@ -215,7 +215,6 @@ MonoBehaviour:
   _rb: {fileID: 2448369009358849145}
   _inputManager: {fileID: 17740070}
   _playerDirection: {x: 0, y: 0}
-  _fakeMyrtle: {fileID: 0}
 --- !u!1 &3218927989246380640
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,8 +286,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -709489405
+  m_SortingLayer: 4
   m_SortingOrder: 2
   m_Sprite: {fileID: 785822776, guid: e83cf5d9256f3004294a3099d71e5d33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -375,10 +374,6 @@ PrefabInstance:
     - target: {fileID: 7968371761981159883, guid: 41404b39b2e664c48a6b10e9e01bdb29, type: 3}
       propertyPath: m_Name
       value: Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 7968371762749389030, guid: 41404b39b2e664c48a6b10e9e01bdb29, type: 3}
-      propertyPath: orthographic size
-      value: 3.90625
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41404b39b2e664c48a6b10e9e01bdb29, type: 3}

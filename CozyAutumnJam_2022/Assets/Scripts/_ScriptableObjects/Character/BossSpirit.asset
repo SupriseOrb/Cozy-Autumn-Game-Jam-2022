@@ -10,20 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3db17c638b994343af964639e872cc9, type: 3}
-  m_Name: JowanS
+  m_Name: BossSpirit
   m_EditorClassIdentifier: 
-  _name: Nervous Pumpkinhead
+  _name: Manuel (?)
   _emotes:
-  - {fileID: 21300000, guid: 98f485f918caba64f9be06da9d1255fd, type: 3}
-  - {fileID: 21300000, guid: 60b14ac36d28bf04f99c97fa910f2118, type: 3}
+  - {fileID: 21300000, guid: 5f4591305c047ea4899a13d7fad06232, type: 3}
+  - {fileID: 21300000, guid: 0f9b2c16259c38b48915d70ff745aa37, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
-  _questIndex: 2
+  _questIndex: 1
   _story:
-  - {fileID: 4900000, guid: 2555c6d70f4109e47a06cd03e85f4997, type: 3}
-  - {fileID: 4900000, guid: fe2fcb6c423ed2e408d77f1b44d34c2a, type: 3}
-  - {fileID: 4900000, guid: 707567121b2aa474bb343c772da73b33, type: 3}
-  - {fileID: 4900000, guid: d9e76e380fbbfc146bbd1e4730dd0423, type: 3}
+  - {fileID: 4900000, guid: e9925524d45a8574e903aa253ce79018, type: 3}
+  - {fileID: 4900000, guid: c35a0787e5a90f942b4e337323c79cf3, type: 3}
   _isTranslatedDefault: 1
   _isTranslated: 1
   _isCostumeCollected: 0

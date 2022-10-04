@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3db17c638b994343af964639e872cc9, type: 3}
-  m_Name: MyrtleS
+  m_Name: JowanSpirit
   m_EditorClassIdentifier: 
-  _name: Impish Demon
+  _name: Nervous Pumpkinhead
   _emotes:
-  - {fileID: 21300000, guid: 683b058c859487b47b39603c1e60ff42, type: 3}
-  - {fileID: 21300000, guid: 83c70b4bec4f98c4c92b0aa20f797fe2, type: 3}
+  - {fileID: 21300000, guid: 98f485f918caba64f9be06da9d1255fd, type: 3}
+  - {fileID: 21300000, guid: 60b14ac36d28bf04f99c97fa910f2118, type: 3}
   _characterID: 0
   _currentStoryBeat: 0
-  _questIndex: 4
+  _questIndex: 2
   _story:
-  - {fileID: 4900000, guid: 4d57b2c6b9b71de42b978f3525cb10e7, type: 3}
-  - {fileID: 4900000, guid: a73099a12e849b04db2cf556e66e9405, type: 3}
-  - {fileID: 4900000, guid: 7ddb9899ec1b80e4e8f2850f07abb975, type: 3}
-  - {fileID: 4900000, guid: 41116e0745e23854b8809e2f84755d62, type: 3}
+  - {fileID: 4900000, guid: 2555c6d70f4109e47a06cd03e85f4997, type: 3}
+  - {fileID: 4900000, guid: fe2fcb6c423ed2e408d77f1b44d34c2a, type: 3}
+  - {fileID: 4900000, guid: 707567121b2aa474bb343c772da73b33, type: 3}
+  - {fileID: 4900000, guid: d9e76e380fbbfc146bbd1e4730dd0423, type: 3}
   _isTranslatedDefault: 1
   _isTranslated: 1
   _isCostumeCollected: 0

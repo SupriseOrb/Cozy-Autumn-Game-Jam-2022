@@ -26,7 +26,6 @@ public class InputManager : MonoBehaviour
     [SerializeField] private string _swapDString;
     [SerializeField] private string _useDString;
     [SerializeField] private string _movementString;
-    [SerializeField] private string _interactString;
     [SerializeField] private string _resizeCardString;
 
     private InputAction _cycleLAction;
@@ -36,7 +35,6 @@ public class InputManager : MonoBehaviour
     private InputAction _swapDAction;
     private InputAction _useDAction;
     private InputAction _movementAction;
-    private InputAction _interactAction;
     private InputAction _resizeCardAction;
     
 
@@ -49,7 +47,6 @@ public class InputManager : MonoBehaviour
         _swapDAction = _playerInput.actions[_swapDString];
         _useDAction = _playerInput.actions[_useDString];
         _movementAction = _playerInput.actions[_movementString];
-        _interactAction = _playerInput.actions[_interactString];
         _resizeCardAction = _playerInput.actions[_resizeCardString];
     }
 
@@ -61,7 +58,6 @@ public class InputManager : MonoBehaviour
         _onEscapeAction.performed += OnEscape;
         _swapDAction.performed += OnSwapD;
         _useDAction.performed += OnUseD;
-        _interactAction.performed += OnInteract;
         _resizeCardAction.performed += OnResizeCard;
 
 
@@ -78,7 +74,6 @@ public class InputManager : MonoBehaviour
         _onEscapeAction.performed -= OnEscape;
         _swapDAction.performed -= OnSwapD;
         _useDAction.performed -= OnUseD;
-        _interactAction.performed -= OnInteract;
 
         _movementAction.started -= OnMovement;
         _movementAction.performed -= OnMovement;
@@ -110,10 +105,16 @@ public class InputManager : MonoBehaviour
 
     public void OnSpace(InputAction.CallbackContext context)
     {
-        
-        if (_playerInConvo)
+        if (!_isPaused.Value)
         {
-            DialogueManager.Instance.OnAdvanceDialogue();
+            if (_playerInConvo.Value)
+            {
+                DialogueManager.Instance.OnAdvanceDialogue();
+            }
+            else
+            {
+                OnInteract();
+            }
         }
     }
 
@@ -141,7 +142,7 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    public void OnInteract(InputAction.CallbackContext context)
+    private void OnInteract()
     {
         Vector2 originalPos = PlayerScript.Instance.transform.position;
         Vector2 originalDir = PlayerScript.Instance.getPlayerDirection();

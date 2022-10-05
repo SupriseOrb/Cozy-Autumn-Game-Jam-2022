@@ -297,7 +297,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &1533640462746633578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1284,6 +1284,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533640462746633576}
     m_Modifications:
+    - target: {fileID: 1217671326158281820, guid: d1fc55b1a5d6a204d8dfac70fca605af, type: 3}
+      propertyPath: m_Name
+      value: Credits Back Button
+      objectReference: {fileID: 0}
     - target: {fileID: 1273098709785458300, guid: d1fc55b1a5d6a204d8dfac70fca605af, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

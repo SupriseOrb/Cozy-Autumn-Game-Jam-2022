@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Resume
       objectReference: {fileID: 0}
+    - target: {fileID: 3051743121719239128, guid: 04c70de5074ea3d4fb460caa0c689a6c, type: 3}
+      propertyPath: m_Name
+      value: Resume Button
+      objectReference: {fileID: 0}
     - target: {fileID: 3051743121719239130, guid: 04c70de5074ea3d4fb460caa0c689a6c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -41,7 +45,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3104393178403879022, guid: 04c70de5074ea3d4fb460caa0c689a6c, type: 3}
       propertyPath: m_Name
-      value: Resume
+      value: Resume Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3104393178435013624, guid: 04c70de5074ea3d4fb460caa0c689a6c, type: 3}
       propertyPath: m_Pivot.x

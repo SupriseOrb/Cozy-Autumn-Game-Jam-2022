@@ -69,15 +69,6 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Interact",
-                    "type": "Button",
-                    "id": "02b3e9b3-eb57-432e-97c0-a6149b02116b",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "ResizeCard",
                     "type": "Button",
                     "id": "b2b8dc3f-826c-4086-9e23-9abdffc2e4c4",
@@ -135,7 +126,7 @@
                 {
                     "name": "",
                     "id": "fadf9955-3fef-432f-a8bd-6be48e88bebd",
-                    "path": "<Keyboard>/o",
+                    "path": "<Keyboard>/tab",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -146,7 +137,7 @@
                 {
                     "name": "",
                     "id": "0c2d074d-18d0-4796-85ea-3f10029a7d87",
-                    "path": "<Keyboard>/p",
+                    "path": "<Keyboard>/r",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -208,17 +199,6 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "c212fee1-9d10-456b-8af6-86d8ec52dc13",
-                    "path": "<Keyboard>/f",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 },
                 {
                     "name": "",

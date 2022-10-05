@@ -8,8 +8,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3184916417918336840, guid: a2eeabb838e32fd40962447475755f5a, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184916417918336840, guid: a2eeabb838e32fd40962447475755f5a, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184916418015587248, guid: a2eeabb838e32fd40962447475755f5a, type: 3}
+      propertyPath: m_Name
+      value: SFX Slider
       objectReference: {fileID: 0}
     - target: {fileID: 3184916418015587251, guid: a2eeabb838e32fd40962447475755f5a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -133,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3184916419720215783, guid: a2eeabb838e32fd40962447475755f5a, type: 3}
       propertyPath: m_Name
-      value: SFX Volume
+      value: SFX Volume Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3184916419722187419, guid: a2eeabb838e32fd40962447475755f5a, type: 3}
       propertyPath: m_AnchorMax.y

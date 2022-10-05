@@ -222,7 +222,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &558851365769207415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,6 +538,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9040060755032344574, guid: dd6affacef7e997469c745b1d68daf9e, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9040060755032344574, guid: dd6affacef7e997469c745b1d68daf9e, type: 3}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 4191902711968219018}
+    - target: {fileID: 9040060755032344574, guid: dd6affacef7e997469c745b1d68daf9e, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -739,6 +747,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4239966983400859721, guid: 3fb2381290510a14ea53d6cf9a17efe5, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4239966983400859721, guid: 3fb2381290510a14ea53d6cf9a17efe5, type: 3}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 8407038531462915917}
+    - target: {fileID: 4239966983400859721, guid: 3fb2381290510a14ea53d6cf9a17efe5, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 994933492885107851}
+    - target: {fileID: 4239966983400859721, guid: 3fb2381290510a14ea53d6cf9a17efe5, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -839,6 +859,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 376452921639449927, guid: e2db8ec74db4fc54f939719a199b6db2, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 376452921639449927, guid: e2db8ec74db4fc54f939719a199b6db2, type: 3}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 994933492885107851}
+    - target: {fileID: 376452921639449927, guid: e2db8ec74db4fc54f939719a199b6db2, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 6961193657154136030}
     - target: {fileID: 376452921639449927, guid: e2db8ec74db4fc54f939719a199b6db2, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1000,6 +1032,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 558851365769207413}
     m_Modifications:
+    - target: {fileID: 1217671326158281820, guid: d1fc55b1a5d6a204d8dfac70fca605af, type: 3}
+      propertyPath: m_Name
+      value: Settings Back Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 1217671326158281822, guid: d1fc55b1a5d6a204d8dfac70fca605af, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1217671326158281822, guid: d1fc55b1a5d6a204d8dfac70fca605af, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 558851366367764335}
     - target: {fileID: 1273098709785458300, guid: d1fc55b1a5d6a204d8dfac70fca605af, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1090,6 +1134,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1fc55b1a5d6a204d8dfac70fca605af, type: 3}
+--- !u!114 &8407038531462915917 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1217671326158281822, guid: d1fc55b1a5d6a204d8dfac70fca605af, type: 3}
+  m_PrefabInstance: {fileID: 7227649160420899603}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &8495812093789637999 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1273098709785458300, guid: d1fc55b1a5d6a204d8dfac70fca605af, type: 3}
@@ -1210,6 +1265,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8514805270911268589, guid: 94b523f51f76ffa4b873f0d9cfd5e5d6, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514805270911268589, guid: 94b523f51f76ffa4b873f0d9cfd5e5d6, type: 3}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 558851366367764335}
+    - target: {fileID: 8514805270911268589, guid: 94b523f51f76ffa4b873f0d9cfd5e5d6, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 4191902711968219018}
     - target: {fileID: 8514805270911268589, guid: 94b523f51f76ffa4b873f0d9cfd5e5d6, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
       value: 1

@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : Menu
 {
     [SerializeField] private Canvas _pauseMenuCanvas;
     [SerializeField] private BoolVariable _isPaused;
+    private EventSystem _currentEventSystem;
+    [SerializeField] private GameObject _resumeButton;
+
     public void Start()
     {
+        _currentEventSystem = EventSystem.current;
         _isPaused.Value = false;
         if(!_isMusicPlaying.Value)
         {
@@ -26,6 +31,7 @@ public class PauseMenu : Menu
             // TODO, drop the volume 50% of what the player has put
             _pauseMenuCanvas.enabled = true;
             _isPaused.Value = true;
+            _currentEventSystem.SetSelectedGameObject(_resumeButton);
         }
         
     }
@@ -39,6 +45,7 @@ public class PauseMenu : Menu
             // TODO, resume the volume
             _pauseMenuCanvas.enabled = false;
             _isPaused.Value = false;
+            _currentEventSystem.SetSelectedGameObject(null);
         }    
     }
 

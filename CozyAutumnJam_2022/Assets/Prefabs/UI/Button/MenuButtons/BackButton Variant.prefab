@@ -11,9 +11,13 @@ PrefabInstance:
       propertyPath: m_text
       value: Back
       objectReference: {fileID: 0}
+    - target: {fileID: 3051743121719239128, guid: 04c70de5074ea3d4fb460caa0c689a6c, type: 3}
+      propertyPath: m_Name
+      value: Back Button
+      objectReference: {fileID: 0}
     - target: {fileID: 3104393178403879022, guid: 04c70de5074ea3d4fb460caa0c689a6c, type: 3}
       propertyPath: m_Name
-      value: BackButton
+      value: BackButton Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3104393178435013624, guid: 04c70de5074ea3d4fb460caa0c689a6c, type: 3}
       propertyPath: m_Pivot.x

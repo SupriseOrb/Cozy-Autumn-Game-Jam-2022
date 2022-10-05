@@ -8,6 +8,7 @@ public class PauseMenu : Menu
     [SerializeField] private Canvas _pauseMenuCanvas;
     [SerializeField] private BoolVariable _isPaused;
     private EventSystem _currentEventSystem;
+    private GameObject _previouslySelectedGameObject;
     [SerializeField] private GameObject _resumeButton;
 
     public void Start()
@@ -31,6 +32,7 @@ public class PauseMenu : Menu
             // TODO, drop the volume 50% of what the player has put
             _pauseMenuCanvas.enabled = true;
             _isPaused.Value = true;
+            _previouslySelectedGameObject = _currentEventSystem.currentSelectedGameObject;
             _currentEventSystem.SetSelectedGameObject(_resumeButton);
         }
         
@@ -45,7 +47,7 @@ public class PauseMenu : Menu
             // TODO, resume the volume
             _pauseMenuCanvas.enabled = false;
             _isPaused.Value = false;
-            _currentEventSystem.SetSelectedGameObject(null);
+            _currentEventSystem.SetSelectedGameObject(_previouslySelectedGameObject);
         }    
     }
 

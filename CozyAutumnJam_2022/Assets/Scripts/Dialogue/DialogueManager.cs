@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 using Ink.Runtime;
 using TMPro;
@@ -59,6 +61,7 @@ public class DialogueManager : MonoBehaviour
             }
 
             _puzzleChoiceParent.SetActive(false);
+            _currentEventSystem.SetSelectedGameObject(null);
             ChooseChoice(index);
         }
     }
@@ -79,6 +82,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     private static DialogueManager instance;
+    private EventSystem _currentEventSystem;
 
     #region Story
     private static Story _story;
@@ -137,6 +141,19 @@ public class DialogueManager : MonoBehaviour
         {
             Destroy(this);
         }
+    }
+
+    void Start()
+    {
+        _currentEventSystem = EventSystem.current;
+        SceneManager.activeSceneChanged += OnChangeScene;
+    }
+
+    private void OnChangeScene(Scene current, Scene next)
+    {
+        Debug.Log("On Change Scene");
+        _playerInConvo.Value = false;
+        SceneManager.activeSceneChanged -= OnChangeScene;
     }
 
     private void SetStoryVariable(string varName, bool varValue)
@@ -320,11 +337,13 @@ public class DialogueManager : MonoBehaviour
             choiceButton[i].GetComponentInChildren<TextMeshProUGUI>().text = choice.text;
             choiceButton[i].SetActive(true);
         }
+        choiceButton[0].GetComponentInChildren<Button>().Select();
     }
     private void ChooseChoice(int index)
     {
         _story.ChooseChoiceIndex(index);
         _playerCanContinue = true;
+        _currentEventSystem.SetSelectedGameObject(null);
         AdvanceDialogue();        
     }
 

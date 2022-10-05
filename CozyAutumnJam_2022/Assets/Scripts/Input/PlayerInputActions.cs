@@ -91,15 +91,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Interact"",
-                    ""type"": ""Button"",
-                    ""id"": ""02b3e9b3-eb57-432e-97c0-a6149b02116b"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""ResizeCard"",
                     ""type"": ""Button"",
                     ""id"": ""b2b8dc3f-826c-4086-9e23-9abdffc2e4c4"",
@@ -157,7 +148,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""fadf9955-3fef-432f-a8bd-6be48e88bebd"",
-                    ""path"": ""<Keyboard>/o"",
+                    ""path"": ""<Keyboard>/tab"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -168,7 +159,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""0c2d074d-18d0-4796-85ea-3f10029a7d87"",
-                    ""path"": ""<Keyboard>/p"",
+                    ""path"": ""<Keyboard>/r"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
@@ -230,17 +221,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c212fee1-9d10-456b-8af6-86d8ec52dc13"",
-                    ""path"": ""<Keyboard>/f"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Interact"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
@@ -328,7 +308,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         m_Player_SwapDeck = m_Player.FindAction("SwapDeck", throwIfNotFound: true);
         m_Player_ActivateCard = m_Player.FindAction("ActivateCard", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
-        m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
         m_Player_ResizeCard = m_Player.FindAction("ResizeCard", throwIfNotFound: true);
     }
 
@@ -396,7 +375,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_SwapDeck;
     private readonly InputAction m_Player_ActivateCard;
     private readonly InputAction m_Player_Movement;
-    private readonly InputAction m_Player_Interact;
     private readonly InputAction m_Player_ResizeCard;
     public struct PlayerActions
     {
@@ -409,7 +387,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         public InputAction @SwapDeck => m_Wrapper.m_Player_SwapDeck;
         public InputAction @ActivateCard => m_Wrapper.m_Player_ActivateCard;
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
-        public InputAction @Interact => m_Wrapper.m_Player_Interact;
         public InputAction @ResizeCard => m_Wrapper.m_Player_ResizeCard;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
@@ -441,9 +418,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @Movement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
-                @Interact.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
-                @Interact.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
-                @Interact.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnInteract;
                 @ResizeCard.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnResizeCard;
                 @ResizeCard.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnResizeCard;
                 @ResizeCard.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnResizeCard;
@@ -472,9 +446,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
-                @Interact.started += instance.OnInteract;
-                @Interact.performed += instance.OnInteract;
-                @Interact.canceled += instance.OnInteract;
                 @ResizeCard.started += instance.OnResizeCard;
                 @ResizeCard.performed += instance.OnResizeCard;
                 @ResizeCard.canceled += instance.OnResizeCard;
@@ -536,7 +507,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         void OnSwapDeck(InputAction.CallbackContext context);
         void OnActivateCard(InputAction.CallbackContext context);
         void OnMovement(InputAction.CallbackContext context);
-        void OnInteract(InputAction.CallbackContext context);
         void OnResizeCard(InputAction.CallbackContext context);
     }
 }

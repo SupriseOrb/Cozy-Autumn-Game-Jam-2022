@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 250, y: 350}
+  m_SizeDelta: {x: 275, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3150672781674562207
 CanvasRenderer:
@@ -75,20 +75,24 @@ MonoBehaviour:
     Space
     - Interact / Continue Dialogue
 
+    WASD - Movement / Navigate UI
+
+    Enter
+    - Select UI Button
+
 
     Card Controls
 
     ------------------
 
-    I
-    - Inspect Card
+    I - Inspect
+    Card
 
     Q/E - Swap cards
 
     R - Use current card
 
-    Tab - Swap
-    decks'
+    Tab - Swap decks'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}
   m_sharedMaterial: {fileID: 9198052892992681617, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}

@@ -161,9 +161,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3706616670738513215, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'Spirit Costume Hint: Is that chest playing a song? I don''t know any
-        key that would fit that type of lock... maybe there''s another way to open
-        it.'
+      value: 'Human''s Costume Hint: Is that chest playing a song? I don''t know
+        any key that would fit that type of lock... maybe there''s another way to
+        open it.'
       objectReference: {fileID: 0}
     - target: {fileID: 3706616670738513215, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -212,8 +212,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8508067896070417292, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'Human Costume Hint: Another musical chest? These music boxes won''t
-        make any sound, though. Maybe they need power.'
+      value: 'Spirit''s Costume Hint: Another musical chest? These music boxes won''t
+        make any sound, though. Maybe they need a power source.'
       objectReference: {fileID: 0}
     - target: {fileID: 8508067896070417292, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_fontColor32.rgba

@@ -161,8 +161,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3706616670738513215, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'Spirit Costume Hint: All this candy is blocking your path to the good
-        stuff.'
+      value: 'Human''s Costume Hint: All these boxes of candy are blocking your path
+        to the good stuff.'
       objectReference: {fileID: 0}
     - target: {fileID: 3706616670738513215, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -210,8 +210,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8508067896070417292, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'Human Costume Hint: This cat looks hungry. Maybe you can get some food
-        so it''ll move.'
+      value: 'Spirit''s Costume Hint: This cat looks hungry. Maybe you can get some
+        food so it''ll move.'
       objectReference: {fileID: 0}
     - target: {fileID: 8508067896070417292, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_fontColor32.rgba

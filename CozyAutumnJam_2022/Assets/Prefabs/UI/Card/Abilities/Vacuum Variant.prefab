@@ -125,9 +125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2469649110553061696, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'Ability Hint: This card has a bunch of loose hairs on it, but looks
-        like it''s missing something. Maybe you should ask one of the customers about
-        it?
+      value: 'Ability Hint: This card has a bunch of loose grey hairs on it.
 
 
 
@@ -168,8 +166,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3706616670738513215, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'Spirit Costume Hint: Maybe you''ll find something nice if you get all
-        this clutter out of the way.'
+      value: 'Human''s Costume Hint: Maybe you''ll find something nice if you get
+        all this clutter out of the way.'
       objectReference: {fileID: 0}
     - target: {fileID: 3706616670738513215, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -221,8 +219,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8508067896070417292, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'Human Costume Hint: The shelves and aisles are different in both worlds?
-        What a pain.'
+      value: 'Spirit''s Costume Hint: The shelves and aisles are different in both
+        worlds? What a pain.'
       objectReference: {fileID: 0}
     - target: {fileID: 8508067896070417292, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_fontColor32.rgba

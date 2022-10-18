@@ -169,9 +169,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3706616670738513215, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'Spirit Costume Hint: This rat is such a pest, and the cat won''t move.
-        Maybe if you can tempt the cat with something it likes it will finally get
-        up and move. You''ll need to find a way to trap that rat, though.'
+      value: 'Human''s Costume Hint: This rat''s annoying, and the cat''s blocking
+        the way. Is there a way to get rid of both of them at once?'
       objectReference: {fileID: 0}
     - target: {fileID: 3706616670738513215, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_fontColor32.rgba
@@ -223,9 +222,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8508067896070417292, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_text
-      value: 'Human Costume Hint: How many cats are in this place? It looks bored
-        -- maybe it wants something that it can chase around. This rat seems sensitive
-        to sound.'
+      value: 'Spirit''s Costume Hint: Another bored looking cat? If only I can catch
+        this ghostly looking rat. Hmm...it seems to be affected by sound.'
       objectReference: {fileID: 0}
     - target: {fileID: 8508067896070417292, guid: d24c0eeb8bfe6804fba35807a06937a1, type: 3}
       propertyPath: m_fontColor32.rgba

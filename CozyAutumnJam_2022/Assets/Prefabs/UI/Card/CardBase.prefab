@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 1309894247137392126}
   - component: {fileID: 3706616670738513215}
   m_Layer: 5
-  m_Name: Hint for Spirit Costume
+  m_Name: Hint for Human's Costume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -483,7 +483,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Spirit Costume Hint:'
+  m_text: 'Human''s Costume Hint:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}
   m_sharedMaterial: {fileID: 9198052892992681617, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}
@@ -493,7 +493,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0.13725491, g: 0.3529412, b: 0.3882353, a: 1}
+  m_fontColor: {r: 1, g: 0.35686275, b: 0.30980393, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 6405396683009457227}
   - component: {fileID: 8508067896070417292}
   m_Layer: 5
-  m_Name: Hint for Human Costume
+  m_Name: Hint for Spirit's Costume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -618,7 +618,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Human Costume:'
+  m_text: 'Spirit''s Costume Hint:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}
   m_sharedMaterial: {fileID: 9198052892992681617, guid: 18296e38c37119b48b6f05f121ecca46, type: 2}
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 0.35686275, b: 0.30980393, a: 1}
+  m_fontColor: {r: 0.13725491, g: 0.3529412, b: 0.3882353, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
